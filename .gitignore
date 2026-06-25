@@ -39,3 +39,7 @@ google-services.json
 
 # ---- Project-specific ----
 reddit_share/
+
+# ---- Signing secrets (NEVER commit) ----
+signing.props
+*.keystore.txt

@@ -46,6 +46,18 @@
 		<TargetPlatformMinVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</TargetPlatformMinVersion>
 	</PropertyGroup>
 
+	<!-- Android release signing → produces a signed .aab for the Play Store.
+	     Only activates when signing.props (which holds the passwords, git-ignored) exists,
+	     so fresh clones / CI without the secrets still build fine. -->
+	<PropertyGroup Condition="'$(Configuration)' == 'Release' and $(TargetFramework.Contains('android')) and Exists('signing.props')">
+		<AndroidPackageFormat>aab</AndroidPackageFormat>
+		<AndroidKeyStore>true</AndroidKeyStore>
+		<AndroidSigningKeyStore>suikodencodex.keystore</AndroidSigningKeyStore>
+		<AndroidSigningKeyAlias>suikodencodex</AndroidSigningKeyAlias>
+	</PropertyGroup>
+	<!-- Secrets (store/key passwords) live here and are NOT committed. -->
+	<Import Project="signing.props" Condition="Exists('signing.props')" />
+
 	<ItemGroup>
 		<!-- App Icon -->
 		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#1C2348" />
