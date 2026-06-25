@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="SuikodenCodex.Pages.CardsPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:vm="clr-namespace:SuikodenCodex.ViewModels"
+    xmlns:models="clr-namespace:SuikodenCodex.Models"
+    xmlns:app="clr-namespace:SuikodenCodex"
+    x:DataType="vm:CardsViewModel"
+    Title="Card Stories">
+
+    <Grid RowDefinitions="Auto,Auto,Auto,*">
+
+        <!-- duel button + search -->
+        <VerticalStackLayout Grid.Row="0" Spacing="0">
+            <Border IsVisible="{x:Static app:FeatureFlags.CardDuel}"
+                    StrokeShape="RoundRectangle 12" Stroke="#66D9A636" BackgroundColor="#2B335E"
+                    Margin="12,10,12,2" Padding="14,10">
+                <Grid ColumnDefinitions="Auto,*,Auto" ColumnSpacing="12">
+                    <Label Text="⚔️" FontSize="22" VerticalOptions="Center" />
+                    <VerticalStackLayout Grid.Column="1" Spacing="0" VerticalOptions="Center">
+                        <Label Text="Play Card Duel" FontSize="15" FontAttributes="Bold" TextColor="{StaticResource Primary}" />
+                        <Label Text="Battle the AI with these cards" FontSize="11" Opacity="0.7" />
+                    </VerticalStackLayout>
+                    <Label Grid.Column="2" Text="›" FontSize="22" Opacity="0.5" VerticalOptions="Center" />
+                </Grid>
+                <Border.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding OpenDuelCommand}" />
+                </Border.GestureRecognizers>
+            </Border>
+
+            <Border StrokeShape="RoundRectangle 12" Stroke="#30808080" Margin="12,4,12,4" Padding="12,2">
+                <Grid ColumnDefinitions="Auto,*">
+                    <Label Text="🔍" FontSize="16" VerticalOptions="Center" />
+                    <Entry Grid.Column="1" Placeholder="Search cards by name, type, artist…"
+                           Text="{Binding Query, Mode=TwoWay}" />
+                </Grid>
+            </Border>
+        </VerticalStackLayout>
+
+        <!-- pack filter chips -->
+        <CollectionView Grid.Row="1" ItemsSource="{Binding Packs}" ItemsLayout="HorizontalList"
+                        HeightRequest="46" Margin="8,0">
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="vm:CardPackFilter">
+                    <Border StrokeShape="RoundRectangle 16" Margin="4,6" Padding="14,5"
+                            Stroke="{Binding IsSelected, Converter={StaticResource BoolToColor}, ConverterParameter=#D9A636|#55808080}"
+                            BackgroundColor="{Binding IsSelected, Converter={StaticResource BoolToColor}, ConverterParameter=#D9A636|#00000000}">
+                        <Label Text="{Binding Label}" FontSize="12" VerticalOptions="Center"
+                               TextColor="{Binding IsSelected, Converter={StaticResource BoolToColor}, ConverterParameter=#1C2348|#9AA0B5}" />
+                        <Border.GestureRecognizers>
+                            <TapGestureRecognizer
+                                Command="{Binding Source={RelativeSource AncestorType={x:Type vm:CardsViewModel}}, Path=SelectPackCommand}"
+                                CommandParameter="{Binding .}" />
+                        </Border.GestureRecognizers>
+                    </Border>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+        <Label Grid.Row="2" Text="{Binding Count, StringFormat='{0} cards'}" FontSize="12" Opacity="0.55" Margin="16,2,16,6" />
+
+        <!-- card grid -->
+        <CollectionView Grid.Row="3" ItemsSource="{Binding Results}" SelectionMode="None" Margin="8,0">
+            <CollectionView.ItemsLayout>
+                <GridItemsLayout Orientation="Vertical" Span="3" HorizontalItemSpacing="6" VerticalItemSpacing="10" />
+            </CollectionView.ItemsLayout>
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="models:CardEntry">
+                    <VerticalStackLayout Spacing="3" Padding="2">
+                        <Border StrokeShape="RoundRectangle 8" Stroke="#22808080" BackgroundColor="White"
+                                Padding="0" HeightRequest="150">
+                            <Grid>
+                                <Image Source="{Binding ImageName}" Aspect="AspectFit" IsVisible="{Binding HasImage}" />
+                                <Label Text="🎴" FontSize="34" IsVisible="{Binding HasImage, Converter={StaticResource InvertedBool}}"
+                                       HorizontalOptions="Center" VerticalOptions="Center" />
+                            </Grid>
+                        </Border>
+                        <Label Text="{Binding Name}" FontSize="11" FontAttributes="Bold"
+                               MaxLines="1" LineBreakMode="TailTruncation" HorizontalTextAlignment="Center" />
+                        <Label Text="{Binding NumberLabel}" FontSize="10" Opacity="0.5" HorizontalTextAlignment="Center" />
+                        <VerticalStackLayout.GestureRecognizers>
+                            <TapGestureRecognizer
+                                Command="{Binding Source={RelativeSource AncestorType={x:Type vm:CardsViewModel}}, Path=OpenCardCommand}"
+                                CommandParameter="{Binding .}" />
+                        </VerticalStackLayout.GestureRecognizers>
+                    </VerticalStackLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </Grid>
+</ContentPage>

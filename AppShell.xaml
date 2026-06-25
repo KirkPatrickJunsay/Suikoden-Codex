@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="SuikodenCodex.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:pages="clr-namespace:SuikodenCodex.Pages"
+    Title="Suikoden Codex"
+    FlyoutBehavior="Disabled">
+
+    <TabBar>
+        <ShellContent
+            Title="Home"
+            Icon="tab_home.png"
+            ContentTemplate="{DataTemplate pages:HomePage}"
+            Route="home" />
+
+        <ShellContent
+            Title="Codex"
+            Icon="tab_codex.png"
+            ContentTemplate="{DataTemplate pages:BrowsePage}"
+            Route="browse" />
+
+        <ShellContent
+            Title="Recruitment"
+            Icon="tab_recruit.png"
+            ContentTemplate="{DataTemplate pages:RecruitmentPage}"
+            Route="recruitment" />
+
+        <ShellContent
+            Title="Cards"
+            Icon="tab_cards.png"
+            ContentTemplate="{DataTemplate pages:CardsPage}"
+            Route="cards" />
+
+        <ShellContent
+            Title="More"
+            Icon="tab_more.png"
+            ContentTemplate="{DataTemplate pages:MorePage}"
+            Route="more" />
+    </TabBar>
+
+</Shell>

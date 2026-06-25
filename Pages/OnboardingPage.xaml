@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="SuikodenCodex.Pages.OnboardingPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:pages="clr-namespace:SuikodenCodex.Pages"
+    BackgroundColor="{StaticResource IndigoDeep}">
+
+    <Grid RowDefinitions="Auto,*,Auto,Auto" Padding="0,16,0,28">
+
+        <Label Grid.Row="0" Text="Skip" TextColor="{StaticResource Gold}" FontSize="14"
+               HorizontalOptions="End" Margin="0,4,20,0">
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Tapped="OnFinish" />
+            </Label.GestureRecognizers>
+        </Label>
+
+        <CarouselView x:Name="Carousel" Grid.Row="1" IndicatorView="Dots" Loop="False">
+            <CarouselView.ItemTemplate>
+                <DataTemplate x:DataType="pages:OnboardSlide">
+                    <Grid Padding="36,0">
+                        <VerticalStackLayout VerticalOptions="Center" Spacing="18">
+                            <Label Text="{Binding Emoji}" FontSize="72" HorizontalOptions="Center" />
+                            <Label Text="{Binding Title}" FontSize="24" FontAttributes="Bold"
+                                   TextColor="{StaticResource Gold}" HorizontalTextAlignment="Center" />
+                            <Label Text="{Binding Body}" FontSize="15" LineHeight="1.4" Opacity="0.85"
+                                   HorizontalTextAlignment="Center" />
+                        </VerticalStackLayout>
+                    </Grid>
+                </DataTemplate>
+            </CarouselView.ItemTemplate>
+        </CarouselView>
+
+        <IndicatorView x:Name="Dots" Grid.Row="2" HorizontalOptions="Center" Margin="0,8,0,18"
+                       IndicatorColor="#44808080" SelectedIndicatorColor="{StaticResource Gold}"
+                       IndicatorSize="8" />
+
+        <Button Grid.Row="3" Text="Get started" Clicked="OnFinish" Margin="36,0"
+                BackgroundColor="{StaticResource Gold}" TextColor="{StaticResource IndigoDeep}"
+                FontAttributes="Bold" CornerRadius="12" HeightRequest="50" />
+    </Grid>
+</ContentPage>

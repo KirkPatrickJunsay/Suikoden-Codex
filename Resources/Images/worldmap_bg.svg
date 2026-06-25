@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="1960" viewBox="0 0 1200 1960" xmlns="http://www.w3.org/2000/svg">
+  <!-- Original detailed fantasy map: lore-accurate LAYOUT, hand-drawn terrain (NOT Konami artwork) -->
+  <defs>
+    <radialGradient id="vignette" cx="50%" cy="46%" r="72%">
+      <stop offset="60%" stop-color="#0E1430" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#05080F" stop-opacity="0.85"/>
+    </radialGradient>
+    <radialGradient id="lakeG" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#1B2A5C"/>
+      <stop offset="100%" stop-color="#101A3E"/>
+    </radialGradient>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="1960" fill="#0E1430"/>
+
+  <!-- graticule -->
+  <g stroke="#172046" stroke-width="1" opacity="0.6">
+    <path d="M200 0 V1960"/><path d="M400 0 V1960"/><path d="M600 0 V1960"/>
+    <path d="M800 0 V1960"/><path d="M1000 0 V1960"/>
+    <path d="M0 240 H1200"/><path d="M0 480 H1200"/><path d="M0 720 H1200"/>
+    <path d="M0 960 H1200"/><path d="M0 1200 H1200"/><path d="M0 1440 H1200"/><path d="M0 1680 H1200"/>
+  </g>
+  <!-- edge ticks -->
+  <g stroke="#3A4778" stroke-width="2" opacity="0.7">
+    <path d="M200 0 V12"/><path d="M400 0 V12"/><path d="M600 0 V12"/><path d="M800 0 V12"/><path d="M1000 0 V12"/>
+    <path d="M0 240 H12"/><path d="M0 720 H12"/><path d="M0 1200 H12"/><path d="M0 1680 H12"/>
+  </g>
+
+  <!-- sea hatching -->
+  <g stroke="#19224A" stroke-width="2" opacity="0.4">
+    <path d="M0 1380 H1200" stroke-dasharray="2 22"/>
+    <path d="M0 1620 H1200" stroke-dasharray="2 22"/>
+    <path d="M620 1340 V1660" stroke-dasharray="2 22"/>
+  </g>
+
+  <!-- ===================== Northern continent ===================== -->
+  <!-- coastline halo -->
+  <path d="M200 140 C360 90, 760 96, 980 150 C1120 180, 1150 360, 1110 520
+           C1140 700, 1080 940, 980 1120 C900 1280, 640 1340, 460 1330
+           C250 1340, 150 1180, 158 940 C120 720, 140 440, 170 320
+           C188 200, 150 160, 200 140 Z"
+        fill="none" stroke="#2A356A" stroke-width="14" opacity="0.55"/>
+  <path d="M200 140 C360 90, 760 96, 980 150 C1120 180, 1150 360, 1110 520
+           C1140 700, 1080 940, 980 1120 C900 1280, 640 1340, 460 1330
+           C250 1340, 150 1180, 158 940 C120 720, 140 440, 170 320
+           C188 200, 150 160, 200 140 Z"
+        fill="#1E2748" stroke="#5E70AC" stroke-width="3"/>
+
+  <!-- territory tints -->
+  <g opacity="1">
+    <ellipse cx="500" cy="230" rx="250" ry="140" fill="#2E8B8B" opacity="0.07"/>
+    <ellipse cx="960" cy="400" rx="210" ry="210" fill="#3A7D44" opacity="0.08"/>
+    <ellipse cx="850" cy="640" rx="180" ry="170" fill="#9E3B3B" opacity="0.06"/>
+    <ellipse cx="270" cy="700" rx="230" ry="230" fill="#3B5B9E" opacity="0.06"/>
+    <ellipse cx="400" cy="1220" rx="270" ry="150" fill="#8B2E5A" opacity="0.07"/>
+  </g>
+
+  <!-- Lake Dunan -->
+  <ellipse cx="520" cy="740" rx="142" ry="92" fill="url(#lakeG)" stroke="#3C4E8C" stroke-width="2.5"/>
+  <ellipse cx="520" cy="740" rx="142" ry="92" fill="none" stroke="#223064" stroke-width="9" opacity="0.5"/>
+
+  <!-- rivers (taper via stacked widths) -->
+  <g fill="none" stroke="#2C7DB0" opacity="0.6" stroke-linecap="round">
+    <path d="M520 832 C500 940, 450 1060, 430 1180 C424 1230, 432 1280, 436 1320" stroke-width="5"/>
+    <path d="M560 250 C620 360, 690 470, 700 560 C708 640, 690 700, 662 712" stroke-width="4"/>
+    <path d="M980 360 C940 460, 880 560, 800 620" stroke-width="3.5"/>
+  </g>
+
+  <!-- internal national borders (dashed) -->
+  <g stroke="#4A5A96" stroke-width="2" fill="none" stroke-dasharray="7 9" opacity="0.75">
+    <path d="M170 560 C400 520, 720 520, 1090 540"/>
+    <path d="M520 540 C512 700, 510 880, 500 1040"/>
+    <path d="M170 920 C360 900, 720 900, 1000 930"/>
+    <path d="M700 150 C760 360, 800 520, 800 620"/>
+  </g>
+
+  <!-- dotted royal roads between capitals -->
+  <g stroke="#D9A636" stroke-width="2.2" fill="none" stroke-dasharray="2 12" stroke-linecap="round" opacity="0.45">
+    <path d="M490 700 L720 710"/>      <!-- Muse - Greenhill -->
+    <path d="M720 710 L720 810"/>      <!-- Greenhill - Two River -->
+    <path d="M490 700 L235 810"/>      <!-- Muse - South Window -->
+    <path d="M235 810 L255 1040"/>     <!-- South Window - Tinto -->
+    <path d="M255 1040 L385 1235"/>    <!-- Tinto - Gregminster -->
+    <path d="M385 1235 L175 1235"/>    <!-- Gregminster - Lake Castle -->
+    <path d="M720 710 L1010 320"/>     <!-- toward Grasslands -->
+  </g>
+
+  <!-- mountain ranges (shaded) -->
+  <g stroke="#93A4DE" stroke-width="1.2">
+    <!-- Banner Mountains (Dunan) -->
+    <g><path d="M500 645 l26 -50 26 50 z" fill="#3E4C82"/><path d="M500 645 l26 -50 13 25 z" fill="#2C3667"/>
+       <path d="M540 650 l22 -42 22 42 z" fill="#3E4C82"/><path d="M540 650 l22 -42 11 21 z" fill="#2C3667"/>
+       <path d="M478 648 l18 -34 18 34 z" fill="#3E4C82"/></g>
+    <!-- Mt. Hei-Tou / Senai (Grasslands) -->
+    <g><path d="M905 425 l24 -46 24 46 z" fill="#3E4C82"/><path d="M905 425 l24 -46 12 23 z" fill="#2C3667"/>
+       <path d="M820 455 l22 -42 22 42 z" fill="#3E4C82"/><path d="M820 455 l22 -42 11 21 z" fill="#2C3667"/></g>
+    <!-- Lorimar / Seifu / Tigerwolf (Toran) -->
+    <g><path d="M190 1300 l24 -46 24 46 z" fill="#3E4C82"/><path d="M190 1300 l24 -46 12 23 z" fill="#2C3667"/>
+       <path d="M224 1304 l18 -34 18 34 z" fill="#3E4C82"/>
+       <path d="M286 1296 l22 -42 22 42 z" fill="#3E4C82"/><path d="M286 1296 l22 -42 11 21 z" fill="#2C3667"/>
+       <path d="M520 1312 l24 -46 24 46 z" fill="#3E4C82"/><path d="M520 1312 l24 -46 12 23 z" fill="#2C3667"/></g>
+  </g>
+
+  <!-- forests (clustered trees) -->
+  <g>
+    <!-- Banner Forest (Dunan) -->
+    <g fill="#2E6B4A" stroke="#1E4A33" stroke-width="0.6">
+      <path d="M556 748 l-8 16 h16 z"/><path d="M572 742 l-7 14 h14 z"/><path d="M542 742 l-6 12 h12 z"/><path d="M564 758 l-7 14 h14 z"/>
+    </g>
+    <!-- Great Forest (Toran) -->
+    <g fill="#2E6B4A" stroke="#1E4A33" stroke-width="0.6">
+      <path d="M470 1318 l-8 16 h16 z"/><path d="M486 1312 l-7 14 h14 z"/><path d="M456 1312 l-6 12 h12 z"/><path d="M478 1328 l-7 14 h14 z"/>
+    </g>
+    <!-- Forest of Illusion (Toran) -->
+    <g fill="#2E6B4A" stroke="#1E4A33" stroke-width="0.6">
+      <path d="M258 1312 l-7 14 h14 z"/><path d="M272 1318 l-6 12 h12 z"/><path d="M246 1320 l-6 12 h12 z"/>
+    </g>
+    <!-- Kuput Forest (Grasslands) -->
+    <g fill="#2E6B4A" stroke="#1E4A33" stroke-width="0.6">
+      <path d="M858 388 l-7 14 h14 z"/><path d="M872 394 l-6 12 h12 z"/><path d="M846 396 l-6 12 h12 z"/>
+    </g>
+  </g>
+
+  <!-- ===================== Western landmass (Kooluk) ===================== -->
+  <path d="M40 1400 C110 1376, 250 1388, 286 1452 C308 1532, 240 1596, 140 1598 C56 1600, 16 1536, 26 1472 Z"
+        fill="none" stroke="#2A356A" stroke-width="12" opacity="0.5"/>
+  <path d="M40 1400 C110 1376, 250 1388, 286 1452 C308 1532, 240 1596, 140 1598 C56 1600, 16 1536, 26 1472 Z"
+        fill="#1E2748" stroke="#5E70AC" stroke-width="3"/>
+
+  <!-- ===================== Island Nations archipelago ===================== -->
+  <g fill="#1E2748" stroke="#5E70AC" stroke-width="3">
+    <ellipse cx="480" cy="1500" rx="112" ry="52"/>
+    <ellipse cx="300" cy="1556" rx="52" ry="28"/>
+    <ellipse cx="600" cy="1466" rx="42" ry="24"/>
+    <ellipse cx="568" cy="1566" rx="62" ry="32"/>
+  </g>
+
+  <!-- ===================== Southern continent (Falena) ===================== -->
+  <path d="M300 1690 C520 1660, 760 1666, 960 1700 C1040 1726, 1010 1840, 760 1872
+           C520 1892, 320 1878, 280 1800 C262 1760, 270 1700, 300 1690 Z"
+        fill="none" stroke="#2A356A" stroke-width="12" opacity="0.5"/>
+  <path d="M300 1690 C520 1660, 760 1666, 960 1700 C1040 1726, 1010 1840, 760 1872
+           C520 1892, 320 1878, 280 1800 C262 1760, 270 1700, 300 1690 Z"
+        fill="#1E2748" stroke="#5E70AC" stroke-width="3"/>
+  <ellipse cx="640" cy="1790" rx="360" ry="120" fill="#B8862E" opacity="0.06"/>
+  <!-- Feitas River + Ashtwal/Ranro mountains -->
+  <path d="M860 1700 C800 1760, 720 1820, 640 1858" fill="none" stroke="#2C7DB0" stroke-width="4" opacity="0.6" stroke-linecap="round"/>
+  <g stroke="#93A4DE" stroke-width="1.2">
+    <path d="M840 1722 l24 -46 24 46 z" fill="#3E4C82"/><path d="M840 1722 l24 -46 12 23 z" fill="#2C3667"/>
+    <path d="M876 1726 l20 -38 20 38 z" fill="#3E4C82"/><path d="M912 1714 l22 -42 22 42 z" fill="#3E4C82"/>
+  </g>
+  <g fill="#2E6B4A" stroke="#1E4A33" stroke-width="0.6">
+    <path d="M360 1894 l-8 16 h16 z"/><path d="M376 1888 l-7 14 h14 z"/><path d="M346 1890 l-6 12 h12 z"/>
+  </g>
+
+  <!-- dotted sea routes -->
+  <g stroke="#D9A636" stroke-width="2.4" opacity="0.38" fill="none" stroke-dasharray="2 14" stroke-linecap="round">
+    <path d="M430 1330 C430 1390, 450 1440, 470 1470"/>
+    <path d="M520 1560 C580 1640, 620 1670, 660 1720"/>
+    <path d="M260 1500 C340 1520, 400 1520, 460 1500"/>
+  </g>
+
+  <!-- compass rose -->
+  <g transform="translate(1100,200)" stroke="#D9A636" fill="#D9A636" opacity="0.9">
+    <circle r="40" fill="none" stroke-width="2.5"/>
+    <circle r="30" fill="none" stroke-width="1" opacity="0.5"/>
+    <path d="M0 -46 L9 0 L0 46 L-9 0 Z" opacity="0.85"/>
+    <path d="M-46 0 L0 -9 L46 0 L0 9 Z" opacity="0.5"/>
+    <circle r="4"/>
+  </g>
+
+  <!-- vignette overlay -->
+  <rect x="0" y="0" width="1200" height="1960" fill="url(#vignette)"/>
+</svg>

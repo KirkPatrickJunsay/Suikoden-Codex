@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="SuikodenCodex.Pages.MorePage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:vm="clr-namespace:SuikodenCodex.ViewModels"
+    x:DataType="vm:MoreViewModel"
+    Title="More">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="14">
+
+            <Label Text="Explore" FontSize="13" FontAttributes="Bold" Opacity="0.6" />
+
+            <Border StrokeShape="RoundRectangle 10" Stroke="#44D9A636" BackgroundColor="#1AD9A636" Padding="16">
+                <Grid ColumnDefinitions="Auto,*,Auto" ColumnSpacing="14">
+                    <Label Text="📜" FontSize="24" VerticalOptions="Center" />
+                    <VerticalStackLayout Grid.Column="1" VerticalOptions="Center">
+                        <Label Text="Series timeline" FontSize="16" FontAttributes="Bold" />
+                        <Label Text="Wars &amp; events across I–V, by Solar Year" FontSize="12" Opacity="0.6" />
+                    </VerticalStackLayout>
+                    <Label Grid.Column="2" Text="›" FontSize="22" Opacity="0.4" VerticalOptions="Center" />
+                    <Grid.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding OpenTimelineCommand}" />
+                    </Grid.GestureRecognizers>
+                </Grid>
+            </Border>
+
+            <Border StrokeShape="RoundRectangle 10" Stroke="#30808080" Padding="16">
+                <Grid ColumnDefinitions="Auto,*,Auto" ColumnSpacing="14">
+                    <Label Text="🗺️" FontSize="24" VerticalOptions="Center" />
+                    <VerticalStackLayout Grid.Column="1" VerticalOptions="Center">
+                        <Label Text="World map" FontSize="16" FontAttributes="Bold" />
+                        <Label Text="The realms of Suikoden, tap to explore" FontSize="12" Opacity="0.6" />
+                    </VerticalStackLayout>
+                    <Label Grid.Column="2" Text="›" FontSize="22" Opacity="0.4" VerticalOptions="Center" />
+                    <Grid.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding OpenWorldMapCommand}" />
+                    </Grid.GestureRecognizers>
+                </Grid>
+            </Border>
+
+            <Border StrokeShape="RoundRectangle 10" Stroke="#30808080" Padding="16">
+                <Grid ColumnDefinitions="Auto,*,Auto" ColumnSpacing="14">
+                    <Label Text="⚖️" FontSize="24" VerticalOptions="Center" />
+                    <VerticalStackLayout Grid.Column="1" VerticalOptions="Center">
+                        <Label Text="Compare" FontSize="16" FontAttributes="Bold" />
+                        <Label Text="Two characters or monsters, side by side" FontSize="12" Opacity="0.6" />
+                    </VerticalStackLayout>
+                    <Label Grid.Column="2" Text="›" FontSize="22" Opacity="0.4" VerticalOptions="Center" />
+                    <Grid.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding OpenCompareCommand}" />
+                    </Grid.GestureRecognizers>
+                </Grid>
+            </Border>
+
+            <Label Text="Library" FontSize="13" FontAttributes="Bold" Opacity="0.6" Margin="0,12,0,0" />
+
+            <Border StrokeShape="RoundRectangle 10" Stroke="#30808080" Padding="16">
+                <Grid ColumnDefinitions="Auto,*,Auto" ColumnSpacing="14">
+                    <Label Text="★" FontSize="24" VerticalOptions="Center" />
+                    <VerticalStackLayout Grid.Column="1">
+                        <Label Text="Favorites" FontSize="16" FontAttributes="Bold" />
+                        <Label Text="{Binding FavoriteCount, StringFormat='{0} saved'}" FontSize="12" Opacity="0.6" />
+                    </VerticalStackLayout>
+                    <Label Grid.Column="2" Text="›" FontSize="22" Opacity="0.4" VerticalOptions="Center" />
+                    <Grid.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding OpenFavoritesCommand}" />
+                    </Grid.GestureRecognizers>
+                </Grid>
+            </Border>
+
+            <Border StrokeShape="RoundRectangle 10" Stroke="#30808080" Padding="16">
+                <Grid ColumnDefinitions="Auto,*,Auto" ColumnSpacing="14">
+                    <Label Text="🕘" FontSize="24" VerticalOptions="Center" />
+                    <VerticalStackLayout Grid.Column="1">
+                        <Label Text="Recently Viewed" FontSize="16" FontAttributes="Bold" />
+                        <Label Text="{Binding RecentCount, StringFormat='{0} entries'}" FontSize="12" Opacity="0.6" />
+                    </VerticalStackLayout>
+                    <Label Grid.Column="2" Text="›" FontSize="22" Opacity="0.4" VerticalOptions="Center" />
+                    <Grid.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding OpenRecentCommand}" />
+                    </Grid.GestureRecognizers>
+                </Grid>
+            </Border>
+
+            <Border StrokeShape="RoundRectangle 10" Stroke="#30808080" Padding="16">
+                <Grid ColumnDefinitions="Auto,*,Auto" ColumnSpacing="14">
+                    <Label Text="🎲" FontSize="24" VerticalOptions="Center" />
+                    <VerticalStackLayout Grid.Column="1">
+                        <Label Text="Random Entry" FontSize="16" FontAttributes="Bold" />
+                        <Label Text="Discover something new" FontSize="12" Opacity="0.6" />
+                    </VerticalStackLayout>
+                    <Label Grid.Column="2" Text="›" FontSize="22" Opacity="0.4" VerticalOptions="Center" />
+                    <Grid.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding RandomEntryCommand}" />
+                    </Grid.GestureRecognizers>
+                </Grid>
+            </Border>
+
+            <Label Text="Settings" FontSize="13" FontAttributes="Bold" Opacity="0.6" Margin="0,12,0,0" />
+
+            <Border StrokeShape="RoundRectangle 10" Stroke="#30808080" Padding="16">
+                <Grid ColumnDefinitions="Auto,*,Auto" ColumnSpacing="14">
+                    <Label Text="🌙" FontSize="24" VerticalOptions="Center" />
+                    <Label Grid.Column="1" Text="Dark theme" FontSize="16" FontAttributes="Bold" VerticalOptions="Center" />
+                    <Switch Grid.Column="2" IsToggled="{Binding IsDarkTheme, Mode=TwoWay}" VerticalOptions="Center" />
+                </Grid>
+            </Border>
+
+            <Border StrokeShape="RoundRectangle 10" Stroke="#30808080" Padding="16">
+                <Grid ColumnDefinitions="Auto,*,Auto" ColumnSpacing="14">
+                    <Label Text="🙈" FontSize="24" VerticalOptions="Center" />
+                    <VerticalStackLayout Grid.Column="1" VerticalOptions="Center">
+                        <Label Text="Spoiler-safe mode" FontSize="16" FontAttributes="Bold" />
+                        <Label Text="Hide entry descriptions behind a tap" FontSize="12" Opacity="0.6" />
+                    </VerticalStackLayout>
+                    <Switch Grid.Column="2" IsToggled="{Binding IsSpoilerSafe, Mode=TwoWay}" VerticalOptions="Center" />
+                </Grid>
+            </Border>
+
+            <Label Text="Data" FontSize="13" FontAttributes="Bold" Opacity="0.6" Margin="0,12,0,0" />
+
+            <Border StrokeShape="RoundRectangle 10" Stroke="#30808080" Padding="16">
+                <Grid ColumnDefinitions="Auto,*,Auto" ColumnSpacing="14">
+                    <Label Text="💾" FontSize="24" VerticalOptions="Center" />
+                    <VerticalStackLayout Grid.Column="1" VerticalOptions="Center">
+                        <Label Text="Back up progress" FontSize="16" FontAttributes="Bold" />
+                        <Label Text="Save favorites &amp; recruitment to a file" FontSize="12" Opacity="0.6" />
+                    </VerticalStackLayout>
+                    <Label Grid.Column="2" Text="›" FontSize="22" Opacity="0.4" VerticalOptions="Center" />
+                    <Grid.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding BackupCommand}" />
+                    </Grid.GestureRecognizers>
+                </Grid>
+            </Border>
+
+            <Border StrokeShape="RoundRectangle 10" Stroke="#30808080" Padding="16">
+                <Grid ColumnDefinitions="Auto,*,Auto" ColumnSpacing="14">
+                    <Label Text="📥" FontSize="24" VerticalOptions="Center" />
+                    <VerticalStackLayout Grid.Column="1" VerticalOptions="Center">
+                        <Label Text="Restore progress" FontSize="16" FontAttributes="Bold" />
+                        <Label Text="Load progress from a backup file" FontSize="12" Opacity="0.6" />
+                    </VerticalStackLayout>
+                    <Label Grid.Column="2" Text="›" FontSize="22" Opacity="0.4" VerticalOptions="Center" />
+                    <Grid.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding RestoreCommand}" />
+                    </Grid.GestureRecognizers>
+                </Grid>
+            </Border>
+
+            <Label Text="About" FontSize="13" FontAttributes="Bold" Opacity="0.6" Margin="0,12,0,0" />
+            <Border StrokeShape="RoundRectangle 10" Stroke="#30808080" Padding="16">
+                <VerticalStackLayout Spacing="6">
+                    <Label Text="Suikoden Codex" FontSize="16" FontAttributes="Bold" />
+                    <Label Text="{Binding EntryCount, StringFormat='{0} encyclopedia entries'}" FontSize="13" Opacity="0.7" />
+                    <Label FontSize="12" Opacity="0.7"
+                           Text="A free, non-commercial fan-made encyclopedia for the Suikoden series. It exists purely to celebrate and promote Suikoden and help fans rediscover the games — nothing more." />
+                </VerticalStackLayout>
+            </Border>
+
+            <Label Text="Credits &amp; Privacy" FontSize="13" FontAttributes="Bold" Opacity="0.6" Margin="0,12,0,0" />
+            <Border StrokeShape="RoundRectangle 10" Stroke="#44D9A636" BackgroundColor="#1AD9A636" Padding="16">
+                <VerticalStackLayout Spacing="12">
+
+                    <VerticalStackLayout Spacing="3">
+                        <Label Text="💜 A fan project" FontSize="14" FontAttributes="Bold" />
+                        <Label FontSize="12" Opacity="0.75"
+                               Text="Suikoden Codex is an unofficial, fan-made companion app created out of love for the series. Its only goal is to promote the Suikoden games and keep the community alive." />
+                    </VerticalStackLayout>
+
+                    <VerticalStackLayout Spacing="3">
+                        <Label Text="🚫 No monetization" FontSize="14" FontAttributes="Bold" />
+                        <Label FontSize="12" Opacity="0.75"
+                               Text="This app is completely free. It contains no ads, no in-app purchases, no subscriptions, and no paid features of any kind. It will never charge you or profit from Konami's intellectual property." />
+                    </VerticalStackLayout>
+
+                    <VerticalStackLayout Spacing="3">
+                        <Label Text="📖 Source &amp; credits" FontSize="14" FontAttributes="Bold" />
+                        <Label FontSize="12" Opacity="0.75"
+                               Text="Character profiles, recruitment details, and most encyclopedia text are sourced from Gensopedia (gensopedia.org), the community Suikoden wiki — the primary source for this app. Our deepest thanks to the Gensopedia editors for their incredible work." />
+                        <Label FontSize="12" Opacity="0.75"
+                               Text="Images and artwork are credited to Gensopedia and to Konami, the original creators and copyright holders. Suikoden, all characters, artwork, and related content are © Konami. This app is not affiliated with, endorsed by, or sponsored by Konami." />
+                    </VerticalStackLayout>
+
+                    <VerticalStackLayout Spacing="3">
+                        <Label Text="🔒 Your privacy" FontSize="14" FontAttributes="Bold" />
+                        <Label FontSize="12" Opacity="0.75"
+                               Text="Suikoden Codex collects no personal data. There is no account, no tracking, and no analytics. Your favorites, recently viewed entries, and recruitment progress are stored only on your device and are never sent anywhere." />
+                    </VerticalStackLayout>
+
+                </VerticalStackLayout>
+            </Border>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

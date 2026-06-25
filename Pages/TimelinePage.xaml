@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="SuikodenCodex.Pages.TimelinePage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:vm="clr-namespace:SuikodenCodex.ViewModels"
+    x:DataType="vm:TimelineViewModel"
+    x:Name="TimelineRoot"
+    Title="Series timeline">
+
+    <CollectionView ItemsSource="{Binding Groups}" IsGrouped="True" Margin="0,4,0,0"
+                    SelectionMode="Single" SelectionChanged="OnEventSelected">
+
+        <CollectionView.Header>
+            <Label Text="A chronological history of the wars and events across Suikoden I–V, by in-universe Solar Year (SY)."
+                   FontSize="12" Opacity="0.6" Padding="20,12,20,4" />
+        </CollectionView.Header>
+
+        <CollectionView.GroupHeaderTemplate>
+            <DataTemplate x:DataType="vm:TimelineGroup">
+                <Label Text="{Binding Title}" FontSize="13" FontAttributes="Bold"
+                       TextColor="{StaticResource Gold}" Padding="20,16,20,6" />
+            </DataTemplate>
+        </CollectionView.GroupHeaderTemplate>
+
+        <CollectionView.ItemTemplate>
+            <DataTemplate x:DataType="vm:TimelineItem">
+                <Grid ColumnDefinitions="64,Auto,*" Padding="12,2,16,2" ColumnSpacing="6">
+                    <!-- year gutter -->
+                    <Label Grid.Column="0" Text="{Binding YearLabel}" FontSize="12" FontAttributes="Bold"
+                           TextColor="{StaticResource Gold}" HorizontalTextAlignment="End"
+                           VerticalOptions="Center" Margin="0,0,4,0" />
+                    <!-- timeline rail + dot -->
+                    <Grid Grid.Column="1" WidthRequest="16">
+                        <BoxView WidthRequest="2" Color="#33D9A636" HorizontalOptions="Center" />
+                        <Border WidthRequest="12" HeightRequest="12" VerticalOptions="Center" HorizontalOptions="Center"
+                                StrokeShape="RoundRectangle 6" BackgroundColor="{StaticResource Gold}" Stroke="{StaticResource IndigoDeep}" StrokeThickness="2" />
+                    </Grid>
+                    <!-- content card -->
+                    <Border Grid.Column="2" StrokeShape="RoundRectangle 10" Stroke="#22808080" Margin="2,5"
+                            Padding="12,10">
+                        <Grid ColumnDefinitions="Auto,*" ColumnSpacing="10">
+                            <Label Text="{Binding Glyph}" FontSize="18" VerticalOptions="Center" />
+                            <VerticalStackLayout Grid.Column="1" Spacing="1" VerticalOptions="Center">
+                                <Label Text="{Binding Name}" FontSize="15" FontAttributes="Bold"
+                                       MaxLines="2" LineBreakMode="TailTruncation" />
+                                <Label Text="{Binding Game}" FontSize="12" Opacity="0.6" />
+                            </VerticalStackLayout>
+                        </Grid>
+                    </Border>
+                </Grid>
+            </DataTemplate>
+        </CollectionView.ItemTemplate>
+    </CollectionView>
+</ContentPage>

@@ -1,0 +1,238 @@
+using System.Text.Json;
+
+enum CType { Mastermind, Leader, Commoner, Craftman, Free, Mission, Facilities, Other }
+enum Kind { StrMission, MilMission, Facility }
+
+class Card {
+    public string Id="", Name="", Camp="", Camp2="", Gender="";
+    public CType Type;
+    public HashSet<char> Links = new();
+    public int? Str, Mil, Con, Cp, Bp;
+    public string? Cbtype, Vp;
+    public int VpSelf=1, VpOpp=1;
+    public bool IsCharacter => Type is CType.Leader or CType.Commoner or CType.Craftman or CType.Free;
+    public IEnumerable<string> Camps(){ if(Camp!="")yield return Camp; if(Camp2!="")yield return Camp2; }
+    public override string ToString()=>Name;
+}
+
+static class Db {
+    public static List<Card> All = new();
+    public static void Load(string path){
+        using var doc=JsonDocument.Parse(File.ReadAllText(path));
+        foreach(var e in doc.RootElement.EnumerateArray()){
+            string S(string k)=> e.TryGetProperty(k,out var v)&&v.ValueKind==JsonValueKind.String?v.GetString()!:"";
+            int? I(string k){ if(e.TryGetProperty(k,out var v)&&v.ValueKind==JsonValueKind.Number) return v.GetInt32(); return null; }
+            string? SN(string k)=> e.TryGetProperty(k,out var v)&&v.ValueKind==JsonValueKind.String?v.GetString():null;
+            var c=new Card{ Id=S("id"), Name=S("name"), Camp=S("camp"), Camp2=S("camp2"), Gender=S("gender"),
+                Str=I("str"), Mil=I("mil"), Con=I("con"), Cp=I("cp"), Bp=I("bp"), Cbtype=SN("cbtype"), Vp=SN("vp") };
+            c.Type = S("type") switch { "Mastermind"=>CType.Mastermind,"Leader"=>CType.Leader,"Commoner"=>CType.Commoner,
+                "Craftman"=>CType.Craftman,"Free"=>CType.Free,"Mission"=>CType.Mission,"Facilities"=>CType.Facilities,_=>CType.Other };
+            if(e.TryGetProperty("links",out var ls)&&ls.ValueKind==JsonValueKind.Array)
+                foreach(var l in ls.EnumerateArray()) if(l.GetString() is {Length:>0} s) c.Links.Add(s[0]);
+            if(c.Vp is {Length:>0}){ var p=c.Vp.Split('/'); int.TryParse(p[0],out c.VpSelf); c.VpOpp= p.Length>1&&int.TryParse(p[1],out var o)?o:c.VpSelf; }
+            All.Add(c);
+        }
+    }
+}
+
+class Player {
+    public string Name; public List<Card> Deck=new(), Hand=new(), Discard=new();
+    public Card? Mastermind; public int Vp; public int FacilitiesBuilt; public int HandLimit=6;
+    public Player(string n){Name=n;}
+    public bool Draw(){ if(Deck.Count==0) return false; Hand.Add(Deck[^1]); Deck.RemoveAt(Deck.Count-1); return true; }
+    public void Replenish(){ while(Hand.Count<HandLimit && Draw()){} }
+}
+class Side { public List<Card> Cards=new(); public HashSet<char> Links=new();
+    public int Str=>Cards.Sum(c=>c.Str??0); public int Mil=>Cards.Sum(c=>c.Mil??0); public int Con=>Cards.Sum(c=>c.Con??0);
+    public bool HasLeader=>Cards.Any(c=>c.Type==CType.Leader); }
+
+// ----------------- Deck building / validation (Mastermind, camp, Unique Rule) -----------------
+static class Decks {
+    static bool CampRestricted(Card c)=> c.Type is CType.Leader or CType.Commoner; // only these carry camp restriction
+    public static List<string> Validate(List<Card> deck, Card? mm, Card? oppMm){
+        var bad=new List<string>();
+        if(deck.Count!=50) bad.Add($"deck must be 50 cards (is {deck.Count})");
+        if(mm!=null){
+            var mc=mm.Camps().ToHashSet();
+            foreach(var c in deck.Where(CampRestricted).Where(c=>c.Camp!=""))
+                if(!c.Camps().Any(mc.Contains)) { bad.Add($"{c.Name} camp [{string.Join('/',c.Camps())}] doesn't match Mastermind {mm.Name} [{string.Join('/',mc)}]"); break; }
+        }
+        var banned=new HashSet<string>(); if(mm!=null)banned.Add(mm.Name); if(oppMm!=null)banned.Add(oppMm.Name);
+        foreach(var c in deck) if(banned.Contains(c.Name)){ bad.Add($"Unique Rule: {c.Name} shares a Mastermind name"); break; }
+        return bad;
+    }
+    public static List<Card> Build(Random r, Card? mm=null){
+        bool campOk(Card c)=> mm==null || !(c.Type is CType.Leader or CType.Commoner) || c.Camp=="" || c.Camps().Any(mm.Camps().Contains);
+        bool nameOk(Card c)=> mm==null || c.Name!=mm.Name;
+        var pool=Db.All.Where(c=>campOk(c)&&nameOk(c)).ToList();
+        var leaders=pool.Where(c=>c.Type==CType.Leader && c.Str.HasValue && c.Links.Count>0).ToList();
+        var chars  =pool.Where(c=>(c.Type==CType.Commoner||c.Type==CType.Free||c.Type==CType.Craftman) && c.Links.Count>0).ToList();
+        var strM   =pool.Where(c=>c.Type==CType.Mission && c.Cbtype=="STR" && c.Cp is >=4 and <=10).ToList();
+        var milM   =pool.Where(c=>c.Type==CType.Mission && c.Cbtype=="MIL" && c.Cp.HasValue).ToList();
+        var facs   =pool.Where(c=>c.Type==CType.Facilities && c.Cp.HasValue && c.Bp.HasValue).ToList();
+        List<Card> take(List<Card> s,int n){ var o=new List<Card>(); for(int i=0;i<n && s.Count>0;i++) o.Add(s[r.Next(s.Count)]); return o; }
+        var d=new List<Card>();
+        d.AddRange(take(leaders,16)); d.AddRange(take(chars,16));
+        d.AddRange(take(strM,10)); d.AddRange(take(milM,4)); d.AddRange(take(facs,4));
+        while(d.Count<50 && leaders.Count>0) d.Add(leaders[r.Next(leaders.Count)]);
+        return d;
+    }
+}
+
+class Game {
+    Player[] P; Random R; public List<string> Log=new(); bool verbose;
+    public bool VpWin; public int Turns;
+    public int StrClears, MilResolved, FacBuilt, FacBlocked, Unresolved; // instrumentation
+    public Game(Player a, Player b, Random r, bool v){ P=new[]{a,b}; R=r; verbose=v; }
+    void L(string s){ if(verbose) Log.Add(s); }
+    static void Shuffle<T>(List<T> l, Random r){ for(int i=l.Count-1;i>0;i--){int j=r.Next(i+1);(l[i],l[j])=(l[j],l[i]);} }
+
+    List<Card> Legal(Player p, Side s){
+        if(s.Cards.Count==0) return p.Hand.Where(c=>c.Type==CType.Leader).ToList();
+        return p.Hand.Where(c=> c.IsCharacter && c.Links.Overlaps(s.Links)).ToList();
+    }
+    void Deploy(Player p, Side s, Card c){ p.Hand.Remove(c); s.Cards.Add(c); foreach(var l in c.Links) s.Links.Add(l); }
+
+    // choose a card to deploy given which stat matters and the target; null = pass
+    Card? Choose(Player p, Side s, Func<Card,int> stat, int cur, int target){
+        var legal=Legal(p,s); if(legal.Count==0) return null;
+        var clinch=legal.Where(c=>cur+stat(c)>=target).OrderBy(c=>stat(c)).FirstOrDefault();
+        if(clinch!=null) return clinch;
+        var best=legal.OrderByDescending(stat).ThenByDescending(c=>c.Links.Count).First();
+        return stat(best)>0 || s.Cards.Count==0 ? best : null; // don't deploy useless cards unless we must open
+    }
+
+    // MIL combat: armies clash, bigger keeps the difference; returns winner side index or -1
+    (int winner,int remaining) MilCombat(Side a, Side b){
+        int ma=a.Mil, mb=b.Mil;
+        if(ma==mb) return (-1,0);
+        return ma>mb ? (0, ma-mb) : (1, mb-ma);
+    }
+
+    public int Play(int maxTurns=400){
+        foreach(var p in P){ Shuffle(p.Deck,R); for(int i=0;i<p.HandLimit;i++) p.Draw(); }
+        int cur=R.Next(2);
+        for(int t=0;t<maxTurns;t++){
+            Player me=P[cur], opp=P[1-cur];
+            var goal=me.Hand.FirstOrDefault(c=>c.Type==CType.Mission||c.Type==CType.Facilities);
+            bool haveLeader=me.Hand.Any(c=>c.Type==CType.Leader);
+            if(goal!=null && goal.Cp.HasValue && haveLeader){
+                me.Hand.Remove(goal);
+                Kind kind = goal.Type==CType.Facilities ? Kind.Facility : (goal.Cbtype=="MIL"?Kind.MilMission:Kind.StrMission);
+                int cp=goal.Cp!.Value, bp=goal.Bp??0;
+                L($"T{t} {me.Name} plays {kind} '{goal.Name}' (cp {cp}{(kind==Kind.Facility?$"/bp {bp}":"")}, VP {goal.VpSelf}/{goal.VpOpp})");
+                var sMe=new Side(); var sOpp=new Side();
+                // opponent deploys first
+                var actors=new[]{ (opp,sOpp,1), (me,sMe,0) }; int idx=0; int passes=0;
+                int clearer=-2; // -2 ongoing, -1 none, 0 me, 1 opp
+                for(int step=0; step<40 && passes<2 && clearer==-2; step++){
+                    var (pl,sd,who)=actors[idx];
+                    // pick contribution stat
+                    Func<Card,int> stat; int curv,tgt;
+                    if(kind==Kind.StrMission){ stat=c=>c.Str??0; curv=sd.Str; tgt=cp; }
+                    else if(kind==Kind.MilMission){ stat=c=>c.Mil??0; curv=sd.Mil; tgt=cp; }
+                    else { if(pl==me){ stat=c=>c.Con??0; curv=sd.Con; tgt=cp; } else { stat=c=>c.Str??0; curv=sd.Str; tgt=bp; } }
+                    var pick = kind==Kind.MilMission && pl==opp ? null /*AI cedes contested MIL (Phase 3)*/ : Choose(pl,sd,stat,curv,tgt);
+                    if(pick==null){ passes++; }
+                    else{ passes=0; Deploy(pl,sd,pick); L($"    {pl.Name} deploys {pick} ({stat(pick)})");
+                        if(kind==Kind.StrMission && sd.Str>=cp) clearer=who;
+                        else if(kind==Kind.Facility && pl==me && sMe.Con>=cp) clearer=0;
+                        else if(kind==Kind.Facility && pl==opp && sOpp.Str>=bp) clearer=1; // blocker destroys
+                    }
+                    idx=1-idx;
+                }
+                // resolve
+                if(kind==Kind.MilMission && clearer==-2){
+                    var (w,rem)=MilCombat(sMe,sOpp);
+                    if(w>=0 && rem>=cp){ clearer=w==0?0:1; L($"    MIL clash: remaining {rem} >= {cp}"); }
+                    else { clearer=-1; }
+                    MilResolved++;
+                }
+                if(kind==Kind.Facility){
+                    if(clearer==0){ me.FacilitiesBuilt++; FacBuilt++;
+                        L($"  >> {me.Name} BUILDS '{goal.Name}' (facilities {me.FacilitiesBuilt})");
+                        if(me.FacilitiesBuilt%2==0){ me.Vp++; L($"     2 facilities -> +1 VP (now {me.Vp})"); } }
+                    else if(clearer==1){ FacBlocked++; L($"  >> {opp.Name} DESTROYS '{goal.Name}'"); }
+                    else { Unresolved++; }
+                } else {
+                    if(clearer==0||clearer==1){
+                        var winner=clearer==0?me:opp; int gain=winner==me?goal.VpSelf:goal.VpOpp;
+                        winner.Vp+=gain; if(kind==Kind.StrMission)StrClears++;
+                        L($"  >> {winner.Name} CLEARS '{goal.Name}' +{gain} VP (now {winner.Vp})");
+                    } else { Unresolved++; L($"  >> '{goal.Name}' unresolved"); }
+                }
+                me.Discard.Add(goal);
+                foreach(var c in sMe.Cards) me.Discard.Add(c);
+                foreach(var c in sOpp.Cards) opp.Discard.Add(c);
+            } else {
+                var junk=me.Hand.Where(c=>c.Type!=CType.Leader && c.Type!=CType.Mission && c.Type!=CType.Facilities).Take(3).ToList();
+                if(junk.Count==0) junk=me.Hand.Take(3).ToList();
+                foreach(var c in junk){ me.Hand.Remove(c); me.Discard.Add(c); }
+            }
+            me.Replenish(); opp.Replenish();
+            if(me.Vp>=5){ VpWin=true; Turns=t+1; L($"== {me.Name} WINS {me.Vp}-{opp.Vp} =="); return cur; }
+            if(opp.Vp>=5){ VpWin=true; Turns=t+1; return 1-cur; }
+            if(me.Deck.Count==0 && me.Hand.Count<me.HandLimit){ Turns=t+1; return 1-cur; }
+            if(opp.Deck.Count==0 && opp.Hand.Count<opp.HandLimit){ Turns=t+1; return cur; }
+            cur=1-cur;
+        }
+        Turns=maxTurns; return P[0].Vp>=P[1].Vp?0:1;
+    }
+}
+
+class App{
+ static void Check(string name, bool ok){ Console.WriteLine($"  [{(ok?"PASS":"FAIL")}] {name}"); }
+ static Card C(CType t, int? str=null,int? mil=null,int? con=null,string camp="",string camp2="",string name="x",params char[] links)
+    => new Card{Type=t,Str=str,Mil=mil,Con=con,Camp=camp,Camp2=camp2,Name=name,Links=links.ToHashSet()};
+ static void Main(){
+    Db.Load("/Users/kirkpatrickjunsay/Documents/projects/SuikodenCodex/Resources/Raw/cards.json");
+    Console.WriteLine($"Loaded {Db.All.Count} cards.\n");
+
+    // ---------- deterministic rule checks ----------
+    Console.WriteLine("RULE CHECKS:");
+    // MIL combat: 2000+1000 vs 1500 -> winner0 remaining 1500; clears cp1500, not cp2000
+    var g=new Game(new Player("A"),new Player("B"),new Random(1),false);
+    var sa=new Side(); sa.Cards.Add(C(CType.Leader,mil:2000)); sa.Cards.Add(C(CType.Commoner,mil:1000));
+    var sb=new Side(); sb.Cards.Add(C(CType.Leader,mil:1500));
+    var mc=typeof(Game).GetMethod("MilCombat",System.Reflection.BindingFlags.NonPublic|System.Reflection.BindingFlags.Instance)!;
+    var (w,rem)=((int,int))mc.Invoke(g,new object[]{sa,sb})!;
+    Check("MIL combat winner = bigger army (A)", w==0);
+    Check("MIL remaining = difference (3000-1500=1500)", rem==1500);
+    Check("MIL clears cp<=1500", rem>=1500);
+    Check("MIL fails cp=2000", !(rem>=2000));
+
+    // Mastermind validation: camp restriction + Unique Rule
+    var mm=C(CType.Mastermind,name:"Odessa",camp:"Liberation Army");
+    var legalDeck=Enumerable.Range(0,50).Select(i=>C(CType.Leader,str:3,camp:"Liberation Army",name:$"L{i}",links:'A')).ToList();
+    Check("legal camp-matched 50-card deck validates", Decks.Validate(legalDeck,mm,null).Count==0);
+    var badCamp=legalDeck.ToList(); badCamp[0]=C(CType.Leader,str:3,camp:"Royal Army",name:"Enemy",links:'A');
+    Check("off-camp Leader rejected", Decks.Validate(badCamp,mm,null).Any(x=>x.Contains("doesn't match")));
+    var dupName=legalDeck.ToList(); dupName[1]=C(CType.Commoner,str:2,camp:"Liberation Army",name:"Odessa",links:'A');
+    Check("Unique Rule: Mastermind-named card rejected", Decks.Validate(dupName,mm,null).Any(x=>x.Contains("Unique")));
+    Check("wrong deck size rejected", Decks.Validate(legalDeck.Take(49).ToList(),null,null).Any(x=>x.Contains("50")));
+
+    // Mastermind-constrained real deck builds legal
+    var realMm=Db.All.First(c=>c.Type==CType.Mastermind && c.Camp!="");
+    var rd=Decks.Build(new Random(3), realMm);
+    Console.WriteLine($"  built Mastermind deck for '{realMm.Name}' [{realMm.Camp}] -> {rd.Count} cards, validation issues: {Decks.Validate(rd,realMm,null).Count}");
+
+    // ---------- AI-vs-AI sim across all battle types ----------
+    int p0=0; int games=2000, vp=0; long turns=0; int sc=0,mr=0,fb=0,fbl=0,un=0;
+    for(int i=0;i<games;i++){
+        var r=new Random(1000+i);
+        var a=new Player("A"){Deck=Decks.Build(r)}; var b=new Player("B"){Deck=Decks.Build(r)};
+        var gg=new Game(a,b,r,false); int wn=gg.Play(); if(wn==0)p0++;
+        if(gg.VpWin)vp++; turns+=gg.Turns; sc+=gg.StrClears; mr+=gg.MilResolved; fb+=gg.FacBuilt; fbl+=gg.FacBlocked; un+=gg.Unresolved;
+    }
+    Console.WriteLine($"\n{games} SIMULATED GAMES (STR + MIL + Facilities):");
+    Console.WriteLine($"  balance P0 {100.0*p0/games:F1}% / P1 {100.0*(games-p0)/games:F1}% | ended by 5VP {100.0*vp/games:F1}% | avg {1.0*turns/games:F1} turns");
+    Console.WriteLine($"  battles: STR clears {sc}, MIL resolved {mr}, facilities built {fb}, blocked {fbl}, unresolved {un}");
+
+    // one verbose sample showing a facility + mil
+    Console.WriteLine("\nSAMPLE TRANSCRIPT (first 30 lines):");
+    var rr=new Random(11);
+    var ga=new Game(new Player("Hero"){Deck=Decks.Build(rr)}, new Player("Jowy"){Deck=Decks.Build(rr)}, rr, true);
+    ga.Play();
+    foreach(var line in ga.Log.Take(30)) Console.WriteLine(line);
+ }
+}

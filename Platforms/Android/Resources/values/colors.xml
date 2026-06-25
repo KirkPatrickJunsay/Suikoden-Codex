@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dark primary so the Android status/navigation bar scrim is dark (edge-to-edge, API 35+). -->
+    <color name="colorPrimary">#161A2E</color>
+    <color name="colorPrimaryDark">#161A2E</color>
+    <color name="colorAccent">#D9A636</color>
+</resources>

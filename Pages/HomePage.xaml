@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="SuikodenCodex.Pages.HomePage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:vm="clr-namespace:SuikodenCodex.ViewModels"
+    xmlns:models="clr-namespace:SuikodenCodex.Models"
+    xmlns:app="clr-namespace:SuikodenCodex"
+    x:DataType="vm:HomeViewModel"
+    Title="Suikoden Codex">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="16" Spacing="18">
+
+            <Label Text="{Binding EntryCount, StringFormat='{0} entries · Suikoden I–V'}" FontSize="13" Opacity="0.6" />
+
+            <!-- Continue where you left off -->
+            <Border IsVisible="{Binding HasLastViewed}" StrokeShape="RoundRectangle 12"
+                    Stroke="#22808080" Padding="0">
+                <Grid ColumnDefinitions="Auto,*,Auto" ColumnSpacing="14" Padding="12"
+                      BindingContext="{Binding LastViewed}" x:DataType="models:CodexEntry">
+                    <Border WidthRequest="58" HeightRequest="58" Padding="0" VerticalOptions="Center"
+                            StrokeShape="RoundRectangle 10" BackgroundColor="White">
+                        <Grid>
+                            <Image Source="{Binding ImageName}" Aspect="AspectFill" IsVisible="{Binding HasImage}" />
+                            <Label Text="{Binding Glyph}" FontSize="28" IsVisible="{Binding ShowGlyph}"
+                                   HorizontalOptions="Center" VerticalOptions="Center" />
+                        </Grid>
+                    </Border>
+                    <VerticalStackLayout Grid.Column="1" Spacing="1" VerticalOptions="Center">
+                        <Label Text="CONTINUE" FontSize="10" FontAttributes="Bold" Opacity="0.5" />
+                        <Label Text="{Binding Name}" FontSize="17" FontAttributes="Bold"
+                               MaxLines="1" LineBreakMode="TailTruncation" />
+                        <Label Text="{Binding Subtitle}" FontSize="12" Opacity="0.6"
+                               MaxLines="1" LineBreakMode="TailTruncation" />
+                    </VerticalStackLayout>
+                    <Label Grid.Column="2" Text="›" FontSize="26" Opacity="0.4" VerticalOptions="Center" />
+                </Grid>
+                <Border.GestureRecognizers>
+                    <TapGestureRecognizer
+                        Command="{Binding Source={RelativeSource AncestorType={x:Type vm:HomeViewModel}}, Path=OpenEntryCommand}"
+                        CommandParameter="{Binding .}" />
+                </Border.GestureRecognizers>
+            </Border>
+
+            <!-- Star of Destiny completion summary -->
+            <Border StrokeShape="RoundRectangle 12" Stroke="#44D9A636" BackgroundColor="#1AD9A636" Padding="16,14">
+                <VerticalStackLayout Spacing="8">
+                    <Grid ColumnDefinitions="*,Auto" VerticalOptions="Center">
+                        <Label Text="🏅 Stars of Destiny" FontSize="15" FontAttributes="Bold" VerticalOptions="Center" />
+                        <Label Grid.Column="1" Text="{Binding CompletionPercent, StringFormat='{0}%'}"
+                               FontSize="26" FontAttributes="Bold" TextColor="{StaticResource Primary}" />
+                    </Grid>
+                    <ProgressBar Progress="{Binding CompletionProgress}" ProgressColor="{StaticResource Primary}" />
+                    <Label Text="{Binding CompletionLabel}" FontSize="12" Opacity="0.65" />
+                </VerticalStackLayout>
+            </Border>
+
+            <!-- Card Duel feature banner (hidden until a later release) -->
+            <Border IsVisible="{x:Static app:FeatureFlags.CardDuel}"
+                    StrokeShape="RoundRectangle 12" Stroke="#66D9A636" BackgroundColor="#2B335E" Padding="16,14">
+                <Grid ColumnDefinitions="Auto,*,Auto" ColumnSpacing="14">
+                    <Label Text="⚔️" FontSize="30" VerticalOptions="Center" />
+                    <VerticalStackLayout Grid.Column="1" Spacing="1" VerticalOptions="Center">
+                        <Label Text="Card Duel" FontSize="17" FontAttributes="Bold" TextColor="{StaticResource Primary}" />
+                        <Label Text="Play the Suikoden Card Stories TCG vs the AI" FontSize="12" Opacity="0.7"
+                               MaxLines="2" LineBreakMode="TailTruncation" />
+                    </VerticalStackLayout>
+                    <Label Grid.Column="2" Text="›" FontSize="26" Opacity="0.5" VerticalOptions="Center" />
+                </Grid>
+                <Border.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding OpenDuelCommand}" />
+                </Border.GestureRecognizers>
+            </Border>
+
+            <!-- Recruitment progress -->
+            <Label Text="RECRUITMENT PROGRESS" FontSize="12" FontAttributes="Bold" Opacity="0.5" />
+            <VerticalStackLayout Spacing="10" BindableLayout.ItemsSource="{Binding GameProgress}">
+                <BindableLayout.ItemTemplate>
+                    <DataTemplate x:DataType="vm:GameProgress">
+                        <Border StrokeShape="RoundRectangle 10" Stroke="#22808080" Padding="14,12">
+                            <VerticalStackLayout Spacing="6">
+                                <Grid ColumnDefinitions="*,Auto">
+                                    <Label Text="{Binding Game}" FontSize="15" FontAttributes="Bold" />
+                                    <Label Grid.Column="1" Text="{Binding CountLabel}" FontSize="13" Opacity="0.7" />
+                                </Grid>
+                                <ProgressBar Progress="{Binding Progress}" ProgressColor="{StaticResource Primary}" />
+                            </VerticalStackLayout>
+                            <Border.GestureRecognizers>
+                                <TapGestureRecognizer
+                                    Command="{Binding Source={RelativeSource AncestorType={x:Type vm:HomeViewModel}}, Path=OpenRecruitmentCommand}"
+                                    CommandParameter="{Binding .}" />
+                            </Border.GestureRecognizers>
+                        </Border>
+                    </DataTemplate>
+                </BindableLayout.ItemTemplate>
+            </VerticalStackLayout>
+
+            <!-- Quick actions -->
+            <Grid ColumnDefinitions="*,*" ColumnSpacing="12">
+                <Border StrokeShape="RoundRectangle 10" Stroke="#22808080" Padding="14">
+                    <VerticalStackLayout Spacing="2">
+                        <Label Text="⭐ Favorites" FontSize="15" FontAttributes="Bold" />
+                        <Label Text="{Binding FavoriteCount, StringFormat='{0} saved'}" FontSize="12" Opacity="0.6" />
+                    </VerticalStackLayout>
+                    <Border.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding OpenFavoritesCommand}" />
+                    </Border.GestureRecognizers>
+                </Border>
+                <Border Grid.Column="1" StrokeShape="RoundRectangle 10" Stroke="#44D9A636" Padding="14"
+                        BackgroundColor="#1AD9A636">
+                    <VerticalStackLayout Spacing="2">
+                        <Label Text="🎲 Discover" FontSize="15" FontAttributes="Bold" />
+                        <Label Text="Random entry" FontSize="12" Opacity="0.6" />
+                    </VerticalStackLayout>
+                    <Border.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding RandomCommand}" />
+                    </Border.GestureRecognizers>
+                </Border>
+            </Grid>
+
+            <!-- Recently viewed -->
+            <Label Text="RECENTLY VIEWED" FontSize="12" FontAttributes="Bold" Opacity="0.5"
+                   IsVisible="{Binding HasRecent}" />
+            <CollectionView ItemsSource="{Binding Recent}" ItemsLayout="HorizontalList"
+                            HeightRequest="150" IsVisible="{Binding HasRecent}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="models:CodexEntry">
+                        <VerticalStackLayout WidthRequest="92" Margin="0,0,10,0" Spacing="4">
+                            <Border WidthRequest="84" HeightRequest="84" Padding="0"
+                                    StrokeShape="RoundRectangle 12" Stroke="#22808080" BackgroundColor="White"
+                                    HorizontalOptions="Center">
+                                <Grid>
+                                    <Image Source="{Binding ImageName}" Aspect="AspectFill" IsVisible="{Binding HasImage}" />
+                                    <Label Text="{Binding Glyph}" FontSize="34" IsVisible="{Binding ShowGlyph}"
+                                           HorizontalOptions="Center" VerticalOptions="Center" />
+                                </Grid>
+                            </Border>
+                            <Label Text="{Binding Name}" FontSize="11" HorizontalTextAlignment="Center"
+                                   MaxLines="2" LineBreakMode="TailTruncation" />
+                            <VerticalStackLayout.GestureRecognizers>
+                                <TapGestureRecognizer
+                                    Command="{Binding Source={RelativeSource AncestorType={x:Type vm:HomeViewModel}}, Path=OpenEntryCommand}"
+                                    CommandParameter="{Binding .}" />
+                            </VerticalStackLayout.GestureRecognizers>
+                        </VerticalStackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

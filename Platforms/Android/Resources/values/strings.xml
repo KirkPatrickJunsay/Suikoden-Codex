@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sc_search_short">Search</string>
+    <string name="sc_search_long">Search the codex</string>
+    <string name="sc_random_short">Random</string>
+    <string name="sc_random_long">Random entry</string>
+    <string name="sc_cards_short">Cards</string>
+    <string name="sc_cards_long">Card Stories</string>
+</resources>

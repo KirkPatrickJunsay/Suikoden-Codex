@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="SuikodenCodex.Pages.DeckManagerPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:vm="clr-namespace:SuikodenCodex.ViewModels"
+    x:Name="Page"
+    x:DataType="vm:DeckManagerViewModel"
+    Title="My Decks"
+    BackgroundColor="#161A2E">
+
+    <Grid RowDefinitions="Auto,*" Padding="14" RowSpacing="12">
+
+        <Button Grid.Row="0" Text="＋  New Deck" Command="{Binding NewDeckCommand}"
+                BackgroundColor="#D9A636" TextColor="#161A2E" FontAttributes="Bold" HorizontalOptions="Start" WidthRequest="160" />
+
+        <Label Grid.Row="1" IsVisible="{Binding HasDecks, Converter={StaticResource InvertedBool}}"
+               Text="No custom decks yet. Tap “New Deck” to build one from all 1,346 cards."
+               TextColor="#9AA6D8" FontSize="14" VerticalOptions="Start" />
+
+        <CollectionView Grid.Row="1" ItemsSource="{Binding Decks}" SelectionMode="None">
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="vm:DeckSummaryVM">
+                    <Border StrokeShape="RoundRectangle 12" Stroke="#33808080" BackgroundColor="#20264A" Padding="14" Margin="0,0,0,10">
+                        <Grid ColumnDefinitions="Auto,*,Auto" ColumnSpacing="12">
+                            <BoxView Grid.Column="0" WidthRequest="10" HeightRequest="10" CornerRadius="5"
+                                     Color="{Binding DotColor}" VerticalOptions="Center" />
+                            <VerticalStackLayout Grid.Column="1" Spacing="2" VerticalOptions="Center">
+                                <Label Text="{Binding Name}" TextColor="#ECC56A" FontSize="17" FontAttributes="Bold" />
+                                <Label Text="{Binding Subtitle}" TextColor="#9AA6D8" FontSize="12" />
+                                <Label Text="{Binding MastermindLabel}" TextColor="#7E8AC0" FontSize="11" IsVisible="{Binding MastermindLabel, Converter={StaticResource StringNotEmpty}}" />
+                            </VerticalStackLayout>
+                            <Button Grid.Column="2" Text="🗑" FontSize="16"
+                                    Command="{Binding Source={x:Reference Page}, Path=BindingContext.DeleteDeckCommand}"
+                                    CommandParameter="{Binding .}"
+                                    WidthRequest="44" HeightRequest="44" Padding="0"
+                                    BackgroundColor="Transparent" TextColor="#C98A3A" />
+                        </Grid>
+                        <Border.GestureRecognizers>
+                            <TapGestureRecognizer
+                                Command="{Binding Source={x:Reference Page}, Path=BindingContext.EditDeckCommand}"
+                                CommandParameter="{Binding .}" />
+                        </Border.GestureRecognizers>
+                    </Border>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </Grid>
+</ContentPage>

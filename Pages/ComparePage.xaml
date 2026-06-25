@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="SuikodenCodex.Pages.ComparePage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:vm="clr-namespace:SuikodenCodex.ViewModels"
+    xmlns:models="clr-namespace:SuikodenCodex.Models"
+    x:DataType="vm:CompareViewModel"
+    Title="Compare">
+
+    <Grid>
+
+        <!-- ===== Main (slots + comparison) ===== -->
+        <Grid RowDefinitions="Auto,Auto,*" IsVisible="{Binding Picking, Converter={StaticResource InvertedBool}}">
+
+            <!-- two slots -->
+            <Grid Grid.Row="0" ColumnDefinitions="*,Auto,*" Padding="12,12,12,4" ColumnSpacing="8">
+                <Border Grid.Column="0" StrokeShape="RoundRectangle 12" Stroke="#3BD9A636" Padding="10" HeightRequest="150">
+                    <Grid>
+                        <VerticalStackLayout IsVisible="{Binding HasA}" Spacing="6" VerticalOptions="Center">
+                            <Border WidthRequest="70" HeightRequest="70" Padding="0" HorizontalOptions="Center"
+                                    StrokeShape="RoundRectangle 10" BackgroundColor="White">
+                                <Image Source="{Binding SlotA.ImageName}" Aspect="AspectFill" />
+                            </Border>
+                            <Label Text="{Binding SlotA.Name}" FontAttributes="Bold" FontSize="14"
+                                   HorizontalTextAlignment="Center" MaxLines="2" LineBreakMode="TailTruncation" />
+                        </VerticalStackLayout>
+                        <VerticalStackLayout IsVisible="{Binding HasA, Converter={StaticResource InvertedBool}}"
+                                             Spacing="4" VerticalOptions="Center">
+                            <Label Text="＋" FontSize="30" TextColor="{StaticResource Gold}" HorizontalOptions="Center" />
+                            <Label Text="Choose first" FontSize="13" Opacity="0.7" HorizontalOptions="Center" />
+                        </VerticalStackLayout>
+                    </Grid>
+                    <Border.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding PickSlotCommand}" CommandParameter="A" />
+                    </Border.GestureRecognizers>
+                </Border>
+
+                <Label Grid.Column="1" Text="⇄" FontSize="22" TextColor="{StaticResource Gold}" VerticalOptions="Center"
+                       IsVisible="{Binding HasBoth}">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding SwapCommand}" />
+                    </Label.GestureRecognizers>
+                </Label>
+
+                <Border Grid.Column="2" StrokeShape="RoundRectangle 12" Stroke="#3BD9A636" Padding="10" HeightRequest="150">
+                    <Grid>
+                        <VerticalStackLayout IsVisible="{Binding HasB}" Spacing="6" VerticalOptions="Center">
+                            <Border WidthRequest="70" HeightRequest="70" Padding="0" HorizontalOptions="Center"
+                                    StrokeShape="RoundRectangle 10" BackgroundColor="White">
+                                <Image Source="{Binding SlotB.ImageName}" Aspect="AspectFill" />
+                            </Border>
+                            <Label Text="{Binding SlotB.Name}" FontAttributes="Bold" FontSize="14"
+                                   HorizontalTextAlignment="Center" MaxLines="2" LineBreakMode="TailTruncation" />
+                        </VerticalStackLayout>
+                        <VerticalStackLayout IsVisible="{Binding HasB, Converter={StaticResource InvertedBool}}"
+                                             Spacing="4" VerticalOptions="Center">
+                            <Label Text="＋" FontSize="30" TextColor="{StaticResource Gold}" HorizontalOptions="Center" />
+                            <Label Text="Choose second" FontSize="13" Opacity="0.7" HorizontalOptions="Center" />
+                        </VerticalStackLayout>
+                    </Grid>
+                    <Border.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding PickSlotCommand}" CommandParameter="B" />
+                    </Border.GestureRecognizers>
+                </Border>
+            </Grid>
+
+            <Label Grid.Row="1" Text="Pick two entries to compare their stats side by side."
+                   FontSize="12" Opacity="0.6" Padding="16,4,16,8"
+                   IsVisible="{Binding HasBoth, Converter={StaticResource InvertedBool}}" />
+
+            <!-- comparison rows -->
+            <CollectionView Grid.Row="2" ItemsSource="{Binding Rows}" IsVisible="{Binding HasBoth}" Margin="0,4,0,0">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="vm:CompareRow">
+                        <Grid ColumnDefinitions="96,*,*" Padding="14,9" ColumnSpacing="8">
+                            <BoxView Grid.ColumnSpan="3" Color="#11808080" HeightRequest="1" VerticalOptions="Start" />
+                            <Label Grid.Column="0" Text="{Binding Label}" FontSize="12" FontAttributes="Bold" Opacity="0.55" VerticalOptions="Center" />
+                            <Label Grid.Column="1" Text="{Binding A}" FontSize="13" VerticalOptions="Center"
+                                   TextColor="{Binding Differs, Converter={StaticResource BoolToColor}, ConverterParameter=#E0B341|#FFFFFFFF}" />
+                            <Label Grid.Column="2" Text="{Binding B}" FontSize="13" VerticalOptions="Center"
+                                   TextColor="{Binding Differs, Converter={StaticResource BoolToColor}, ConverterParameter=#E0B341|#FFFFFFFF}" />
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </Grid>
+
+        <!-- ===== Picker overlay ===== -->
+        <Grid RowDefinitions="Auto,Auto,*" IsVisible="{Binding Picking}" BackgroundColor="{StaticResource IndigoDeep}">
+            <Grid Grid.Row="0" ColumnDefinitions="*,Auto" Padding="16,14,12,4">
+                <Label Text="{Binding PickTitle}" FontSize="16" FontAttributes="Bold" VerticalOptions="Center" />
+                <Button Grid.Column="1" Text="✕" BackgroundColor="Transparent" TextColor="{StaticResource Gold}"
+                        Command="{Binding CancelPickCommand}" />
+            </Grid>
+            <Border Grid.Row="1" StrokeShape="RoundRectangle 12" Stroke="#30808080" Margin="12,4,12,8" Padding="12,2">
+                <Entry Placeholder="Search by name…" Text="{Binding Query, Mode=TwoWay}" />
+            </Border>
+            <CollectionView Grid.Row="2" ItemsSource="{Binding Results}" SelectionMode="None" Margin="8,0">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="models:CodexEntry">
+                        <Grid Padding="8,8" ColumnDefinitions="Auto,*" ColumnSpacing="12">
+                            <Border WidthRequest="44" HeightRequest="44" Padding="0" VerticalOptions="Center"
+                                    StrokeShape="RoundRectangle 9" BackgroundColor="White">
+                                <Grid>
+                                    <Image Source="{Binding ImageName}" Aspect="AspectFill" IsVisible="{Binding HasImage}" />
+                                    <Label Text="{Binding Glyph}" FontSize="20" IsVisible="{Binding ShowGlyph}"
+                                           HorizontalOptions="Center" VerticalOptions="Center" />
+                                </Grid>
+                            </Border>
+                            <VerticalStackLayout Grid.Column="1" Spacing="1" VerticalOptions="Center">
+                                <Label Text="{Binding Name}" FontSize="15" FontAttributes="Bold" />
+                                <Label Text="{Binding Subtitle}" FontSize="12" Opacity="0.6"
+                                       MaxLines="1" LineBreakMode="TailTruncation" />
+                            </VerticalStackLayout>
+                            <Grid.GestureRecognizers>
+                                <TapGestureRecognizer
+                                    Command="{Binding Source={RelativeSource AncestorType={x:Type vm:CompareViewModel}}, Path=ChooseCommand}"
+                                    CommandParameter="{Binding .}" />
+                            </Grid.GestureRecognizers>
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </Grid>
+    </Grid>
+</ContentPage>

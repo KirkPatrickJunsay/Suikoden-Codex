@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="SuikodenCodex.Pages.RecruitmentPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:vm="clr-namespace:SuikodenCodex.ViewModels"
+    x:DataType="vm:RecruitmentViewModel"
+    Title="Recruitment">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Reset" Command="{Binding ResetCommand}" />
+    </ContentPage.ToolbarItems>
+
+    <Grid RowDefinitions="Auto,Auto,*">
+
+        <!-- Game selector -->
+        <CollectionView Grid.Row="0" ItemsSource="{Binding Games}" ItemsLayout="HorizontalList"
+                        HeightRequest="56" Margin="8,8,8,0">
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="vm:GameTab">
+                    <Border StrokeShape="RoundRectangle 20"
+                            Stroke="{Binding IsSelected, Converter={StaticResource BoolToColor}, ConverterParameter=#D9A636|#55808080}"
+                            Margin="4" Padding="18,8"
+                            BackgroundColor="{Binding IsSelected, Converter={StaticResource BoolToColor}, ConverterParameter=#D9A636|#00000000}">
+                        <Grid ColumnDefinitions="Auto,Auto" ColumnSpacing="6">
+                            <Label Text="{Binding Label}" FontSize="15" FontAttributes="Bold" VerticalOptions="Center"
+                                   TextColor="{Binding IsSelected, Converter={StaticResource BoolToColor}, ConverterParameter=#1C2348|#9AA0B5}" />
+                            <Label Grid.Column="1" Text="🔒" FontSize="11" VerticalOptions="Center"
+                                   IsVisible="{Binding Available, Converter={StaticResource InvertedBool}}" />
+                        </Grid>
+                        <Border.GestureRecognizers>
+                            <TapGestureRecognizer
+                                Command="{Binding Source={RelativeSource AncestorType={x:Type vm:RecruitmentViewModel}}, Path=SelectGameCommand}"
+                                CommandParameter="{Binding .}" />
+                        </Border.GestureRecognizers>
+                    </Border>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+        <!-- Progress header -->
+        <VerticalStackLayout Grid.Row="1" Padding="16,8" Spacing="6" BackgroundColor="#11808080"
+                             IsVisible="{Binding HasList}">
+            <Label Text="{Binding SelectedGame.Game}" FontSize="13" Opacity="0.6" />
+            <Label Text="{Binding ProgressLabel}" FontSize="18" FontAttributes="Bold" />
+            <ProgressBar Progress="{Binding Progress}" ProgressColor="{StaticResource Primary}" />
+            <Label Text="Recruitment guide — tap a row to mark it recruited. Source: Suikoden Fandom (CC BY-SA)."
+                   FontSize="11" Opacity="0.55" />
+            <Label Text="{Binding MissableLabel}" IsVisible="{Binding HasMissableHints}"
+                   FontSize="11" TextColor="#E0B341" LineHeight="1.25" />
+        </VerticalStackLayout>
+
+        <!-- Recruit list -->
+        <CollectionView Grid.Row="2" ItemsSource="{Binding Recruits}" SelectionMode="None"
+                        IsVisible="{Binding HasList}">
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="vm:RecruitItem">
+                    <Grid Padding="14,10" ColumnDefinitions="Auto,Auto,*,Auto" ColumnSpacing="12">
+
+                        <!-- recruited check -->
+                        <Border Grid.Column="0" WidthRequest="30" HeightRequest="30"
+                                StrokeShape="RoundRectangle 15" Stroke="#80808080" VerticalOptions="Center"
+                                BackgroundColor="{Binding Recruited, Converter={StaticResource BoolToColor}, ConverterParameter=#2E7D32|#00000000}">
+                            <Label Text="✓" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center"
+                                   IsVisible="{Binding Recruited}" />
+                        </Border>
+
+                        <Label Grid.Column="1" Text="{Binding Num}" FontSize="12" Opacity="0.45"
+                               WidthRequest="26" VerticalOptions="Center" HorizontalTextAlignment="End" />
+
+                        <VerticalStackLayout Grid.Column="2" Spacing="1" VerticalOptions="Center">
+                            <Label FontSize="16">
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span Text="{Binding Name}" FontAttributes="Bold" />
+                                        <Span Text="  " />
+                                        <Span Text="{Binding Star}" FontSize="11" TextColor="{StaticResource Primary}" />
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                            <Label Text="{Binding Method}" FontSize="12" Opacity="0.65" />
+                            <Label Text="⚠ Check recruitment timing" FontSize="11" FontAttributes="Bold"
+                                   TextColor="#E0B341" IsVisible="{Binding MissableHint}" Margin="0,2,0,0" />
+                        </VerticalStackLayout>
+
+                        <Button Grid.Column="3" Text="ⓘ" FontSize="18" Padding="8,0"
+                                BackgroundColor="Transparent" TextColor="{StaticResource Primary}"
+                                IsVisible="{Binding HasEntry}" VerticalOptions="Center"
+                                Command="{Binding Source={RelativeSource AncestorType={x:Type vm:RecruitmentViewModel}}, Path=OpenEntryCommand}"
+                                CommandParameter="{Binding .}" />
+
+                        <Grid.GestureRecognizers>
+                            <TapGestureRecognizer
+                                Command="{Binding Source={RelativeSource AncestorType={x:Type vm:RecruitmentViewModel}}, Path=ToggleRecruitedCommand}"
+                                CommandParameter="{Binding .}" />
+                        </Grid.GestureRecognizers>
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+        <!-- Coming soon -->
+        <VerticalStackLayout Grid.Row="2" IsVisible="{Binding ComingSoon}"
+                             VerticalOptions="Center" HorizontalOptions="Center" Spacing="10" Padding="30">
+            <Label Text="🔒" FontSize="44" HorizontalOptions="Center" />
+            <Label Text="{Binding ComingSoonText}" FontSize="16" HorizontalTextAlignment="Center" Opacity="0.7" />
+            <Label Text="Suikoden I and II are available now." FontSize="13" HorizontalTextAlignment="Center" Opacity="0.5" />
+        </VerticalStackLayout>
+    </Grid>
+</ContentPage>

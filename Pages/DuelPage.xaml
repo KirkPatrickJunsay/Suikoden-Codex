@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="SuikodenCodex.Pages.DuelPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:vm="clr-namespace:SuikodenCodex.ViewModels"
+    xmlns:m="clr-namespace:SuikodenCodex.Models"
+    xmlns:sd="clr-namespace:SuikodenCodex.Services.CardGame"
+    x:Name="Page"
+    x:DataType="vm:DuelViewModel"
+    Title="Card Duel"
+    BackgroundColor="#161A2E">
+
+    <Grid>
+
+        <!-- ============ SETUP ============ -->
+        <ScrollView IsVisible="{Binding ShowSetup}">
+            <VerticalStackLayout Padding="20" Spacing="16">
+                <Label Text="Card Duel" TextColor="#ECC56A" FontSize="26" FontAttributes="Bold" />
+                <Label Text="Genso Suikoden Card Stories — play a faithful match against the AI. Clear missions to earn 5 VP."
+                       TextColor="#9AA6D8" FontSize="13" />
+                <HorizontalStackLayout Spacing="10">
+                    <Button Text="📖  How to Play" Command="{Binding OpenHelpCommand}"
+                            BackgroundColor="#20264A" TextColor="#ECC56A" BorderColor="#33D9A636" BorderWidth="1" />
+                    <Button Text="📜  Full Rules" Command="{Binding OpenRulesCommand}"
+                            BackgroundColor="#20264A" TextColor="#ECC56A" BorderColor="#33D9A636" BorderWidth="1" />
+                </HorizontalStackLayout>
+                <Label Text="Choose your deck" TextColor="#C9D2F0" FontSize="15" FontAttributes="Bold" Margin="0,8,0,0" />
+                <VerticalStackLayout BindableLayout.ItemsSource="{Binding Decks}" Spacing="12">
+                    <BindableLayout.ItemTemplate>
+                        <DataTemplate x:DataType="sd:StarterDecks+Deck">
+                            <Border StrokeShape="RoundRectangle 14" Stroke="#33D9A636" BackgroundColor="#20264A" Padding="16">
+                                <VerticalStackLayout Spacing="4">
+                                    <Label Text="{Binding Name}" TextColor="#ECC56A" FontSize="18" FontAttributes="Bold" />
+                                    <Label Text="{Binding Blurb}" TextColor="#9AA6D8" FontSize="12.5" />
+                                    <Label Text="50 cards · tap to play" TextColor="#7E8AC0" FontSize="11" Margin="0,4,0,0" />
+                                </VerticalStackLayout>
+                                <Border.GestureRecognizers>
+                                    <TapGestureRecognizer
+                                        Command="{Binding Source={x:Reference Page}, Path=BindingContext.ChooseDeckCommand}"
+                                        CommandParameter="{Binding .}" />
+                                </Border.GestureRecognizers>
+                            </Border>
+                        </DataTemplate>
+                    </BindableLayout.ItemTemplate>
+                </VerticalStackLayout>
+
+                <!-- your custom decks -->
+                <Grid ColumnDefinitions="*,Auto" Margin="0,14,0,0">
+                    <Label Text="Your decks" TextColor="#C9D2F0" FontSize="15" FontAttributes="Bold" VerticalOptions="Center" />
+                    <Button Grid.Column="1" Text="Manage / Build" Command="{Binding OpenDeckManagerCommand}"
+                            FontSize="12" HeightRequest="38" Padding="14,0"
+                            BackgroundColor="#20264A" TextColor="#ECC56A" BorderColor="#33D9A636" BorderWidth="1" />
+                </Grid>
+                <Label IsVisible="{Binding HasMyDecks, Converter={StaticResource InvertedBool}}"
+                       Text="No custom decks yet — tap Manage / Build to create one from all 1,346 cards."
+                       TextColor="#7E8AC0" FontSize="12" />
+                <VerticalStackLayout BindableLayout.ItemsSource="{Binding MyDecks}" Spacing="10">
+                    <BindableLayout.ItemTemplate>
+                        <DataTemplate x:DataType="vm:DeckSummaryVM">
+                            <Border StrokeShape="RoundRectangle 14" Stroke="#33808080" BackgroundColor="#20264A" Padding="16">
+                                <Grid ColumnDefinitions="Auto,*">
+                                    <BoxView WidthRequest="10" HeightRequest="10" CornerRadius="5" Color="{Binding DotColor}" VerticalOptions="Center" />
+                                    <VerticalStackLayout Grid.Column="1" Spacing="3" Margin="12,0,0,0">
+                                        <Label Text="{Binding Name}" TextColor="#ECC56A" FontSize="17" FontAttributes="Bold" />
+                                        <Label Text="{Binding Subtitle}" TextColor="#9AA6D8" FontSize="12" />
+                                    </VerticalStackLayout>
+                                </Grid>
+                                <Border.GestureRecognizers>
+                                    <TapGestureRecognizer
+                                        Command="{Binding Source={x:Reference Page}, Path=BindingContext.ChooseSavedDeckCommand}"
+                                        CommandParameter="{Binding .}" />
+                                </Border.GestureRecognizers>
+                            </Border>
+                        </DataTemplate>
+                    </BindableLayout.ItemTemplate>
+                </VerticalStackLayout>
+            </VerticalStackLayout>
+        </ScrollView>
+
+        <!-- ============ BOARD ============ -->
+        <ScrollView IsVisible="{Binding ShowBoard}">
+        <VerticalStackLayout Padding="10" Spacing="10">
+
+            <!-- VP track -->
+            <Grid Grid.Row="0" ColumnDefinitions="*,Auto,*" BackgroundColor="#12162B" Padding="12,8">
+                <Label Grid.Column="0" Text="{Binding HumanVp, StringFormat='You  {0} VP'}"
+                       TextColor="#ECC56A" FontSize="15" FontAttributes="Bold" />
+                <Label Grid.Column="1" Text="first to 5" TextColor="#7E8AC0" FontSize="11" VerticalOptions="Center" />
+                <Label Grid.Column="2" TextColor="#C9D2F0" FontSize="15" FontAttributes="Bold" HorizontalTextAlignment="End">
+                    <Label.Text><MultiBinding StringFormat="{}{0}  {1} VP"><Binding Path="AiName" /><Binding Path="AiVp" /></MultiBinding></Label.Text>
+                </Label>
+            </Grid>
+
+            <!-- opponent's face-down hand -->
+            <VerticalStackLayout Grid.Row="1" Spacing="4">
+                <Label Text="{Binding AiHandCount, StringFormat='Opponent · {0} cards in hand'}"
+                       TextColor="#7E8AC0" FontSize="14" />
+                <ScrollView Orientation="Horizontal" HorizontalScrollBarVisibility="Never">
+                    <HorizontalStackLayout BindableLayout.ItemsSource="{Binding AiBacks}" Spacing="6">
+                        <BindableLayout.ItemTemplate>
+                            <DataTemplate>
+                                <Border WidthRequest="58" HeightRequest="84" StrokeShape="RoundRectangle 7"
+                                        Stroke="#66D9A636" BackgroundColor="#161A2E">
+                                    <Label Text="✦" TextColor="#66D9A636" FontSize="26"
+                                           HorizontalOptions="Center" VerticalOptions="Center" />
+                                </Border>
+                            </DataTemplate>
+                        </BindableLayout.ItemTemplate>
+                    </HorizontalStackLayout>
+                </ScrollView>
+            </VerticalStackLayout>
+
+            <!-- battle table -->
+            <VerticalStackLayout Grid.Row="2" Spacing="8">
+                <Border IsVisible="{Binding BattleActive}" StrokeShape="RoundRectangle 12"
+                        Stroke="#33D9A636" BackgroundColor="#1C2348" Padding="10,8">
+                        <VerticalStackLayout Spacing="6">
+
+                            <!-- opponent side -->
+                            <Label Text="{Binding AiProgress}" TextColor="#C9D2F0" FontSize="16" FontAttributes="Bold" />
+                            <ScrollView Orientation="Horizontal" HorizontalScrollBarVisibility="Never">
+                                <HorizontalStackLayout BindableLayout.ItemsSource="{Binding AiDeployed}" Spacing="7">
+                                    <BindableLayout.ItemTemplate>
+                                        <DataTemplate x:DataType="m:CardEntry">
+                                            <Border StrokeShape="RoundRectangle 7" Stroke="#5C6BA0" BackgroundColor="#20264A" Padding="0" WidthRequest="92">
+                                                <Grid RowDefinitions="*,Auto" WidthRequest="92">
+                                                    <Image Grid.Row="0" Source="{Binding ImageName}" Aspect="AspectFill" HeightRequest="116" />
+                                                    <Label Grid.Row="1" Text="{Binding Name}" TextColor="#C9D2F0" FontSize="11"
+                                                           MaxLines="1" LineBreakMode="TailTruncation" Padding="3,1,3,2" HorizontalTextAlignment="Center" />
+                                                </Grid>
+                                            </Border>
+                                        </DataTemplate>
+                                    </BindableLayout.ItemTemplate>
+                                </HorizontalStackLayout>
+                            </ScrollView>
+
+                            <!-- the contested mission/facility in the centre -->
+                            <Border StrokeShape="RoundRectangle 12" Stroke="#66D9A636" BackgroundColor="#161A2E" Padding="12" Margin="0,4">
+                                <Grid ColumnDefinitions="Auto,*" ColumnSpacing="14">
+                                    <Border Grid.Column="0" WidthRequest="104" StrokeShape="RoundRectangle 8" Stroke="#3C4E8C" Padding="0">
+                                        <Image Source="{Binding GoalImage}" Aspect="AspectFill" HeightRequest="146" />
+                                    </Border>
+                                    <VerticalStackLayout Grid.Column="1" Spacing="4" VerticalOptions="Center">
+                                        <Label Text="CONTESTED" TextColor="#7E8AC0" FontSize="11" FontAttributes="Bold" />
+                                        <Label Text="{Binding GoalTitle}" TextColor="#ECC56A" FontSize="22" FontAttributes="Bold"
+                                               MaxLines="2" LineBreakMode="TailTruncation" />
+                                        <Label Text="{Binding GoalSub}" TextColor="#9AA6D8" FontSize="14" />
+                                    </VerticalStackLayout>
+                                </Grid>
+                            </Border>
+
+                            <!-- your side -->
+                            <Label Text="{Binding HumanProgress}" TextColor="#ECC56A" FontSize="16" FontAttributes="Bold" />
+                            <ScrollView Orientation="Horizontal" HorizontalScrollBarVisibility="Never">
+                                <HorizontalStackLayout BindableLayout.ItemsSource="{Binding HumanDeployed}" Spacing="7">
+                                    <BindableLayout.ItemTemplate>
+                                        <DataTemplate x:DataType="m:CardEntry">
+                                            <Border StrokeShape="RoundRectangle 7" Stroke="#66D9A636" BackgroundColor="#20264A" Padding="0" WidthRequest="92">
+                                                <Grid RowDefinitions="*,Auto" WidthRequest="92">
+                                                    <Image Grid.Row="0" Source="{Binding ImageName}" Aspect="AspectFill" HeightRequest="116" />
+                                                    <Label Grid.Row="1" Text="{Binding Name}" TextColor="#ECC56A" FontSize="11"
+                                                           MaxLines="1" LineBreakMode="TailTruncation" Padding="3,1,3,2" HorizontalTextAlignment="Center" />
+                                                </Grid>
+                                            </Border>
+                                        </DataTemplate>
+                                    </BindableLayout.ItemTemplate>
+                                </HorizontalStackLayout>
+                            </ScrollView>
+                        </VerticalStackLayout>
+                </Border>
+
+                <!-- log (compact, last events) -->
+                <Border StrokeShape="RoundRectangle 8" Stroke="Transparent" HeightRequest="110" Padding="2">
+                    <ScrollView>
+                        <VerticalStackLayout BindableLayout.ItemsSource="{Binding LogLines}" Spacing="2" Padding="6,2">
+                            <BindableLayout.ItemTemplate>
+                                <DataTemplate x:DataType="x:String">
+                                    <Label Text="{Binding .}" TextColor="#8C97C8" FontSize="12.5" />
+                                </DataTemplate>
+                            </BindableLayout.ItemTemplate>
+                        </VerticalStackLayout>
+                    </ScrollView>
+                </Border>
+            </VerticalStackLayout>
+
+            <!-- status -->
+            <Label Grid.Row="3" Text="{Binding Status}" TextColor="#ECC56A" FontSize="16" FontAttributes="Bold"
+                   HorizontalTextAlignment="Center" Margin="0,4" />
+
+            <!-- hand + actions -->
+            <VerticalStackLayout Grid.Row="4" Spacing="8">
+                <Label Text="Your hand" TextColor="#7E8AC0" FontSize="13" />
+                <CollectionView ItemsSource="{Binding Hand}" HeightRequest="208">
+                    <CollectionView.ItemsLayout>
+                        <LinearItemsLayout Orientation="Horizontal" ItemSpacing="8" />
+                    </CollectionView.ItemsLayout>
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate x:DataType="vm:DuelCardVM">
+                            <Border StrokeShape="RoundRectangle 9" Stroke="#66D9A636" BackgroundColor="#20264A"
+                                    Padding="0" WidthRequest="138" Opacity="{Binding Dim}">
+                                <Grid RowDefinitions="*,Auto,Auto,Auto" WidthRequest="138">
+                                    <Image Grid.Row="0" Source="{Binding Card.ImageName}" Aspect="AspectFill" HeightRequest="106" />
+                                    <Label Grid.Row="1" Text="{Binding Card.Name}" TextColor="#E2E8FB" FontSize="12.5"
+                                           FontAttributes="Bold" MaxLines="1" LineBreakMode="TailTruncation" Padding="6,3,6,0" />
+                                    <Label Grid.Row="2" Text="{Binding Line1}" TextColor="#ECC56A" FontSize="13"
+                                           MaxLines="1" Padding="6,1,6,0" />
+                                    <Label Grid.Row="3" Text="{Binding Line2}" TextColor="#8C97C8" FontSize="11"
+                                           MaxLines="1" LineBreakMode="TailTruncation" Padding="6,0,6,4" />
+                                </Grid>
+                                <Border.GestureRecognizers>
+                                    <TapGestureRecognizer
+                                        Command="{Binding Source={x:Reference Page}, Path=BindingContext.TapCardCommand}"
+                                        CommandParameter="{Binding .}" />
+                                </Border.GestureRecognizers>
+                            </Border>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+
+                <Grid ColumnDefinitions="*,*" ColumnSpacing="8">
+                    <Button Grid.Column="0" Text="End Turn" IsVisible="{Binding CanEndTurn}" HeightRequest="54" FontSize="16"
+                            Command="{Binding EndTurnCommand}"
+                            BackgroundColor="#20264A" TextColor="#ECC56A" BorderColor="#33D9A636" BorderWidth="1" />
+                    <Button Grid.Column="1" Text="Pass" IsVisible="{Binding CanPass}" HeightRequest="54" FontSize="16"
+                            Command="{Binding PassCommand}"
+                            BackgroundColor="#20264A" TextColor="#ECC56A" BorderColor="#33D9A636" BorderWidth="1" />
+                </Grid>
+            </VerticalStackLayout>
+        </VerticalStackLayout>
+        </ScrollView>
+
+        <!-- ============ RESULT ============ -->
+        <VerticalStackLayout IsVisible="{Binding ShowResult}" Padding="24" Spacing="18"
+                             VerticalOptions="Center" HorizontalOptions="Center">
+            <Label Text="{Binding ResultText}" TextColor="#ECC56A" FontSize="28" FontAttributes="Bold" HorizontalTextAlignment="Center" />
+            <Button Text="Play Again" Command="{Binding PlayAgainCommand}"
+                    BackgroundColor="#D9A636" TextColor="#161A2E" FontAttributes="Bold" WidthRequest="200" />
+        </VerticalStackLayout>
+
+        <!-- floating help button while playing -->
+        <Button Text="?" Command="{Binding OpenHelpCommand}" IsVisible="{Binding ShowBoard}"
+                WidthRequest="38" HeightRequest="38" CornerRadius="19" Padding="0" FontAttributes="Bold"
+                HorizontalOptions="End" VerticalOptions="Start" Margin="0,6,8,0"
+                BackgroundColor="#20264A" TextColor="#ECC56A" BorderColor="#33D9A636" BorderWidth="1" />
+
+        <!-- ============ HOW TO PLAY OVERLAY ============ -->
+        <Grid IsVisible="{Binding ShowHelp}" BackgroundColor="#E00B0E1C" Padding="22">
+            <Border StrokeShape="RoundRectangle 18" Stroke="#66D9A636" BackgroundColor="#1C2348"
+                    Padding="20,18" VerticalOptions="Center" MaximumWidthRequest="460" HorizontalOptions="Center">
+                <Grid RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto" RowSpacing="12">
+                    <Grid Grid.Row="0" ColumnDefinitions="*,Auto,Auto">
+                        <Label Text="How to Play" TextColor="#9AA6D8" FontSize="12" FontAttributes="Bold" VerticalOptions="Center" />
+                        <Button Grid.Column="1" Text="Full rules ›" Command="{Binding OpenRulesCommand}"
+                                HeightRequest="32" Padding="6,0" FontSize="12"
+                                BackgroundColor="Transparent" TextColor="#ECC56A" />
+                        <Button Grid.Column="2" Text="✕" Command="{Binding CloseHelpCommand}"
+                                WidthRequest="32" HeightRequest="32" Padding="0" FontSize="14"
+                                BackgroundColor="Transparent" TextColor="#9AA6D8" />
+                    </Grid>
+                    <Label Grid.Row="1" Text="{Binding CurrentHelp.Icon}" FontSize="48" HorizontalTextAlignment="Center" />
+                    <Label Grid.Row="2" Text="{Binding CurrentHelp.Title}" TextColor="#ECC56A" FontSize="20"
+                           FontAttributes="Bold" HorizontalTextAlignment="Center" />
+                    <Label Grid.Row="3" Text="{Binding CurrentHelp.Body}" TextColor="#D3DAF2" FontSize="14.5"
+                           HorizontalTextAlignment="Center" LineHeight="1.35" MinimumHeightRequest="120" />
+                    <Label Grid.Row="4" Text="{Binding HelpCounter}" TextColor="#7E8AC0" FontSize="12"
+                           HorizontalTextAlignment="Center" />
+                    <Grid Grid.Row="5" ColumnDefinitions="Auto,*,Auto">
+                        <Button Grid.Column="0" Text="‹ Back" Command="{Binding HelpBackCommand}"
+                                IsVisible="{Binding CanHelpBack}"
+                                BackgroundColor="Transparent" TextColor="#9AA6D8" />
+                        <Button Grid.Column="2" Text="{Binding NextLabel}" Command="{Binding HelpNextCommand}"
+                                BackgroundColor="#D9A636" TextColor="#161A2E" FontAttributes="Bold" WidthRequest="120" />
+                    </Grid>
+                </Grid>
+            </Border>
+        </Grid>
+
+        <!-- ============ FULL RULES OVERLAY ============ -->
+        <Grid IsVisible="{Binding ShowRules}" BackgroundColor="#F50B0E1C" RowDefinitions="Auto,*" Padding="0">
+            <Grid Grid.Row="0" ColumnDefinitions="*,Auto" BackgroundColor="#12162B" Padding="16,12">
+                <Label Text="Card Duel — Full Rules" TextColor="#ECC56A" FontSize="18" FontAttributes="Bold" VerticalOptions="Center" />
+                <Button Grid.Column="1" Text="✕  Close" Command="{Binding CloseRulesCommand}"
+                        BackgroundColor="#20264A" TextColor="#ECC56A" BorderColor="#33D9A636" BorderWidth="1" />
+            </Grid>
+            <ScrollView Grid.Row="1" Padding="20,14">
+                <VerticalStackLayout BindableLayout.ItemsSource="{Binding Rules}" Spacing="18">
+                    <BindableLayout.ItemTemplate>
+                        <DataTemplate x:DataType="vm:RuleSection">
+                            <VerticalStackLayout Spacing="5">
+                                <Label Text="{Binding Title}" TextColor="#ECC56A" FontSize="16" FontAttributes="Bold" />
+                                <Label Text="{Binding Body}" TextColor="#D3DAF2" FontSize="14" LineHeight="1.35" />
+                            </VerticalStackLayout>
+                        </DataTemplate>
+                    </BindableLayout.ItemTemplate>
+                </VerticalStackLayout>
+            </ScrollView>
+        </Grid>
+
+    </Grid>
+</ContentPage>

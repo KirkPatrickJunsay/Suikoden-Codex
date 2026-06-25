@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="SuikodenCodex.Pages.DeckBuilderPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:vm="clr-namespace:SuikodenCodex.ViewModels"
+    x:Name="Page"
+    x:DataType="vm:DeckBuilderViewModel"
+    Title="Deck Builder"
+    SizeChanged="OnSizeChanged"
+    BackgroundColor="#161A2E">
+
+    <Grid RowDefinitions="Auto,Auto,*" Padding="10" RowSpacing="8">
+
+        <!-- header -->
+        <VerticalStackLayout Grid.Row="0" Spacing="6">
+            <Grid ColumnDefinitions="*,Auto" ColumnSpacing="8">
+                <Border StrokeShape="RoundRectangle 8" Stroke="#33D9A636" BackgroundColor="#20264A" Padding="10,0">
+                    <Entry Text="{Binding DeckName}" Placeholder="Deck name" TextColor="#ECC56A" PlaceholderColor="#7E8AC0" />
+                </Border>
+                <Button Grid.Column="1" Text="Save" Command="{Binding SaveCommand}"
+                        BackgroundColor="#D9A636" TextColor="#161A2E" FontAttributes="Bold" WidthRequest="92" />
+            </Grid>
+            <Grid ColumnDefinitions="Auto,*">
+                <Label Text="{Binding CountLabel}" TextColor="#ECC56A" FontSize="15" FontAttributes="Bold" VerticalOptions="Center" />
+                <Label Grid.Column="1" Text="{Binding StatusText}" TextColor="#9AA6D8" FontSize="12" Margin="10,0,0,0"
+                       VerticalOptions="Center" MaxLines="2" />
+            </Grid>
+            <Button Text="{Binding MastermindLabel}" Command="{Binding ClearMastermindCommand}"
+                    IsVisible="{Binding HasMastermind}" HorizontalOptions="Start" FontSize="12" HeightRequest="34" Padding="10,0"
+                    BackgroundColor="#2B335E" TextColor="#ECC56A" BorderColor="#33D9A636" BorderWidth="1" />
+        </VerticalStackLayout>
+
+        <!-- filters -->
+        <Grid Grid.Row="1" ColumnDefinitions="*,Auto,Auto" ColumnSpacing="8">
+            <Border StrokeShape="RoundRectangle 8" Stroke="#30808080" BackgroundColor="#20264A" Padding="10,0">
+                <Entry Text="{Binding Query}" Placeholder="Search cards…" TextColor="#E2E8FB" PlaceholderColor="#7E8AC0" />
+            </Border>
+            <Border Grid.Column="1" StrokeShape="RoundRectangle 8" Stroke="#30808080" BackgroundColor="#20264A" Padding="8,0" WidthRequest="130">
+                <Picker ItemsSource="{Binding TypeFilters}" SelectedIndex="{Binding TypeIndex}"
+                        TextColor="#ECC56A" TitleColor="#7E8AC0" FontSize="12" />
+            </Border>
+            <HorizontalStackLayout Grid.Column="2" Spacing="4" VerticalOptions="Center">
+                <Switch IsToggled="{Binding ShowDeckOnly}" OnColor="#D9A636" />
+                <Label Text="In deck" TextColor="#9AA6D8" FontSize="11" VerticalOptions="Center" />
+            </HorizontalStackLayout>
+        </Grid>
+
+        <!-- card grid -->
+        <CollectionView Grid.Row="2" ItemsSource="{Binding Cards}" SelectionMode="None">
+            <CollectionView.ItemsLayout>
+                <GridItemsLayout x:Name="CardGrid" Orientation="Vertical" Span="3" HorizontalItemSpacing="6" VerticalItemSpacing="6" />
+            </CollectionView.ItemsLayout>
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="vm:BuilderCardVM">
+                    <Border StrokeShape="RoundRectangle 8" Stroke="#33808080" BackgroundColor="#20264A" Padding="0">
+                        <Grid RowDefinitions="Auto,Auto,Auto">
+                            <Image Grid.Row="0" Source="{Binding Card.ImageName}" Aspect="AspectFit" HeightRequest="172" BackgroundColor="#161A2E" />
+                            <!-- copies / mastermind badge -->
+                            <Border Grid.Row="0" IsVisible="{Binding ShowBadge}" BackgroundColor="#D9A636"
+                                    StrokeShape="RoundRectangle 6" Padding="5,1" Margin="4"
+                                    HorizontalOptions="End" VerticalOptions="Start">
+                                <Label Text="{Binding Badge}" TextColor="#161A2E" FontSize="10.5" FontAttributes="Bold" />
+                            </Border>
+                            <!-- remove button -->
+                            <Button Grid.Row="0" Text="−" IsVisible="{Binding ShowBadge}"
+                                    Command="{Binding Source={x:Reference Page}, Path=BindingContext.RemoveCardCommand}"
+                                    CommandParameter="{Binding .}"
+                                    WidthRequest="30" HeightRequest="30" CornerRadius="15" Padding="0" FontSize="18" FontAttributes="Bold"
+                                    HorizontalOptions="Start" VerticalOptions="Start" Margin="4"
+                                    BackgroundColor="#CC161A2E" TextColor="#ECC56A" />
+                            <Label Grid.Row="1" Text="{Binding Card.Name}" TextColor="#E2E8FB" FontSize="11"
+                                   FontAttributes="Bold" MaxLines="1" LineBreakMode="TailTruncation" Padding="5,2,5,0" />
+                            <Label Grid.Row="2" Text="{Binding Stat}" TextColor="#9AA6D8" FontSize="9.5"
+                                   MaxLines="1" LineBreakMode="TailTruncation" Padding="5,0,5,4" />
+                        </Grid>
+                        <Border.GestureRecognizers>
+                            <TapGestureRecognizer
+                                Command="{Binding Source={x:Reference Page}, Path=BindingContext.TapCardCommand}"
+                                CommandParameter="{Binding .}" />
+                        </Border.GestureRecognizers>
+                    </Border>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </Grid>
+</ContentPage>

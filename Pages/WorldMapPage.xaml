@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="SuikodenCodex.Pages.WorldMapPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:vm="clr-namespace:SuikodenCodex.ViewModels"
+    x:Name="Page"
+    x:DataType="vm:WorldMapViewModel"
+    Title="World map"
+    BackgroundColor="{StaticResource IndigoDeep}">
+
+    <ContentPage.Resources>
+        <Style x:Key="SeaLabel" TargetType="Label">
+            <Setter Property="TextColor" Value="#5C6BA0" />
+            <Setter Property="FontSize" Value="12" />
+            <Setter Property="FontAttributes" Value="Italic" />
+            <Setter Property="InputTransparent" Value="True" />
+            <Setter Property="Scale" Value="{Binding Source={x:Reference Page}, Path=BindingContext.PinScale}" />
+        </Style>
+    </ContentPage.Resources>
+
+    <Grid RowDefinitions="Auto,*">
+
+        <!-- toolbar -->
+        <Grid Grid.Row="0" ColumnDefinitions="Auto,Auto,*,Auto,Auto,Auto" ColumnSpacing="8"
+              BackgroundColor="{StaticResource IndigoBar}" Padding="12,8">
+            <Label Grid.Column="0" Text="Game" TextColor="#9AA6D8" FontSize="12" VerticalOptions="Center" />
+            <Border Grid.Column="1" StrokeShape="RoundRectangle 8" Stroke="#33D9A636" Padding="0" WidthRequest="110">
+                <Picker Title="Game" TextColor="#ECC56A" TitleColor="#9AA6D8" FontSize="12"
+                        BackgroundColor="#20264A" HeightRequest="38"
+                        ItemsSource="{Binding GameOptions}" SelectedIndex="{Binding GameIndex}" />
+            </Border>
+            <Button Grid.Column="3" Text="−" Clicked="OnZoomOut"
+                    WidthRequest="42" HeightRequest="38" Padding="0" FontSize="20" FontAttributes="Bold"
+                    TextColor="#ECC56A" BackgroundColor="#20264A" BorderColor="#33D9A636" BorderWidth="1" CornerRadius="8" />
+            <Button Grid.Column="4" Text="+" Clicked="OnZoomIn"
+                    WidthRequest="42" HeightRequest="38" Padding="0" FontSize="20" FontAttributes="Bold"
+                    TextColor="#ECC56A" BackgroundColor="#20264A" BorderColor="#33D9A636" BorderWidth="1" CornerRadius="8" />
+            <Button Grid.Column="5" Text="⤢" Clicked="OnZoomFit"
+                    WidthRequest="42" HeightRequest="38" Padding="0" FontSize="16"
+                    TextColor="#9AA6D8" BackgroundColor="#20264A" BorderColor="#33D9A636" BorderWidth="1" CornerRadius="8" />
+        </Grid>
+
+        <!-- clipped pan/pinch viewport — the single gesture surface -->
+        <Grid x:Name="Viewport" Grid.Row="1" IsClippedToBounds="True"
+              BackgroundColor="{StaticResource IndigoDeep}"
+              SizeChanged="OnViewportSizeChanged">
+
+            <Grid.GestureRecognizers>
+                <PinchGestureRecognizer PinchUpdated="OnPinch" />
+                <PanGestureRecognizer PanUpdated="OnPan" />
+                <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="OnSingleTap" />
+            </Grid.GestureRecognizers>
+
+            <!-- map content is input-transparent so every touch reaches the viewport's
+                 recognizers; pin taps are resolved by hit-testing in code-behind -->
+            <Grid x:Name="MapContent" WidthRequest="1200" HeightRequest="1960"
+                  HorizontalOptions="Start" VerticalOptions="Start"
+                  InputTransparent="True" CascadeInputTransparent="True">
+
+                <Image Source="worldmap_bg.svg" Aspect="Fill" />
+
+                <AbsoluteLayout>
+
+                    <!-- sea / region labels (decorative, counter-scaled) -->
+                    <Label Text="THE NORTHERN REACHES" Style="{StaticResource SeaLabel}"
+                           AbsoluteLayout.LayoutBounds="380,230,300,18" AbsoluteLayout.LayoutFlags="None" />
+                    <Label Text="THE GRASSLANDS" Style="{StaticResource SeaLabel}"
+                           AbsoluteLayout.LayoutBounds="900,560,200,18" AbsoluteLayout.LayoutFlags="None" />
+                    <Label Text="Lake Dunan" Style="{StaticResource SeaLabel}"
+                           AbsoluteLayout.LayoutBounds="470,732,120,18" AbsoluteLayout.LayoutFlags="None" />
+                    <Label Text="Lake Toran" Style="{StaticResource SeaLabel}"
+                           AbsoluteLayout.LayoutBounds="320,1238,120,18" AbsoluteLayout.LayoutFlags="None" />
+                    <Label Text="THE INNER SEA" Style="{StaticResource SeaLabel}"
+                           AbsoluteLayout.LayoutBounds="700,1430,200,18" AbsoluteLayout.LayoutFlags="None" />
+                    <Label Text="Feitas River" Style="{StaticResource SeaLabel}"
+                           AbsoluteLayout.LayoutBounds="700,1820,160,18" AbsoluteLayout.LayoutFlags="None" />
+
+                    <!-- pins (data-driven, filtered, counter-scaled) -->
+                    <AbsoluteLayout BindableLayout.ItemsSource="{Binding Pins}"
+                                    AbsoluteLayout.LayoutBounds="0,0,1,1"
+                                    AbsoluteLayout.LayoutFlags="All">
+                        <BindableLayout.ItemTemplate>
+                            <DataTemplate x:DataType="vm:MapPin">
+                                <Border AbsoluteLayout.LayoutBounds="{Binding Bounds}"
+                                        AbsoluteLayout.LayoutFlags="None"
+                                        Scale="{Binding Source={x:Reference Page}, Path=BindingContext.PinScale}"
+                                        StrokeShape="RoundRectangle 8"
+                                        Stroke="{Binding StrokeColor}"
+                                        BackgroundColor="{Binding BgColor}"
+                                        Padding="6,3">
+                                    <Grid ColumnDefinitions="Auto,*" ColumnSpacing="6">
+                                        <Image IsVisible="{Binding IsNation}"
+                                               Source="{Binding Flag}"
+                                               WidthRequest="28" HeightRequest="19" Aspect="AspectFill" />
+                                        <Label IsVisible="{Binding ShowGlyph}"
+                                               Text="{Binding Glyph}"
+                                               TextColor="{Binding GlyphColor}" FontSize="11"
+                                               VerticalOptions="Center" HorizontalOptions="Center" />
+                                        <Label Grid.Column="1"
+                                               Text="{Binding Name}"
+                                               TextColor="{Binding NameColor}"
+                                               FontSize="{Binding NameSize}"
+                                               FontAttributes="{Binding NameBold}"
+                                               VerticalOptions="Center"
+                                               MaxLines="1" LineBreakMode="TailTruncation" />
+                                    </Grid>
+                                </Border>
+                            </DataTemplate>
+                        </BindableLayout.ItemTemplate>
+                    </AbsoluteLayout>
+
+                </AbsoluteLayout>
+            </Grid>
+        </Grid>
+    </Grid>
+</ContentPage>

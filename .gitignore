@@ -1,0 +1,41 @@
+# ---- .NET / Visual Studio ----
+[Bb]in/
+[Oo]bj/
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+*.userprefs
+*.DotSettings.user
+*.binlog
+project.lock.json
+artifacts/
+
+# ---- .NET MAUI build output ----
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+Platforms/Android/**/[Bb]in/
+Platforms/Android/**/[Oo]bj/
+
+# ---- Android / signing (never commit keys or packages) ----
+*.apk
+*.aab
+*.idsig
+*.keystore
+*.jks
+*.p12
+*.pfx
+google-services.json
+
+# ---- macOS / misc ----
+.DS_Store
+*.swp
+*~
+
+# ---- Project-specific ----
+reddit_share/

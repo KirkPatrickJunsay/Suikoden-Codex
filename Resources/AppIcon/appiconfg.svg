@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="456" height="456" viewBox="0 0 456 456" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <!-- Original "Codex" emblem for Suikoden Codex: an open book crowned by a rune
+       and Stars of Destiny. Hand-authored, not derived from any Konami artwork. -->
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F4D789"/>
+      <stop offset="100%" stop-color="#C9982F"/>
+    </linearGradient>
+  </defs>
+
+  <!-- rune ring -->
+  <g fill="none" stroke="url(#gold)" stroke-linecap="round">
+    <circle cx="228" cy="178" r="50" stroke-width="9"/>
+    <circle cx="228" cy="178" r="36" stroke-width="2.5"/>
+  </g>
+  <!-- radial ticks around the ring -->
+  <g stroke="url(#gold)" stroke-width="5" stroke-linecap="round">
+    <line x1="228" y1="116" x2="228" y2="126"/>
+    <line x1="228" y1="228" x2="228" y2="218"/>
+    <line x1="166" y1="178" x2="176" y2="178"/>
+    <line x1="290" y1="178" x2="280" y2="178"/>
+    <line x1="184" y1="134" x2="191" y2="141"/>
+    <line x1="272" y1="134" x2="265" y2="141"/>
+    <line x1="184" y1="222" x2="191" y2="215"/>
+    <line x1="272" y1="222" x2="265" y2="215"/>
+  </g>
+  <!-- central four-point Star of Destiny -->
+  <path d="M228 144 C233 170 235 172 261 178 C235 184 233 186 228 212 C223 186 221 184 195 178 C221 172 223 170 228 144 Z"
+        fill="url(#gold)"/>
+  <circle cx="228" cy="178" r="6" fill="#1C2348"/>
+
+  <!-- open book / codex -->
+  <path d="M228 276 C198 263 162 261 136 270 L136 330 C162 322 198 323 228 336 Z" fill="url(#gold)"/>
+  <path d="M228 276 C258 263 294 261 320 270 L320 330 C294 322 258 323 228 336 Z" fill="url(#gold)"/>
+  <line x1="228" y1="276" x2="228" y2="336" stroke="#1C2348" stroke-width="4" stroke-linecap="round"/>
+  <g stroke="#1C2348" stroke-width="3" stroke-linecap="round" opacity="0.85">
+    <line x1="154" y1="286" x2="206" y2="289"/>
+    <line x1="154" y1="299" x2="206" y2="302"/>
+    <line x1="154" y1="312" x2="206" y2="315"/>
+    <line x1="250" y1="289" x2="302" y2="286"/>
+    <line x1="250" y1="302" x2="302" y2="299"/>
+    <line x1="250" y1="315" x2="302" y2="312"/>
+  </g>
+
+  <!-- small Stars of Destiny flanking the rune -->
+  <g fill="url(#gold)">
+    <path d="M150 140 C152 149 153 150 162 152 C153 154 152 155 150 164 C148 155 147 154 138 152 C147 150 148 149 150 140 Z"/>
+    <path d="M306 140 C308 149 309 150 318 152 C309 154 308 155 306 164 C304 155 303 154 294 152 C303 150 304 149 306 140 Z"/>
+  </g>
+</svg>

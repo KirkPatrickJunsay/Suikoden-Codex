@@ -1,0 +1,4023 @@
+{
+  "Suikoden I": [
+    {
+      "num": 1,
+      "character": "Tir McDohl",
+      "display": "Tir",
+      "method": "Joins your party at the very beginning of the game.",
+      "entryId": "tir-mcdohl",
+      "star": "Tenkai Star"
+    },
+    {
+      "num": 2,
+      "character": "Cleo",
+      "display": "Cleo",
+      "method": "Automatically joins at the beginning of the game.",
+      "entryId": "s1-cleo",
+      "star": "Tenman Star"
+    },
+    {
+      "num": 3,
+      "character": "Gremio",
+      "display": "Gremio",
+      "method": "Automatically joins at the beginning of the game.",
+      "entryId": "gremio",
+      "star": "Tenei Star"
+    },
+    {
+      "num": 4,
+      "character": "Viktor",
+      "display": "Viktor",
+      "method": "Automatically joins after leaving Gregminster.",
+      "entryId": "viktor",
+      "star": "Tenko Star"
+    },
+    {
+      "num": 5,
+      "character": "Mathiu Silverberg",
+      "display": "Mathiu",
+      "method": "Joins automatically after Tir agrees to become leader of the Liberation Army.",
+      "entryId": "mathiu",
+      "star": "Tenki Star"
+    },
+    {
+      "num": 6,
+      "character": "Camille",
+      "display": "Camille",
+      "method": "Joins automatically after talking to her in Kaku.",
+      "entryId": "s1-camille",
+      "star": "Tenyu Star"
+    },
+    {
+      "num": 7,
+      "character": "Tai Ho",
+      "display": "Tai Ho",
+      "method": "Joins Tir in Kaku after beating him at Chinchirorin before going to explore Toran Castle.",
+      "entryId": "s1-tai-ho",
+      "star": "Tenhei Star"
+    },
+    {
+      "num": 8,
+      "character": "Yam Koo",
+      "display": "Yam Koo",
+      "method": "Joins along with Tai Ho.",
+      "entryId": "s1-yam-koo",
+      "star": "Tenson Star"
+    },
+    {
+      "num": 9,
+      "character": "Luc",
+      "display": "Luc",
+      "method": "Joins automatically at Toran Castle.",
+      "entryId": "s1-luc",
+      "star": "Tenkan Star"
+    },
+    {
+      "num": 10,
+      "character": "Chandler",
+      "display": "Chandler",
+      "method": "Talk to him at Kwaba Fortress after you acquire your castle.",
+      "entryId": "s1-chandler",
+      "star": "Chikou Star"
+    },
+    {
+      "num": 11,
+      "character": "Kai",
+      "display": "Kai",
+      "method": "After having set the HQ, Joins when spoken to at the Garan Fortress.",
+      "entryId": "s1-kai",
+      "star": "Chihi Star"
+    },
+    {
+      "num": 12,
+      "character": "Lorelai",
+      "display": "Lorelai",
+      "method": "After having set the HQ, Lorelai joins Tir in Kouan if he's over level 25 when he talks to her.",
+      "entryId": "s1-lorelai",
+      "star": "Chikatsu Star"
+    },
+    {
+      "num": 13,
+      "character": "Maas",
+      "display": "Maas",
+      "method": "Joins when spoken to in the Great Forest Kobold Village.",
+      "entryId": "s1-maas",
+      "star": "Chibaku Star"
+    },
+    {
+      "num": 14,
+      "character": "Marie",
+      "display": "Marie",
+      "method": "Joins when spoken to at the inn in Seika after securing Toran Castle.",
+      "entryId": "marie",
+      "star": "Chiin Star"
+    },
+    {
+      "num": 15,
+      "character": "Onil",
+      "display": "Onil",
+      "method": "Joins when spoken to in Seika after exploring Toran Castle.",
+      "entryId": "s1-onil",
+      "star": "Chizen Star"
+    },
+    {
+      "num": 16,
+      "character": "Sansuke",
+      "display": "Sansuke",
+      "method": "Joins when spoken to in Great Forest Village after exploring Toran Castle.",
+      "entryId": "s1-sansuke",
+      "star": "Chiretsu Star"
+    },
+    {
+      "num": 17,
+      "character": "Sergei",
+      "display": "Sergei",
+      "method": "Joins when spoken to in Kaku after exploring Toran Castle.",
+      "entryId": "s1-sergei",
+      "star": "Chisou Star"
+    },
+    {
+      "num": 18,
+      "character": "Antonio",
+      "display": "Antonio",
+      "method": "He joins when Tir speaks to him at the Inn in Seika, after Marie has been recruited and mentions she needs help. You need to sleep or just choose \"don't stay\" a couple of times at your HQ until Marie triggers the dialog that she needs help, then go back see Antonio.",
+      "entryId": "s1-antonio",
+      "star": "Chisyu Star"
+    },
+    {
+      "num": 19,
+      "character": "Rock",
+      "display": "Rock",
+      "method": "Rock joins when spoken to in Kouan in Lepant's mansion.",
+      "entryId": null,
+      "star": "Chison Star"
+    },
+    {
+      "num": 20,
+      "character": "Juppo",
+      "display": "Juppo",
+      "method": "Joins automatically, after talking to him in Lepant's mansion. Note: If you didn't recruited him while sneaking in Lepant's Mansion, he will automatically be available at the HQ after Lepant joined.",
+      "entryId": "s1-juppo",
+      "star": "Chisyun Star"
+    },
+    {
+      "num": 21,
+      "character": "Meg",
+      "display": "Meg",
+      "method": "After recruiting Juppo, put him in the party to Kaku and talk to her, she will join.",
+      "entryId": "s1-meg",
+      "star": "Chikei Star"
+    },
+    {
+      "num": 22,
+      "character": "Lepant",
+      "display": "Lepant",
+      "method": "Joins automatically after saving Eileen.",
+      "entryId": "s1-lepant",
+      "star": "Tengou Star"
+    },
+    {
+      "num": 23,
+      "character": "Eileen",
+      "display": "Eileen",
+      "method": "Joins with Lepant.",
+      "entryId": "s1-eileen",
+      "star": "Tenkou Star"
+    },
+    {
+      "num": 24,
+      "character": "Giovanni",
+      "display": "Giovanni",
+      "method": "Joins with Lepant.",
+      "entryId": "s1-giovanni",
+      "star": "Chiyou Star"
+    },
+    {
+      "num": 25,
+      "character": "Krin",
+      "display": "Krin",
+      "method": "Joins automatically during the events in Kouan.",
+      "entryId": "s1-krin",
+      "star": "Chizoku Star"
+    },
+    {
+      "num": 26,
+      "character": "Pahn",
+      "display": "Pahn",
+      "method": "Pahn joins when spoken to after the events in Kouan. At a later point in the game, Pahn must duel Teo McDohl. If Pahn is defeated in the duel, then he will be technically killed in the story. The player must keep his weapon properly sharpened and have Pahn higher than level 30 with good equipment in order to increase the possibility of winning the duel.",
+      "entryId": "s1-pahn",
+      "star": "Tentai Star"
+    },
+    {
+      "num": 27,
+      "character": "Gaspar",
+      "display": "Gaspar",
+      "method": "Joins if Tir wins 5000 potch off of him in Chinchirorin.",
+      "entryId": "s1-gaspar",
+      "star": "Chisyu Star"
+    },
+    {
+      "num": 28,
+      "character": "Varkas",
+      "display": "Varkas",
+      "method": "Joins automatically with Sydonia in Toran Castle after the events in Kouan.",
+      "entryId": "s1-varkas",
+      "star": "Tenbou Star"
+    },
+    {
+      "num": 29,
+      "character": "Sydonia",
+      "display": "Sydonia",
+      "method": "Joins automatically with Varkas in Toran Castle after events in Kouan.",
+      "entryId": "s1-sydonia",
+      "star": "Tenkoku Star"
+    },
+    {
+      "num": 30,
+      "character": "Kirkis",
+      "display": "Kirkis",
+      "method": "Joins automatically after events in Pannu Yakuta.",
+      "entryId": "s1-kirkis",
+      "star": "Tenbi Star"
+    },
+    {
+      "num": 31,
+      "character": "Sheena",
+      "display": "Sheena",
+      "method": "Joins when spoken to with Lepant in the party at the Inn in Seika.",
+      "entryId": "s1-sheena",
+      "star": "Chimei Star"
+    },
+    {
+      "num": 32,
+      "character": "Viki",
+      "display": "Viki",
+      "method": "She will appear in the Forest trail, in Great Forest Village, ask her to join.",
+      "entryId": "s1-viki",
+      "star": "Chitatsu Star"
+    },
+    {
+      "num": 33,
+      "character": "Meese",
+      "display": "Meese",
+      "method": "Speak to him in the Village of the Dwarves after recruiting Maas and he will join.",
+      "entryId": "s1-meese",
+      "star": "Chihi Star"
+    },
+    {
+      "num": 34,
+      "character": "Valeria",
+      "display": "Valeria",
+      "method": "Joins automatically after the events in Pannu Yakuta.",
+      "entryId": "s1-valeria",
+      "star": "Tensyo Star"
+    },
+    {
+      "num": 35,
+      "character": "Templeton",
+      "display": "Templeton",
+      "method": "Joins when spoken to at the burned Village of the Elves.",
+      "entryId": "s1-templeton",
+      "star": "Chimou Star"
+    },
+    {
+      "num": 36,
+      "character": "Kuromimi",
+      "display": "Kuromimi",
+      "method": "Joins automatically after the events at Pannu Yakuta.",
+      "entryId": "s1-kuromimi",
+      "star": "Chitan Star"
+    },
+    {
+      "num": 37,
+      "character": "Humphrey Mintz",
+      "display": "Humphrey",
+      "method": "Joins automatically after the original remaining members from the Liberation Army meet up at the new Headquarters.",
+      "entryId": "s1-humphrey-mintz",
+      "star": "Tenyu Star"
+    },
+    {
+      "num": 38,
+      "character": "Kwanda Rosman",
+      "display": "Kwanda",
+      "method": "After defeating Kwanda in a duel in Pannu Yakuta, choose the following choices: \"Something's wrong.\" and \"I want you to join us.\"",
+      "entryId": "s1-kwanda-rosman",
+      "star": "Tenmou Star"
+    },
+    {
+      "num": 39,
+      "character": "Sylvina",
+      "display": "Sylvina",
+      "method": "Joins automatically after events at Pannu Yakuta.",
+      "entryId": "s1-sylvina",
+      "star": "Chisatsu Star"
+    },
+    {
+      "num": 40,
+      "character": "Stallion",
+      "display": "Stallion",
+      "method": "Joins automatically after events at Pannu Yakuta.",
+      "entryId": "stallion",
+      "star": "Tensoku Star"
+    },
+    {
+      "num": 41,
+      "character": "Fu Su Lu",
+      "display": "Fu Su Lu",
+      "method": "Joins if Tir agrees to pay his 10,000 bit food bill at the Inn in the Great Forest Kobold Village.",
+      "entryId": "s1-fu-su-lu",
+      "star": "Tensatsu Star"
+    },
+    {
+      "num": 42,
+      "character": "Gon",
+      "display": "Gon",
+      "method": "Bring Kuromimi to visit him in the Great Forest Kobold Village and speak to him to recruit him.",
+      "entryId": "s1-gon",
+      "star": "Chikaku Star"
+    },
+    {
+      "num": 43,
+      "character": "Rubi",
+      "display": "Rubi",
+      "method": "Bring Kirkis to speak to Rubi at the Great Forest Kobold Village when Kirkis is Lv. 35 or higher and speak to Rubi to recruit him.",
+      "entryId": "s1-rubi",
+      "star": "Chisoku Star"
+    },
+    {
+      "num": 44,
+      "character": "Apple",
+      "display": "Apple",
+      "method": "Speak to her in Seika and she'll join to find out Mathiu's reason for joining.",
+      "entryId": "s1-apple",
+      "star": "Chifuku Star"
+    },
+    {
+      "num": 45,
+      "character": "Flik",
+      "display": "Flik",
+      "method": "Joins automatically in Kaku when Viktor and Tir speak to him after events in Pannu Yakuta occur.",
+      "entryId": "flik",
+      "star": "Tenan Star"
+    },
+    {
+      "num": 46,
+      "character": "Chapman",
+      "display": "Chapman",
+      "method": "Joins when talked to at the Antei Armor store.",
+      "entryId": "s1-chapman",
+      "star": "Chiyu Star"
+    },
+    {
+      "num": 47,
+      "character": "Eikei",
+      "display": "Eikei",
+      "method": "Speak to him in Teien when Tir is Lv. 40 or higher.",
+      "entryId": "s1-eikei",
+      "star": "Chiyu Star"
+    },
+    {
+      "num": 48,
+      "character": "Hellion",
+      "display": "Hellion",
+      "method": "Joins when spoken to at the Inn in Teien, as long as the castle is level 2 or higher.",
+      "entryId": "s1-hellion",
+      "star": "Chisyu Star"
+    },
+    {
+      "num": 49,
+      "character": "Jabba",
+      "display": "Jabba",
+      "method": "Fight Holly Fairies until one drops a Nameless Urn, then speak to Jabba in Rikon with the urn in your inventory to get Jabba to join.",
+      "entryId": "s1-jabba",
+      "star": "Chisei Star"
+    },
+    {
+      "num": 50,
+      "character": "Jeane",
+      "display": "Jeane",
+      "method": "Speak to her in the Rune Shop at Antei. Allow her to join you. Your Castle must be at least Lv. 3.",
+      "entryId": "jeane",
+      "star": "Chiketsu Star"
+    },
+    {
+      "num": 51,
+      "character": "Lotte",
+      "display": "Lotte",
+      "method": "She is at the inn, inside of Rikon, speak to her. Eventually she will tell you, her cat is missing, if you find her cat, she will join. The cat is in Kaku, you may need the Holy Rune to help catch her. Run after the cat \"Mina\", and when next to her,press the action button.",
+      "entryId": "s1-lotte",
+      "star": "Chiku Star"
+    },
+    {
+      "num": 52,
+      "character": "Mina",
+      "display": "Mina",
+      "method": "Buy Toe Shoes and equip them to Tir, talk to Mina and she will dance with you, and join you.",
+      "entryId": "s1-mina",
+      "star": "Chiin Star"
+    },
+    {
+      "num": 53,
+      "character": "Anji",
+      "display": "Anji",
+      "method": "After the castle is level 3 or higher, take Tai Ho and Yam Koo in a party to the Pirate's Hideout. Defeat the 3 pirates within 5 rounds to recruit them.",
+      "entryId": "s1-anji",
+      "star": "Tenken Star"
+    },
+    {
+      "num": 54,
+      "character": "Kanak",
+      "display": "Kanak",
+      "method": "Joins alongside Anji and Leonardo when defeated at their hideout. Take Tai Ho and Yam Koo to the Pirate's Hideout once the castle is Level 3 or higher.",
+      "entryId": "s1-kanak",
+      "star": "Tenzai Star"
+    },
+    {
+      "num": 55,
+      "character": "Leonardo",
+      "display": "Leonardo",
+      "method": "After the castle reaches level 3, take Tai Ho and Yam Koo to the Pirate's Hideout, and upon defeating Anji, Leonardo, and Kanak, they will join.",
+      "entryId": "s1-leonardo",
+      "star": "Tenpai Star"
+    },
+    {
+      "num": 56,
+      "character": "Kamandol",
+      "display": "Kamandol",
+      "method": "Joins automatically alongside Gen during the events to pass the Dunan Rapids.",
+      "entryId": "s1-kamandol",
+      "star": "Chiri Star"
+    },
+    {
+      "num": 57,
+      "character": "Gen",
+      "display": "Gen",
+      "method": "Gen will automatically join when spoken to in a house in Teien when Tir and party need a way to pass the Dunan Rapids.",
+      "entryId": "s1-gen",
+      "star": "Chiman Star"
+    },
+    {
+      "num": 58,
+      "character": "Tesla",
+      "display": "Tesla",
+      "method": "Joins automatically when spoken to in Antei after Mathiu assigns Tir to recruit him and Kimberly.",
+      "entryId": "s1-tesla",
+      "star": "Chibun Star"
+    },
+    {
+      "num": 59,
+      "character": "Kimberly",
+      "display": "Kimberly",
+      "method": "Joins when spoken to at her home in Antei, after Mathiu instructs Tir to recruit her and Tesla.",
+      "entryId": "s1-kimberly",
+      "star": "Chikou Star"
+    },
+    {
+      "num": 60,
+      "character": "Esmeralda",
+      "display": "Esmeralda",
+      "method": "Acquire an Opal from the enemies in Soniere Prison, and give one to Esmeralda, she will then join.",
+      "entryId": "s1-esmeralda",
+      "star": "Chikai Star"
+    },
+    {
+      "num": 61,
+      "character": "Liukan",
+      "display": "Liukan",
+      "method": "Joins automatically when spoken to in Soniere Prison.",
+      "entryId": "s1-liukan",
+      "star": "Chirei Star"
+    },
+    {
+      "num": 62,
+      "character": "Milich Oppenheimer",
+      "display": "Milich",
+      "method": "After defeating him, say that he is not at fault for killing Gremio and ask him to join.",
+      "entryId": "s1-milich-oppenheimer",
+      "star": "Tenkyu Star"
+    },
+    {
+      "num": 63,
+      "character": "Ivanov",
+      "display": "Ivanov",
+      "method": "Speak with him at Scarleticia Castle after defeating Milich Oppenheimer.",
+      "entryId": "s1-ivanov",
+      "star": "Chiyu Star"
+    },
+    {
+      "num": 64,
+      "character": "Kasios",
+      "display": "Kasios",
+      "method": "Speak to him in Scarleticia Castle with Milich Oppenheimer in your party.",
+      "entryId": "s1-kasios",
+      "star": "Chiraku Star"
+    },
+    {
+      "num": 65,
+      "character": "Qlon",
+      "display": "Qlon",
+      "method": "Qlon joins if you speak to him in Antei after liberating it from Milich Oppenheimer.",
+      "entryId": "s1-qlon",
+      "star": "Chiken Star"
+    },
+    {
+      "num": 66,
+      "character": "Kasumi",
+      "display": "Kasumi",
+      "method": "Joins automatically before the first battle with Teo McDohl's army.",
+      "entryId": "s1-kasumi",
+      "star": "Chikyu Star"
+    },
+    {
+      "num": 67,
+      "character": "Georges",
+      "display": "Georges",
+      "method": "Talk to him at the inn in Kirov and beat the record in any card game level he offers.",
+      "entryId": "s1-georges",
+      "star": "Chisatsu Star"
+    },
+    {
+      "num": 68,
+      "character": "Lester",
+      "display": "Lester",
+      "method": "In Kirov, enter the houses to the left and right of Sarah and taste the stew on the stove. Then enter the house south of Sarah and talk to him. He will not appear unless Toran Castle is at least Level 3.",
+      "entryId": "s1-lester",
+      "star": "Chizou Star"
+    },
+    {
+      "num": 69,
+      "character": "Sarah (Suikoden)",
+      "display": "Sarah",
+      "method": "Recruting Sarah requires a series of trades with the denizens of Kirov. When Sarah asks for soap, Tir can talk to various villagers to find out what they'll want to trade for. To complete the quest, buy Sugar at the item store. Trade it to the man at the Inn for a yardstick. Trade the yardstick to the villager near Sarah for Salt. Trade the Salt for Soy Sauce with the villager at the Item Shop. Then trade the Soy Sauce to the villager near the Armor Shop for some Soap. Speak to Sarah with soap in hand and she'll join.",
+      "entryId": "s1-sarah-suikoden",
+      "star": "Chisou Star"
+    },
+    {
+      "num": 70,
+      "character": "Blackman",
+      "display": "Blackman",
+      "method": "Speak to him at Kalekka without stepping on his plants.",
+      "entryId": "s1-blackman",
+      "star": "Chitou Star"
+    },
+    {
+      "num": 71,
+      "character": "Ledon",
+      "display": "Ledon",
+      "method": "Speak to him at the Secret Factory.",
+      "entryId": "s1-ledon",
+      "star": "Chido Star"
+    },
+    {
+      "num": 72,
+      "character": "Kessler",
+      "display": "Kessler",
+      "method": "Speak to him at the Secret Factory.",
+      "entryId": "s1-kessler",
+      "star": "Chisin Star"
+    },
+    {
+      "num": 73,
+      "character": "Kage",
+      "display": "Kage",
+      "method": "Speak to him at the Secret Factory and pay his 20,000 bit service fee.",
+      "entryId": "s1-kage",
+      "star": "Teni Star"
+    },
+    {
+      "num": 74,
+      "character": "Melodye",
+      "display": "Melodye",
+      "method": "Speak to her at Kirov with the Sound Orb in your inventory.",
+      "entryId": "s1-melodye",
+      "star": "Chisa Star"
+    },
+    {
+      "num": 75,
+      "character": "Kun To",
+      "display": "Kun To",
+      "method": "Joins automatically after lending boats to carry the Fire Spears.",
+      "entryId": "s1-kun-to",
+      "star": "Tenfu Star"
+    },
+    {
+      "num": 76,
+      "character": "Mose",
+      "display": "Mose",
+      "method": "Joins automatically before delivering the Fire Spears.",
+      "entryId": "s1-mose",
+      "star": "Chiziku Star"
+    },
+    {
+      "num": 77,
+      "character": "Ronnie Bell",
+      "display": "Ronnie Bell",
+      "method": "Joins automatically before delivering the Fire Spears.",
+      "entryId": "s1-ronnie-bell",
+      "star": "Chiaku Star"
+    },
+    {
+      "num": 78,
+      "character": "Alen",
+      "display": "Alen",
+      "method": "Joins automatically with Grenseal after defeating General Teo.",
+      "entryId": "s1-alen",
+      "star": "Chimou Star"
+    },
+    {
+      "num": 79,
+      "character": "Grenseal",
+      "display": "Grenseal",
+      "method": "Joins automatically with Alen after defeating General Teo.",
+      "entryId": null,
+      "star": "Chiki Star"
+    },
+    {
+      "num": 80,
+      "character": "Kirke",
+      "display": "Kirke",
+      "method": "Joins when spoken to at the Lorimar checkpoint after the events there make the area available.",
+      "entryId": "s1-kirke",
+      "star": "Chihei Star"
+    },
+    {
+      "num": 81,
+      "character": "Marco",
+      "display": "Marco",
+      "method": "Play his game and win 5,000 potch from him in the Warrior's Village.",
+      "entryId": "marco",
+      "star": "Chitai Star"
+    },
+    {
+      "num": 82,
+      "character": "Moose",
+      "display": "Moose",
+      "method": "Speak to him in the weapon shop at the Warrior's Village with Maas, Meese, and Mose in your active party.",
+      "entryId": "s1-moose",
+      "star": "Chikyou Star"
+    },
+    {
+      "num": 83,
+      "character": "Morgan",
+      "display": "Morgan",
+      "method": "Speak to him at Qlon Temple if your Castle is at least Level 3 and allow him to join the army, otherwise he will say he needs more training.",
+      "entryId": "s1-morgan",
+      "star": "Chian Star"
+    },
+    {
+      "num": 84,
+      "character": "Zen",
+      "display": "Zen",
+      "method": "Joins upon request at Qlon Temple if you bring him Blue, Red, and Yellow Flower Seeds.",
+      "entryId": "s1-zen",
+      "star": "Chikei Star"
+    },
+    {
+      "num": 85,
+      "character": "Quincy",
+      "display": "Quincy",
+      "method": "Speak to him at the Garan Fortress with at least 80 recruits (dead and \"away\" characters do not count).",
+      "entryId": "s1-quincy",
+      "star": "Chiyu Star"
+    },
+    {
+      "num": 86,
+      "character": "Fukien",
+      "display": "Fukien",
+      "method": "Joins automatically after you enter Qlon Temple.",
+      "entryId": "s1-fukien",
+      "star": "Chijyu Star"
+    },
+    {
+      "num": 87,
+      "character": "Hugo (Suikoden)",
+      "display": "Hugo",
+      "method": "Speak to him at the Qlon Temple with the War Scroll in your inventory. He will not accept it unless your Castle is at least Level 3.",
+      "entryId": "s1-hugo-suikoden",
+      "star": "Chisui Star"
+    },
+    {
+      "num": 88,
+      "character": "Window",
+      "display": "Window",
+      "method": "Bring him the Window Orb, that is found in the Cave of Past, in Qlon Temple.",
+      "entryId": "s1-window",
+      "star": "Chisu Star"
+    },
+    {
+      "num": 89,
+      "character": "Tengaar",
+      "display": "Tengaar",
+      "method": "Automatically joins after rescuing her from Neclord's Castle.",
+      "entryId": "s1-tengaar",
+      "star": "Tensui Star"
+    },
+    {
+      "num": 90,
+      "character": "Hix",
+      "display": "Hix",
+      "method": "Joins automatically before entering Neclord's Castle.",
+      "entryId": "s1-hix",
+      "star": "Tenrou Star"
+    },
+    {
+      "num": 91,
+      "character": "Fuma",
+      "display": "Fuma",
+      "method": "Speak to him at the Dragon Knights' Fortress and allow him to join the party. Note: He is at the upper-right of the first screen of the fortress, and he will not appear unless your Castle is at least Level 3.",
+      "entryId": "s1-fuma",
+      "star": "Chikou Star"
+    },
+    {
+      "num": 92,
+      "character": "Crowley",
+      "display": "Crowley",
+      "method": "Prerequisites: Level 4 Headquarters",
+      "entryId": "s1-crowley",
+      "star": "Chizen Star"
+    },
+    {
+      "num": 93,
+      "character": "Pesmerga",
+      "display": "Pesmerga",
+      "method": "Prerequisites: Level 4 Headquarters",
+      "entryId": "s1-pesmerga",
+      "star": "Teni Star"
+    },
+    {
+      "num": 94,
+      "character": "Clive",
+      "display": "Clive",
+      "method": "Joins when spoken to when he appears at the Inn in Rikon. He appears there at random starting after events in Lorimar.",
+      "entryId": "s1-clive",
+      "star": "Tensyo Star"
+    },
+    {
+      "num": 95,
+      "character": "Leon Silverberg",
+      "display": "Leon",
+      "method": "Speak to him in the house at Kalekka after attaining a Level 4 HQ. He will mention how impressive the Liberation Army has become. Speak to Mathiu at HQ and receive a letter. Deliver the letter to Leon and he will join.",
+      "entryId": "s1-leon-silverberg",
+      "star": "Chikai Star"
+    },
+    {
+      "num": 96,
+      "character": "Kreutz",
+      "display": "Kreutz",
+      "method": "Speak to him at the Dragon's Den with Humphrey in the active party.",
+      "entryId": "s1-kreutz",
+      "star": "Tenku Star"
+    },
+    {
+      "num": 97,
+      "character": "Joshua Levenheit",
+      "display": "Joshua",
+      "method": "Joins automatically after returning from Seek Valley.",
+      "entryId": "s1-joshua-levenheit",
+      "star": "Chikyou Star"
+    },
+    {
+      "num": 98,
+      "character": "Milia",
+      "display": "Milia",
+      "method": "Joins automatically before heading to Seek Valley.",
+      "entryId": "s1-milia",
+      "star": "Chii Star"
+    },
+    {
+      "num": 99,
+      "character": "Futch",
+      "display": "Futch",
+      "method": "Joins automatically after returning from Seek Valley.",
+      "entryId": "futch",
+      "star": "Chibi Star"
+    },
+    {
+      "num": 100,
+      "character": "Taggart",
+      "display": "Taggart",
+      "method": "Joins automatically after informing him of Warren's capture.",
+      "entryId": "s1-taggart",
+      "star": "Chima Star"
+    },
+    {
+      "num": 101,
+      "character": "Mace",
+      "display": "Mace",
+      "method": "Speak to him at Seek Valley with Maas, Meese, Moose and Mose in your active party. A Level 4 Headquarters is required before recruiting him.",
+      "entryId": "s1-mace",
+      "star": "Chiko Star"
+    },
+    {
+      "num": 102,
+      "character": "Griffith",
+      "display": "Griffith",
+      "method": "Is recruited automatically after defeating him at the Northern Checkpoint, regardless of the player's choice.",
+      "entryId": "s1-griffith",
+      "star": "Tenritsu Star"
+    },
+    {
+      "num": 103,
+      "character": "Warren",
+      "display": "Warren",
+      "method": "Joins automatically after the events at Moravia Castle.",
+      "entryId": "s1-warren",
+      "star": "Tenki Star"
+    },
+    {
+      "num": 104,
+      "character": "Kasim Hazil",
+      "display": "Kasim",
+      "method": "Joins automatically after the events at Moravia Castle.",
+      "entryId": "s1-kasim-hazil",
+      "star": "Tenyu Star"
+    },
+    {
+      "num": 105,
+      "character": "Vincent De Boule",
+      "display": "Vincent",
+      "method": "After rescuing Warren and Viktor, go back to Kasim's prison and talk to Vincent.",
+      "entryId": "s1-vincent-de-boule",
+      "star": "Chichin Star"
+    },
+    {
+      "num": 106,
+      "character": "Maximillian",
+      "display": "Maximillian",
+      "method": "Joins upon request at the Northern Checkpoint after rescuing Warren and Viktor.",
+      "entryId": "s1-maximillian",
+      "star": "Chii Star"
+    },
+    {
+      "num": 107,
+      "character": "Sancho",
+      "display": "Sancho",
+      "method": "Joins with Maximillian at the Northern Checkpoint after rescuing Warren and Viktor.",
+      "entryId": "s1-sancho",
+      "star": "Chiei Star"
+    },
+    {
+      "num": 108,
+      "character": "Sonya Schulen",
+      "display": "Sonya Schulen",
+      "method": "After the mission at Shasarazade, speak to her in the dungeon at HQ. Request her assistance.",
+      "entryId": null,
+      "star": "Tenjyu Star"
+    }
+  ],
+  "Suikoden II": [
+    {
+      "num": 1,
+      "character": "Riou",
+      "display": "Riou",
+      "method": "Automatically joins.",
+      "entryId": "riou",
+      "star": "Tenkai Star"
+    },
+    {
+      "num": 2,
+      "character": "Mukumuku",
+      "display": "Mukumuku",
+      "method": "When going to Kyaro, before entering Riou's house, examine the big tree to the right three times and Mukumuku will join.",
+      "entryId": "s2-mukumuku",
+      "star": "Chima Star"
+    },
+    {
+      "num": 3,
+      "character": "Nanami",
+      "display": "Nanami",
+      "method": "Talk with her in Kyaro, and she will join. Alternatively, if you refuse her assistance, she will join later when you go to Muse.",
+      "entryId": "nanami",
+      "star": "Tenjyu Star"
+    },
+    {
+      "num": 4,
+      "character": "Gengen",
+      "display": "Gengen",
+      "method": "Automatically joins after returning from Kyaro.",
+      "entryId": "s2-gengen",
+      "star": "Chitan Star"
+    },
+    {
+      "num": 5,
+      "character": "Rikimaru",
+      "display": "Rikimaru",
+      "method": "In Ryube village, you'll find him on the ground next to the town gate. Speak to him and offer to help him, then pay for his meal (3000 potch). Alternatively, he will be in Coronet in the same predicament if you did not get him in Ryube before it was destroyed.",
+      "entryId": "s2-rikimaru",
+      "star": "Chian Star"
+    },
+    {
+      "num": 6,
+      "character": "Millie",
+      "display": "Millie",
+      "method": "Speak to her in Ryube Village, and help her retrieve Bonaparte and she will join you.",
+      "entryId": "s2-millie",
+      "star": "Chiku Star"
+    },
+    {
+      "num": 7,
+      "character": "Shiro",
+      "display": "Shiro",
+      "method": "Joins with Kinnison.",
+      "entryId": "s2-shiro",
+      "star": "Chitai Star"
+    },
+    {
+      "num": 8,
+      "character": "Kinnison",
+      "display": "Kinnison",
+      "method": "When entering Ryube forest, help the bird's nest on the left fork. Leave and come back; talk to Kinnison.",
+      "entryId": "s2-kinnison",
+      "star": "Chisin Star"
+    },
+    {
+      "num": 9,
+      "character": "Zamza",
+      "display": "Zamza",
+      "method": "Speak to him while Nanami is in the party, either in Toto Village (before Toto's destruction)or the South-Window inn.",
+      "entryId": "s2-zamza",
+      "star": "Chisyu Star"
+    },
+    {
+      "num": 10,
+      "character": "Apple",
+      "display": "Apple",
+      "method": "Joins automatically after the destruction of Toto.",
+      "entryId": "s1-apple",
+      "star": "Chifuku Star"
+    },
+    {
+      "num": 11,
+      "character": "Hanna",
+      "display": "Hanna",
+      "method": "After Toto Village is destroyed, you can find her at the entrance. Tell her to fight with you.",
+      "entryId": "s2-hanna",
+      "star": "Tensatsu Star"
+    },
+    {
+      "num": 12,
+      "character": "Tsai",
+      "display": "Tsai",
+      "method": "Joins automatically.",
+      "entryId": "tsai",
+      "star": "Tenyu Star"
+    },
+    {
+      "num": 13,
+      "character": "Tuta",
+      "display": "Tuta",
+      "method": "You can talk to him in Muse near the entrance up a bit, close to Huan's house. He will also join you automatically after you receive a headquarters if you did not recruit him then.",
+      "entryId": "s2-tuta",
+      "star": "Chijyu Star"
+    },
+    {
+      "num": 14,
+      "character": "Anita",
+      "display": "Anita",
+      "method": "Speak with her several times in the Tavern at Muse City or the Inn at Banner Village. Meet her requests and flatter her. Leave the town and return after every request she makes. Eventually you will be able to recruit her.",
+      "entryId": "s2-anita",
+      "star": "Tenkyu Star"
+    },
+    {
+      "num": 15,
+      "character": "Templeton",
+      "display": "Templeton",
+      "method": "First go to the Mercenary fortress after receiving your mission from Jess, view a scene here, then find him at the destroyed Toto Village and ask him to fight with you.",
+      "entryId": "s1-templeton",
+      "star": "Chimou Star"
+    },
+    {
+      "num": 16,
+      "character": "Gilbert",
+      "display": "Gilbert",
+      "method": "During the first battle for Muse city, damage his unit. *This character is missable and can only be recruited during this battle!",
+      "entryId": "s2-gilbert",
+      "star": "Chisatsu Star"
+    },
+    {
+      "num": 17,
+      "character": "Rina",
+      "display": "Rina",
+      "method": "Joins automatically in Coronet after the events in Muse.",
+      "entryId": "s2-rina",
+      "star": "Tenken Star"
+    },
+    {
+      "num": 18,
+      "character": "Eilie",
+      "display": "Eilie",
+      "method": "Joins automatically in Coronet after the events in Muse.",
+      "entryId": "s2-eilie",
+      "star": "Tenzai Star"
+    },
+    {
+      "num": 19,
+      "character": "Bolgan",
+      "display": "Bolgan",
+      "method": "Joins automatically in Coronet after the events in Muse.",
+      "entryId": "s2-bolgan",
+      "star": "Tenpai Star"
+    },
+    {
+      "num": 20,
+      "character": "Freed Yamamoto",
+      "display": "Freed Y.",
+      "method": "Joins automatically when going to investigate disappearances of woman in North-Window.",
+      "entryId": "s2-freed-yamamoto",
+      "star": "Tenbou Star"
+    },
+    {
+      "num": 21,
+      "character": "Viktor",
+      "display": "Viktor",
+      "method": "Joins automatically after meeting with Granmeyer.",
+      "entryId": "viktor",
+      "star": "Tenko Star"
+    },
+    {
+      "num": 22,
+      "character": "Flik",
+      "display": "Flik",
+      "method": "Joins automatically after meeting with Granmeyer.",
+      "entryId": "flik",
+      "star": "Tenan Star"
+    },
+    {
+      "num": 23,
+      "character": "Shu",
+      "display": "Shu",
+      "method": "Joins automatically after establishing the headquarters.",
+      "entryId": "s2-shu",
+      "star": "Tenki Star"
+    },
+    {
+      "num": 24,
+      "character": "Luc",
+      "display": "Luc",
+      "method": "Joins automatically after establishing the headquarters.",
+      "entryId": "s1-luc",
+      "star": "Tenkan Star"
+    },
+    {
+      "num": 25,
+      "character": "Huan",
+      "display": "Huan",
+      "method": "Joins automatically after establishing the headquarters.",
+      "entryId": "s2-huan",
+      "star": "Chirei Star"
+    },
+    {
+      "num": 26,
+      "character": "Barbara",
+      "display": "Barbara",
+      "method": "Joins automatically after establishing the headquarters.",
+      "entryId": "s2-barbara",
+      "star": "Chison Star"
+    },
+    {
+      "num": 27,
+      "character": "Leona",
+      "display": "Leona",
+      "method": "Joins automatically after establishing the headquarters.",
+      "entryId": "s2-leona",
+      "star": "Chihi Star"
+    },
+    {
+      "num": 28,
+      "character": "Oulan",
+      "display": "Oulan",
+      "method": "Enter Kuskus with at least one female in the party and NO males except Riou. Speak with the old lady nearby the entrance to the village, and then cross the bridge next to the inn.",
+      "entryId": "s2-oulan",
+      "star": "Chiaku Star"
+    },
+    {
+      "num": 29,
+      "character": "Tai Ho",
+      "display": "Tai Ho",
+      "method": "After meeting with Fitcher you will be told to find someone to steer your boat. You can find him and Yam Koo in Kuskus at the docks. You'll have to win 5000 potch from him at Chinchorin and he'll join.",
+      "entryId": "s1-tai-ho",
+      "star": "Tenhei Star"
+    },
+    {
+      "num": 30,
+      "character": "Yam Koo",
+      "display": "Yam Koo",
+      "method": "Joins with Tai Ho.",
+      "entryId": "s1-yam-koo",
+      "star": "Tenson Star"
+    },
+    {
+      "num": 31,
+      "character": "Amada",
+      "display": "Amada",
+      "method": "After meeting Fitcher and being told to find a captain, go to Radat town where you met him before, and defeat him at a duel and he'll join.",
+      "entryId": "s2-amada",
+      "star": "Chiman Star"
+    },
+    {
+      "num": 32,
+      "character": "Richmond",
+      "display": "Richmond",
+      "method": "Speak with him in Radat in front of the appraisal shop and do his coin toss challenge. After losing, go to the tavern and speak to the man straight to the left after entering, and he'll give you a coin. Go back and offer Richmond to use the coin, and he will join.",
+      "entryId": "s2-richmond",
+      "star": "Chiyu Star"
+    },
+    {
+      "num": 33,
+      "character": "Yoshino Yamamoto",
+      "display": "Yoshino Y.",
+      "method": "Speak with her while Freed Y. is in the party. She is in Radat to the direct right of the south exit.",
+      "entryId": "s2-yoshino-yamamoto",
+      "star": "Tenkoku Star"
+    },
+    {
+      "num": 34,
+      "character": "Hilda",
+      "display": "Hilda",
+      "method": "Find Hilda and Alex on the upper floor of the South-Window inn. They will ask to join you, which you should accept.",
+      "entryId": "hilda",
+      "star": "Chiin Star"
+    },
+    {
+      "num": 35,
+      "character": "Alex",
+      "display": "Alex",
+      "method": "Joins with Hilda.",
+      "entryId": "s2-alex",
+      "star": "Chisu Star"
+    },
+    {
+      "num": 36,
+      "character": "Adlai",
+      "display": "Adlai",
+      "method": "In a house in South-Window he will ask for three items. Bring him a Wooden shield, Sacrificial Jizo and finally a wind rune. Throw the Wind Rune at him and he will join!",
+      "entryId": "s2-adlai",
+      "star": "Chisou Star"
+    },
+    {
+      "num": 37,
+      "character": "Clive",
+      "display": "Clive",
+      "method": "When in Muse city (after escaping to Muse,before the battle of Muse) you will have to speak to Elza in the back alleyways. She will give you some object to hold onto. Then try exiting the alleyways to the north, Clive will appear and ask if you've seen a woman. Tell him whatever. Upon trying to exit the city, the two will meet and a scene will occur. Later, after traveling by ship to Lakewest; speak with him in South-Window and tell him you have a ship. He will then join you.",
+      "entryId": "s1-clive",
+      "star": "Tensyo Star"
+    },
+    {
+      "num": 38,
+      "character": "Taki",
+      "display": "Taki",
+      "method": "Speak to her in Lakewest three times and she will join.",
+      "entryId": "s2-taki",
+      "star": "Chizen Star"
+    },
+    {
+      "num": 39,
+      "character": "Tetsu",
+      "display": "Tetsu",
+      "method": "Speak to him while having the \"toasty\" status effect. You can get this status effect by eating fried taco's, which can be purchased at the Kobold District item store in Two-River.",
+      "entryId": "s2-tetsu",
+      "star": "Chiyu Star"
+    },
+    {
+      "num": 40,
+      "character": "Hans",
+      "display": "Hans",
+      "method": "Speak with him in the inn (2nd floor) of Two-River and he will beg to open a store in your castle. You can either charge him or not. If you charge him, wait several days then talk to him again. If not, he will join right away.",
+      "entryId": "s2-hans",
+      "star": "Chiyu Star"
+    },
+    {
+      "num": 41,
+      "character": "Ridley Wizen",
+      "display": "Ridley",
+      "method": "Joins automatically after allying with Two-River.",
+      "entryId": "s2-ridley-wizen",
+      "star": "Tengou Star"
+    },
+    {
+      "num": 42,
+      "character": "Chaco",
+      "display": "Chaco",
+      "method": "Joins automatically after allying with Two-River.",
+      "entryId": "chaco",
+      "star": "Tenkou Star"
+    },
+    {
+      "num": 43,
+      "character": "Fitcher",
+      "display": "Fitcher",
+      "method": "Joins automatically after allying with Two-River.",
+      "entryId": "fitcher",
+      "star": "Tenritsu Star"
+    },
+    {
+      "num": 44,
+      "character": "Stallion",
+      "display": "Stallion",
+      "method": "Once your castle is Level 2, challenge him to a race after using Let Go or Run 50 times in battle.",
+      "entryId": "stallion",
+      "star": "Tensoku Star"
+    },
+    {
+      "num": 45,
+      "character": "Hai Yo",
+      "display": "Hai Yo",
+      "method": "Once your castle is Level 2, he will appear in the kitchen area and ask to join.",
+      "entryId": "s2-hai-yo",
+      "star": "Chizou Star"
+    },
+    {
+      "num": 46,
+      "character": "Shilo",
+      "display": "Shilo",
+      "method": "Win 5000 potch from him at a game of Chinchorin (Castle Level 2)",
+      "entryId": "s2-shilo",
+      "star": "Chisyu Star"
+    },
+    {
+      "num": 47,
+      "character": "Gabocha",
+      "display": "Gabocha",
+      "method": "He's located in a house in Two-River (Kobold side). Enter this house while Gengen is in the party. Even though Gengen says no, he will follow you and join.",
+      "entryId": "s2-gabocha",
+      "star": "Chikaku Star"
+    },
+    {
+      "num": 48,
+      "character": "Sid",
+      "display": "Sid",
+      "method": "Once your castle is at level 2, go to the Two River Sewers with Chaco in the active party and find his room (take the passage behind the waterfall), where he will join.",
+      "entryId": "s2-sid",
+      "star": "Chido Star"
+    },
+    {
+      "num": 49,
+      "character": "Meg",
+      "display": "Meg",
+      "method": "Go to the Muse/Greenhill border after your castle is Level 2. After the scene ask her to join.",
+      "entryId": "s1-meg",
+      "star": "Chikei Star"
+    },
+    {
+      "num": 50,
+      "character": "Gadget",
+      "display": "Gadget",
+      "method": "Joins with Meg.",
+      "entryId": "s2-gadget",
+      "star": "Chisyun Star"
+    },
+    {
+      "num": 51,
+      "character": "Wakaba",
+      "display": "Wakaba",
+      "method": "She's in front of the Armor Shop at Forest Village, speak to her after being level 30 or more.",
+      "entryId": "s2-wakaba",
+      "star": "Chiyu Star"
+    },
+    {
+      "num": 52,
+      "character": "Tony",
+      "display": "Tony",
+      "method": "Once castle is level 2, speak to him at the elders house in forest village, twice.",
+      "entryId": "s2-tony",
+      "star": "Chitou Star"
+    },
+    {
+      "num": 53,
+      "character": "Tengaar",
+      "display": "Tengaar",
+      "method": "Speak to them first in Lakewest, then go to Kobold Village. There is a long sidequest where you'll have to collect several items for Hix and then bring them back, and then find Tengaar in the Unicorn Forest. After all that, they will join.",
+      "entryId": "s1-tengaar",
+      "star": "Tensui Star"
+    },
+    {
+      "num": 54,
+      "character": "Hix",
+      "display": "Hix",
+      "method": "Joins with Tengaar.",
+      "entryId": "s1-hix",
+      "star": "Tenrou Star"
+    },
+    {
+      "num": 55,
+      "character": "Emilia",
+      "display": "Emilia",
+      "method": "Speak to her after the tour she gives and tell her what you're really up to. She will join after the events in Greenhill if you do this.",
+      "entryId": "s2-emilia",
+      "star": "Chisui Star"
+    },
+    {
+      "num": 56,
+      "character": "Shin",
+      "display": "Shin",
+      "method": "Joins automatically after the Greenhill events.",
+      "entryId": "s2-shin",
+      "star": "Chisatsu Star"
+    },
+    {
+      "num": 57,
+      "character": "Teresa Wisemail",
+      "display": "Teresa",
+      "method": "Joins automatically after the Greenhill events.",
+      "entryId": "s2-teresa-wisemail",
+      "star": "Tenki Star"
+    },
+    {
+      "num": 58,
+      "character": "Nina",
+      "display": "Nina",
+      "method": "Joins automatically after the Greenhill events.",
+      "entryId": "s2-nina",
+      "star": "Tenfu Star"
+    },
+    {
+      "num": 59,
+      "character": "Jeane",
+      "display": "Jeane",
+      "method": "After the Greenhill events, speak to her in the Two-River runeshop.",
+      "entryId": "jeane",
+      "star": "Chiketsu Star"
+    },
+    {
+      "num": 60,
+      "character": "Yuzu",
+      "display": "Yuzu",
+      "method": "After the Greenhill events, talk to her in Kobold village. Find her three sheep in the forest (one is behind the tree) and she will join.",
+      "entryId": "s2-yuzu",
+      "star": "Chisyu Star"
+    },
+    {
+      "num": 61,
+      "character": "Viki",
+      "display": "Viki",
+      "method": "She will appear in the forest path to Matilda, just let her stay with you.",
+      "entryId": "s1-viki",
+      "star": "Chitatsu Star"
+    },
+    {
+      "num": 62,
+      "character": "Humphrey Mintz",
+      "display": "Humphrey",
+      "method": "Once you can access Highway Village, speak to him at the inn and spend the night. Keep speaking to him and spending the night and follow the events of the sidequest, saving Kent eventually. He and Futch will join after the events.",
+      "entryId": "s1-humphrey-mintz",
+      "star": "Tenyu Star"
+    },
+    {
+      "num": 63,
+      "character": "Futch",
+      "display": "Futch",
+      "method": "Joins with Humphrey.",
+      "entryId": "futch",
+      "star": "Chibi Star"
+    },
+    {
+      "num": 64,
+      "character": "Miklotov",
+      "display": "Miklotov",
+      "method": "Joins automatically after the Rockaxe events.",
+      "entryId": "s2-miklotov",
+      "star": "Chimou Star"
+    },
+    {
+      "num": 65,
+      "character": "Camus",
+      "display": "Camus",
+      "method": "Joins automatically after the Rockaxe events.",
+      "entryId": "s2-camus",
+      "star": "Chiki Star"
+    },
+    {
+      "num": 66,
+      "character": "Kiba Windamier",
+      "display": "Kiba",
+      "method": "Joins automatically after defeating him.",
+      "entryId": "s2-kiba-windamier",
+      "star": "Tenmou Star"
+    },
+    {
+      "num": 67,
+      "character": "Klaus Windamier",
+      "display": "Klaus",
+      "method": "Joins with Kiba.",
+      "entryId": "s2-klaus-windamier",
+      "star": "Chikai Star"
+    },
+    {
+      "num": 68,
+      "character": "Badeaux",
+      "display": "Badeaux",
+      "method": "After Castle is Level 3, speak to him at the entrance to the Forest Path, with either Shiro or a Squirrel in your party.",
+      "entryId": "s2-badeaux",
+      "star": "Chibaku Star"
+    },
+    {
+      "num": 69,
+      "character": "Connell",
+      "display": "Connell",
+      "method": "After Castle is Level 3, speak to him in Forest Village while having one or more sound sets in your inventory.",
+      "entryId": "s2-connell",
+      "star": "Chisa Star"
+    },
+    {
+      "num": 70,
+      "character": "Ayda",
+      "display": "Ayda",
+      "method": "After recruiting Badeaux, go to forest Village and agree not to kill Feather. She and the Griffon will join. Alternatively, you can loose the fight against the Griffons then speak with her behind the building.",
+      "entryId": "s2-ayda",
+      "star": "Chisou Star"
+    },
+    {
+      "num": 71,
+      "character": "Feather",
+      "display": "Feather/Sigfried",
+      "method": "Feather: After recruiting Badeaux, go to Forest Village and defeat the Griffons, then agree to spare Feather. Sigfried: After recruiting Badeaux, as well as completing the sidequest for Hix/Tengaar, go to the same place you found him in Unicorn Forest with a young female in the party (Mikumiku counts). If you bring Sierra, there will be a cutscene, but you won't be able to recruit him.",
+      "entryId": "s2-feather",
+      "star": "Tenman Star"
+    },
+    {
+      "num": 72,
+      "character": "Lebrante",
+      "display": "Lebrante",
+      "method": "After Caslte is Level 3, speak to him with a Celadon Urn on your inventory. You can buy these at the Gregminster trade shop, from the Rope Climbing mini-game, or as a rare drop from a BonBon or Flyer.",
+      "entryId": "s2-lebrante",
+      "star": "Chisei Star"
+    },
+    {
+      "num": 73,
+      "character": "Simone Verdricci",
+      "display": "Simone",
+      "method": "He is below the Sluice gate in Radat, by the water. Talk to him with a Rose Brooch in your inventory, which can be purchased at the Banner Village item shop at the Rare finds section.",
+      "entryId": "s2-simone-verdricci",
+      "star": "Chikai Star"
+    },
+    {
+      "num": 74,
+      "character": "Kasumi",
+      "display": "Kasumi/Valeria",
+      "method": "When asking Toran for an alliance, Lepant will ask you to choose one of these two. Note that only one of them can ever join you in a single play through.",
+      "entryId": "s1-kasumi",
+      "star": "Chikyu Star"
+    },
+    {
+      "num": 75,
+      "character": "Sheena",
+      "display": "Sheena",
+      "method": "Joins automatically when going to Toran.",
+      "entryId": "s1-sheena",
+      "star": "Chimei Star"
+    },
+    {
+      "num": 76,
+      "character": "Lorelai",
+      "display": "Lorelai",
+      "method": "After Castle is Level 3, speak to her in Gregminster. If you have Killey in the party you will receive extra dialogue.",
+      "entryId": "s1-lorelai",
+      "star": "Chikatsu Star"
+    },
+    {
+      "num": 77,
+      "character": "Gordon",
+      "display": "Gordon",
+      "method": "Speak to him in Gregminster and accept his challenge to earn 50,000 potch by trading (selling items in shops other than trading post doesn't count). Tips: 1) before you accept his challenge, you can buy from him ANY item which costs 50,000 potch and sell it back); 2) if you earned 50,000 potch (by trading) before you accepted this challenge, speak to him right away and he will join.",
+      "entryId": "s2-gordon-suikoden-ii"
+    },
+    {
+      "num": 78,
+      "character": "Sasuke",
+      "display": "Sasuke",
+      "method": "Enter Rokkaku Hamlet, which can be accessed on a hidden path on the south edge of the screen right after the ladders on the forest path to Gregminster from Banner (4th screen). If you have Kasumi in the party Mondo will join, then go outside and talk to Sasuke to get him. If you recruited Valeria, you will have to wait until your castle is Level 4, but, they will both join right away.",
+      "entryId": "s2-sasuke",
+      "star": "Chikyou Star"
+    },
+    {
+      "num": 79,
+      "character": "Mondo",
+      "display": "Mondo",
+      "method": "Joins with Sasuke.",
+      "entryId": "mondo",
+      "star": "Chikou Star"
+    },
+    {
+      "num": 80,
+      "character": "Bob",
+      "display": "Bob",
+      "method": "He's at Two-River's Kobold district. Ask him to join when you have at least 80 Stars of Destiny recruited.",
+      "entryId": "s2-bob",
+      "star": "Chikei Star"
+    },
+    {
+      "num": 81,
+      "character": "Tomo",
+      "display": "Tomo",
+      "method": "At some point, Tsai will write in the suggestion box asking you to go back to his place in Ryube Forest to get some tools. When this happens, put him in the active party and go to his house. There will be a cutscene between Tsai and Tomo, and she will join.",
+      "entryId": "s2-tomo",
+      "star": "Chikyu Star"
+    },
+    {
+      "num": 82,
+      "character": "Annallee",
+      "display": "Annallee",
+      "method": "With a Level 3 castle, after defeating Luca, go to the South-Window inn and view a scene. Then find her out to the right of Town hall and listen to her sing (in some versions of the game you will not hear any music). You can recruit her before defeating Luca, but the castle needs to be at least level 3.",
+      "entryId": "s2-annallee",
+      "star": "Chiraku Star"
+    },
+    {
+      "num": 83,
+      "character": "Killey",
+      "display": "Killey",
+      "method": "When the castle achieves level 3, speak to him in South Window, in front of the Trading Post, until he asks you a question. Tell him about Alex and then go to the Item Store in your castle. (You will need Alex and Hilda recruited)",
+      "entryId": "s2-killey",
+      "star": "Tenbi Star"
+    },
+    {
+      "num": 84,
+      "character": "Karen",
+      "display": "Karen",
+      "method": "After Luca Blight's defeat, find her in Kuskus. Dance with her and she'll join you.",
+      "entryId": "s2-karen",
+      "star": "Chiin Star"
+    },
+    {
+      "num": 85,
+      "character": "Maximillian",
+      "display": "Maximillian",
+      "method": "After defeating Luca Blight just walk into South-Window and he'll find you. He will ask you to join, just accept it.",
+      "entryId": "s1-maximillian",
+      "star": "Chii Star"
+    },
+    {
+      "num": 86,
+      "character": "Hoi",
+      "display": "Hoi",
+      "method": "After defeating Luca Blight, go to the restaurant in Radat and let him join.",
+      "entryId": "s2-hoi",
+      "star": "Chizoku Star"
+    },
+    {
+      "num": 87,
+      "character": "Tenkou",
+      "display": "Tenkou",
+      "method": "Speak to him in Crom Village, while having a Window Set in your inventory.",
+      "entryId": "s2-tenkou",
+      "star": "Chiri Star"
+    },
+    {
+      "num": 88,
+      "character": "Long Chan Chan",
+      "display": "L.C. Chan",
+      "method": "First recruit Wakaba and have her in your active party, then enter the inn at Crom Village. (You can use the Matilda bug to recruit him at the Rockaxe inn during the peace conference).",
+      "entryId": "s2-long-chan-chan",
+      "star": "Chihi Star"
+    },
+    {
+      "num": 89,
+      "character": "Raura",
+      "display": "Raura",
+      "method": "Talk to her in Tinto and tell her you have Jeane recruited. (You'll need to recruit Jeane to do this)",
+      "entryId": "s2-raura",
+      "star": "Chikou Star"
+    },
+    {
+      "num": 90,
+      "character": "Koyu",
+      "display": "Koyu",
+      "method": "Joins automatically after the Tinto/Neclord events.",
+      "entryId": "s2-koyu",
+      "star": "Chisoku Star"
+    },
+    {
+      "num": 91,
+      "character": "Lo Wen",
+      "display": "Lo Wen",
+      "method": "Joins automatically after the Tinto/Neclord events.",
+      "entryId": "s2-lo-wen",
+      "star": "Chii Star"
+    },
+    {
+      "num": 92,
+      "character": "Gijimu",
+      "display": "Gijimu",
+      "method": "Joins automatically after the Tinto/Neclord events.",
+      "entryId": "s2-gijimu",
+      "star": "Chikyou Star"
+    },
+    {
+      "num": 93,
+      "character": "Marlowe",
+      "display": "Marlowe",
+      "method": "Joins automatically after the Tinto/Neclord events.",
+      "entryId": null,
+      "star": "Chiyou Star"
+    },
+    {
+      "num": 94,
+      "character": "Hauser",
+      "display": "Hauser",
+      "method": "Joins automatically after the Tinto/Neclord events.",
+      "entryId": "s2-hauser",
+      "star": "Tenyu Star"
+    },
+    {
+      "num": 95,
+      "character": "Sierra Mikain",
+      "display": "Sierra",
+      "method": "Joins automatically after the Tinto/Neclord events.",
+      "entryId": "s2-sierra-mikain",
+      "star": "Tenei Star"
+    },
+    {
+      "num": 96,
+      "character": "Kahn Marley",
+      "display": "Kahn",
+      "method": "Joins automatically after the Tinto/Neclord events.",
+      "entryId": "s2-kahn-marley",
+      "star": "Chihei Star"
+    },
+    {
+      "num": 97,
+      "character": "Jess",
+      "display": "Jess",
+      "method": "After the Tinto events, accept his apology. (if you reject him he will leave forever!)",
+      "entryId": "s2-jess",
+      "star": "Tenku Star"
+    },
+    {
+      "num": 98,
+      "character": "Georg Prime",
+      "display": "Georg",
+      "method": "Speak to him at the Tigermouth mountain path after defeating Neclord and promise not to give up. He will join you after that.",
+      "entryId": "s2-georg-prime",
+      "star": "Teni Star"
+    },
+    {
+      "num": 99,
+      "character": "Gantetsu",
+      "display": "Gantetsu",
+      "method": "Speak to him after defeating Neclord, with a party that has an overall strength of 400 in order to beat him at a pushing contest and he will join.",
+      "entryId": "s2-gantetsu",
+      "star": "Chiziku Star"
+    },
+    {
+      "num": 100,
+      "character": "Abizboah",
+      "display": "Abizboah/Sigfried/Feather",
+      "method": "Feather: After recruiting Badeaux, go to Forest Village and defeat the Griffons, then agree to spare Feather. Sigfried: After recruiting Badeaux, as well as completing the sidequest for Hix/Tengaar, go to the same place you found him in Unicorn Forest with a young female in the party (Mikumiku and Sierra count) Abizboah: Go to the Tinto mines and find the little pool of water close to the entrance, and use the Listening Crystal there.",
+      "entryId": "s2-abizboah",
+      "star": "Tenman Star"
+    },
+    {
+      "num": 101,
+      "character": "Pico",
+      "display": "Pico",
+      "method": "After recruiting Annallee, speak to him at the Greenhill inn.",
+      "entryId": "pico",
+      "star": "Chiretsu Star"
+    },
+    {
+      "num": 102,
+      "character": "Jude",
+      "display": "Jude",
+      "method": "Speak with him at the New Leaf Academy. Go to Forest Village and find a villager who has some clay, then bring him said clay.",
+      "entryId": "s2-jude",
+      "star": "Chibun Star"
+    },
+    {
+      "num": 103,
+      "character": "Alberto",
+      "display": "Alberto",
+      "method": "After recruiting both Annallee and Pico, speak to him at Tinto Armor Shop.",
+      "entryId": "s2-alberto",
+      "star": "Chiken Star"
+    },
+    {
+      "num": 104,
+      "character": "Tessai",
+      "display": "Tessai",
+      "method": "Speak with him at Kuskus Blacksmith while having Viktor in your active party.",
+      "entryId": "s2-tessai",
+      "star": "Chiko Star"
+    },
+    {
+      "num": 105,
+      "character": "Vincent",
+      "display": "Vincent",
+      "method": "Speak to him at the same place you found Simone, with Simone in your party.",
+      "entryId": null,
+      "star": "Chichin Star"
+    },
+    {
+      "num": 106,
+      "character": "Pesmerga",
+      "display": "Pesmerga",
+      "method": "He is found at the Cave of Wind, same place you found the Star Dragon Sword. Speak to him with a Level 4 castle.",
+      "entryId": "s1-pesmerga",
+      "star": "Teni Star"
+    },
+    {
+      "num": 107,
+      "character": "Genshu",
+      "display": "Genshu",
+      "method": "Ride the boat from Kuskus to Coronet, and speak to him. At least one person in your active party must have a weapon with a Level 14 rating.",
+      "entryId": "s2-genshu",
+      "star": "Chiei Star"
+    },
+    {
+      "num": 108,
+      "character": "Mazus",
+      "display": "Mazus",
+      "method": "Speak to Mazus in the Tinto Mines after liberating Greenhill. You have to have at least 100 recruits.",
+      "entryId": "s2-mazus",
+      "star": "Chizen Star"
+    }
+  ],
+  "Suikoden III": [
+    {
+      "num": 1,
+      "character": "Hugo (Suikoden III)",
+      "display": "Hugo",
+      "method": "Joins Automatically in Hugo Chapter 1.",
+      "entryId": "s1-hugo-suikoden"
+    },
+    {
+      "num": 2,
+      "character": "Sgt. Joe",
+      "display": "Sgt. Joe",
+      "method": "Joins Automatically in Hugo Chapter 1.",
+      "entryId": "s3-sgt_joe"
+    },
+    {
+      "num": 3,
+      "character": "Fubar",
+      "display": "Fubar",
+      "method": "Joins Automatically in Hugo Chapter 1.",
+      "entryId": "s3-fubar"
+    },
+    {
+      "num": 4,
+      "character": "Chris Lightfellow",
+      "display": "Chris",
+      "method": "Joins Automatically in Chris Chapter 1.",
+      "entryId": "s3-chris_lightfellow"
+    },
+    {
+      "num": 5,
+      "character": "Salome Harras",
+      "display": "Salome",
+      "method": "Joins Automatically in Chris Chapter 1.",
+      "entryId": "s3-salome_harras"
+    },
+    {
+      "num": 6,
+      "character": "Leo Galan",
+      "display": "Leo",
+      "method": "Joins Automatically in Chris Chapter 1.",
+      "entryId": null
+    },
+    {
+      "num": 7,
+      "character": "Roland Lesaurus",
+      "display": "Roland",
+      "method": "Joins Automatically in Chris Chapter 1.",
+      "entryId": "s3-roland_lesaurus"
+    },
+    {
+      "num": 8,
+      "character": "Percival Fraulein",
+      "display": "Percival",
+      "method": "Joins Automatically in Chris Chapter 1.",
+      "entryId": "s3-percival_fraulein"
+    },
+    {
+      "num": 9,
+      "character": "Borus Redrum",
+      "display": "Borus",
+      "method": "Joins Automatically in Chris Chapter 1.",
+      "entryId": "s3-borus_redrum"
+    },
+    {
+      "num": 10,
+      "character": "Louis Keeferson",
+      "display": "Louis",
+      "method": "Joins Automatically in Chris Chapter 1.",
+      "entryId": "s3-louis_keeferson"
+    },
+    {
+      "num": 11,
+      "character": "Geddoe",
+      "display": "Geddoe",
+      "method": "Joins Automatically in Geddoe Chapter 1.",
+      "entryId": "s3-geddoe"
+    },
+    {
+      "num": 12,
+      "character": "Ace",
+      "display": "Ace",
+      "method": "Joins Automatically in Geddoe Chapter 1.",
+      "entryId": "s3-ace"
+    },
+    {
+      "num": 13,
+      "character": "Joker",
+      "display": "Joker",
+      "method": "Joins Automatically in Geddoe Chapter 1.",
+      "entryId": "s3-joker"
+    },
+    {
+      "num": 14,
+      "character": "Queen",
+      "display": "Queen",
+      "method": "Joins Automatically in Geddoe Chapter 1.",
+      "entryId": "s3-queen"
+    },
+    {
+      "num": 15,
+      "character": "Jacques",
+      "display": "Jacques",
+      "method": "Joins Automatically in Geddoe Chapter 1.",
+      "entryId": "s3-jacques"
+    },
+    {
+      "num": 16,
+      "character": "Aila",
+      "display": "Aila",
+      "method": "Geddoe and his group will run into Aila after Karaya village is burned to the ground, she joins his team automatically.",
+      "entryId": "s3-aila"
+    },
+    {
+      "num": 17,
+      "character": "Thomas",
+      "display": "Thomas",
+      "method": "Joins Automatically in Thomas Chapter 1.",
+      "entryId": "s3-thomas"
+    },
+    {
+      "num": 18,
+      "character": "Sebastian",
+      "display": "Sebastian",
+      "method": "Joins Automatically in Thomas Chapter 1.",
+      "entryId": "s3-sebastian"
+    },
+    {
+      "num": 19,
+      "character": "Cecile",
+      "display": "Cecile",
+      "method": "Joins Automatically in Thomas Chapter 1.",
+      "entryId": "s3-cecile"
+    },
+    {
+      "num": 20,
+      "character": "Juan",
+      "display": "Juan",
+      "method": "Joins Automatically in Thomas Chapter 1.",
+      "entryId": "s3-juan"
+    },
+    {
+      "num": 21,
+      "character": "Piccolo",
+      "display": "Piccolo",
+      "method": "Joins Automatically in Thomas Chapter 1.",
+      "entryId": "s3-piccolo"
+    },
+    {
+      "num": 22,
+      "character": "Martha",
+      "display": "Martha",
+      "method": "Joins Automatically in Thomas Chapter 1.",
+      "entryId": "s3-martha"
+    },
+    {
+      "num": 23,
+      "character": "Eike",
+      "display": "Eike",
+      "method": "Joins Automatically in Thomas Chapter 1.",
+      "entryId": "s3-eike"
+    },
+    {
+      "num": 24,
+      "character": "Muto",
+      "display": "Muto",
+      "method": "Joins Automatically in Thomas Chapter 1.",
+      "entryId": "s3-muto"
+    },
+    {
+      "num": 25,
+      "character": "Shizu",
+      "display": "Shizu",
+      "method": "Joins Automatically in Thomas Chapter 1",
+      "entryId": "s3-shizu"
+    },
+    {
+      "num": 26,
+      "character": "Billy",
+      "display": "Billy",
+      "method": "Place a S size statue in the statue room on the second floor of Budehuc castle, then leave the room and return. Make a bet with Billy. If you win, he will join. Make sure to save because if you lose, he will leave and keep the statue.",
+      "entryId": "s3-billy"
+    },
+    {
+      "num": 27,
+      "character": "Mio",
+      "display": "Mio",
+      "method": "Find Mio and Tuta on the second floor of Iksay Inn and ask him to join.",
+      "entryId": "s3-mio"
+    },
+    {
+      "num": 28,
+      "character": "Gordon",
+      "display": "Gordon",
+      "method": "Speak to Gordon in Iksay with a full party of males, as Chris with any party OR with Augustine in the party.",
+      "entryId": "s2-gordon-suikoden-ii"
+    },
+    {
+      "num": 29,
+      "character": "Mel",
+      "display": "Mel",
+      "method": "Talk to her in Iksay village, and she will join.",
+      "entryId": "s3-mel"
+    },
+    {
+      "num": 30,
+      "character": "Watari",
+      "display": "Watari",
+      "method": "Find him in Iksay village and pay him 100,000 Potch.",
+      "entryId": "s3-watari"
+    },
+    {
+      "num": 31,
+      "character": "Twaikin",
+      "display": "Twaikin",
+      "method": "Find him in the Great Hollow in one of the tunnels. Tell the guard \"Nothing\" and then ask him to join you.",
+      "entryId": "s3-twaikin"
+    },
+    {
+      "num": 32,
+      "character": "Peggi",
+      "display": "Peggi",
+      "method": "Find him at the Great Hollow and give him a new hammer, one can be found at the training center.",
+      "entryId": "s3-peggi"
+    },
+    {
+      "num": 33,
+      "character": "Koroku",
+      "display": "Koroku",
+      "method": "Find him at Mt. Hei-Tou, take the first left and another left and he's off the path here. Once you get him, talk to him at the HQ to get a secret Point of View!",
+      "entryId": "s3-koroku"
+    },
+    {
+      "num": 34,
+      "character": "Belle",
+      "display": "Belle",
+      "method": "Retrieve a screw from a purple creeper, talk to Belle and she'll join.",
+      "entryId": "s3-belle"
+    },
+    {
+      "num": 35,
+      "character": "Gadget Z",
+      "display": "Gadget Z",
+      "method": "Joins with Belle.",
+      "entryId": "s3-gadget_z"
+    },
+    {
+      "num": 36,
+      "character": "Jeane",
+      "display": "Jeane",
+      "method": "Find her at the Rune Shop in Brass Castle and ask her to join.",
+      "entryId": "jeane"
+    },
+    {
+      "num": 37,
+      "character": "Scott",
+      "display": "Scott",
+      "method": "Buy a deer antler from Vinnay Del Zexay trading post and then give it to him.",
+      "entryId": "s3-scott"
+    },
+    {
+      "num": 38,
+      "character": "Ernie",
+      "display": "Ernie",
+      "method": "Talk to her at Brass Castle and complete her quiz.",
+      "entryId": "s3-ernie"
+    },
+    {
+      "num": 39,
+      "character": "Arthur",
+      "display": "Arthur",
+      "method": "After Hugo chapter 1, talk to him in the Brass Castle Knights dining room, and help him with his investigation.",
+      "entryId": "s3-arthur"
+    },
+    {
+      "num": 40,
+      "character": "Goro",
+      "display": "Goro",
+      "method": "Speak to him in the Zexen forest while someone in your party has the Appraisal Skill.",
+      "entryId": "s3-goro"
+    },
+    {
+      "num": 41,
+      "character": "Melville",
+      "display": "Melville",
+      "method": "After Hugo chapter 1, speak to him in the alleyway where his hideout is after speaking to Billy about his son. If you are using Hugo you can just ask him to join.",
+      "entryId": "s3-melville"
+    },
+    {
+      "num": 42,
+      "character": "Elliot",
+      "display": "Elliot",
+      "method": "Joins with Melville.",
+      "entryId": "s3-elliot"
+    },
+    {
+      "num": 43,
+      "character": "Nei",
+      "display": "Nei",
+      "method": "Speak to her in the area of Vinnay Del Zexay near the inn, she will mention Shabon is missing. Find Guillaume chasing her in front of the guild hall. Beat him in a duel and then return to Nei.",
+      "entryId": "s3-nei"
+    },
+    {
+      "num": 44,
+      "character": "Toppo",
+      "display": "Toppo",
+      "method": "Joins with Nei.",
+      "entryId": "s3-toppo"
+    },
+    {
+      "num": 45,
+      "character": "Shabon",
+      "display": "Shabon",
+      "method": "Joins with Nei.",
+      "entryId": "s3-shabon"
+    },
+    {
+      "num": 46,
+      "character": "Augustine Nabor",
+      "display": "Augustine",
+      "method": "Speak to him in Vinay Del Zexay with a Rose Brooch in your party and he will join! You can get a Rose Brooch in the Iksay Village rare finds.",
+      "entryId": "s3-augustine_nabor"
+    },
+    {
+      "num": 47,
+      "character": "Dominic",
+      "display": "Dominic",
+      "method": "Talk to him in the armor shop at Vinnay Del Zexay and buy the ridiculously expensive Mole Armor from him.",
+      "entryId": "s3-dominic"
+    },
+    {
+      "num": 48,
+      "character": "Ayame",
+      "display": "Ayame",
+      "method": "After recruiting Watari, speak to him in the castle basement until he has a flashback of her in the North Cavern. After this, put Watari in the party and head to the very end of the cavern and find Ayame there. Watari must defeat her in a duel, and she will join.",
+      "entryId": "s3-ayame"
+    },
+    {
+      "num": 49,
+      "character": "Kenji",
+      "display": "Kenji",
+      "method": "After speaking to a man in brass castle about seeing someone defeat a monster with cartwheels, find him at the end of Yaza Plains off to the side, and exercise with him. After, ask him for a glass of water.",
+      "entryId": "s3-kenji"
+    },
+    {
+      "num": 50,
+      "character": "Barts",
+      "display": "Barts",
+      "method": "Buy Grapes C (NOT Grape Seeds) from Vinnay Del Zexay trading post, then give him this item. He can be found in Iksay Village next to the windmills.",
+      "entryId": "s3-barts"
+    },
+    {
+      "num": 51,
+      "character": "Alanis",
+      "display": "Alanis",
+      "method": "Bring Melville and Elliot to the Great Hollow and speak to her.",
+      "entryId": "s3-alanis"
+    },
+    {
+      "num": 52,
+      "character": "Kathy",
+      "display": "Kathy",
+      "method": "She can be found at the North Amur plains. you must count how many horses she has then tell her. If you make a mistake she'll leave and come back. The number changes each time.",
+      "entryId": "s3-kathy"
+    },
+    {
+      "num": 53,
+      "character": "Hortez VII",
+      "display": "Hortez VII",
+      "method": "Speak to him first in Duck Village and give directions. Speak to him again in Chisha village, do the same; than again in Caleria. Finally, find him once more in Duck Village, this time giving him the WRONG directions.",
+      "entryId": "s3-hortez_vii"
+    },
+    {
+      "num": 54,
+      "character": "Sanae Y.",
+      "display": "Sanae Y.",
+      "method": "After recruiting at least 50 Stars, find her behind the inn at Duck Village and help her with her issue, then ask her to join.",
+      "entryId": null
+    },
+    {
+      "num": 55,
+      "character": "Kidd",
+      "display": "Kidd",
+      "method": "Find him at Duck Village inn and help him solve the mystery. Doesn't mucb matter what you say during the investigation.",
+      "entryId": "s3-kidd"
+    },
+    {
+      "num": 56,
+      "character": "Edge",
+      "display": "Edge",
+      "method": "He can be found outside the Education Center/Rune Shop in Le Buque, You can then beat him at a duel for him to join.",
+      "entryId": "s3-edge"
+    },
+    {
+      "num": 57,
+      "character": "Nadir",
+      "display": "Nadir",
+      "method": "Speak to him at the Caleria inn second floor, while having 3 men, 2 woman and 1 child in the group, child can be any gender. They must be in your main party, not support.",
+      "entryId": "s3-nadir"
+    },
+    {
+      "num": 58,
+      "character": "Mike",
+      "display": "Mike",
+      "method": "Talk to him in Caleria trading post and win 20,000 at his game.",
+      "entryId": "s3-mike"
+    },
+    {
+      "num": 59,
+      "character": "Mamie",
+      "display": "Mamie",
+      "method": "Give her a Crab Rice Bowl (dropped by enemies in Kuput Forest) she is fond in the Duck Village appraisal shop second floor.",
+      "entryId": "s3-mamie"
+    },
+    {
+      "num": 60,
+      "character": "Landis",
+      "display": "Landis",
+      "method": "Have an empty slot in the party, and he will appear in the group when walking around Kaput Forest.",
+      "entryId": "s3-landis"
+    },
+    {
+      "num": 61,
+      "character": "Wan Fu",
+      "display": "Wan Fu",
+      "method": "Find him in the basement of the Chisha village item shop, and talk to him. Offer to pay 3000 for his food.",
+      "entryId": "s3-wan_fu"
+    },
+    {
+      "num": 62,
+      "character": "Emily",
+      "display": "Emily",
+      "method": "You have to beat her at arm wrestling, to do this you need a party with a combined STR of 600.",
+      "entryId": "s3-emily"
+    },
+    {
+      "num": 63,
+      "character": "Estella",
+      "display": "Estella",
+      "method": "After the events at Alma Kinan, talk to her at the inn there. Then speak tgo a girl at the ceremonial site who will say the village does not exist. Speak to her again and she will join up along with Rody.",
+      "entryId": "s3-estella"
+    },
+    {
+      "num": 64,
+      "character": "Rody",
+      "display": "Rody",
+      "method": "Joins with Estella.",
+      "entryId": "s3-rody"
+    },
+    {
+      "num": 65,
+      "character": "Guillaume",
+      "display": "Guillaume",
+      "method": "After stopping him from chasing Shabon, you can find him at the Sindar Ruins Gates in the tunnel. Beat him at a duel there and he will join.",
+      "entryId": "s3-guillaume"
+    },
+    {
+      "num": 66,
+      "character": "Hallec",
+      "display": "Hallec",
+      "method": "Joins Automatically during Hugo Chapter 3.",
+      "entryId": "s3-hallec"
+    },
+    {
+      "num": 67,
+      "character": "Mua",
+      "display": "Mua",
+      "method": "Joins Automatically during Hugo Chapter 3.",
+      "entryId": "s3-mua"
+    },
+    {
+      "num": 68,
+      "character": "Nash",
+      "display": "Nash",
+      "method": "Joins Automatically during Chris Chapter 2.",
+      "entryId": null
+    },
+    {
+      "num": 69,
+      "character": "Rico",
+      "display": "Rico",
+      "method": "Joins Automatically during Chris Chapter 3.",
+      "entryId": "s3-rico"
+    },
+    {
+      "num": 70,
+      "character": "Fred",
+      "display": "Fred",
+      "method": "Joins Automatically during Chris Chapter 3.",
+      "entryId": null
+    },
+    {
+      "num": 71,
+      "character": "Yun",
+      "display": "Yun",
+      "method": "Joins Automatically during Chris Chapter 3.",
+      "entryId": "s3-yun"
+    },
+    {
+      "num": 72,
+      "character": "Apple",
+      "display": "Apple",
+      "method": "Joins Automatically in Chapter 4.",
+      "entryId": "s1-apple",
+      "star": "Chifuku Star"
+    },
+    {
+      "num": 73,
+      "character": "Caesar",
+      "display": "Caesar",
+      "method": "Joins Automatically in Chapter 4.",
+      "entryId": null
+    },
+    {
+      "num": 74,
+      "character": "Samus",
+      "display": "Samus",
+      "method": "Joins Automatically in Hugo Chapter 2.",
+      "entryId": "s3-samus"
+    },
+    {
+      "num": 75,
+      "character": "Reed",
+      "display": "Reed",
+      "method": "Joins Automatically in Hugo Chapter 2.",
+      "entryId": "s3-reed"
+    },
+    {
+      "num": 76,
+      "character": "Lilly Pendragon",
+      "display": "Lilly",
+      "method": "Joins Automatically in Hugo Chapter 2.",
+      "entryId": "s2-lilly-pendragon",
+      "star": "Chikyu Star"
+    },
+    {
+      "num": 77,
+      "character": "Luce",
+      "display": "Luce",
+      "method": "Joins Automatically in Chapter 4.",
+      "entryId": "s3-luce"
+    },
+    {
+      "num": 78,
+      "character": "Anne",
+      "display": "Anne",
+      "method": "Joins Automatically in Chapter 4.",
+      "entryId": "s3-anne"
+    },
+    {
+      "num": 79,
+      "character": "Jimba",
+      "display": "Jimba",
+      "method": "Joins Automatically in Chapter 4.",
+      "entryId": null
+    },
+    {
+      "num": 80,
+      "character": "Beechum",
+      "display": "Beechum",
+      "method": "Joins Automatically in Chapter 4.",
+      "entryId": null
+    },
+    {
+      "num": 81,
+      "character": "Lucia",
+      "display": "Lucia",
+      "method": "Joins Automatically in Chapter 4.",
+      "entryId": "lucia"
+    },
+    {
+      "num": 82,
+      "character": "Tuta",
+      "display": "Tuta",
+      "method": "After recruiting Mio, take Mio to the underground of Chisha village and talk to Tuta in the middle room. (You can recruit him without Mio)",
+      "entryId": "s2-tuta",
+      "star": "Chijyu Star"
+    },
+    {
+      "num": 83,
+      "character": "Wilder",
+      "display": "Wilder",
+      "method": "Talk to Wilder and Rhett at Duck Village with Sgt. Joe in your party.",
+      "entryId": "s3-wilder"
+    },
+    {
+      "num": 84,
+      "character": "Rhett",
+      "display": "Rhett",
+      "method": "Joins with Wilder.",
+      "entryId": "s3-rhett"
+    },
+    {
+      "num": 85,
+      "character": "Bright",
+      "display": "Bright",
+      "method": "Joins with Sharon and Futch.",
+      "entryId": "s2-bright",
+      "star": "Chikyou Star"
+    },
+    {
+      "num": 86,
+      "character": "Sharon",
+      "display": "Sharon",
+      "method": "Joins with Futch and Bright.",
+      "entryId": "s3-sharon"
+    },
+    {
+      "num": 87,
+      "character": "Futch",
+      "display": "Futch",
+      "method": "Speak to him near the exit to the mountain math near Caleria and agree to help him. He will ask to find Sharon, chase her around Caleria (she isn't hard to find) and then when all is over he, Sharon and Bright will join.",
+      "entryId": "futch"
+    },
+    {
+      "num": 88,
+      "character": "Shiba",
+      "display": "Shiba",
+      "method": "Joins automatically during Chapter 4.",
+      "entryId": "s3-shiba"
+    },
+    {
+      "num": 89,
+      "character": "Bazba",
+      "display": "Bazba",
+      "method": "Joins automatically during Chapter 4.",
+      "entryId": "s3-bazba"
+    },
+    {
+      "num": 90,
+      "character": "Dupa",
+      "display": "Dupa",
+      "method": "Joins automatically during Chapter 4.",
+      "entryId": "s3-dupa"
+    },
+    {
+      "num": 91,
+      "character": "Viki",
+      "display": "Viki",
+      "method": "Enter the mountain path any time after being asked to find help by Thomas, and she will suddenly appear (enter from the west side).",
+      "entryId": "s1-viki",
+      "star": "Chitatsu Star"
+    },
+    {
+      "num": 92,
+      "character": "Viki (Child)",
+      "display": "Viki",
+      "method": "Re-enter the mountain path with Viki now in your party, and young viki will appear. Let her join you.",
+      "entryId": "s1-viki",
+      "star": "Chitatsu Star"
+    },
+    {
+      "num": 93,
+      "character": "Jefferson",
+      "display": "Jefferson",
+      "method": "Leave the castle through the gate with neither Cecil or Juan in your party, you must also have 70+ stars.",
+      "entryId": "s3-jefferson"
+    },
+    {
+      "num": 94,
+      "character": "Yumi",
+      "display": "Yumi",
+      "method": "Joins automatically during Chapter 5.",
+      "entryId": "s3-yumi"
+    },
+    {
+      "num": 95,
+      "character": "Yuiri",
+      "display": "Yuiri",
+      "method": "Joins automatically during Chapter 5.",
+      "entryId": "s3-yuiri"
+    },
+    {
+      "num": 96,
+      "character": "Elaine",
+      "display": "Elaine",
+      "method": "Joins during Geddoe Chapter 5, Note: As long as you do not run away!",
+      "entryId": "s3-elaine"
+    },
+    {
+      "num": 97,
+      "character": "Nicolas",
+      "display": "Nicolas",
+      "method": "Joins during Geddoe Chapter 5, Note: As long as you do not run away!",
+      "entryId": "s3-nicolas"
+    },
+    {
+      "num": 98,
+      "character": "Gau",
+      "display": "Gau",
+      "method": "Joins during Geddoe Chapter 5, Note: As long as you do not run away!",
+      "entryId": "s3-gau"
+    },
+    {
+      "num": 99,
+      "character": "Duke",
+      "display": "Duke",
+      "method": "Joins during Geddoe Chapter 5, Note: As long as you do not run away!",
+      "entryId": "s3-duke"
+    },
+    {
+      "num": 100,
+      "character": "Ruby",
+      "display": "Ruby",
+      "method": "Joins during Geddoe Chapter 5, Note: As long as you do not run away!",
+      "entryId": "s3-ruby"
+    },
+    {
+      "num": 101,
+      "character": "Iku",
+      "display": "Iku",
+      "method": "Joins during Geddoe Chapter 5, Note: As long as you do not run away!",
+      "entryId": "s3-iku"
+    },
+    {
+      "num": 102,
+      "character": "Franz",
+      "display": "Franz",
+      "method": "Joins during Geddoe Chapter 5, Note: As long as you do not run away!",
+      "entryId": "s3-franz"
+    },
+    {
+      "num": 103,
+      "character": "Dios",
+      "display": "Dios",
+      "method": "Joins automatically during Chapter 5.",
+      "entryId": "s3-dios"
+    },
+    {
+      "num": 104,
+      "character": "Sasarai",
+      "display": "Sasarai",
+      "method": "Joins automatically during Chapter 5.",
+      "entryId": "s2-sasarai",
+      "star": "Tengou Star"
+    },
+    {
+      "num": 105,
+      "character": "Yuber",
+      "display": "Yuber",
+      "method": "Joins in Chapter 6, Note: Must have all other Stars recruited (104) before Chapter 6!",
+      "entryId": "s1-yuber",
+      "star": "Tenyu Star"
+    },
+    {
+      "num": 106,
+      "character": "Albert Silverberg",
+      "display": "Albert",
+      "method": "Joins in Chapter 6, Note: Must have all other Stars recruited (104) before Chapter 6!",
+      "entryId": "s3-albert_silverberg"
+    },
+    {
+      "num": 107,
+      "character": "Sarah (Suikoden III)",
+      "display": "Sarah",
+      "method": "Joins in Chapter 6, Note: Must have all other Stars recruited (104) before Chapter 6!",
+      "entryId": "s1-sarah-suikoden"
+    },
+    {
+      "num": 108,
+      "character": "Luc",
+      "display": "Luc",
+      "method": "Joins in Chapter 6, Note: Must have all other Stars recruited (104) before Chapter 6!",
+      "entryId": "s1-luc",
+      "star": "Tenkan Star"
+    }
+  ],
+  "Suikoden IV": [
+    {
+      "num": 1,
+      "character": "Lazlo",
+      "display": "Lazlo",
+      "method": "Joins at the start of the game.",
+      "entryId": null
+    },
+    {
+      "num": 2,
+      "character": "Jewel",
+      "display": "Jewel/Paula/Keneth/Tal",
+      "method": "Whichever character you choose to accompany you on normal Razril missions, are the characters that will join you in the beginning of the game.",
+      "entryId": "s4-jewel"
+    },
+    {
+      "num": 3,
+      "character": "Keneth",
+      "display": "Keneth/Tal/Keneth/Tal",
+      "method": "Whichever character you choose to accompany you on normal Razril missions, are the characters that will join you in the beginning of the game.",
+      "entryId": "s4-keneth"
+    },
+    {
+      "num": 4,
+      "character": "Chiepoo",
+      "display": "Chiepoo",
+      "method": "Joins automatically after Lazlo is banned from Razril.",
+      "entryId": "s4-chiepoo"
+    },
+    {
+      "num": 5,
+      "character": "Desmond",
+      "display": "Desmond",
+      "method": "Joins Automatically once the HQ is established.",
+      "entryId": "s4-desmond"
+    },
+    {
+      "num": 6,
+      "character": "Louise",
+      "display": "Louise",
+      "method": "Joins Automatically once the HQ is established.",
+      "entryId": "s4-louise"
+    },
+    {
+      "num": 7,
+      "character": "Chadli",
+      "display": "Chadli",
+      "method": "Joins Automatically once the HQ is established.",
+      "entryId": "s4-chadli"
+    },
+    {
+      "num": 8,
+      "character": "Tov",
+      "display": "Tov",
+      "method": "Joins Automatically once the HQ is established.",
+      "entryId": "s4-tov"
+    },
+    {
+      "num": 9,
+      "character": "Ornan",
+      "display": "Ornan",
+      "method": "Joins Automatically once the HQ is established.",
+      "entryId": "s4-ornan"
+    },
+    {
+      "num": 10,
+      "character": "Perrault",
+      "display": "Perrault",
+      "method": "After Lino asks for recruits, go to Nay's Kobold town and talk to him in the Trading Post building.",
+      "entryId": "s4-perrault"
+    },
+    {
+      "num": 11,
+      "character": "Rita",
+      "display": "Rita",
+      "method": "Find her in the Na-Nal Inn and beat her at Ritapon 10 times and she will join.",
+      "entryId": "s4-rita"
+    },
+    {
+      "num": 12,
+      "character": "Mitsuba",
+      "display": "Mitsuba",
+      "method": "Speak to Reinhold on Na-Nal and then go to the town square, defeat Mitsuba and she, along with Reinhold, will join.",
+      "entryId": "s4-mitsuba"
+    },
+    {
+      "num": 13,
+      "character": "Reinhold",
+      "display": "Reinhold",
+      "method": "Joins with Mitsuba.",
+      "entryId": "s4-reinhold"
+    },
+    {
+      "num": 14,
+      "character": "Rikie",
+      "display": "Rikie",
+      "method": "Joins Automatically.",
+      "entryId": "s4-rikie"
+    },
+    {
+      "num": 15,
+      "character": "Rakgi",
+      "display": "Rakgi",
+      "method": "Joins Automatically.",
+      "entryId": "s4-rakgi"
+    },
+    {
+      "num": 16,
+      "character": "Lilin",
+      "display": "Lilin",
+      "method": "Joins Automatically.",
+      "entryId": "s4-lilin"
+    },
+    {
+      "num": 17,
+      "character": "Cedric",
+      "display": "Cedric",
+      "method": "After the event with the mermaid poacher ship, go to the inn at Obel and view the scene. Then speak with a woman close to the inn; finally, go to Louise at your base and she will give up Cedric who will join.",
+      "entryId": "s4-cedric"
+    },
+    {
+      "num": 18,
+      "character": "Oleg",
+      "display": "Oleg",
+      "method": "Joins Automatically.",
+      "entryId": "s4-oleg"
+    },
+    {
+      "num": 19,
+      "character": "Ramada",
+      "display": "Ramada",
+      "method": "Joins Automatically.",
+      "entryId": "s4-ramada"
+    },
+    {
+      "num": 20,
+      "character": "Mizuki",
+      "display": "Mizuki",
+      "method": "Joins Automatically.",
+      "entryId": "s4-mizuki"
+    },
+    {
+      "num": 21,
+      "character": "Akaghi",
+      "display": "Akaghi",
+      "method": "Joins Automatically.",
+      "entryId": "s4-akaghi"
+    },
+    {
+      "num": 22,
+      "character": "Yu",
+      "display": "Yu",
+      "method": "When everyone is evacuating Obel, talk to Yu and he will join.",
+      "entryId": "s4-yu"
+    },
+    {
+      "num": 23,
+      "character": "Adrienne",
+      "display": "Adrienne",
+      "method": "When everyone is evacuating Obel, talk to Adrienne and she will join.",
+      "entryId": "s4-adrienne"
+    },
+    {
+      "num": 24,
+      "character": "Pablo",
+      "display": "Pablo",
+      "method": "Joins Automatically.",
+      "entryId": "s4-pablo"
+    },
+    {
+      "num": 25,
+      "character": "Nico",
+      "display": "Nico",
+      "method": "Joins Automatically.",
+      "entryId": "s4-nico"
+    },
+    {
+      "num": 26,
+      "character": "Haruto",
+      "display": "Haruto",
+      "method": "Joins Automatically.",
+      "entryId": "s4-haruto"
+    },
+    {
+      "num": 27,
+      "character": "Lino En Kuldes",
+      "display": "Lino",
+      "method": "Joins Automatically.",
+      "entryId": "s4-lino_en_kuldes"
+    },
+    {
+      "num": 28,
+      "character": "Mao",
+      "display": "Mao",
+      "method": "After your HQ can sail, enter your room and exit to have Tov mention a strange room. Go into the room across from Reinhold's training room.",
+      "entryId": "s4-mao"
+    },
+    {
+      "num": 29,
+      "character": "Nao",
+      "display": "Nao",
+      "method": "After recruiting Mao and allowing some time to pass, rest in your room and ext and have another scene with Tov. Go into the same room and Nao will be there.",
+      "entryId": "s4-nao"
+    },
+    {
+      "num": 30,
+      "character": "Bartholomew",
+      "display": "Bartholomew",
+      "method": "After your HQ can sail and after getting Perrault, view a newspaper heading about Bartholomew. Now speak to him in a house at Nay-Kobold Village.",
+      "entryId": "s4-bartholomew"
+    },
+    {
+      "num": 31,
+      "character": "Viki",
+      "display": "Viki",
+      "method": "After your HQ can sail, go to Nay Island. Head toward Nay-Kobold village across the bridge and Viki will appear and vanish. Go to the Kobold village and then head back across the bridge and speak to Viki there.",
+      "entryId": "s1-viki",
+      "star": "Chitatsu Star"
+    },
+    {
+      "num": 32,
+      "character": "Jeane",
+      "display": "Jeane",
+      "method": "After your HQ can sail, go to Na-Nal and speak to the men beside the armor shop and hot springs, then go to the runeshop and inquire about the runemistress, and ask to have her look at a rune.",
+      "entryId": "jeane"
+    },
+    {
+      "num": 33,
+      "character": "Manu",
+      "display": "Manu",
+      "method": "Speak to him at the Na-Nal inn.",
+      "entryId": "s4-manu"
+    },
+    {
+      "num": 34,
+      "character": "Ugetsu",
+      "display": "Ugetsu",
+      "method": "Speak to him at the Na-Nal trading shop.",
+      "entryId": "s4-ugetsu"
+    },
+    {
+      "num": 35,
+      "character": "Bang",
+      "display": "Bang",
+      "method": "Speak to him at the Nay-Kobold Settlement.",
+      "entryId": "s4-bang"
+    },
+    {
+      "num": 36,
+      "character": "Shiramine",
+      "display": "Shiramine",
+      "method": "After recruiting Ugetsu, go to HQ and speak to him.",
+      "entryId": "s4-shiramine"
+    },
+    {
+      "num": 37,
+      "character": "Lilan",
+      "display": "Lilan",
+      "method": "After getting Shiramine, lower the net and sail between Nay and Na-Nal islands.",
+      "entryId": "s4-lilan"
+    },
+    {
+      "num": 38,
+      "character": "Izak",
+      "display": "Izak",
+      "method": "Buy a flower seed from Nay Island Trading post or Middleport trading post, and bring it to him at Iluya.",
+      "entryId": "s4-izak"
+    },
+    {
+      "num": 39,
+      "character": "Nataly",
+      "display": "Nataly",
+      "method": "Speak to her at Iluya, she's in the ruins near one of the destroyed houses.",
+      "entryId": "s4-nataly"
+    },
+    {
+      "num": 40,
+      "character": "Kate",
+      "display": "Kate",
+      "method": "Bring Mizuki and speak to her at Illya, she's among the ruins.",
+      "entryId": "s4-kate"
+    },
+    {
+      "num": 41,
+      "character": "Taisuke",
+      "display": "Taisuke",
+      "method": "After your HQ can sail, go to the deserted island, and enter the cave following it to the end. He will ask you to go fetch his clothes outside the cave. Do this and bring them all the way back, he will then ask you to go outside the cave so he can change. Do this, and then return to him and ask him to join.",
+      "entryId": "s4-taisuke"
+    },
+    {
+      "num": 42,
+      "character": "Lilen",
+      "display": "Lilen",
+      "method": "After recruiting Taisuke, visit the Deserted Island cavern and speak with Lilen.",
+      "entryId": "s4-lilen"
+    },
+    {
+      "num": 43,
+      "character": "Rene",
+      "display": "Rene",
+      "method": "After your headquarter is launched to sea, find a bottle on the shore of Nay Island. After reading the message go to Donut Island to recruit Rene.",
+      "entryId": "s4-rene"
+    },
+    {
+      "num": 44,
+      "character": "Phil",
+      "display": "Phil",
+      "method": "Speak to Phil at the Nest of Pirates after recruiting 42 Stars of Destiny.",
+      "entryId": "s4-phil"
+    },
+    {
+      "num": 45,
+      "character": "Kika",
+      "display": "Kika",
+      "method": "Joins Automatically.",
+      "entryId": "s4-kika"
+    },
+    {
+      "num": 46,
+      "character": "Hervey",
+      "display": "Hervey",
+      "method": "Joins Automatically.",
+      "entryId": "s4-hervey"
+    },
+    {
+      "num": 47,
+      "character": "Sigurd",
+      "display": "Sigurd",
+      "method": "Joins Automatically.",
+      "entryId": "s4-sigurd"
+    },
+    {
+      "num": 48,
+      "character": "Dario",
+      "display": "Dario",
+      "method": "Joins Automatically.",
+      "entryId": "s4-dario"
+    },
+    {
+      "num": 49,
+      "character": "Nalleo",
+      "display": "Nalleo",
+      "method": "Joins Automatically.",
+      "entryId": "s4-nalleo"
+    },
+    {
+      "num": 50,
+      "character": "Lilon",
+      "display": "Lilon",
+      "method": "After defeating Snowe and chasing him all the way to Razril, return to the Nest of Pirates. Speak to the pirate standing near the Blacksmith and then Sail out of the Nest of Pirates. Sail around the Nest of Pirates until you her calling.",
+      "entryId": "s4-lilon"
+    },
+    {
+      "num": 51,
+      "character": "Liloon",
+      "display": "Liloon",
+      "method": "Speak to her at Iluya harbor once you have recruited Lilin, Lilen, Lilan, and Lilon. (You don't need to have the four mermaids in your party when speaking to her)",
+      "entryId": "s4-liloon"
+    },
+    {
+      "num": 52,
+      "character": "Elenor Silverberg",
+      "display": "Elenor",
+      "method": "Joins Automatically.",
+      "entryId": "s4-elenor_silverberg"
+    },
+    {
+      "num": 53,
+      "character": "Agnes",
+      "display": "Agnes",
+      "method": "Joins Automatically.",
+      "entryId": "s4-agnes"
+    },
+    {
+      "num": 54,
+      "character": "Jango",
+      "display": "Jango",
+      "method": "Enter your room in the Dauntless after you have recruited 51 Stars of Destiny. A scene will trigger. Jango will join you along with Brec.",
+      "entryId": "s4-jango"
+    },
+    {
+      "num": 55,
+      "character": "Brec",
+      "display": "Brec",
+      "method": "Joins with Jango.",
+      "entryId": "s4-brec"
+    },
+    {
+      "num": 56,
+      "character": "Gau",
+      "display": "Gau",
+      "method": "After naming your army and ship, return to the Hermitage Island and wander around the forest. Gau will eventually appear as a random encounter. Once you defeat him he will join you.",
+      "entryId": "s3-gau"
+    },
+    {
+      "num": 57,
+      "character": "Aldo",
+      "display": "Aldo",
+      "method": "After recruiting Elenor, Aldo will appear behind her house by a boulder, talk to him and he will join.",
+      "entryId": "s4-aldo"
+    },
+    {
+      "num": 58,
+      "character": "Katarina",
+      "display": "Katarina",
+      "method": "After naming both your ship and your army, sail to the Nest of Pirates and find her in Kika's room. After beating Snowe in a naval battle and capturing him, return to the Nest of Pirates and speak with her again.",
+      "entryId": "s4-katarina"
+    },
+    {
+      "num": 59,
+      "character": "Lo Seng",
+      "display": "Lo Seng",
+      "method": "After naming your ship and army, head to Mordo Island and go into the hot springs. Refuse to pay 10,000 potch and then beat Lo Fong, Lo Hak, and Lo Seng in battle.",
+      "entryId": "s4-lo_seng"
+    },
+    {
+      "num": 60,
+      "character": "Lo Fong",
+      "display": "Lo Fong",
+      "method": "Joins with Lo Seng.",
+      "entryId": "s4-lo_fong"
+    },
+    {
+      "num": 61,
+      "character": "Lo Hak",
+      "display": "Lo Hak",
+      "method": "Joins with Lo Hak.",
+      "entryId": "s4-lo_hak"
+    },
+    {
+      "num": 62,
+      "character": "Igor",
+      "display": "Igor",
+      "method": "After recruiting Lo Fong, Lo Hak, and Lo Seng, speak to Igor next to the hot springs on Mordo Island.",
+      "entryId": "s4-igor"
+    },
+    {
+      "num": 63,
+      "character": "Nalkul",
+      "display": "Nalkul",
+      "method": "After naming your army and ship, return to Nay Island with Chiepoo in your group. Visit the trading shop in the Nay-Kobold Settlement and then leave the town. Upon crossing the bridge that leads to Nay Island, a scene with Nalkul and Champo will occur. Return to the Kobold Settlement and find the duo beside the locked house.",
+      "entryId": "s4-nalkul"
+    },
+    {
+      "num": 64,
+      "character": "Champo",
+      "display": "Champo",
+      "method": "Joins with Nalkul.",
+      "entryId": "s4-champo"
+    },
+    {
+      "num": 65,
+      "character": "Schtolteheim Reinbach III",
+      "display": "Reinbach III",
+      "method": "After the audience with Reinbach II, Reinbach will join if you give him the Rose Crest from a man named Gareth. Gareth is at the in on Nay Island; obtain the rose crest and bring it to Reinbach, he will join you along with Mickey.",
+      "entryId": "s4-schtolteheim_reinbach_iii"
+    },
+    {
+      "num": 66,
+      "character": "Micky",
+      "display": "Micky",
+      "method": "Joins with Reinbach III.",
+      "entryId": "s4-micky"
+    },
+    {
+      "num": 67,
+      "character": "Etienne",
+      "display": "Etienne",
+      "method": "After recruiting Reinbach III, return to Middleport and find him in front of the Reinbach Mansion. Bring Reinbach III with you and talk with him. Then allow Reinbach to recruit Etienne.",
+      "entryId": "s4-etienne"
+    },
+    {
+      "num": 68,
+      "character": "Oskar",
+      "display": "Oskar",
+      "method": "Speak to Deborah in Middleport Inn after your audience with Lord Reinbach II. Oskar will not join you in the Inn but after you get back on your ship you will find Oskar aboard. Note: You must depart from Middleport aboard your ship not warp to a new location in order to recruit Oskar.",
+      "entryId": "s4-oskar"
+    },
+    {
+      "num": 69,
+      "character": "Deborah",
+      "display": "Deborah",
+      "method": "Speak to Deborah in Middleport Inn after your audience with Lord Reinbach II.",
+      "entryId": "s4-deborah"
+    },
+    {
+      "num": 70,
+      "character": "Gareth",
+      "display": "Gareth",
+      "method": "Speak to Gareth in the Nay Island Inn with Reinbach III in your party.",
+      "entryId": "s4-gareth"
+    },
+    {
+      "num": 71,
+      "character": "Helga",
+      "display": "Helga",
+      "method": "Talk to one of the towns people in the Nay Island Inn, he will tell you about a woman wrecking the Inn at Middleport. Talk to Helga outside of the inn a few times and eventually she will join you.",
+      "entryId": "s4-helga"
+    },
+    {
+      "num": 72,
+      "character": "Ted",
+      "display": "Ted",
+      "method": "After obtaining 71 Stars of Destiny, enter the War Room on the Dauntless. Upon entering, a Fog Ship will appear. Complete the events on the fog ship to obtain Ted.Note - Ted cannot be recruited after liberating Obel.",
+      "entryId": "s1-ted",
+      "star": "Tenkan Star"
+    },
+    {
+      "num": 73,
+      "character": "Keen",
+      "display": "Keen",
+      "method": "After your audience with Reinbach II, speak to Keen at the port of Middleport with Sigurd in your party. Remove Sigurd from your group and speak to Keen again. He will join you for 10,000 potch. Declining once will drop the price by one potch.",
+      "entryId": "s4-keen"
+    },
+    {
+      "num": 74,
+      "character": "Charlemagne",
+      "display": "Charlemagne",
+      "method": "After you recruit Helga, talk to Charlemagne and leave Middleport, just to come back a few times and he will join.",
+      "entryId": "s4-charlemagne"
+    },
+    {
+      "num": 75,
+      "character": "Axel",
+      "display": "Axel",
+      "method": "Joins automatically after liberating Na-Nal.",
+      "entryId": "s4-axel"
+    },
+    {
+      "num": 76,
+      "character": "Eugene",
+      "display": "Eugene",
+      "method": "Speak to him outside the Inn in Na-Nal after liberating Na-Nal.",
+      "entryId": "s4-eugene"
+    },
+    {
+      "num": 77,
+      "character": "Selma",
+      "display": "Selma",
+      "method": "Speak to her at the harbor of Na-Nal after liberating Na-Nal.",
+      "entryId": "s4-selma"
+    },
+    {
+      "num": 78,
+      "character": "Pam",
+      "display": "Pam",
+      "method": "Pam joins after making an alliance with Nay Island.",
+      "entryId": "s4-pam"
+    },
+    {
+      "num": 79,
+      "character": "Kevin",
+      "display": "Kevin",
+      "method": "Joins with Pam.",
+      "entryId": "s4-kevin"
+    },
+    {
+      "num": 80,
+      "character": "Millay",
+      "display": "Millay",
+      "method": "After making an alliance with Nay Island, speak to the man at the trading post in Middleport and go to Na-Nal with Reinbach in the party and she will join.",
+      "entryId": "s4-millay"
+    },
+    {
+      "num": 81,
+      "character": "Jeremy",
+      "display": "Jeremy",
+      "method": "After receiving the orders to liberate Razril, speak with Jeremy at the town square in Na-Nal with Mitsuba in your party.",
+      "entryId": "s4-jeremy"
+    },
+    {
+      "num": 82,
+      "character": "Helmut",
+      "display": "Helmut",
+      "method": "Helmut joins after you defeat his army at Razril in battle and agree to spare his men.",
+      "entryId": "s4-helmut"
+    },
+    {
+      "num": 83,
+      "character": "Jewel",
+      "display": "Jewel/Paula",
+      "method": "Joins Automatically after the Liberation of Razril, if you did not recruit earlier.",
+      "entryId": "s4-jewel"
+    },
+    {
+      "num": 84,
+      "character": "Keneth",
+      "display": "Keneth/Tal",
+      "method": "Joins Automatically after the Liberation of Razril, if you did not recruit earlier.",
+      "entryId": "s4-keneth"
+    },
+    {
+      "num": 85,
+      "character": "Basil",
+      "display": "Basil",
+      "method": "Speak to him in the town square of Razril after liberating Razril.",
+      "entryId": "s4-basil"
+    },
+    {
+      "num": 86,
+      "character": "Maxine",
+      "display": "Maxine",
+      "method": "Defeat her once at Na Nal town square, then again at Stone Cutters field in Nay. After Razril is liberated, talk to her at the Inn and she will join.",
+      "entryId": "s4-maxine"
+    },
+    {
+      "num": 87,
+      "character": "Konrad",
+      "display": "Konrad",
+      "method": "After liberating Razril, speak to him in Razril Inn with Katarina in your party.",
+      "entryId": "s4-konrad"
+    },
+    {
+      "num": 88,
+      "character": "Funghi",
+      "display": "Funghi",
+      "method": "After liberating Razril, speak to him in Razril Hall of Knights and he will join you.",
+      "entryId": "s4-funghi"
+    },
+    {
+      "num": 89,
+      "character": "Frederica",
+      "display": "Frederica",
+      "method": "After liberating Razril, speak to her at the item shop in Razril. Frederica will not become available to recruit until you have witnessed the sunset in Razril.",
+      "entryId": "s4-frederica"
+    },
+    {
+      "num": 90,
+      "character": "Gretchen",
+      "display": "Gretchen",
+      "method": "After liberating Razril, speak to her next to the armor shop in Razril.",
+      "entryId": "s4-gretchen"
+    },
+    {
+      "num": 91,
+      "character": "Karl",
+      "display": "Karl",
+      "method": "After liberating Razril, spend the night at the inn in Razril and then speak with Karl in the back streets.",
+      "entryId": "s4-karl"
+    },
+    {
+      "num": 92,
+      "character": "Ameria",
+      "display": "Ameria",
+      "method": "After liberating Razril, Ameria can be recruited by speaking with her on the tower in the Hall of Knights.",
+      "entryId": "s4-ameria"
+    },
+    {
+      "num": 93,
+      "character": "Warlock",
+      "display": "Warlock",
+      "method": "After liberating Razril, speak with Pablo and then visit the abandoned house in Middleport. Search the opened treasure chest and select \"24\". Enter the dungeon that opens up and defeat the boss at the end. Once defeated, go into the room and speak to him.",
+      "entryId": "s4-warlock"
+    },
+    {
+      "num": 94,
+      "character": "Pecola",
+      "display": "Pecola",
+      "method": "After recruiting Warlock, speak with the woman beside the inn in Middleport to receive an Interior Book. Then visit the abandoned house there.",
+      "entryId": "s4-pecola"
+    },
+    {
+      "num": 95,
+      "character": "Tanya",
+      "display": "Tanya",
+      "method": "After liberating Razril, sail to the Nest of Pirates and speak with her. She'll ask if you know where Elenor Silverberg is. She'll join join once you tell her.",
+      "entryId": "s4-tanya"
+    },
+    {
+      "num": 96,
+      "character": "Setsu",
+      "display": "Setsu",
+      "method": "Joins automatically after liberating Obel.",
+      "entryId": "s4-setsu"
+    },
+    {
+      "num": 97,
+      "character": "Flare",
+      "display": "Flare",
+      "method": "Joins automatically after liberating Obel.",
+      "entryId": "s4-flare"
+    },
+    {
+      "num": 98,
+      "character": "Wendel",
+      "display": "Wendel",
+      "method": "After Obel is liberated, talk to Nico and then head to the Obel harbor and speak to her.",
+      "entryId": "s4-wendel"
+    },
+    {
+      "num": 99,
+      "character": "Gunter",
+      "display": "Gunter",
+      "method": "Speak with Gunter in Middleport near the beginning of the game and later just after Na-Nal's liberation. After liberating Obel, speak with Gunter near the rune shop in Obel.",
+      "entryId": "s4-gunter"
+    },
+    {
+      "num": 100,
+      "character": "Nabokov",
+      "display": "Nabokov",
+      "method": "After liberating Obel, speak to him at the appraisal shop to get him to join.",
+      "entryId": "s4-nabokov"
+    },
+    {
+      "num": 101,
+      "character": "Trishtan",
+      "display": "Trishtan",
+      "method": "After liberating Obel, talk to him with Yu in your party.",
+      "entryId": "s4-trishtan"
+    },
+    {
+      "num": 102,
+      "character": "Carrie",
+      "display": "Carrie",
+      "method": "After liberating Obel, speak to Carrie above the appraisal shop.",
+      "entryId": "s4-carrie"
+    },
+    {
+      "num": 103,
+      "character": "Gary",
+      "display": "Gary",
+      "method": "Speak to Gary and Ema in Obel near the palace after the liberation.",
+      "entryId": "s4-gary"
+    },
+    {
+      "num": 104,
+      "character": "Ema",
+      "display": "Ema",
+      "method": "Joins with Gary.",
+      "entryId": "s4-ema"
+    },
+    {
+      "num": 105,
+      "character": "Noah",
+      "display": "Noah",
+      "method": "After liberating Obel, speak with Noah in the throne room of Obel Palace and answer her questions three times.",
+      "entryId": "s4-noah"
+    },
+    {
+      "num": 106,
+      "character": "Rachel",
+      "display": "Rachel",
+      "method": "After liberating Obel, speak with Rachel in the cave where your headquarters used to be. Cedric must be in the group and you must agree to pay off Cedric's debt of 5,000 potch. Otherwise, Cedric will leave the party until the debt is paid for.",
+      "entryId": "s4-rachel"
+    },
+    {
+      "num": 107,
+      "character": "Travis",
+      "display": "Travis",
+      "method": "Travel through the Obel ruins, and go to the place where you meet Rakgi and Rikie. Talk to Travis with an escape talisman, use the talisman and then go back inside the ruins and talk to Travis once again in the same place.",
+      "entryId": "s4-travis"
+    },
+    {
+      "num": 108,
+      "character": "Snowe Vingerhut",
+      "display": "Snowe",
+      "method": "After viewing a scene involving Ramada's war bird, DO NOT enter the warroom, you cannot recruit Snowe after this point. Secondly, you must have ALL 107 Other stars recruited. Also, you must have asked Snowe to join the other chances you've had to do so. Once these three conditions are met, visit Mordo and talk to the rumor guy outside the bathhouse. He will mention having seen a body drifting in the water. Sail west from Mordo and you'll encounter Snowe. Ask him to join at this point.",
+      "entryId": "s4-snowe_vingerhut"
+    }
+  ],
+  "Suikoden V": [
+    {
+      "num": 1,
+      "character": "Freyjadour Falenas",
+      "display": "Freyjadour",
+      "method": "Joins at the start of the game.",
+      "entryId": null
+    },
+    {
+      "num": 2,
+      "character": "Lyon",
+      "display": "Lyon",
+      "method": "Joins at the start of the game.",
+      "entryId": "s5-lyon"
+    },
+    {
+      "num": 3,
+      "character": "Sairoh",
+      "display": "Sairoh",
+      "method": "Buy 6 Salt at the start of the game at trade shops. When Salt goes up in price (check prices and/or rumors), talk to Sairoh in Raftfleet and he will ask what you will do to take care of the salt price problem. Sell those 6 Salts to the trader immediately and talk to him again to get him to join you.",
+      "entryId": "s5-sairoh"
+    },
+    {
+      "num": 4,
+      "character": "Boz Wilde",
+      "display": "Boz Wilde",
+      "method": "Joins automatically in Haud Village after the party escape through the Lunas Woods.",
+      "entryId": "s5-boz_wilde"
+    },
+    {
+      "num": 5,
+      "character": "Luserina Barows",
+      "display": "Luserina",
+      "method": "Joins automatically during the Rainwall Defense.",
+      "entryId": "s5-luserina_barows"
+    },
+    {
+      "num": 6,
+      "character": "Cornelio",
+      "display": "Cornelio",
+      "method": "After the defense of Rainwall, go back to Haud Village and enter the big house in the south of the city. Upon entering, you will be attacked by 5 DoReMi elves. Defeat them and an upset Cornelio will tell you to catch him a new orchestra of them. Capture the DoReMi Elf wandering in Haud Village, and he joins the party.",
+      "entryId": "s5-cornelio"
+    },
+    {
+      "num": 7,
+      "character": "Lun",
+      "display": "Lun",
+      "method": "Joins automatically after talking to Kisara on the Dahak, after freeing Lucretia from Agate Prison.",
+      "entryId": "s5-lun"
+    },
+    {
+      "num": 8,
+      "character": "Logg",
+      "display": "Logg",
+      "method": "Joins automatically after talking to Kisara on the Dahak, after freeing Lucretia from Agate Prison.",
+      "entryId": "s5-logg"
+    },
+    {
+      "num": 9,
+      "character": "Lelei",
+      "display": "Lelei",
+      "method": "Joins automatically after talking to Kisara on the Dahak, after freeing Lucretia from Agate Prison.",
+      "entryId": "s5-lelei"
+    },
+    {
+      "num": 10,
+      "character": "Cius",
+      "display": "Cius",
+      "method": "Joins automatically after talking to Kisara on the Dahak, after freeing Lucretia from Agate Prison.",
+      "entryId": "s5-cius"
+    },
+    {
+      "num": 11,
+      "character": "Lucretia Merces",
+      "display": "Lucretia",
+      "method": "Joins automatically after she was freed from Agate Prison.",
+      "entryId": "s5-lucretia_merces"
+    },
+    {
+      "num": 12,
+      "character": "Kisara",
+      "display": "Kisara",
+      "method": "Joins automatically after the Defense of Raftfleet.",
+      "entryId": "s5-kisara"
+    },
+    {
+      "num": 13,
+      "character": "Raja",
+      "display": "Raja",
+      "method": "Joins automatically after the Defense of Raftfleet.",
+      "entryId": "s5-raja"
+    },
+    {
+      "num": 14,
+      "character": "Takamu",
+      "display": "Takamu",
+      "method": "After recruiting Lucretia, bring Cius and/or Lelei to Agate Prison and meet Takamu. He is eager to join, but needs his maps back. Go to the room in the basement to find his stuff and let him join afterwards.",
+      "entryId": "s5-takamu"
+    },
+    {
+      "num": 15,
+      "character": "Josephine",
+      "display": "Josephine",
+      "method": "Talk to her in Haud Village with Sialeeds (in her normal clothes) in the party and she will join. Alternatively, talk to her with Shula or Sharmista in the party and she will join.",
+      "entryId": "s5-josephine"
+    },
+    {
+      "num": 16,
+      "character": "Shinro",
+      "display": "Shinro",
+      "method": "Speak to him after freeing Lucretia from Agate Prison and he will join.",
+      "entryId": "s5-shinro"
+    },
+    {
+      "num": 17,
+      "character": "Egbert Aethelbald",
+      "display": "Egbert",
+      "method": "After the defense of Raftfleet, talk to Egbert in the tunnels underneath Agate Prison (between the Dwarf Camp and Agate Prison). Upon starting the dialogue, he will rant about the Godwin family and starts talking very slowly. Do not skip any of his dialogues (Don't press any buttons until prompted. Let him rant.). You can exit the area and come back if you messed up. He will offer to join when he's finished talking.",
+      "entryId": "s5-egbert_aethelbald"
+    },
+    {
+      "num": 18,
+      "character": "Kyle",
+      "display": "Kyle",
+      "method": "After recruting Lucretia and defeating Bahram Luger in the major battle, Kyle joins you automatically near the end of the second chapter.",
+      "entryId": "s5-kyle"
+    },
+    {
+      "num": 19,
+      "character": "Chuck",
+      "display": "Chuck",
+      "method": "Joins automatically after receiving the Dawn Rune and leaving Rainwall.",
+      "entryId": "s5-chuck"
+    },
+    {
+      "num": 20,
+      "character": "Norden",
+      "display": "Norden",
+      "method": "After the relocation from Rainwall to Raftfleet, start the investigation on Norden with Oboro. If you finish the investigation successfully, talk to Norden in the Raftfleet Inn and allow him to join. If you didn't recruit him in Raftfleet, Norden will move to Lordlake after its restoration northwest of the town's entrance.",
+      "entryId": "s5-norden"
+    },
+    {
+      "num": 21,
+      "character": "Fuyo",
+      "display": "Fuyo",
+      "method": "Fuyo joins together with Oboro and Shigure.",
+      "entryId": "s5-fuyo"
+    },
+    {
+      "num": 22,
+      "character": "Shigure",
+      "display": "Shigure",
+      "method": "Shigure joins together with Oboro and Fuyo.",
+      "entryId": "s5-shigure"
+    },
+    {
+      "num": 23,
+      "character": "Oboro",
+      "display": "Oboro",
+      "method": "There are two ways to recruit Oboro:",
+      "entryId": "s5-oboro"
+    },
+    {
+      "num": 24,
+      "character": "Sorensen",
+      "display": "Sorensen",
+      "method": "Firstoff, talk to Babbage in Estrise after relocating to Raftfleet. Go to the Revolving Bridge and talk to the soldier there, he will mention that the creator of the bridge lives in Estrise. Return to Estrise and talk to Babbage again. He will agree on the subject of the Revolving Bridge being used by the wrong side. Sail to the bridge and go to the top. After dismantling the bridge, leave the place, and return to Estrise. Sorensen will join afterwards if you ask Babbage to join.",
+      "entryId": "s5-sorensen"
+    },
+    {
+      "num": 25,
+      "character": "Zegai",
+      "display": "Zegai",
+      "method": "After relocating to Raftfleet, take Takamu into your party to find back to Lunas and go through the Elven Road. Once through you'll hear a loud yell, go north to where Logg and Lun were caught stealing gold dust. After some odd conversation offer to let him join and he should do just that if you were fair to him in your choices at the Sacred Games. Note: If he refuses talk to him again and he should agree.",
+      "entryId": "s5-zegai"
+    },
+    {
+      "num": 26,
+      "character": "Zerase",
+      "display": "Zerase",
+      "method": "Joins automatically after getting the HQ.",
+      "entryId": "s5-zerase"
+    },
+    {
+      "num": 27,
+      "character": "Viki",
+      "display": "Viki",
+      "method": "Joins automatically after exiting the Ceras Lake Ruins.",
+      "entryId": "s1-viki",
+      "star": "Chitatsu Star"
+    },
+    {
+      "num": 28,
+      "character": "Zweig",
+      "display": "Zweig",
+      "method": "Joins automatically after the Ceras Lake Ruins.",
+      "entryId": "s5-zweig"
+    },
+    {
+      "num": 29,
+      "character": "Lorelai",
+      "display": "Lorelai",
+      "method": "Joins automatically after the Ceras Lake Ruins.",
+      "entryId": "s1-lorelai",
+      "star": "Chikatsu Star"
+    },
+    {
+      "num": 30,
+      "character": "Muroon",
+      "display": "Muroon",
+      "method": "After the restoration of Lordlake, talk to him at the dock of the HQ and let him join.",
+      "entryId": "s5-muroon"
+    },
+    {
+      "num": 31,
+      "character": "Talgeyl",
+      "display": "Talgeyl",
+      "method": "Joins automatically after destroying Hatred Fortress.",
+      "entryId": "s5-talgeyl"
+    },
+    {
+      "num": 32,
+      "character": "Toma",
+      "display": "Toma",
+      "method": "Joins automatically after the restoration of Lordlake.",
+      "entryId": "s5-toma"
+    },
+    {
+      "num": 33,
+      "character": "Goesch",
+      "display": "Goesch",
+      "method": "Joins automatically after the restoration of Lordlake.",
+      "entryId": "s5-goesch"
+    },
+    {
+      "num": 34,
+      "character": "Silva",
+      "display": "Silva",
+      "method": "Joins automatically after the restoration of Lordlake.",
+      "entryId": "s5-silva"
+    },
+    {
+      "num": 35,
+      "character": "Mueller",
+      "display": "Mueller",
+      "method": "Joins together with Wilhelm.",
+      "entryId": "s5-mueller"
+    },
+    {
+      "num": 36,
+      "character": "Wilhelm",
+      "display": "Wilhelm",
+      "method": "There are two ways of recruiting Wilhelm:",
+      "entryId": "s5-wilhelm"
+    },
+    {
+      "num": 37,
+      "character": "Bastan",
+      "display": "Bastan",
+      "method": "After the restoration of Lordlake, with a \"? Painting\" in your inventory, talk to him and close the appraise window in Haud Village until you get a scene. Note: You should not appraise the \"? Painting\", as the scene triggers randomly and identifies it as a painting by Ivanov. So if it does not trigger, exit the shop and go back in.",
+      "entryId": "s5-bastan"
+    },
+    {
+      "num": 38,
+      "character": "Zunda",
+      "display": "Zunda",
+      "method": "After the restoration of Lordlake, talk to Zunda in the Dwarf Camp. Take her to Lunas and let her see the window on the 1F of the Master's sanctuary. Zunda is found behind another dwarf in the area you can reach by ladder. To get to Lunas, you need to get through the Lunas North Woods, which either requires an elf or Takamu.",
+      "entryId": "s5-zunda"
+    },
+    {
+      "num": 39,
+      "character": "Subala",
+      "display": "Subala",
+      "method": "After the restoration of Lordlake, take Lun into your party. Go to Raftfleet afterwards to trigger a scene with Subala. Afterwards, beat Subala at the fishing mini-game.",
+      "entryId": "s5-subala"
+    },
+    {
+      "num": 40,
+      "character": "Marina",
+      "display": "Marina",
+      "method": "Joins with Belcoot.",
+      "entryId": "s5-marina"
+    },
+    {
+      "num": 41,
+      "character": "Belcoot",
+      "display": "Belcoot",
+      "method": "After establishing your HQ, go to Yashuna Village and talk to Belcoot outside of the inn. Go indoors afterwards to talk to Marina and offer her a job at the HQ to get them both to join you.",
+      "entryId": "s5-belcoot"
+    },
+    {
+      "num": 42,
+      "character": "Alhazred",
+      "display": "Alhazred",
+      "method": "While based in Rainwall, run into Alhazred by the Trading shop. He will mention a cursed book. Later, after you got your HQ, head to Yashuna Village and talk to the fortune teller in the Tricolor Inn 2nd floor closest room to the stairs. Get the Cursed Tome. Place the Cursed Tome in storage, then sleep at Marina's Inn (or any other for that matter). Go back to storage and get the book from Chuck, who will tell you that it glows strangely and he doesn't want to storage it anymore. Go back to Yashuna Village, but the fortune teller isn't there. Instead, give it to the woman in the room who says that she will give the book to its owner. Go to Estrise and talk to Alhazred near the fountain, then take him to Yashuna Village where the fortune teller was. Fight the Cursed Book. After the scene with Euram, get the Condemnation Rune and ask him to join immediately or you can recruit/find him in Estrise afterwards. Note: You cannot trigger Alhazred's sidequest after Godwin's troops pull out of Rainwall.",
+      "entryId": "s5-alhazred"
+    },
+    {
+      "num": 43,
+      "character": "Genoh",
+      "display": "Genoh",
+      "method": "After restoring Lordlake, find Genoh at the waterfall area in Waterfall Basin (where Richard is/was training). To do this ...",
+      "entryId": "s5-genoh"
+    },
+    {
+      "num": 44,
+      "character": "Richard",
+      "display": "Richard",
+      "method": "Note: Mueller needs to be recruited, otherwise Richard will not join and will continue his training. After the restoration of Lordlake, talk to him at the Waterfall Basin, then talk to Mueller in Marina's Inn at Ceras Lake Castle. Return to Richard, and he'll join.",
+      "entryId": "s5-richard"
+    },
+    {
+      "num": 45,
+      "character": "Murad",
+      "display": "Murad",
+      "method": "Talk to him at each location and offer to let him join 4 times:",
+      "entryId": "s5-murad"
+    },
+    {
+      "num": 46,
+      "character": "Wasil",
+      "display": "Wasil",
+      "method": "Joins automatically after the Battle of Lelcar.",
+      "entryId": "s5-wasil"
+    },
+    {
+      "num": 47,
+      "character": "Orok",
+      "display": "Orok",
+      "method": "Joins automatically after the Battle of Lelcar.",
+      "entryId": "s5-orok"
+    },
+    {
+      "num": 48,
+      "character": "Volga",
+      "display": "Volga",
+      "method": "Joins automatically after the Battle of Lelcar.",
+      "entryId": "s5-volga"
+    },
+    {
+      "num": 49,
+      "character": "Mohsen",
+      "display": "Mohsen",
+      "method": "There are two ways to recruit Mohsen:",
+      "entryId": "s5-mohsen"
+    },
+    {
+      "num": 50,
+      "character": "Jeane",
+      "display": "Jeane",
+      "method": "First, speak with the guard at the entrance of the Big Hole. After the Battle of Lelcar, talk to Jeane in Lelcar's Rune Shop in the Western Islet. Take her to the Big Hole northwest of Rainwall (and northeast of the Eastern Wharf). Take her through the entire dungeon until you reach the sarcophagus. She will join you regardless of your dialogue choice.",
+      "entryId": "jeane"
+    },
+    {
+      "num": 51,
+      "character": "Nikea",
+      "display": "Nikea",
+      "method": "After the Battle of Lelcar, she is staying in the inn of Estrise. Talk to her and agree to duel; she will join afterwards.",
+      "entryId": "s5-nikea"
+    },
+    {
+      "num": 52,
+      "character": "Taylor",
+      "display": "Taylor",
+      "method": "After the Battle of Lelcar, talk to Taylor outside Marina's Inn, and allow him to interview. Talk to him again outside the Room of the Seal (Roof) and allow him to interview. Talk to him for the third time outside of Georg's room and allow him to interview. He will join you after these three interviews. Leaving the castle before completing all three interview rooms will bring Taylor back to the inn, and you will have to start over.",
+      "entryId": "s5-taylor"
+    },
+    {
+      "num": 53,
+      "character": "Dongo",
+      "display": "Dongo",
+      "method": "Give him two Hammers on two different occassions, upgrading your weapon to the max both times. If you are unable to recruit Dongo before Wabon joins, place Wabon in your party and speak with Dongo.",
+      "entryId": "s5-dongo"
+    },
+    {
+      "num": 54,
+      "character": "Roy",
+      "display": "Roy",
+      "method": "Joins automatically after defeating him in Sable.",
+      "entryId": "s5-roy"
+    },
+    {
+      "num": 55,
+      "character": "Dinn",
+      "display": "Dinn",
+      "method": "Joins after defeating the bandits in Sable. Pick the second choice when talking to him in Solis' mansion.",
+      "entryId": "s5-dinn"
+    },
+    {
+      "num": 56,
+      "character": "Faylen",
+      "display": "Faylen",
+      "method": "Three ways to recruit:",
+      "entryId": "s5-faylen"
+    },
+    {
+      "num": 57,
+      "character": "Faylon",
+      "display": "Faylon",
+      "method": "Joins with Faylen.",
+      "entryId": "s5-faylon"
+    },
+    {
+      "num": 58,
+      "character": "Nakula",
+      "display": "Nakula",
+      "method": "After solving the bandit mystery at Sable, talk to the Armes soldier upstairs in the Inn. After finishing talking to him, go to the Oboro Detective Agency in the HQ. With Oboro, Shigure, and Sagiri in the party, return and talk to Nakula. Nakula will leave the inn at some point, so recruit him as soon as possible.",
+      "entryId": "s5-nakula"
+    },
+    {
+      "num": 59,
+      "character": "Linfa",
+      "display": "Linfa",
+      "method": "After the meeting in Beaver Lodge, play cards (and lose 2000 potch) to her in Estrise. Next, talk to Linfa in Yashuna Village after the Battle of Lelcar. Lastly, play her in cards in Raftfleet after Lymsleia's coronation. You never have to win against her but you have to pay her 5000 potch debt.",
+      "entryId": "s5-linfa"
+    },
+    {
+      "num": 60,
+      "character": "Sagiri",
+      "display": "Sagiri",
+      "method": "Joins with Nakula.",
+      "entryId": "s5-sagiri"
+    },
+    {
+      "num": 61,
+      "character": "Maroon",
+      "display": "Maroon",
+      "method": "Joins automatically after the fire attack at Beaver Lodge.",
+      "entryId": "s5-maroon"
+    },
+    {
+      "num": 62,
+      "character": "Fuwalafuwalu",
+      "display": "Fuwalafuwalu",
+      "method": "Joins automatically after the fire attack at Beaver Lodge.",
+      "entryId": "s5-fuwalafuwalu"
+    },
+    {
+      "num": 63,
+      "character": "Mathias",
+      "display": "Mathias",
+      "method": "Joins with Isabel.",
+      "entryId": "s5-mathias"
+    },
+    {
+      "num": 64,
+      "character": "Isabel",
+      "display": "Isabel",
+      "method": "After saving Beaver Lodge from the Nether Gate, visit Estrise and go to Babbage's home. Mathias and Isabel will appear, then leave. Return to HQ and talk to Boz and Luserina. Agree to Euram's terms and play through the sub-plot. Note: You cannot recruit them after Godwin's troops pull out of Rainwall.",
+      "entryId": "s5-isabel"
+    },
+    {
+      "num": 65,
+      "character": "Bernadette Egan",
+      "display": "Bernadette",
+      "method": "Joins automatically after the events in Nirva Island.",
+      "entryId": "s5-bernadette_egan"
+    },
+    {
+      "num": 66,
+      "character": "Byakuren",
+      "display": "Byakuren",
+      "method": "After the coronation ceremony and your HQ is upgraded (combined scene), fight Byakuren on the bridge leaving HQ. After recruiting Genoh or Levi, fight Byakuren on the same bridge. Ask her to join. If you didn't recruit Byakuren the first time, she comes back every 20 recruits. Make sure to have recruited Genoh or Levi before the last set of 20 recruits.",
+      "entryId": "s5-byakuren"
+    },
+    {
+      "num": 67,
+      "character": "Shun Min",
+      "display": "Shun Min",
+      "method": "Joins with Retso.",
+      "entryId": "s2-shun-min",
+      "star": "Chisyu Star"
+    },
+    {
+      "num": 68,
+      "character": "Retso",
+      "display": "Retso",
+      "method": "After the coronation ceremony and your HQ is upgraded (combined scene), talk to Retso and learn about the Mythical Fish Sashimi. Catch a Weird Fish in Subala's mini-game and bring it to Retso in the Raftfleet Inn.",
+      "entryId": "s2-retso"
+    },
+    {
+      "num": 69,
+      "character": "Miroon",
+      "display": "Miroon",
+      "method": "After the coronation ceremony/HQ upgrade (combined scene), meet her in Yashuna Village with Muroon. Go into the cave until you discover the problem. During the scene with the dwarves, Miroon will be recruited regardless of your choice.",
+      "entryId": "s5-miroon"
+    },
+    {
+      "num": 70,
+      "character": "Meroon",
+      "display": "Meroon",
+      "method": "After recruting Maroon, Muroon and Miroon, visit Beaver Lodge and speak with Meroon with all three beavers in your party. Agree to take her to Moroon (who is at the Baska Mines) and then take him back to Beaver Lodge. Both Moroon and Meroon will join then.",
+      "entryId": "s5-meroon"
+    },
+    {
+      "num": 71,
+      "character": "Moroon",
+      "display": "Moroon",
+      "method": "Take Maroon to speak with Moroon at Baska Mine at any time. Then after recruiting Maroon and Miroon, speak with Meroon in Beaver Lodge with all three beavers in your party and ask her if she was referring to Moroon. Take her to see Moroon at Baska Mine and the two will join.",
+      "entryId": "s5-moroon"
+    },
+    {
+      "num": 72,
+      "character": "Babbage",
+      "display": "Babbage",
+      "method": "After Gizel and Lymsleia's coronation, bring Sorensen to the Gear Room in the HQ (HQ has upgraded along with coronation scene). Go back to Babbage's office, talk to him, and bring him to the gears. Leave the HQ and return, then return to the Gear Room. Babbage will join there.",
+      "entryId": "s5-babbage"
+    },
+    {
+      "num": 73,
+      "character": "Lu",
+      "display": "Lu",
+      "method": "After recruiting both Sorensen and Babbage, take Sorensen back to Babbage's Workshop in Estrise. Inside help Lu locate the missing Revolving Bridge gear (in a crate by the door) and she'll join you.",
+      "entryId": "s5-lu"
+    },
+    {
+      "num": 74,
+      "character": "Chisato",
+      "display": "Chisato",
+      "method": "While on Nirva Island, trigger the handpuppet scene by approaching Chisato and the crowd of children. Then, after the coronation ceremony/HQ upgrade (combined scene), bring Bernadette to Nirva to trigger the kidnapping event, then talk to Chisato and ask her to help. After the event, she will join.",
+      "entryId": "s5-chisato"
+    },
+    {
+      "num": 75,
+      "character": "Yahr",
+      "display": "Yahr",
+      "method": "After the coronation ceremony/HQ upgrade (combined scene), return there with Bernadette and look at the cannons on the Lino En Kuldes. Afterwards, head into the Inn and talk with Yahr and Nelis. Take the ship back to Estrise, and the two will join. Offer to check out the Rune shell, and go through the ship graveyard. Suggest use of the rune cannon to defeat the monster during the quest, and choose to destroy the Rune Cannon, and, back at Nirva Island, Yahr and Nelis will join.",
+      "entryId": "s5-yahr"
+    },
+    {
+      "num": 76,
+      "character": "Nelis",
+      "display": "Nelis",
+      "method": "Joins with Yahr.",
+      "entryId": "s5-nelis"
+    },
+    {
+      "num": 77,
+      "character": "Gavaya",
+      "display": "Gavaya",
+      "method": "Talk to him in Raftfleet with one of the three-girl unites in your party:",
+      "entryId": "s5-gavaya"
+    },
+    {
+      "num": 78,
+      "character": "Miakis",
+      "display": "Miakis",
+      "method": "After the Doraat Siege you'll end up dueling Miakis at the end of the Fortress, defeat her and she'll join you.",
+      "entryId": "s5-miakis"
+    },
+    {
+      "num": 79,
+      "character": "Bergen",
+      "display": "Bergen",
+      "method": "Joins with Levi.",
+      "entryId": "s5-bergen"
+    },
+    {
+      "num": 80,
+      "character": "Levi",
+      "display": "Levi",
+      "method": "After summoning the Tablet of Stars, talk to him in the Big Hole. Offer to let him come with you.",
+      "entryId": "s5-levi"
+    },
+    {
+      "num": 81,
+      "character": "Ernst",
+      "display": "Ernst",
+      "method": "Joins with Norma.",
+      "entryId": "s5-ernst"
+    },
+    {
+      "num": 82,
+      "character": "Norma",
+      "display": "Norma",
+      "method": "After the summoning of the Tablet of Stars and recruiting Levi, talk to Norma in Raftfleet,the lower room at the inn, and she will mention she's looking for a powerful wizard. Take Levi to Norma in Raftfleet. Ask her to join afterwards.",
+      "entryId": "s5-norma"
+    },
+    {
+      "num": 83,
+      "character": "Raven",
+      "display": "Raven",
+      "method": "After calling the Tablet of Stars, talk to Solis in Sable and offer to help. Then, talk to Oboro in HQ . Next, talk to Egbert in Marina 's Inn. back to Oboro , Last back to Marina 's Inn. When inside the warehouse, looking near the top right corner to find it. If you fail to find him in time, others will catch him and you can talk to him in your jail. Ask him to join. Note: You must have recruited Egbert, Oboro, Marina, and Taylor to recruit Raven.",
+      "entryId": "s5-raven"
+    },
+    {
+      "num": 84,
+      "character": "Galleon",
+      "display": "Galleon",
+      "method": "Joins automatically after the Queen's Campaign.",
+      "entryId": "s5-galleon"
+    },
+    {
+      "num": 85,
+      "character": "Isato",
+      "display": "Isato",
+      "method": "Joins with Haswar.",
+      "entryId": "s5-isato"
+    },
+    {
+      "num": 86,
+      "character": "Urda",
+      "display": "Urda",
+      "method": "Joins with Haswar.",
+      "entryId": "s5-urda"
+    },
+    {
+      "num": 87,
+      "character": "Haswar",
+      "display": "Haswar",
+      "method": "After the Queen's campaign, return to the Lunas Northern Woods with Takamu in the party. Talk with Urda and go through to Lunas. In the Master's Conclave, enter the dining room for a scene and the three will join your party regardless of your choice. As you exit Lunas North Woods, Haswar, Isato, and Urda will officially get recruited.",
+      "entryId": "s5-haswar"
+    },
+    {
+      "num": 88,
+      "character": "Eresh",
+      "display": "Eresh/Euram",
+      "method": "For Eresh: Take Jeane to the Big Hole again after Queen's Campaign, meet Eresh. Eresh will accompany you. Go to where you took Jeane in the ruins and go through the new passageway. Go through the dungeon and defeat the boss within. After fighting the Ancient Armes' boss, Eresh will permanently join. Note that you can exit the Big Hole before defeating the boss to avoid recruiting Eresh, as another character is recruitable in her place.",
+      "entryId": "s5-eresh"
+    },
+    {
+      "num": 89,
+      "character": "Hazuki",
+      "display": "Hazuki",
+      "method": "After meeting with Craig Laden, talk to her in Port Spinacks without Belcoot in the party. After that, bring Belcoot to see her. Ask her to join.",
+      "entryId": "s5-hazuki"
+    },
+    {
+      "num": 90,
+      "character": "Cathari",
+      "display": "Cathari",
+      "method": "After arriving at Port Spinacks, talk to a person to learn about Hershville. Sail there, talk to Cathari by the exit going out to land. Return to Port Spinacks, talk to her, choose the response \"Very well\" and take her to Lucretia in the 3F War Room.",
+      "entryId": "s5-cathari"
+    },
+    {
+      "num": 91,
+      "character": "Rania",
+      "display": "Rania",
+      "method": "Talk to her with Miakis or Rahal in the party in her house in Sauronix Castle when going to meet Craig. A scene will happen in front of the house. Go back inside and ask her to join.",
+      "entryId": "s5-rania"
+    },
+    {
+      "num": 92,
+      "character": "Killey",
+      "display": "Killey",
+      "method": "Killey has several methods to recruit:",
+      "entryId": "s2-killey",
+      "star": "Tenbi Star"
+    },
+    {
+      "num": 93,
+      "character": "Gunde",
+      "display": "Gunde",
+      "method": "Joins with Wabon.",
+      "entryId": "s5-gunde"
+    },
+    {
+      "num": 94,
+      "character": "Wabon",
+      "display": "Wabon",
+      "method": "After the assassins destroy his mining car, Wabon will join your cause regardless of your dialogue choices.",
+      "entryId": "s5-wabon"
+    },
+    {
+      "num": 95,
+      "character": "Roog",
+      "display": "Roog",
+      "method": "Joins automatically after meeting with Craig Laden for the second time in Sauronix Castle.",
+      "entryId": "s5-roog"
+    },
+    {
+      "num": 96,
+      "character": "Rahal",
+      "display": "Rahal",
+      "method": "Joins automatically after meeting with Craig Laden for the second time in Sauronix Castle.",
+      "entryId": "s5-rahal"
+    },
+    {
+      "num": 97,
+      "character": "Georg Prime",
+      "display": "Georg",
+      "method": "Joins automatically after the events in Gordius.",
+      "entryId": "s2-georg-prime",
+      "star": "Teni Star"
+    },
+    {
+      "num": 98,
+      "character": "Craig Laden",
+      "display": "Craig",
+      "method": "Joins automatically after rescuing the Dragonhorses in Gordius Village (or after the events that follow choosing not to flee HQ when it is attacked).",
+      "entryId": "s5-craig_laden"
+    },
+    {
+      "num": 99,
+      "character": "Lance",
+      "display": "Lance",
+      "method": "Joins automatically after the events in Gordius Village (or after the events that follow choosing not to flee HQ when it is attacked).",
+      "entryId": "s5-lance"
+    },
+    {
+      "num": 100,
+      "character": "Flail",
+      "display": "Flail",
+      "method": "Joins automatically after the events in Gordius Village (or after the events that follow choosing not to flee HQ when it is attacked).",
+      "entryId": "s5-flail"
+    },
+    {
+      "num": 101,
+      "character": "Ax",
+      "display": "Ax",
+      "method": "There are two ways to recruit Ax:",
+      "entryId": "s5-ax"
+    },
+    {
+      "num": 102,
+      "character": "Yoran",
+      "display": "Yoran",
+      "method": "There are two ways to recruit Yoran:",
+      "entryId": "s5-yoran"
+    },
+    {
+      "num": 103,
+      "character": "Nick",
+      "display": "Nick",
+      "method": "There are two ways to recruit Nick:",
+      "entryId": "s5-nick"
+    },
+    {
+      "num": 104,
+      "character": "Haleth",
+      "display": "Haleth",
+      "method": "After the liberation of Sable or Doraat, talk to Logg in the Tavern. Afterwards, go to Hershville and enter one of the warehouses. Go back to the HQ, then back to Hershville. Enter the Administration building to find Haleth no longer there by talking to the other employees. Return to the HQ and hit the Tavern. Ask Haleth to join.",
+      "entryId": "s5-haleth"
+    },
+    {
+      "num": 105,
+      "character": "Sharmista",
+      "display": "Sharmista",
+      "method": "Joins with Shula.",
+      "entryId": "s5-sharmista"
+    },
+    {
+      "num": 106,
+      "character": "Nifsara",
+      "display": "Nifsara",
+      "method": "Joins with Shula.",
+      "entryId": "s5-nifsara"
+    },
+    {
+      "num": 107,
+      "character": "Shula Valya",
+      "display": "Shula",
+      "method": "Automatically joins you in Yashuna Village after he sends for you. This will take place after the liberation of Sable.",
+      "entryId": "s5-shula_valya"
+    },
+    {
+      "num": 108,
+      "character": "Shoon",
+      "display": "Shoon",
+      "method": "Joins automatically during the recapture of Stormfist.",
+      "entryId": "s5-shoon"
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="SuikodenCodex.Pages.BrowsePage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:vm="clr-namespace:SuikodenCodex.ViewModels"
+    xmlns:models="clr-namespace:SuikodenCodex.Models"
+    x:DataType="vm:BrowseViewModel"
+    Title="Suikoden Codex">
+
+    <Grid RowDefinitions="Auto,Auto,Auto,Auto,*">
+
+        <!-- Search bar -->
+        <SearchBar
+            Grid.Row="0"
+            Placeholder="Search characters, runes, items…"
+            Text="{Binding SearchText, Mode=TwoWay}" />
+
+        <!-- Category filter chips -->
+        <CollectionView
+            Grid.Row="1"
+            ItemsSource="{Binding Filters}"
+            ItemsLayout="HorizontalList"
+            HeightRequest="48"
+            Margin="8,0">
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="vm:CategoryFilter">
+                    <Border
+                        StrokeShape="RoundRectangle 18"
+                        Stroke="{Binding IsSelected, Converter={StaticResource BoolToColor}, ConverterParameter=#D9A636|#55808080}"
+                        Margin="4,6"
+                        Padding="12,6"
+                        BackgroundColor="{Binding IsSelected, Converter={StaticResource BoolToColor}, ConverterParameter=#D9A636|#00000000}">
+                        <Label Text="{Binding Label}" FontSize="13" VerticalOptions="Center"
+                               TextColor="{Binding IsSelected, Converter={StaticResource BoolToColor}, ConverterParameter=#1C2348|#9AA0B5}" />
+                        <Border.GestureRecognizers>
+                            <TapGestureRecognizer
+                                Command="{Binding Source={RelativeSource AncestorType={x:Type vm:BrowseViewModel}}, Path=SelectFilterCommand}"
+                                CommandParameter="{Binding .}" />
+                        </Border.GestureRecognizers>
+                    </Border>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+        <!-- Game filter chips (shown only when >1 game present) -->
+        <CollectionView
+            Grid.Row="2"
+            IsVisible="{Binding ShowGameFilter}"
+            ItemsSource="{Binding GameFilters}"
+            ItemsLayout="HorizontalList"
+            HeightRequest="42"
+            Margin="8,0">
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="vm:GameFilter">
+                    <Border
+                        StrokeShape="RoundRectangle 16"
+                        Stroke="{Binding IsSelected, Converter={StaticResource BoolToColor}, ConverterParameter=#D9A636|#55808080}"
+                        Margin="4,4"
+                        Padding="14,5"
+                        BackgroundColor="{Binding IsSelected, Converter={StaticResource BoolToColor}, ConverterParameter=#2B335E|#00000000}">
+                        <Label Text="{Binding Label}" FontSize="12" FontAttributes="Bold" VerticalOptions="Center"
+                               TextColor="{Binding IsSelected, Converter={StaticResource BoolToColor}, ConverterParameter=#ECC56A|#9AA0B5}" />
+                        <Border.GestureRecognizers>
+                            <TapGestureRecognizer
+                                Command="{Binding Source={RelativeSource AncestorType={x:Type vm:BrowseViewModel}}, Path=SelectGameCommand}"
+                                CommandParameter="{Binding .}" />
+                        </Border.GestureRecognizers>
+                    </Border>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+        <!-- Result count -->
+        <Grid Grid.Row="3" Padding="16,2,12,4">
+            <Label Text="{Binding ResultSummary}" FontSize="12" Opacity="0.6" VerticalOptions="Center" />
+        </Grid>
+
+        <!-- Entry list, grouped A–Z -->
+        <CollectionView
+            Grid.Row="4"
+            ItemsSource="{Binding Groups}"
+            IsGrouped="True"
+            SelectionMode="None">
+
+            <CollectionView.GroupHeaderTemplate>
+                <DataTemplate x:DataType="vm:EntryGroup">
+                    <Label
+                        Text="{Binding Key}"
+                        FontAttributes="Bold"
+                        FontSize="14"
+                        TextColor="{StaticResource Primary}"
+                        BackgroundColor="#11808080"
+                        Padding="16,4" />
+                </DataTemplate>
+            </CollectionView.GroupHeaderTemplate>
+
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="models:CodexEntry">
+                    <Grid Padding="16,10" ColumnDefinitions="Auto,*" ColumnSpacing="14">
+                        <Border WidthRequest="50" HeightRequest="50" Padding="0" VerticalOptions="Center"
+                                StrokeShape="RoundRectangle 10" Stroke="#22808080" BackgroundColor="Transparent">
+                            <Border.Triggers>
+                                <DataTrigger TargetType="Border" Binding="{Binding HasImage}" Value="True">
+                                    <Setter Property="BackgroundColor" Value="White" />
+                                </DataTrigger>
+                            </Border.Triggers>
+                            <Grid>
+                                <Image Source="{Binding ImageName}" Aspect="AspectFill" IsVisible="{Binding HasImage}" />
+                                <Label Text="{Binding Glyph}" FontSize="24" IsVisible="{Binding ShowGlyph}"
+                                       HorizontalOptions="Center" VerticalOptions="Center" />
+                            </Grid>
+                        </Border>
+                        <VerticalStackLayout Grid.Column="1" Spacing="1" VerticalOptions="Center">
+                            <Label Text="{Binding Name}" FontSize="16" FontAttributes="Bold"
+                                   MaxLines="1" LineBreakMode="TailTruncation" />
+                            <Label Text="{Binding Subtitle}" FontSize="12" Opacity="0.6"
+                                   MaxLines="1" LineBreakMode="TailTruncation" />
+                        </VerticalStackLayout>
+                        <Grid.GestureRecognizers>
+                            <TapGestureRecognizer
+                                Command="{Binding Source={RelativeSource AncestorType={x:Type vm:BrowseViewModel}}, Path=OpenEntryCommand}"
+                                CommandParameter="{Binding .}" />
+                        </Grid.GestureRecognizers>
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+
+            <CollectionView.EmptyView>
+                <Label
+                    Text="No entries match your search."
+                    HorizontalOptions="Center"
+                    Margin="0,40"
+                    Opacity="0.6" />
+            </CollectionView.EmptyView>
+        </CollectionView>
+    </Grid>
+</ContentPage>
