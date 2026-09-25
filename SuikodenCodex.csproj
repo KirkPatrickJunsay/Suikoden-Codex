@@ -76,6 +76,17 @@
 	</ItemGroup>
 
 	<ItemGroup>
+		<Compile Remove="lib\**;tests\**;build\**" />
+		<None Remove="lib\**;tests\**;build\**" />
+		<Content Remove="lib\**;tests\**;build\**" />
+		<EmbeddedResource Remove="lib\**;tests\**;build\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="lib\SuikodenCodex.StarLeap\SuikodenCodex.StarLeap.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="10.0.0" />
 		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.0" />
