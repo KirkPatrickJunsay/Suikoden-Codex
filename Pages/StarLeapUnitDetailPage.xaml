@@ -24,7 +24,7 @@
                 </VerticalStackLayout>
             </Grid>
 
-            <Border StrokeShape="RoundRectangle 8" Stroke="#30808080" Padding="14,12">
+            <Border IsVisible="{Binding HasInfo}" StrokeShape="RoundRectangle 8" Stroke="#30808080" Padding="14,12">
                 <VerticalStackLayout Spacing="6" BindableLayout.ItemsSource="{Binding Info}">
                     <BindableLayout.ItemTemplate>
                         <DataTemplate x:DataType="vm:InfoRow">
@@ -57,10 +57,11 @@
                     </VerticalStackLayout>
                     <Label IsVisible="{Binding HasTraining}" Text="{Binding TrainingText, StringFormat='Full training: {0}'}"
                            FontSize="12" Opacity="0.7" Margin="0,4,0,0" />
-                    <Label IsVisible="{Binding HasWeapon}" Text="{Binding WeaponText, StringFormat='Weapon: {0}'}"
-                           FontSize="12" Opacity="0.7" />
                 </VerticalStackLayout>
             </Border>
+
+            <Label IsVisible="{Binding HasWeapon}" Text="{Binding WeaponText, StringFormat='Weapon: {0}'}"
+                   FontSize="12" Opacity="0.7" />
 
             <Label IsVisible="{Binding HasKit}" Text="Skill kit" FontSize="13" FontAttributes="Bold" Opacity="0.6" />
             <VerticalStackLayout Spacing="10" BindableLayout.ItemsSource="{Binding Kit}">

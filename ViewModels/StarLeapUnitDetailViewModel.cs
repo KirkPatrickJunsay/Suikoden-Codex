@@ -90,6 +90,9 @@ public partial class StarLeapUnitDetailViewModel : ObservableObject
     [ObservableProperty]
     private bool _hasClassic;
 
+    [ObservableProperty]
+    private bool _hasInfo;
+
     public string? UnitId
     {
         get => _unitId;
@@ -138,6 +141,7 @@ public partial class StarLeapUnitDetailViewModel : ObservableObject
         AddInfo("From", unit.Origin);
         AddInfo("Voice", unit.Voice);
         AddInfo("Illustration", unit.Illustration);
+        HasInfo = Info.Count > 0;
 
         Stats.Clear();
         if (unit.Stats is { } s)
