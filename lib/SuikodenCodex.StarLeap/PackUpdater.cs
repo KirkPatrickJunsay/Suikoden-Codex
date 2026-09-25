@@ -18,6 +18,7 @@ public sealed class PackUpdater
     private readonly HttpClient _http;
     private readonly Uri _base;
     private readonly string _root;
+    private readonly SemaphoreSlim _gate = new(1, 1);
 
     public PackUpdater(HttpClient http, Uri baseUri, string cacheRoot)
     {
@@ -42,6 +43,26 @@ public sealed class PackUpdater
     {
         try
         {
+            await _gate.WaitAsync(ct);
+        }
+        catch (OperationCanceledException e)
+        {
+            return new UpdateResult(UpdateOutcome.Failed, e.Message);
+        }
+        try
+        {
+            return await CheckAndUpdateCoreAsync(currentManifest, currentFiles, ct);
+        }
+        finally
+        {
+            _gate.Release();
+        }
+    }
+
+    private async Task<UpdateResult> CheckAndUpdateCoreAsync(SlManifest? currentManifest, IPackFiles? currentFiles, CancellationToken ct = default)
+    {
+        try
+        {
             var manifestBytes = await _http.GetByteArrayAsync(new Uri(_base, PackFormat.ManifestFile), ct);
             var remote = JsonSerializer.Deserialize<SlManifest>(manifestBytes, PackFormat.Json)
                 ?? throw new PackException("Empty manifest");
@@ -62,11 +83,14 @@ public sealed class PackUpdater
                 var reused = currentFiles is not null
                     && currentHashes.TryGetValue(entry.Path, out var hash)
                     && string.Equals(hash, entry.Sha256, StringComparison.OrdinalIgnoreCase)
-                    && await CopyFromCurrentAsync(currentFiles, entry.Path, target, ct);
+                    && await CopyFromCurrentAsync(currentFiles, entry.Path, target, ct)
+                    && await HashMatchesAsync(target, entry.Sha256, ct);
                 if (!reused)
+                {
                     await DownloadAsync(entry.Path, target, ct);
-                if (!string.Equals(await Sha256Async(target, ct), entry.Sha256, StringComparison.OrdinalIgnoreCase))
-                    return Fail($"Checksum mismatch for {entry.Path}");
+                    if (!await HashMatchesAsync(target, entry.Sha256, ct))
+                        return Fail($"Checksum mismatch for {entry.Path}");
+                }
             }
 
             await File.WriteAllBytesAsync(Path.Combine(StagingDirectory, PackFormat.ManifestFile), manifestBytes, ct);
@@ -116,6 +140,9 @@ public sealed class PackUpdater
         await using var stream = File.OpenRead(path);
         return Convert.ToHexStringLower(await SHA256.HashDataAsync(stream, ct));
     }
+
+    private static async Task<bool> HashMatchesAsync(string path, string expected, CancellationToken ct) =>
+        string.Equals(await Sha256Async(path, ct), expected, StringComparison.OrdinalIgnoreCase);
 
     private void Swap()
     {

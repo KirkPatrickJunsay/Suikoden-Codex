@@ -93,16 +93,19 @@ public class PackUpdaterTests
     [Fact]
     public async Task Unsafe_manifest_path_is_rejected()
     {
+        var evil = new byte[] { 6, 6, 6 };
         var remote = TestPack.Files(version: 2);
         var manifest = TestPack.ManifestOf(remote);
-        manifest.Files.Add(new SlFileEntry { Path = "../escape.txt", Sha256 = "00", Bytes = 1 });
+        manifest.Files.Add(new SlFileEntry { Path = "../escape.txt", Sha256 = TestPack.Sha(evil), Bytes = evil.Length });
         remote["manifest.json"] = System.Text.Json.JsonSerializer.SerializeToUtf8Bytes(manifest, PackFormat.Json);
-        var (updater, _, cache) = Create(remote);
+        remote["escape.txt"] = evil;
+        var (updater, server, cache) = Create(remote);
 
         var result = await updater.CheckAndUpdateAsync(null, null);
 
         Assert.Equal(UpdateOutcome.Failed, result.Outcome);
-        Assert.False(File.Exists(Path.Combine(Path.GetDirectoryName(cache)!, "escape.txt")));
+        Assert.False(File.Exists(Path.Combine(cache, "escape.txt")));
+        Assert.DoesNotContain("escape.txt", server.Requested);
     }
 
     [Fact]
@@ -120,5 +123,34 @@ public class PackUpdaterTests
         Assert.True(File.Exists(Path.Combine(updater.CurrentDirectory, "marker.txt")));
         Assert.False(Directory.Exists(previous));
         Assert.False(Directory.Exists(Path.Combine(cache, "staging")));
+    }
+
+    [Fact]
+    public async Task Redownloads_a_reused_file_whose_copy_is_corrupt()
+    {
+        var old = TestPack.Files(version: 1);
+        var oldDir = TestPack.WriteToTempDir(old);
+        File.WriteAllBytes(Path.Combine(oldDir, "portraits", "flik-blue-thunder.png"), new byte[] { 7, 7 });
+        var (updater, server, _) = Create(TestPack.Files(version: 2));
+
+        var result = await updater.CheckAndUpdateAsync(TestPack.ManifestOf(old), new DirectoryPackFiles(oldDir));
+
+        Assert.Equal(UpdateOutcome.Updated, result.Outcome);
+        Assert.Contains("portraits/flik-blue-thunder.png", server.Requested);
+        Assert.Equal(new byte[] { 1, 2, 3 }, File.ReadAllBytes(Path.Combine(updater.CurrentDirectory, "portraits", "flik-blue-thunder.png")));
+    }
+
+    [Fact]
+    public async Task Concurrent_checks_do_not_overlap()
+    {
+        var (updater, server, _) = Create(TestPack.Files(version: 2));
+        server.DelayMs = 50;
+
+        var results = await Task.WhenAll(updater.CheckAndUpdateAsync(null, null), updater.CheckAndUpdateAsync(null, null));
+
+        Assert.Equal(1, server.MaxInFlight);
+        Assert.All(results, r => Assert.Equal(UpdateOutcome.Updated, r.Outcome));
+        var reloaded = await PackLoader.LoadAsync(new DirectoryPackFiles(updater.CurrentDirectory));
+        Assert.Equal(2, reloaded.Manifest.Version);
     }
 }
