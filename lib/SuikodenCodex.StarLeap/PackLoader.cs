@@ -15,16 +15,20 @@ public static class PackLoader
 
     private static async Task<T> ReadAsync<T>(IPackFiles files, string path, CancellationToken ct)
     {
-        await using var stream = await files.OpenReadAsync(path, ct)
-            ?? throw new PackException($"Missing {path}");
         try
         {
+            await using var stream = await files.OpenReadAsync(path, ct)
+                ?? throw new PackException($"Missing {path}");
             return await JsonSerializer.DeserializeAsync<T>(stream, PackFormat.Json, ct)
                 ?? throw new PackException($"Empty {path}");
         }
         catch (JsonException e)
         {
             throw new PackException($"Invalid {path}: {e.Message}", e);
+        }
+        catch (Exception e) when (e is IOException or UnauthorizedAccessException)
+        {
+            throw new PackException($"Unreadable {path}: {e.Message}", e);
         }
     }
 }

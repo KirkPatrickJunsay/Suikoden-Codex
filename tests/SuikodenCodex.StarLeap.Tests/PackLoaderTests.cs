@@ -47,4 +47,17 @@ public class PackLoaderTests
 
         await Assert.ThrowsAsync<PackException>(() => PackLoader.LoadAsync(new DirectoryPackFiles(dir)));
     }
+
+    [Fact]
+    public async Task Wraps_io_failures_in_pack_exception()
+    {
+        var ex = await Assert.ThrowsAsync<PackException>(() => PackLoader.LoadAsync(new ThrowingPackFiles()));
+        Assert.Contains("manifest.json", ex.Message);
+    }
+
+    private sealed class ThrowingPackFiles : IPackFiles
+    {
+        public Task<Stream?> OpenReadAsync(string path, CancellationToken ct = default) =>
+            throw new IOException("disk error");
+    }
 }
