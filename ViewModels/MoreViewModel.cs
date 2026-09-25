@@ -91,6 +91,10 @@ public partial class MoreViewModel : ObservableObject
         await Shell.Current.GoToAsync(nameof(WorldMapPage));
 
     [RelayCommand]
+    private async Task OpenWalkthrough() =>
+        await Shell.Current.GoToAsync(nameof(WalkthroughPage));
+
+    [RelayCommand]
     private async Task Backup()
     {
         try

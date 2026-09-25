@@ -1,0 +1,518 @@
+{
+  "game": "Suikoden V",
+  "subtitle": "The Sun Rune War · the Queendom of Falena",
+  "intro": "A concise, spoiler-aware milestone guide to Suikoden V. Follow the Prince from the Sacred Games to the recapture of Sun Palace, see which Stars of Destiny each battle unlocks, and gather all 108 before the finale. Original content — not copied from any guide.",
+  "chapters": [
+    {
+      "id": "s5c1",
+      "title": "1 · The Sacred Games & the Coup",
+      "context": "In the Queendom of Falena, the Prince and his guardian Lyon attend the Sacred Games to choose his sister Lymsleia's royal husband. The Godwin faction turns the ceremony into a coup, seizing Sun Palace at Stormfist.",
+      "steps": [
+        {
+          "id": "s5c1s0",
+          "kind": "story",
+          "text": "Play through the Sacred Games at Stormfist."
+        },
+        {
+          "id": "s5c1s1",
+          "kind": "boss",
+          "text": "Escape the Godwin coup with Lyon and Sialeeds."
+        },
+        {
+          "id": "s5c1s2",
+          "kind": "recruit",
+          "text": "Optional: corner the Salt market early (buy 6 Salt, sell high) for Sairoh."
+        }
+      ],
+      "recruits": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "s5c2",
+      "title": "2 · Flight through the Lunas Woods",
+      "context": "Hunted, the Prince's party flees through the Lunas Woods to Haud Village, gathering its first loyal hands as the Godwins consolidate power.",
+      "steps": [
+        {
+          "id": "s5c2s0",
+          "kind": "story",
+          "text": "Escape through the Lunas Woods to Haud Village."
+        },
+        {
+          "id": "s5c2s1",
+          "kind": "recruit",
+          "text": "Boz Wilde joins automatically at Haud Village."
+        },
+        {
+          "id": "s5c2s2",
+          "kind": "recruit",
+          "text": "Optional: recruit Josephine in Haud with Sialeeds in normal clothes."
+        }
+      ],
+      "recruits": [
+        4,
+        15
+      ]
+    },
+    {
+      "id": "s5c3",
+      "title": "3 · Rainwall & the Dawn Rune",
+      "context": "The Barows faction shelters the Prince at Rainwall. Defending the city earns powerful allies — and the Dawn Rune, sister to the Sun Rune at the heart of the war.",
+      "steps": [
+        {
+          "id": "s5c3s0",
+          "kind": "boss",
+          "text": "Defend Rainwall alongside the Barows faction."
+        },
+        {
+          "id": "s5c3s1",
+          "kind": "recruit",
+          "text": "Receive the Dawn Rune and leave Rainwall; Chuck and Luserina join."
+        },
+        {
+          "id": "s5c3s2",
+          "kind": "recruit",
+          "text": "Optional: recruit Cornelio (back at Haud) and Alhazred (Rainwall trade shop)."
+        }
+      ],
+      "recruits": [
+        5,
+        6,
+        19,
+        42
+      ]
+    },
+    {
+      "id": "s5c4",
+      "title": "4 · Freeing Lucretia — Agate Prison",
+      "context": "The Prince breaks the brilliant strategist Lucretia Merces out of Agate Prison. With her mind guiding the cause and the warship Dahak crewed, a true rebellion takes shape.",
+      "steps": [
+        {
+          "id": "s5c4s0",
+          "kind": "boss",
+          "text": "Free Lucretia Merces from Agate Prison."
+        },
+        {
+          "id": "s5c4s1",
+          "kind": "recruit",
+          "text": "Lucretia becomes your strategist; the Dahak crew (Lun, Logg, Lelei, Cius) joins."
+        },
+        {
+          "id": "s5c4s2",
+          "kind": "recruit",
+          "text": "Optional: bring Cius/Lelei back to Agate for Takamu, and recruit Shinro."
+        }
+      ],
+      "recruits": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        14,
+        16
+      ]
+    },
+    {
+      "id": "s5c5",
+      "title": "5 · The Defense of Raftfleet",
+      "context": "The sea-faring people of Raftfleet are drawn into the war. Win the battle there — defeating Bahram Luger — and the fleet, Kisara and the islanders rally to the Prince.",
+      "steps": [
+        {
+          "id": "s5c5s0",
+          "kind": "boss",
+          "text": "Win the Defense of Raftfleet and defeat Bahram Luger."
+        },
+        {
+          "id": "s5c5s1",
+          "kind": "recruit",
+          "text": "Kisara, Raja and the Raftfleet allies join automatically."
+        },
+        {
+          "id": "s5c5s2",
+          "kind": "recruit",
+          "text": "Optional: recruit Oboro's detective trio, Sorensen, Zegai, Norden and Kyle."
+        }
+      ],
+      "recruits": [
+        12,
+        13,
+        17,
+        18,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ]
+    },
+    {
+      "id": "s5c6",
+      "title": "6 · A Castle of Your Own — Ceras Lake",
+      "context": "Deep beneath Ceras Lake the rebellion claims its headquarters. The sorceress Zerase and familiar faces appear as the army settles in.",
+      "steps": [
+        {
+          "id": "s5c6s0",
+          "kind": "story",
+          "text": "Explore the Ceras Lake Ruins and establish your HQ."
+        },
+        {
+          "id": "s5c6s1",
+          "kind": "recruit",
+          "text": "Zerase, Viki, Zweig and Lorelai join automatically."
+        },
+        {
+          "id": "s5c6s2",
+          "kind": "recruit",
+          "text": "Optional: recruit Belcoot (and Marina) at Yashuna once the HQ is set."
+        }
+      ],
+      "recruits": [
+        26,
+        27,
+        28,
+        29,
+        40,
+        41
+      ]
+    },
+    {
+      "id": "s5c7",
+      "title": "7 · The Restoration of Lordlake",
+      "context": "Lordlake was left to die of thirst as punishment for rebellion. Restore its water and the grateful town — and many wanderers — swell your ranks.",
+      "steps": [
+        {
+          "id": "s5c7s0",
+          "kind": "boss",
+          "text": "Restore the water to Lordlake and destroy Hatred Fortress."
+        },
+        {
+          "id": "s5c7s1",
+          "kind": "recruit",
+          "text": "Toma, Goesch, Silva and Talgeyl join automatically."
+        },
+        {
+          "id": "s5c7s2",
+          "kind": "tip",
+          "text": "Tip: many OPTIONAL Stars open here (Wilhelm/Mueller, Richard, Bastan, Zunda, Genoh…)."
+        }
+      ],
+      "recruits": [
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        43,
+        44
+      ]
+    },
+    {
+      "id": "s5c8",
+      "title": "8 · The Battle of Lelcar",
+      "context": "The war turns at Lelcar. Victory brings veteran soldiers to the flag and reopens several towns for recruiting.",
+      "steps": [
+        {
+          "id": "s5c8s0",
+          "kind": "story",
+          "text": "Win the Battle of Lelcar."
+        },
+        {
+          "id": "s5c8s1",
+          "kind": "recruit",
+          "text": "Wasil, Orok and Volga join automatically afterward."
+        },
+        {
+          "id": "s5c8s2",
+          "kind": "recruit",
+          "text": "Optional: Jeane, Nikea, Taylor, Murad, Mohsen and Dongo become available."
+        }
+      ],
+      "recruits": [
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53
+      ]
+    },
+    {
+      "id": "s5c9",
+      "title": "9 · The Bandits of Sable",
+      "context": "A bandit mystery troubles the town of Sable. Resolve it and its fighters — and a few from the surrounding roads — join the cause.",
+      "steps": [
+        {
+          "id": "s5c9s0",
+          "kind": "boss",
+          "text": "Solve the bandit trouble at Sable; defeat Roy."
+        },
+        {
+          "id": "s5c9s1",
+          "kind": "recruit",
+          "text": "Dinn, Faylen, Faylon, Nakula and Sagiri can be recruited here."
+        }
+      ],
+      "recruits": [
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60
+      ]
+    },
+    {
+      "id": "s5c10",
+      "title": "10 · Beaver Lodge & the Nether Gate",
+      "context": "The Nether Gate assassins strike Beaver Lodge with fire. Save the beavers and the swamp folk — and uncover the cult shadowing the Prince — to gain new allies.",
+      "steps": [
+        {
+          "id": "s5c10s0",
+          "kind": "boss",
+          "text": "Save Beaver Lodge from the Nether Gate's fire attack."
+        },
+        {
+          "id": "s5c10s1",
+          "kind": "recruit",
+          "text": "Maroon and Fuwalafuwalu join automatically; Isabel and Mathias can follow."
+        }
+      ],
+      "recruits": [
+        61,
+        62,
+        63,
+        64
+      ]
+    },
+    {
+      "id": "s5c11",
+      "title": "11 · Nirva Island",
+      "context": "Events on Nirva Island bring the swordswoman Bernadette and the puppeteer Chisato into the fold.",
+      "steps": [
+        {
+          "id": "s5c11s0",
+          "kind": "story",
+          "text": "Clear the events on Nirva Island."
+        },
+        {
+          "id": "s5c11s1",
+          "kind": "recruit",
+          "text": "Bernadette joins automatically; recruit Chisato via the handpuppet scene."
+        }
+      ],
+      "recruits": [
+        65,
+        74
+      ]
+    },
+    {
+      "id": "s5c12",
+      "title": "12 · A Stolen Coronation",
+      "context": "Gizel Godwin forces a marriage to Queen Lymsleia, cementing his grip on Falena. As your HQ is upgraded in response, a wave of craftsmen and warriors signs on.",
+      "steps": [
+        {
+          "id": "s5c12s0",
+          "kind": "story",
+          "text": "Witness Gizel and Lymsleia's coronation; upgrade your HQ."
+        },
+        {
+          "id": "s5c12s1",
+          "kind": "tip",
+          "text": "Tip: many OPTIONAL Stars unlock with the HQ upgrade (Byakuren, Retso, Babbage, Lu, Yahr…)."
+        },
+        {
+          "id": "s5c12s2",
+          "kind": "recruit",
+          "text": "Optional: gather the Roon siblings (Meroon, Moroon) and Miroon around now."
+        }
+      ],
+      "recruits": [
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        75,
+        76
+      ]
+    },
+    {
+      "id": "s5c13",
+      "title": "13 · The Doraat Siege",
+      "context": "The campaign storms the fortress of Doraat. At its end the Prince duels the Queen's Knight Miakis — beat her and she joins.",
+      "steps": [
+        {
+          "id": "s5c13s0",
+          "kind": "boss",
+          "text": "Take the fortress in the Doraat Siege."
+        },
+        {
+          "id": "s5c13s1",
+          "kind": "recruit",
+          "text": "Defeat Miakis in the duel to recruit her; Gavaya can join at Raftfleet."
+        }
+      ],
+      "recruits": [
+        77,
+        78
+      ]
+    },
+    {
+      "id": "s5c14",
+      "title": "14 · The Tablet of Stars",
+      "context": "Summoning the Tablet of Stars confirms the Prince as the true bearer of the rune's destiny — and calls a handful of fated companions to his side.",
+      "steps": [
+        {
+          "id": "s5c14s0",
+          "kind": "story",
+          "text": "Summon the Tablet of Stars at the HQ."
+        },
+        {
+          "id": "s5c14s1",
+          "kind": "recruit",
+          "text": "Optional: recruit Levi, Bergen, Norma, Ernst and Raven afterward."
+        }
+      ],
+      "recruits": [
+        79,
+        80,
+        81,
+        82,
+        83
+      ]
+    },
+    {
+      "id": "s5c15",
+      "title": "15 · The Queen's Campaign",
+      "context": "With the realm rallying, the Queen's Campaign drives back the Godwins. Veterans and old friends of the royal house return.",
+      "steps": [
+        {
+          "id": "s5c15s0",
+          "kind": "story",
+          "text": "Carry out the Queen's Campaign."
+        },
+        {
+          "id": "s5c15s1",
+          "kind": "recruit",
+          "text": "Galleon joins automatically; Haswar, Isato, Urda and Eresh can follow."
+        }
+      ],
+      "recruits": [
+        84,
+        85,
+        86,
+        87,
+        88
+      ]
+    },
+    {
+      "id": "s5c16",
+      "title": "16 · Sauronix, Gordius & the Dragon Cavalry",
+      "context": "The Prince seeks the Dragon Cavalry of Craig Laden and the Dragon Horses of Gordius. This long arc opens the last great batch of optional Stars.",
+      "steps": [
+        {
+          "id": "s5c16s0",
+          "kind": "story",
+          "text": "Win over Craig Laden and rescue the Dragon Horses at Gordius."
+        },
+        {
+          "id": "s5c16s1",
+          "kind": "recruit",
+          "text": "Georg, Craig, Roog and Rahal join automatically through this arc."
+        },
+        {
+          "id": "s5c16s2",
+          "kind": "tip",
+          "text": "Tip: many OPTIONAL Stars here (Killey, Hazuki, Cathari, Rania, Wabon, Haleth…)."
+        }
+      ],
+      "recruits": [
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104
+      ]
+    },
+    {
+      "id": "s5c17",
+      "title": "17 · The Final Allies",
+      "context": "As the army marches on Sun Palace, the last reinforcements answer the call.",
+      "steps": [
+        {
+          "id": "s5c17s0",
+          "kind": "story",
+          "text": "Rally the final allies before the assault on Stormfist."
+        },
+        {
+          "id": "s5c17s1",
+          "kind": "recruit",
+          "text": "Shula joins at Yashuna (with Sharmista and Nifsara)."
+        },
+        {
+          "id": "s5c17s2",
+          "kind": "tip",
+          "text": "LAST CHANCE TO RECRUIT: gather every remaining Star now — the finale follows."
+        }
+      ],
+      "recruits": [
+        105,
+        106,
+        107
+      ]
+    },
+    {
+      "id": "s5c18",
+      "title": "18 · The Recapture of Stormfist",
+      "context": "The Sun Rune War ends where it began — Sun Palace at Stormfist. Reclaim it from the Godwins, master the Sun Rune, and free Queen Lymsleia.",
+      "steps": [
+        {
+          "id": "s5c18s0",
+          "kind": "tip",
+          "text": "⛔ POINT OF NO RETURN — the recapture of Stormfist is the finale. You CANNOT return to recruit once it begins. Have all 108 Stars first for the best ending.",
+          "missable": true
+        },
+        {
+          "id": "s5c18s1",
+          "kind": "recruit",
+          "text": "Shoon joins automatically during the recapture of Stormfist."
+        },
+        {
+          "id": "s5c18s2",
+          "kind": "boss",
+          "text": "Retake Sun Palace and end the Sun Rune War."
+        }
+      ],
+      "recruits": [
+        108
+      ]
+    }
+  ]
+}

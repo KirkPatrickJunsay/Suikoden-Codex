@@ -22,6 +22,7 @@ public static class MauiProgram
 		builder.Services.AddSingleton<CodexData>();
 		builder.Services.AddSingleton<CardData>();
 		builder.Services.AddSingleton<DeckStore>();
+		builder.Services.AddSingleton<WalkthroughData>();
 		builder.Services.AddSingleton<UserState>();
 
 		// ViewModels
@@ -39,6 +40,7 @@ public static class MauiProgram
 		builder.Services.AddTransient<DuelViewModel>();
 		builder.Services.AddTransient<DeckBuilderViewModel>();
 		builder.Services.AddTransient<DeckManagerViewModel>();
+		builder.Services.AddTransient<WalkthroughViewModel>();
 
 		// Pages
 		builder.Services.AddSingleton<HomePage>();
@@ -56,6 +58,7 @@ public static class MauiProgram
 		builder.Services.AddTransient<DuelPage>();
 		builder.Services.AddTransient<DeckBuilderPage>();
 		builder.Services.AddTransient<DeckManagerPage>();
+		builder.Services.AddTransient<WalkthroughPage>();
 		builder.Services.AddTransient<ImageViewerPage>();
 
 #if DEBUG

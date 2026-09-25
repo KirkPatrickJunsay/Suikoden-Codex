@@ -1,0 +1,337 @@
+{
+  "game": "Suikoden III",
+  "subtitle": "The Hero's War · the Trinity Sight System",
+  "intro": "A concise, spoiler-aware milestone guide to Suikoden III. Follow Hugo, Chris, Geddoe and Thomas through the Trinity Sight chapters, see which Stars of Destiny each chapter unlocks, and clear the all-104 gate before Chapter 6. Original content — not copied from any guide.",
+  "chapters": [
+    {
+      "id": "s3c1",
+      "title": "1 · The Trinity Sight",
+      "context": "Suikoden III is told through three pairs of eyes — Hugo of the Grasslands, Chris of the Zexen Knights, and the mercenary Geddoe — plus young Thomas. You play their opening chapters in any order; their paths cross and finally merge under one flag.",
+      "steps": [
+        {
+          "id": "s3c1s0",
+          "kind": "tip",
+          "text": "Pick a protagonist to begin — Hugo, Chris or Geddoe (Thomas unlocks after)."
+        },
+        {
+          "id": "s3c1s1",
+          "kind": "tip",
+          "text": "Tip: you'll replay events from each side. What one hero misses, another may see."
+        },
+        {
+          "id": "s3c1s2",
+          "kind": "tip",
+          "text": "Tip: progress is shared across all four story windows of this guide."
+        }
+      ],
+      "recruits": []
+    },
+    {
+      "id": "s3c2",
+      "title": "2 · Hugo · Chapter 1 — The Grasslands",
+      "context": "Hugo of the Karaya Clan, his griffon Fubar and the warrior Sgt. Joe carry a peace offering to the Zexen Federation — only for the fragile truce between Grasslanders and knights to shatter.",
+      "steps": [
+        {
+          "id": "s3c2s0",
+          "kind": "story",
+          "text": "Play Hugo's first chapter and deliver the message to Zexen."
+        },
+        {
+          "id": "s3c2s1",
+          "kind": "recruit",
+          "text": "Hugo, Sgt. Joe and Fubar join automatically."
+        }
+      ],
+      "recruits": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "s3c3",
+      "title": "3 · Chris · Chapter 1 — The Silver Maiden",
+      "context": "Chris Lightfellow leads the Zexen Knights — Salome, Borus, Percival, Roland, Leo and squire Louis. Bound by a council that distrusts them, they ride against the Grassland clans.",
+      "steps": [
+        {
+          "id": "s3c3s0",
+          "kind": "story",
+          "text": "Play Chris's first chapter with the Zexen Knights."
+        },
+        {
+          "id": "s3c3s1",
+          "kind": "recruit",
+          "text": "All six knights and squire Louis join automatically."
+        }
+      ],
+      "recruits": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "id": "s3c4",
+      "title": "4 · Geddoe · Chapter 1 — The Mercenaries",
+      "context": "Geddoe's unit — Ace, Joker, Queen, Jacques and the bishop Sasarai's hidden agenda — works the Grasslands for Harmonia. After Karaya burns they take in the survivor Aila.",
+      "steps": [
+        {
+          "id": "s3c4s0",
+          "kind": "story",
+          "text": "Play Geddoe's first chapter with his mercenary unit."
+        },
+        {
+          "id": "s3c4s1",
+          "kind": "recruit",
+          "text": "Geddoe's squad joins automatically; Aila joins after Karaya burns."
+        }
+      ],
+      "recruits": [
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "id": "s3c5",
+      "title": "5 · Thomas · Chapter 1 — Budehuc Castle",
+      "context": "Disowned noble's son Thomas is handed the run-down Budehuc Castle and its motley staff. This neutral ground will become the home base of the army to come.",
+      "steps": [
+        {
+          "id": "s3c5s0",
+          "kind": "story",
+          "text": "Play Thomas's chapter and take charge of Budehuc Castle."
+        },
+        {
+          "id": "s3c5s1",
+          "kind": "recruit",
+          "text": "The whole Budehuc staff joins automatically with Thomas."
+        },
+        {
+          "id": "s3c5s2",
+          "kind": "tip",
+          "text": "Tip: Budehuc is your hub — most optional Stars are recruited here in Chapter 4."
+        }
+      ],
+      "recruits": [
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ]
+    },
+    {
+      "id": "s3c6",
+      "title": "6 · Chapter 2 — Paths Cross",
+      "context": "Each hero's second chapter deepens the war: Hugo seeks allies among the clans, Chris uncovers rot inside the Federation, and Nash and others slip into the story.",
+      "steps": [
+        {
+          "id": "s3c6s0",
+          "kind": "story",
+          "text": "Play the Chapter 2 segment for each protagonist you're following."
+        },
+        {
+          "id": "s3c6s1",
+          "kind": "recruit",
+          "text": "Hugo's allies (Reed, Samus, Lilly) and Chris's Nash join automatically."
+        }
+      ],
+      "recruits": [
+        68,
+        74,
+        75,
+        76
+      ]
+    },
+    {
+      "id": "s3c7",
+      "title": "7 · Chapter 3 — The War Widens",
+      "context": "The Hero's War spreads across the Grasslands. Hugo gains Hallec and Mua; Chris is joined by Rico, Fred and Yun as the truth about the Zexen council surfaces.",
+      "steps": [
+        {
+          "id": "s3c7s0",
+          "kind": "story",
+          "text": "Play the Chapter 3 segment for each protagonist."
+        },
+        {
+          "id": "s3c7s1",
+          "kind": "recruit",
+          "text": "Hallec, Mua (Hugo) and Rico, Fred, Yun (Chris) join automatically."
+        }
+      ],
+      "recruits": [
+        66,
+        67,
+        69,
+        70,
+        71
+      ]
+    },
+    {
+      "id": "s3c8",
+      "title": "8 · Chapter 4 — The Fire Bringer",
+      "context": "The three armies unite at Budehuc under one banner — the reborn Fire Bringer. With Caesar and Apple guiding strategy, this is the great recruiting chapter: nearly every optional Star of Destiny can be gathered now.",
+      "steps": [
+        {
+          "id": "s3c8s0",
+          "kind": "story",
+          "text": "Unite the armies at Budehuc Castle as the Fire Bringer."
+        },
+        {
+          "id": "s3c8s1",
+          "kind": "recruit",
+          "text": "Caesar, Apple, Jimba, Lucia and the chapter leaders join automatically."
+        },
+        {
+          "id": "s3c8s2",
+          "kind": "tip",
+          "text": "Tip: this is your main recruiting window — most OPTIONAL Stars below have their own item, party, or quest condition."
+        },
+        {
+          "id": "s3c8s3",
+          "kind": "tip",
+          "text": "Tip: recruit widely now — Chapter 6 locks anyone you don't already have."
+        }
+      ],
+      "recruits": [
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        72,
+        73,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93
+      ]
+    },
+    {
+      "id": "s3c9",
+      "title": "9 · Chapter 5 — The True Runes Converge",
+      "context": "The masked threat behind the war steps into the light and the True Runes draw together. Geddoe's confrontation here decides whether several of his world's people stand with you.",
+      "steps": [
+        {
+          "id": "s3c9s0",
+          "kind": "story",
+          "text": "Play through Chapter 5 toward the heart of the conspiracy."
+        },
+        {
+          "id": "s3c9s1",
+          "kind": "recruit",
+          "text": "Dios, Sasarai, Yumi and Yuiri join automatically."
+        },
+        {
+          "id": "s3c9s2",
+          "kind": "recruit",
+          "text": "⚠ During Geddoe's Chapter 5 battle, do NOT run away — flee and Elaine, Nicolas, Gau, Duke, Ruby, Iku and Franz are lost.",
+          "missable": true
+        }
+      ],
+      "recruits": [
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104
+      ]
+    },
+    {
+      "id": "s3c10",
+      "title": "10 · Chapter 6 — The Final Battle",
+      "context": "All paths end together against the true enemy of the Hero's War. The last four Stars only appear if every other Star is already in your ranks.",
+      "steps": [
+        {
+          "id": "s3c10s0",
+          "kind": "tip",
+          "text": "⛔ POINT OF NO RETURN — Chapter 6 is the finale. You CANNOT return to recruit once it begins.",
+          "missable": true
+        },
+        {
+          "id": "s3c10s1",
+          "kind": "recruit",
+          "text": "⚠ TRUE-RECRUIT GATE: you must already have all 104 other Stars BEFORE Chapter 6, or Yuber, Albert, Sarah and Luc are lost forever.",
+          "missable": true
+        },
+        {
+          "id": "s3c10s2",
+          "kind": "boss",
+          "text": "Fight the Final Battle and end the Hero's War."
+        }
+      ],
+      "recruits": [
+        105,
+        106,
+        107,
+        108
+      ]
+    }
+  ]
+}

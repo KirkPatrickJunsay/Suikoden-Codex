@@ -1,0 +1,534 @@
+{
+ "game": "Suikoden I",
+ "subtitle": "The Gate Rune War — chapter walkthrough",
+ "intro": "A spoiler-aware, correctly-sequenced guide to Suikoden's main story (the Gate Rune War / Toran Liberation War), its bosses and army battles, and every major recruitment window. Original content — not a copy of any published guide. Tick steps as you play; tap the ➜ on a step to open its codex entry. Watch for ⚠ MISSABLE steps.",
+ "chapters": [
+  {
+   "id": "s1c1",
+   "title": "1 · Gregminster — A Soldier's Beginning",
+   "context": "Suikoden opens in Gregminster, glittering capital of the Scarlet Moon Empire. As the privileged son of a war hero, you have no reason to doubt the Empire — yet. This chapter is your tutorial: get used to movement, party menus, and combat.",
+   "steps": [
+    {
+     "id": "s1c1s1",
+     "kind": "story",
+     "text": "You are Tir McDohl, son of Imperial Great General Teo McDohl, living in the capital of the Scarlet Moon Empire, Gregminster.",
+     "link": "tir-mcdohl"
+    },
+    {
+     "id": "s1c1s2",
+     "kind": "recruit",
+     "text": "Your household serves at your side from the start: the loyal Gremio, the swordswoman Cleo, and the brawler Pahn.",
+     "link": "gremio"
+    },
+    {
+     "id": "s1c1s3",
+     "kind": "story",
+     "text": "Under Commander Kraze Miles, set out with your friend Ted to subjugate the bandits at Mt. Tigerwolf.",
+     "link": "region-mt_tigerwolf"
+    }
+   ],
+   "recruits": [
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "id": "s1c2",
+   "title": "2 · The Soul Eater",
+   "context": "The Empire's rot surfaces fast. The Court Magician Windy is hunting the 27 True Runes, and your friend Ted has hidden one — the Soul Eater — for a century. Forced to choose, Ted saves you and dooms himself, and you become a wanted fugitive overnight.",
+   "steps": [
+    {
+     "id": "s1c2s1",
+     "kind": "story",
+     "text": "The Court Magician Windy schemes to claim a True Rune. It emerges that your friend Ted secretly bears the cursed Soul Eater.",
+     "link": "s1-windy"
+    },
+    {
+     "id": "s1c2s2",
+     "kind": "boss",
+     "text": "Windy and Kraze attack to seize the rune. Mortally pressed, Ted entrusts the Soul Eater to you and tells you to run.",
+     "link": "soul-eater"
+    },
+    {
+     "id": "s1c2s3",
+     "kind": "story",
+     "text": "Branded a traitor, flee Gregminster with Gremio, Cleo, and Pahn."
+    }
+   ],
+   "recruits": []
+  },
+  {
+   "id": "s1c3",
+   "title": "3 · Joining the Liberation",
+   "context": "On the run, you fall in with the Toran Liberation Army — a fledgling resistance led by the charismatic Odessa Silverberg. Viktor, a boisterous mercenary, becomes your first true ally outside your household.",
+   "steps": [
+    {
+     "id": "s1c3s1",
+     "kind": "story",
+     "text": "Lie low in Lenankamp while Imperial soldiers hunt you.",
+     "link": "region-lenankamp"
+    },
+    {
+     "id": "s1c3s2",
+     "kind": "recruit",
+     "text": "Meet Viktor, who smuggles you to the Liberation Army's hidden base. Recruit Viktor.",
+     "link": "viktor"
+    },
+    {
+     "id": "s1c3s3",
+     "kind": "story",
+     "text": "Pledge yourself to the rebellion led by Odessa Silverberg.",
+     "link": "odessa"
+    }
+   ],
+   "recruits": [
+    4
+   ]
+  },
+  {
+   "id": "s1c4",
+   "title": "4 · Odessa's Sacrifice",
+   "context": "War has a cost, and the game makes you feel it early. Odessa's death is the emotional hinge of the first act: it transforms a band of malcontents into a cause — and puts that cause on your shoulders.",
+   "steps": [
+    {
+     "id": "s1c4s1",
+     "kind": "boss",
+     "text": "During an operation in Gregminster, Odessa is fatally wounded shielding a child. She dies, entrusting the cause — and the rebels — to you.",
+     "link": "odessa"
+    },
+    {
+     "id": "s1c4s2",
+     "kind": "story",
+     "text": "Shaken and leaderless, the army needs both a commander and a strategist."
+    }
+   ],
+   "recruits": []
+  },
+  {
+   "id": "s1c5",
+   "title": "5 · The Strategist of Seika",
+   "context": "A movement needs a mind. Odessa's will points you to Mathiu Silverberg, a brilliant strategist who walked away from war to run a village school. Only a direct Imperial attack pulls him back in.",
+   "steps": [
+    {
+     "id": "s1c5s1",
+     "kind": "recruit",
+     "text": "Travel to Seika to persuade the retired genius Mathiu Silverberg to lead the army. After an Imperial attack, he accepts and becomes your chief strategist.",
+     "link": "mathiu"
+    }
+   ],
+   "recruits": [
+    5,
+    44
+   ]
+  },
+  {
+   "id": "s1c6",
+   "title": "6 · A Castle of Your Own",
+   "context": "Every great army needs a home. With Mathiu's guidance you seize an abandoned lake castle as your headquarters — the hub you'll return to throughout the game. Here the seer Leknaat frames your true quest: gather the 108 Stars of Destiny.",
+   "steps": [
+    {
+     "id": "s1c6s1",
+     "kind": "story",
+     "text": "Claim Toran Lake Castle as the Liberation Army's headquarters.",
+     "link": "region-toran_lake_castle"
+    },
+    {
+     "id": "s1c6s2",
+     "kind": "story",
+     "text": "The seer Leknaat appears, revealing the gathering of the 108 Stars of Destiny and your fate as a bearer of a True Rune.",
+     "link": "s1-leknaat"
+    },
+    {
+     "id": "s1c6s3",
+     "kind": "tip",
+     "missable": true,
+     "text": "GOAL: recruiting all 108 Stars of Destiny is required for the true ending — and to revive Gremio at the very end. Many recruits are MISSABLE once the story advances, so use the Recruitment tab often."
+    }
+   ],
+   "recruits": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    14,
+    15,
+    17,
+    18,
+    52
+   ]
+  },
+  {
+   "id": "s1ck",
+   "title": "7 · The Kouan Affair",
+   "context": "With a base secured, your reputation spreads and recruits start arriving. The Kouan affair — rescuing the kidnapped noblewoman Eileen and freeing the foppish-but-formidable Lepant — is the first big recruitment surge and unlocks much of the early roster.",
+   "steps": [
+    {
+     "id": "s1cks1",
+     "kind": "story",
+     "text": "Back at your castle, trouble brews in Kouan: the noblewoman Eileen has been kidnapped and her husband, the eccentric noble Lepant, is caught up in the crisis."
+    },
+    {
+     "id": "s1cks2",
+     "kind": "story",
+     "text": "Resolve the Kouan affair and rescue Eileen. Lepant, his retinue, and a wave of new Stars rally to your banner — your first big recruitment surge."
+    }
+   ],
+   "recruits": [
+    12,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    28,
+    29,
+    31
+   ]
+  },
+  {
+   "id": "s1c7",
+   "title": "8 · First Blood — Pannu Yakuta",
+   "context": "Your first real test of arms. Imperial General Kwanda Rosman holds Pannu Yakuta in the Great Forest, and his Burning Mirror can incinerate whole units — which is why aerial support (the Dragon Knights) matters. Victory here turns a rebellion into an army.",
+   "steps": [
+    {
+     "id": "s1c7s1",
+     "kind": "story",
+     "text": "Scout the Great Forest with Gremio and the elf Kirkis; survivors of the Imperial raid on Lenankamp arrive to swell your ranks.",
+     "link": "s1-kirkis"
+    },
+    {
+     "id": "s1c7s2",
+     "kind": "recruit",
+     "text": "Recruit the Dragon Knights — Futch (with the dragon Black) and Humphrey Mintz — to help counter enemy fire.",
+     "link": "futch"
+    },
+    {
+     "id": "s1c7s3",
+     "kind": "boss",
+     "text": "Win the first major army battle at Pannu Yakuta Castle against General Kwanda Rosman and his fearsome Burning Mirror.",
+     "link": "s1-kwanda-rosman"
+    },
+    {
+     "id": "s1c7s4",
+     "kind": "recruit",
+     "text": "Spare Kwanda Rosman — he joins the Liberation Army.",
+     "link": "s1-kwanda-rosman"
+    }
+   ],
+   "recruits": [
+    30,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    45,
+    13,
+    16,
+    32,
+    33,
+    41,
+    42,
+    43
+   ]
+  },
+  {
+   "id": "s1c8",
+   "title": "9 · Into Kunan — Fortress of Garan",
+   "context": "Momentum carries the war into Kunan, the domain of General Milich Oppenheimer. The Fortress of Garan is the gateway, and breaking it open is the second great battle of the war.",
+   "steps": [
+    {
+     "id": "s1c8s1",
+     "kind": "story",
+     "text": "With Flik urging the liberation of Kunan (Milich's domain), break through the Fortress of Garan — the second great battle of the war.",
+     "link": "region-fortress_of_garan"
+    },
+    {
+     "id": "s1c8s2",
+     "kind": "recruit",
+     "missable": true,
+     "text": "Keep recruiting optional Stars as your momentum and castle facilities grow."
+    }
+   ],
+   "recruits": [
+    11,
+    85
+   ]
+  },
+  {
+   "id": "s1c9",
+   "title": "10 · Scarleticia — First Attempt (Defeat)",
+   "context": "A lesson in hubris. Flush with victory, the army charges Scarleticia — straight into Milich's monstrous flower, Antoinette, whose toxin devastates your ranks. This battle is meant to be lost.",
+   "steps": [
+    {
+     "id": "s1c9s1",
+     "kind": "boss",
+     "text": "Overconfident after Garan, Flik pushes straight on to Scarleticia Castle — but Milich's giant poison flower, Antoinette, routs the army. You LOSE this battle.",
+     "link": "region-scarleticia_castle"
+    },
+    {
+     "id": "s1c9s2",
+     "kind": "story",
+     "text": "You cannot win until you have an antidote to Antoinette's poison."
+    }
+   ],
+   "recruits": []
+  },
+  {
+   "id": "s1c10",
+   "title": "11 · Rescue Doctor Liukan",
+   "context": "The counter to poison is a cure. The renowned doctor Liukan is languishing in Soniere Prison; spring him and he'll brew the antitoxin that makes Scarleticia winnable.",
+   "steps": [
+    {
+     "id": "s1c10s1",
+     "kind": "recruit",
+     "text": "Break the great physician Liukan out of Soniere Prison. He brews the antitoxin needed to fight Antoinette's poison.",
+     "link": "region-soniere_prison"
+    }
+   ],
+   "recruits": [
+    60,
+    61
+   ]
+  },
+  {
+   "id": "s1c11",
+   "title": "12 · Scarleticia Retaken",
+   "context": "Round two. Immune to Antoinette now, the army takes Scarleticia and the vain General Milich — who proves there's more to him than perfume. A second Great General joins your cause.",
+   "steps": [
+    {
+     "id": "s1c11s1",
+     "kind": "boss",
+     "text": "Now immune to the poison, storm Scarleticia Castle and defeat General Milich Oppenheimer in the second battle.",
+     "link": "s1-milich-oppenheimer"
+    },
+    {
+     "id": "s1c11s2",
+     "kind": "recruit",
+     "text": "Milich joins the Liberation Army.",
+     "link": "s1-milich-oppenheimer"
+    }
+   ],
+   "recruits": [
+    62,
+    63,
+    64,
+    65,
+    46,
+    50,
+    58,
+    59,
+    53,
+    54,
+    55
+   ]
+  },
+  {
+   "id": "s1c12",
+   "title": "13 · Side Quest — Neclord the Vampire",
+   "context": "An optional but unforgettable detour. Viktor's grudge is personal: the vampire Neclord razed his village and stole the Star Dragon Sword. Reclaim the sentient blade and you can finally put the monster down.",
+   "steps": [
+    {
+     "id": "s1c12s1",
+     "kind": "story",
+     "text": "Viktor's home, Blue Moon Village, was destroyed years ago by the vampire Neclord, who stole the Star Dragon Sword. Hunt him to his castle.",
+     "link": "region-blue_moon_village"
+    },
+    {
+     "id": "s1c12s2",
+     "kind": "boss",
+     "text": "Obtain the sentient Star Dragon Sword — the only blade that can harm Neclord — and destroy him.",
+     "link": "neclord"
+    }
+   ],
+   "recruits": [
+    89,
+    90,
+    47,
+    48,
+    49,
+    51,
+    94,
+    83,
+    84,
+    86,
+    87,
+    88
+   ]
+  },
+  {
+   "id": "s1c13",
+   "title": "14 · The First Battle with Teo (Defeat)",
+   "context": "The war turns personal. The Empire sends its finest — your father, Great General Teo McDohl, and his peerless Armored Cavalry. The first clash is a wall; the army is meant to break against it and retreat.",
+   "steps": [
+    {
+     "id": "s1c13s1",
+     "kind": "boss",
+     "text": "After Scarleticia, your own father — Great General Teo McDohl — advances with his elite Armored Cavalry. The first clash is a disaster; the army is forced to retreat.",
+     "link": "s1-teo-mcdohl"
+    }
+   ],
+   "recruits": [
+    66,
+    81,
+    82
+   ]
+  },
+  {
+   "id": "s1c14",
+   "title": "15 · Fire Spears & the Second Battle with Teo",
+   "context": "Strategy beats cavalry. The hidden Secret Factory yields Fire Spears that can stop Teo's charge cold. Gathering and delivering them opens up a swathe of recruits before the rematch — and the heartbreaking duel with your father.",
+   "steps": [
+    {
+     "id": "s1c14s1",
+     "kind": "story",
+     "text": "Discover that the Secret Factory survived the Imperial crackdown, and procure Fire Spears to counter the Armored Cavalry.",
+     "link": "region-secret_factory"
+    },
+    {
+     "id": "s1c14s2",
+     "kind": "boss",
+     "text": "The Fire Spears shatter Teo's cavalry. Defeat your father in the second battle — a heavy, personal victory.",
+     "link": "s1-teo-mcdohl"
+    }
+   ],
+   "recruits": [
+    56,
+    57,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    95
+   ]
+  },
+  {
+   "id": "s1c15",
+   "title": "16 · Push to the Capital — Northern Checkpoint",
+   "context": "The road to the capital. Mathiu outwits an Imperial spy to take the Northern Checkpoint, and the Moravia side-events free captured allies. This is effectively the last stretch to gather your 108 before the end.",
+   "steps": [
+    {
+     "id": "s1c15s1",
+     "kind": "boss",
+     "text": "Mathiu disguises the march as a training exercise to mislead an Imperial spy, then strikes the Northern Checkpoint, where General Griffith stalls for time in vain.",
+     "link": "region-northern_checkpoint"
+    },
+    {
+     "id": "s1c15s2",
+     "kind": "recruit",
+     "missable": true,
+     "text": "Before the final approach, gather every remaining optional Star — e.g. the mage Crowley and the wandering swordsman Pesmerga.",
+     "link": "s1-crowley"
+    },
+    {
+     "id": "s1c15s3",
+     "kind": "tip",
+     "missable": true,
+     "text": "TRUE-ENDING CHECK: gather every remaining Star now. The last safe place to recruit is your castle, just before the final battle — once you enter Gregminster there's no going back. (Tir is the 108th.)"
+    }
+   ],
+   "recruits": [
+    80,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    91,
+    96,
+    97,
+    98,
+    99,
+    101,
+    27,
+    92,
+    93,
+    100
+   ]
+  },
+  {
+   "id": "s1c16",
+   "title": "17 · Floating Fortress Shasarazade",
+   "context": "One gateway remains. Mathiu chooses Admiral Sonya Shulen's Floating Fortress of Shasarazade over the Fortress of Kwaba — the penultimate battle before the capital itself.",
+   "steps": [
+    {
+     "id": "s1c16s1",
+     "kind": "boss",
+     "text": "With the rebels united, only Gregminster remains. Mathiu chooses to attack the Floating Fortress of Shasarazade over the Fortress of Kwaba; storm it and defeat Admiral Sonya Shulen.",
+     "link": "region-floating_fortress_of_shasarazade"
+    },
+    {
+     "id": "s1c16s9",
+     "kind": "tip",
+     "text": "LAST CHANCE TO RECRUIT: after this, your castle is the final place you can gather Stars before the assault on Gregminster. Open the Recruitment tab and confirm nobody is missing."
+    }
+   ],
+   "recruits": [
+    108
+   ]
+  },
+  {
+   "id": "s1c17",
+   "title": "18 · The Last Battle",
+   "context": "Everything converges at Gregminster. Windy plays her final cards, the Emperor Barbarossa makes his stand, and the True Runes decide the war — and Ted's century-long burden.",
+   "steps": [
+    {
+     "id": "s1c17s0",
+     "kind": "tip",
+     "missable": true,
+     "text": "⛔ POINT OF NO RETURN — Gregminster is the final dungeon. Once you begin this assault you CANNOT return to the world map or your castle to recruit. Make sure all 107 other Stars of Destiny are gathered before you start."
+    },
+    {
+     "id": "s1c17s1",
+     "kind": "story",
+     "text": "Launch the final assault on Gregminster and the Imperial Palace.",
+     "link": "gregminster"
+    },
+    {
+     "id": "s1c17s2",
+     "kind": "boss",
+     "text": "Confront the Court Magician Windy and reach Emperor Barbarossa Rugner. The clash of True Runes decides Ted's fate and the outcome of the war.",
+     "link": "s1-barbarossa-rugner"
+    }
+   ],
+   "recruits": []
+  },
+  {
+   "id": "s1c18",
+   "title": "19 · Liberation",
+   "context": "The Empire falls and the Toran Republic rises in its place. Whether your story ends in bittersweet loss or full triumph depends on one thing: did you gather every Star?",
+   "steps": [
+    {
+     "id": "s1c18s1",
+     "kind": "story",
+     "text": "Victory ends the Gate Rune War and founds the Toran Republic.",
+     "link": "toran-republic"
+    },
+    {
+     "id": "s1c18s2",
+     "kind": "tip",
+     "missable": true,
+     "text": "BEST ENDING: if all 108 Stars of Destiny were recruited, Gremio is revived in the finale. Hail the Liberator!"
+    }
+   ],
+   "recruits": []
+  }
+ ]
+}

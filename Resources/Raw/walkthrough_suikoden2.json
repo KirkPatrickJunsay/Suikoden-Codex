@@ -1,0 +1,535 @@
+{
+  "game": "Suikoden II",
+  "subtitle": "The Dunan Unification War · SY 460",
+  "intro": "A concise, spoiler-aware milestone guide to Suikoden II. Tick off each beat of the Dunan Unification War, see which Stars of Destiny you can recruit in every chapter, and never miss a window. Original content — not copied from any guide.",
+  "chapters": [
+    {
+      "id": "s2c1",
+      "title": "1 · The Tenzan Pass Betrayal",
+      "context": "Riou and Jowy serve in Highland's Unicorn Youth Brigade. On a quiet night Prince Luca Blight has the entire brigade slaughtered to fake a Jowston atrocity — the two friends barely escape by leaping into the river.",
+      "steps": [
+        {
+          "id": "s2c1s0",
+          "kind": "story",
+          "text": "Play through the prologue with the Youth Brigade at Tenzan Pass."
+        },
+        {
+          "id": "s2c1s1",
+          "kind": "boss",
+          "text": "Survive Luca Blight's night raid and dive off the cliff into the river."
+        },
+        {
+          "id": "s2c1s2",
+          "kind": "tip",
+          "text": "Tip: name your hero — this is Riou, the Bright Shield bearer."
+        }
+      ],
+      "recruits": [
+        1
+      ]
+    },
+    {
+      "id": "s2c2",
+      "title": "2 · Home to Kyaro",
+      "context": "Riou wakes in his home village of Kyaro with his sister Nanami and little Pilika. Highland soldiers now hunt the 'deserters', so the three must slip out of town.",
+      "steps": [
+        {
+          "id": "s2c2s0",
+          "kind": "story",
+          "text": "Recover at home and reunite with Nanami and Pilika."
+        },
+        {
+          "id": "s2c2s1",
+          "kind": "story",
+          "text": "Escape Kyaro past the Highland patrols."
+        },
+        {
+          "id": "s2c2s2",
+          "kind": "recruit",
+          "text": "Optional: before entering Riou's house, examine the big tree on the right three times for Mukumuku."
+        }
+      ],
+      "recruits": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "s2c3",
+      "title": "3 · Viktor's Mercenaries",
+      "context": "Fleeing into Jowston, Riou and Jowy fall in with Viktor and Flik's mercenary band based near Ryube. It becomes their first refuge — and the seed of an army.",
+      "steps": [
+        {
+          "id": "s2c3s0",
+          "kind": "story",
+          "text": "Reach the Mercenary Fortress and sign on with Viktor."
+        },
+        {
+          "id": "s2c3s1",
+          "kind": "story",
+          "text": "Pass through Ryube Village and Ryube Forest."
+        },
+        {
+          "id": "s2c3s2",
+          "kind": "recruit",
+          "text": "Optional: help the bird's nest on the left fork of Ryube Forest, then return for Kinnison (and Shiro)."
+        }
+      ],
+      "recruits": [
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "s2c4",
+      "title": "4 · Toto Village & the Bright Shield",
+      "context": "Highland burns Toto Village to the ground. In the aftermath Riou claims the Bright Shield Rune and Jowy the Black Sword Rune — the bond and the curse that will drive the whole war.",
+      "steps": [
+        {
+          "id": "s2c4s0",
+          "kind": "boss",
+          "text": "Witness the destruction of Toto Village by Highland."
+        },
+        {
+          "id": "s2c4s1",
+          "kind": "story",
+          "text": "Receive the Bright Shield Rune (Jowy gains the Black Sword Rune)."
+        },
+        {
+          "id": "s2c4s2",
+          "kind": "recruit",
+          "text": "Apple, Shu's pupil, joins automatically after Toto falls."
+        }
+      ],
+      "recruits": [
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "id": "s2c5",
+      "title": "5 · The City-State of Muse",
+      "context": "The mercenaries carry word to Muse, heart of the Jowston City-States. Mayor Granmeyer and the spy Jess weigh whether to trust two Highland runaways while Luca's army closes in.",
+      "steps": [
+        {
+          "id": "s2c5s0",
+          "kind": "story",
+          "text": "Take Jess's mission and report back to Muse."
+        },
+        {
+          "id": "s2c5s1",
+          "kind": "recruit",
+          "text": "⚠ Gilbert can ONLY be recruited by damaging his unit during the first battle for Muse — easy to miss.",
+          "missable": true
+        },
+        {
+          "id": "s2c5s2",
+          "kind": "recruit",
+          "text": "⚠ Clive's chain of timed events begins here in Muse — start it now or lose him.",
+          "missable": true
+        }
+      ],
+      "recruits": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        37
+      ]
+    },
+    {
+      "id": "s2c6",
+      "title": "6 · The Fall of Muse & Jowy's Choice",
+      "context": "Muse cannot hold. As the city falls Jowy makes his fateful decision — to walk into Highland and seize power from within by marrying Jillia Blight. Riou is left to lead alone, regrouping in Coronet.",
+      "steps": [
+        {
+          "id": "s2c6s0",
+          "kind": "story",
+          "text": "Escape the fall of Muse and regroup in Coronet."
+        },
+        {
+          "id": "s2c6s1",
+          "kind": "boss",
+          "text": "Part ways with Jowy — he leaves to infiltrate Highland."
+        },
+        {
+          "id": "s2c6s2",
+          "kind": "recruit",
+          "text": "Eilie, Rina and Bolgan's circus troupe joins automatically in Coronet."
+        }
+      ],
+      "recruits": [
+        17,
+        18,
+        19
+      ]
+    },
+    {
+      "id": "s2c7",
+      "title": "7 · A Castle of Your Own",
+      "context": "Leknaat points Riou to the lakeside fortress at North Window. With Shu as strategist and the Beast Rune's old enemy gathering, the New State Army is born and your castle becomes home base.",
+      "steps": [
+        {
+          "id": "s2c7s0",
+          "kind": "story",
+          "text": "Claim the North Window castle as your headquarters."
+        },
+        {
+          "id": "s2c7s1",
+          "kind": "boss",
+          "text": "Convince Shu to become your strategist after meeting Granmeyer."
+        },
+        {
+          "id": "s2c7s2",
+          "kind": "recruit",
+          "text": "Viktor, Flik, Luc, Huan, Barbara and Leona settle in automatically."
+        }
+      ],
+      "recruits": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ]
+    },
+    {
+      "id": "s2c8",
+      "title": "8 · Rallying the City-States",
+      "context": "An army needs allies, boats and supplies. Riou criss-crosses South Window, Radat and Lakewest signing on captains, merchants and old soldiers.",
+      "steps": [
+        {
+          "id": "s2c8s0",
+          "kind": "story",
+          "text": "Find a boat captain (Tai Ho & Yam Koo) and a navigator (Amada)."
+        },
+        {
+          "id": "s2c8s1",
+          "kind": "story",
+          "text": "Recruit through South Window, Radat and Lakewest."
+        },
+        {
+          "id": "s2c8s2",
+          "kind": "recruit",
+          "text": "Optional: enter Kuskus with one female and no males but Riou for Oulan."
+        }
+      ],
+      "recruits": [
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        38,
+        39
+      ]
+    },
+    {
+      "id": "s2c9",
+      "title": "9 · Alliance with Two-River",
+      "context": "The free city of Two-River is split between Kobolds and the Lizard Clan, with Highland agents stoking the feud. Settle it and the city — and Ridley's veterans — join the cause.",
+      "steps": [
+        {
+          "id": "s2c9s0",
+          "kind": "story",
+          "text": "Resolve the Kobold / Lizard-Clan tension and ally with Two-River."
+        },
+        {
+          "id": "s2c9s1",
+          "kind": "recruit",
+          "text": "Ridley, Chaco and Fitcher join automatically once Two-River allies."
+        }
+      ],
+      "recruits": [
+        40,
+        41,
+        42,
+        43
+      ]
+    },
+    {
+      "id": "s2c10",
+      "title": "10 · The Castle Grows",
+      "context": "As your headquarters climbs to Level 2 a wave of specialists, cooks and oddballs ask to join — most are optional and tied to small side-tasks.",
+      "steps": [
+        {
+          "id": "s2c10s0",
+          "kind": "story",
+          "text": "Upgrade the castle to Level 2 to unlock these recruits."
+        },
+        {
+          "id": "s2c10s1",
+          "kind": "tip",
+          "text": "Tip: most of this chapter is optional — they stay available, so circle back any time."
+        }
+      ],
+      "recruits": [
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54
+      ]
+    },
+    {
+      "id": "s2c11",
+      "title": "11 · Greenhill & the New Leaf Academy",
+      "context": "Occupied Greenhill hides Mayor Teresa among her own students. Jowy reappears here under the alias 'Bright' — proof he is still playing both sides.",
+      "steps": [
+        {
+          "id": "s2c11s0",
+          "kind": "story",
+          "text": "Infiltrate the New Leaf Academy and rescue Teresa."
+        },
+        {
+          "id": "s2c11s1",
+          "kind": "boss",
+          "text": "Liberate Greenhill from Highland occupation."
+        },
+        {
+          "id": "s2c11s2",
+          "kind": "recruit",
+          "text": "Teresa, Shin and Nina join automatically after Greenhill is freed."
+        }
+      ],
+      "recruits": [
+        55,
+        56,
+        57,
+        58,
+        59,
+        60
+      ]
+    },
+    {
+      "id": "s2c12",
+      "title": "12 · The Knights of Matilda",
+      "context": "The proud Matilda Knightdom holds Rockaxe. Win their respect (and pass through Highway Village) to add the legendary knights Miklotov and Camus.",
+      "steps": [
+        {
+          "id": "s2c12s0",
+          "kind": "story",
+          "text": "Cross to Matilda via the forest path — let Viki tag along."
+        },
+        {
+          "id": "s2c12s1",
+          "kind": "boss",
+          "text": "Take part in the Conquest of Matilda / Battle of Rockaxe."
+        },
+        {
+          "id": "s2c12s2",
+          "kind": "recruit",
+          "text": "Miklotov and Camus join automatically after the Rockaxe events."
+        }
+      ],
+      "recruits": [
+        61,
+        62,
+        63,
+        64,
+        65
+      ]
+    },
+    {
+      "id": "s2c13",
+      "title": "13 · Luca Blight's Last Stand",
+      "context": "Mad Prince Luca walks into a three-army ambush at Tenzan Pass. He is brought down by a relentless gauntlet of attackers — and then a final one-on-one duel.",
+      "steps": [
+        {
+          "id": "s2c13s0",
+          "kind": "story",
+          "text": "Spring the three-army ambush on Luca Blight at Tenzan Pass."
+        },
+        {
+          "id": "s2c13s1",
+          "kind": "boss",
+          "text": "Survive the gauntlet, then defeat Luca Blight in a duel."
+        },
+        {
+          "id": "s2c13s2",
+          "kind": "recruit",
+          "text": "Highland general Kiba (with Klaus) can be recruited after his battle."
+        }
+      ],
+      "recruits": [
+        66,
+        67
+      ]
+    },
+    {
+      "id": "s2c14",
+      "title": "14 · Castle Level 3 — Gathering the 108",
+      "context": "With Luca dead the war pauses long enough to fill your ranks. Once the castle reaches Level 3 a long list of optional heroes can be sought across the land — each with its own condition.",
+      "steps": [
+        {
+          "id": "s2c14s0",
+          "kind": "story",
+          "text": "Upgrade the castle to Level 3 to open these recruits."
+        },
+        {
+          "id": "s2c14s1",
+          "kind": "tip",
+          "text": "Tip: nearly all of these are OPTIONAL and conditional — check each method carefully."
+        },
+        {
+          "id": "s2c14s2",
+          "kind": "tip",
+          "text": "Tip: many require a specific item, party member, or castle level in your inventory."
+        }
+      ],
+      "recruits": [
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        76,
+        77,
+        78,
+        79,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105
+      ]
+    },
+    {
+      "id": "s2c15",
+      "title": "15 · Tinto & the Vampire Neclord",
+      "context": "The mining republic of Tinto is terrorised by the immortal vampire Neclord. Recover the Star Dragon Sword and the witch Sierra Mikain to put him down for good.",
+      "steps": [
+        {
+          "id": "s2c15s0",
+          "kind": "boss",
+          "text": "Travel to Tinto and confront the vampire Neclord."
+        },
+        {
+          "id": "s2c15s1",
+          "kind": "story",
+          "text": "Claim the Star Dragon Sword at the Cave of the Wind."
+        },
+        {
+          "id": "s2c15s2",
+          "kind": "recruit",
+          "text": "Optional: speak to Pesmerga at the Cave of the Wind with the right party."
+        }
+      ],
+      "recruits": [
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        106
+      ]
+    },
+    {
+      "id": "s2c16",
+      "title": "16 · The Toran Alliance",
+      "context": "Riou turns to the Toran Republic — the heroes of the first Liberation War — for help. President Lepant asks you to choose one of his two bodyguards.",
+      "steps": [
+        {
+          "id": "s2c16s0",
+          "kind": "story",
+          "text": "Petition Toran for an alliance; Sheena joins automatically."
+        },
+        {
+          "id": "s2c16s1",
+          "kind": "recruit",
+          "text": "Choose ONE bodyguard — Kasumi OR Valeria. The other is lost for this save.",
+          "missable": true
+        }
+      ],
+      "recruits": [
+        74,
+        75
+      ]
+    },
+    {
+      "id": "s2c17",
+      "title": "17 · The Beast Rune & the Great Offensive",
+      "context": "Jowy, now King of Highland, unleashes the Beast Rune. The allied army launches the Great Offensive, driving toward the Highland capital of L'Renouille for the final reckoning.",
+      "steps": [
+        {
+          "id": "s2c17s0",
+          "kind": "story",
+          "text": "Launch the Great Offensive toward L'Renouille."
+        },
+        {
+          "id": "s2c17s1",
+          "kind": "recruit",
+          "text": "Optional last recruits: Bob (80 Stars), Genshu, Tomo, and Mazus (100 recruited, after Greenhill freed)."
+        },
+        {
+          "id": "s2c17s2",
+          "kind": "tip",
+          "text": "LAST CHANCE TO RECRUIT: gather every remaining Star at your castle before you march on L'Renouille."
+        }
+      ],
+      "recruits": [
+        80,
+        81,
+        107,
+        108
+      ]
+    },
+    {
+      "id": "s2c18",
+      "title": "18 · The Last Battle — L'Renouille",
+      "context": "Everything ends at L'Renouille: the Beast Rune, Highland's army, and the duel with Jowy that decides whether two friends can still choose each other.",
+      "steps": [
+        {
+          "id": "s2c18s0",
+          "kind": "tip",
+          "text": "⛔ POINT OF NO RETURN — the assault on L'Renouille is the final stretch. Once you begin you CANNOT return to recruit. Have all 108 Stars of Destiny BEFORE you enter for the true ending (Jowy survives).",
+          "missable": true
+        },
+        {
+          "id": "s2c18s1",
+          "kind": "boss",
+          "text": "Fight through L'Renouille and shut down the Beast Rune."
+        },
+        {
+          "id": "s2c18s2",
+          "kind": "boss",
+          "text": "Face Jowy at the climax of the Dunan Unification War."
+        }
+      ],
+      "recruits": []
+    }
+  ]
+}

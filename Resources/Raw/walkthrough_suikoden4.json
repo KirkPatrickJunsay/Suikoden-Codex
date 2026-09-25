@@ -1,0 +1,328 @@
+{
+  "game": "Suikoden IV",
+  "subtitle": "The Island Liberation War · the Rune of Punishment",
+  "intro": "A concise, spoiler-aware milestone guide to Suikoden IV. Sail the island nations, track which Stars of Destiny each liberation unlocks, and gather all 108 for the ending where Lazlo survives the Rune of Punishment. Original content — not copied from any guide.",
+  "chapters": [
+    {
+      "id": "s4c1",
+      "title": "1 · Knighthood at Razril",
+      "context": "On the isle of Razril, Lazlo and his fellow rookies are knighted into the Gaien order. When the pirate Brandeau falls, the cursed Rune of Punishment leaps to Lazlo's hand — a power that devours its bearer's life.",
+      "steps": [
+        {
+          "id": "s4c1s0",
+          "kind": "story",
+          "text": "Complete the Razril missions and the knighthood ceremony."
+        },
+        {
+          "id": "s4c1s1",
+          "kind": "boss",
+          "text": "Defeat the pirate Brandeau and inherit the Rune of Punishment."
+        },
+        {
+          "id": "s4c1s2",
+          "kind": "recruit",
+          "text": "Your chosen mission partner (Jewel, Paula, Keneth or Tal) stays with you."
+        }
+      ],
+      "recruits": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "s4c2",
+      "title": "2 · Exile",
+      "context": "Snowe's cowardice and the council's fear of the Rune of Punishment see Lazlo branded a criminal and cast out to sea. The merchant boy Chiepoo throws in his lot with the exiles.",
+      "steps": [
+        {
+          "id": "s4c2s0",
+          "kind": "boss",
+          "text": "Take the blame for the Rune and be exiled from Razril."
+        },
+        {
+          "id": "s4c2s1",
+          "kind": "recruit",
+          "text": "Chiepoo joins automatically after Lazlo is banished."
+        }
+      ],
+      "recruits": [
+        4
+      ]
+    },
+    {
+      "id": "s4c3",
+      "title": "3 · A Ship for a Home",
+      "context": "Adrift, Lazlo's band claims a ship as their floating headquarters. A crew of cooks, navigators and quartermasters signs on as the rebellion finds its feet.",
+      "steps": [
+        {
+          "id": "s4c3s0",
+          "kind": "story",
+          "text": "Establish the ship as your headquarters."
+        },
+        {
+          "id": "s4c3s1",
+          "kind": "recruit",
+          "text": "Desmond, Louise, Chadli, Tov and Ornan join automatically."
+        },
+        {
+          "id": "s4c3s2",
+          "kind": "tip",
+          "text": "Tip: once the HQ can sail, the island nations open up for free recruiting."
+        }
+      ],
+      "recruits": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "id": "s4c4",
+      "title": "4 · Setting Sail — the Island Nations",
+      "context": "With the HQ able to sail, the whole archipelago — Na-Nal, Nay, the deserted islands, Middleport — becomes yours to explore. This is the great optional-recruiting window; most Stars here need an item, a party member, or a small quest.",
+      "steps": [
+        {
+          "id": "s4c4s0",
+          "kind": "story",
+          "text": "Sail freely between the island nations and gather optional Stars."
+        },
+        {
+          "id": "s4c4s1",
+          "kind": "tip",
+          "text": "Tip: most recruits here are OPTIONAL — check each method for its specific condition."
+        },
+        {
+          "id": "s4c4s2",
+          "kind": "tip",
+          "text": "Tip: the Lily sisters, the Lo brothers and the Reinbach chain are all here."
+        }
+      ],
+      "recruits": [
+        10,
+        11,
+        12,
+        13,
+        17,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        50,
+        51,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74
+      ]
+    },
+    {
+      "id": "s4c5",
+      "title": "5 · The Kooluk Empire & the Fall of Obel",
+      "context": "The expansionist Kooluk Empire strikes. King Lino En Kuldes of Obel and Princess Flare are drawn in, Obel is evacuated, and Kika's pirates throw their weight behind you.",
+      "steps": [
+        {
+          "id": "s4c5s0",
+          "kind": "story",
+          "text": "Side with Obel against the Kooluk Empire."
+        },
+        {
+          "id": "s4c5s1",
+          "kind": "recruit",
+          "text": "Evacuate Obel — speak to Yu and Adrienne during the escape."
+        },
+        {
+          "id": "s4c5s2",
+          "kind": "recruit",
+          "text": "Kika, Hervey, Sigurd, Dario and the Obel crew join automatically."
+        }
+      ],
+      "recruits": [
+        14,
+        15,
+        16,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        45,
+        46,
+        47,
+        48,
+        49,
+        52,
+        53
+      ]
+    },
+    {
+      "id": "s4c6",
+      "title": "6 · Liberation of Na-Nal & the Nay Alliance",
+      "context": "The fleet takes the fight back to the occupied islands — freeing Na-Nal and winning the Nay Kobolds to the cause, then receiving the order to retake Razril.",
+      "steps": [
+        {
+          "id": "s4c6s0",
+          "kind": "story",
+          "text": "Liberate Na-Nal and forge the alliance with Nay Island."
+        },
+        {
+          "id": "s4c6s1",
+          "kind": "recruit",
+          "text": "Axel, Eugene, Selma and the Nay allies join after liberation."
+        },
+        {
+          "id": "s4c6s2",
+          "kind": "recruit",
+          "text": "Optional: recruit Gunter around Na-Nal (Middleport early, then after Na-Nal)."
+        }
+      ],
+      "recruits": [
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        99
+      ]
+    },
+    {
+      "id": "s4c7",
+      "title": "7 · Liberation of Razril",
+      "context": "Lazlo returns to the home that exiled him. Defeat the Kooluk garrison, spare General Helmut, and the people of Razril — and old comrades — rally to the flag.",
+      "steps": [
+        {
+          "id": "s4c7s0",
+          "kind": "boss",
+          "text": "Retake Razril; defeat Helmut and agree to spare his men."
+        },
+        {
+          "id": "s4c7s1",
+          "kind": "recruit",
+          "text": "After liberation, sweep Razril for its many optional Stars."
+        },
+        {
+          "id": "s4c7s2",
+          "kind": "tip",
+          "text": "Tip: Jewel/Paula and Keneth/Tal join here automatically if not recruited earlier."
+        }
+      ],
+      "recruits": [
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95
+      ]
+    },
+    {
+      "id": "s4c8",
+      "title": "8 · Liberation of Obel",
+      "context": "The campaign turns to free Obel itself. With the island retaken, the last wave of Stars — appraisers, scholars and palace folk — can be gathered.",
+      "steps": [
+        {
+          "id": "s4c8s0",
+          "kind": "story",
+          "text": "Liberate Obel and restore King Lino."
+        },
+        {
+          "id": "s4c8s1",
+          "kind": "recruit",
+          "text": "Setsu and Flare join automatically; sweep Obel for the rest."
+        },
+        {
+          "id": "s4c8s2",
+          "kind": "tip",
+          "text": "LAST CHANCE TO RECRUIT: gather every remaining Star now — the finale is next."
+        }
+      ],
+      "recruits": [
+        96,
+        97,
+        98,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107
+      ]
+    },
+    {
+      "id": "s4c9",
+      "title": "9 · The Rune of Punishment — Finale",
+      "context": "The war's end forces a reckoning with Graham Cray, young Troy, and the Rune of Punishment's terrible price. Recruit all 108 Stars for the ending where Lazlo lives.",
+      "steps": [
+        {
+          "id": "s4c9s0",
+          "kind": "tip",
+          "text": "⛔ POINT OF NO RETURN — the final voyage locks recruiting. Have all 108 Stars BEFORE you commit.",
+          "missable": true
+        },
+        {
+          "id": "s4c9s1",
+          "kind": "recruit",
+          "text": "⚠ Snowe is the trickiest Star: after the scene with Ramada's war bird, DO NOT enter the war room until you've recruited him, or he's lost.",
+          "missable": true
+        },
+        {
+          "id": "s4c9s2",
+          "kind": "boss",
+          "text": "Confront Graham Cray and end the Island Liberation War."
+        }
+      ],
+      "recruits": [
+        108
+      ]
+    }
+  ]
+}

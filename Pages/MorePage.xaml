@@ -42,6 +42,20 @@
 
             <Border StrokeShape="RoundRectangle 10" Stroke="#30808080" Padding="16">
                 <Grid ColumnDefinitions="Auto,*,Auto" ColumnSpacing="14">
+                    <Label Text="🧭" FontSize="24" VerticalOptions="Center" />
+                    <VerticalStackLayout Grid.Column="1" VerticalOptions="Center">
+                        <Label Text="Walkthrough" FontSize="16" FontAttributes="Bold" />
+                        <Label Text="Suikoden I–V — interactive chapter guides" FontSize="12" Opacity="0.6" />
+                    </VerticalStackLayout>
+                    <Label Grid.Column="2" Text="›" FontSize="22" Opacity="0.4" VerticalOptions="Center" />
+                    <Grid.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding OpenWalkthroughCommand}" />
+                    </Grid.GestureRecognizers>
+                </Grid>
+            </Border>
+
+            <Border StrokeShape="RoundRectangle 10" Stroke="#30808080" Padding="16">
+                <Grid ColumnDefinitions="Auto,*,Auto" ColumnSpacing="14">
                     <Label Text="⚖️" FontSize="24" VerticalOptions="Center" />
                     <VerticalStackLayout Grid.Column="1" VerticalOptions="Center">
                         <Label Text="Compare" FontSize="16" FontAttributes="Bold" />

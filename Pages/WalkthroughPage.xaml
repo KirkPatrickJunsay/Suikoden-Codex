@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="SuikodenCodex.Pages.WalkthroughPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:vm="clr-namespace:SuikodenCodex.ViewModels"
+    x:Name="Page"
+    x:DataType="vm:WalkthroughViewModel"
+    Title="Walkthrough"
+    BackgroundColor="{StaticResource IndigoDeep}">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="16" Spacing="14">
+
+            <!-- game picker I–V -->
+            <CollectionView ItemsSource="{Binding Games}" HeightRequest="44">
+                <CollectionView.ItemsLayout>
+                    <LinearItemsLayout Orientation="Horizontal" ItemSpacing="8" />
+                </CollectionView.ItemsLayout>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="vm:GamePickVM">
+                        <Border StrokeShape="RoundRectangle 9" Stroke="#33808080" BackgroundColor="{Binding BackColor}" Padding="0">
+                            <Label Text="{Binding Roman}" TextColor="{Binding TextColor}" FontSize="15" FontAttributes="Bold"
+                                   WidthRequest="52" HeightRequest="40" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+                            <Border.GestureRecognizers>
+                                <TapGestureRecognizer
+                                    Command="{Binding Source={x:Reference Page}, Path=BindingContext.SelectGameCommand}"
+                                    CommandParameter="{Binding .}" />
+                            </Border.GestureRecognizers>
+                        </Border>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+            <!-- header -->
+            <Label Text="{Binding Subtitle}" TextColor="#9AA6D8" FontSize="13" />
+
+            <!-- empty state (guide not bundled yet) -->
+            <Label Text="{Binding EmptyMessage}" IsVisible="{Binding IsEmpty}"
+                   TextColor="#9AA6D8" FontSize="14" Margin="0,20,0,0" HorizontalTextAlignment="Center" />
+
+            <Border IsVisible="{Binding HasChapters}" StrokeShape="RoundRectangle 12" Stroke="#44D9A636" BackgroundColor="#1AD9A636" Padding="16,12">
+                <VerticalStackLayout Spacing="8">
+                    <Grid ColumnDefinitions="*,Auto">
+                        <Label Text="Progress" FontSize="15" FontAttributes="Bold" TextColor="#E2E8FB" VerticalOptions="Center" />
+                        <Label Grid.Column="1" Text="{Binding Percent, StringFormat='{0}%'}" FontSize="24" FontAttributes="Bold" TextColor="{StaticResource Primary}" />
+                    </Grid>
+                    <ProgressBar Progress="{Binding Progress}" ProgressColor="{StaticResource Primary}" />
+                    <Label Text="{Binding ProgressLabel}" FontSize="12" TextColor="#9AA6D8" />
+                </VerticalStackLayout>
+            </Border>
+
+            <Label Text="{Binding Intro}" TextColor="#9AA6D8" FontSize="12.5" LineHeight="1.3" />
+
+            <Button Text="Reset progress" Command="{Binding ResetCommand}" HorizontalOptions="Start"
+                    FontSize="12" HeightRequest="36" Padding="14,0"
+                    BackgroundColor="#20264A" TextColor="#9AA6D8" BorderColor="#33808080" BorderWidth="1" />
+
+            <!-- chapters -->
+            <VerticalStackLayout BindableLayout.ItemsSource="{Binding Chapters}" Spacing="10">
+                <BindableLayout.ItemTemplate>
+                    <DataTemplate x:DataType="vm:WalkChapterVM">
+                        <Border StrokeShape="RoundRectangle 12" Stroke="#2A335E" BackgroundColor="#1C2348" Padding="0">
+                            <VerticalStackLayout Spacing="0">
+
+                                <!-- chapter header (tap to expand) -->
+                                <Grid ColumnDefinitions="Auto,*,Auto,Auto" Padding="14,12" ColumnSpacing="10">
+                                    <Label Grid.Column="0" Text="{Binding ExpandGlyph}" TextColor="#9AA6D8" FontSize="14" VerticalOptions="Center" />
+                                    <Label Grid.Column="1" Text="{Binding Chapter.Title}" TextColor="#E2E8FB" FontSize="15" FontAttributes="Bold"
+                                           VerticalOptions="Center" MaxLines="2" />
+                                    <Label Grid.Column="2" Text="✓" TextColor="#6FCF7A" FontSize="14" FontAttributes="Bold"
+                                           IsVisible="{Binding Complete}" VerticalOptions="Center" />
+                                    <Label Grid.Column="3" Text="{Binding ProgressLabel}" TextColor="#7E8AC0" FontSize="12" VerticalOptions="Center" />
+                                    <Grid.GestureRecognizers>
+                                        <TapGestureRecognizer
+                                            Command="{Binding Source={x:Reference Page}, Path=BindingContext.ToggleChapterCommand}"
+                                            CommandParameter="{Binding .}" />
+                                    </Grid.GestureRecognizers>
+                                </Grid>
+
+                                <!-- expanded body: context + steps + recruits -->
+                                <VerticalStackLayout IsVisible="{Binding IsExpanded}" Padding="12,0,12,10" Spacing="6">
+
+                                <!-- context -->
+                                <Label Text="{Binding Context}" IsVisible="{Binding HasContext}"
+                                       TextColor="#9AA6D8" FontSize="12.5" LineHeight="1.3" Margin="0,2,0,4" />
+
+                                <!-- steps -->
+                                <VerticalStackLayout BindableLayout.ItemsSource="{Binding Steps}" Spacing="2">
+                                    <BindableLayout.ItemTemplate>
+                                        <DataTemplate x:DataType="vm:WalkStepVM">
+                                            <Grid ColumnDefinitions="Auto,Auto,*,Auto" ColumnSpacing="8" Padding="6,6">
+                                                <!-- check -->
+                                                <Border Grid.Column="0" WidthRequest="26" HeightRequest="26" StrokeShape="RoundRectangle 6"
+                                                        Stroke="#55D9A636" BackgroundColor="#161A2E" VerticalOptions="Center"
+                                                        IsVisible="{Binding Checkable}">
+                                                    <Label Text="{Binding CheckGlyph}" TextColor="#ECC56A" FontSize="14" FontAttributes="Bold"
+                                                           HorizontalOptions="Center" VerticalOptions="Center" />
+                                                    <Border.GestureRecognizers>
+                                                        <TapGestureRecognizer
+                                                            Command="{Binding Source={x:Reference Page}, Path=BindingContext.ToggleStepCommand}"
+                                                            CommandParameter="{Binding .}" />
+                                                    </Border.GestureRecognizers>
+                                                </Border>
+                                                <!-- kind icon -->
+                                                <Label Grid.Column="1" Text="{Binding Icon}" TextColor="{Binding IconColor}" FontSize="14"
+                                                       VerticalOptions="Center" WidthRequest="18" HorizontalTextAlignment="Center" />
+                                                <!-- text (+ missable badge) -->
+                                                <VerticalStackLayout Grid.Column="2" Spacing="2" VerticalOptions="Center">
+                                                    <Label Text="{Binding Text}" TextColor="#D3DAF2" FontSize="13" LineHeight="1.25" Opacity="{Binding TextOpacity}" />
+                                                    <Border IsVisible="{Binding Missable}" StrokeShape="RoundRectangle 4" BackgroundColor="#3A2A1A"
+                                                            Stroke="#C98A3A" Padding="6,1" HorizontalOptions="Start">
+                                                        <Label Text="⚠ MISSABLE" TextColor="#E0A85A" FontSize="9.5" FontAttributes="Bold" />
+                                                    </Border>
+                                                </VerticalStackLayout>
+                                                <!-- codex link -->
+                                                <Button Grid.Column="3" Text="➜" IsVisible="{Binding HasLink}" FontSize="16"
+                                                        Command="{Binding Source={x:Reference Page}, Path=BindingContext.OpenLinkCommand}"
+                                                        CommandParameter="{Binding .}"
+                                                        WidthRequest="40" HeightRequest="40" Padding="0"
+                                                        BackgroundColor="Transparent" TextColor="#ECC56A" VerticalOptions="Center" />
+                                            </Grid>
+                                        </DataTemplate>
+                                    </BindableLayout.ItemTemplate>
+                                </VerticalStackLayout>
+
+                                <!-- recruits available around here -->
+                                <VerticalStackLayout IsVisible="{Binding HasRecruits}" Spacing="4" Margin="0,8,0,0">
+                                    <Label Text="{Binding RecruitsHeader}" TextColor="#ECC56A" FontSize="12.5" FontAttributes="Bold" />
+                                    <VerticalStackLayout BindableLayout.ItemsSource="{Binding Recruits}" Spacing="2">
+                                        <BindableLayout.ItemTemplate>
+                                            <DataTemplate x:DataType="vm:WalkRecruitVM">
+                                                <Grid ColumnDefinitions="Auto,*,Auto" ColumnSpacing="8" Padding="4,5" BackgroundColor="Transparent">
+                                                    <Grid.GestureRecognizers>
+                                                        <TapGestureRecognizer
+                                                            Command="{Binding Source={x:Reference Page}, Path=BindingContext.OpenRecruitCommand}"
+                                                            CommandParameter="{Binding .}" />
+                                                    </Grid.GestureRecognizers>
+                                                    <Label Grid.Column="0" Text="★" TextColor="#ECC56A" FontSize="13" VerticalOptions="Start" WidthRequest="16" HorizontalTextAlignment="Center" />
+                                                    <VerticalStackLayout Grid.Column="1" Spacing="1">
+                                                        <Grid ColumnDefinitions="Auto,*" ColumnSpacing="6">
+                                                            <Label Text="{Binding Name}" TextColor="#E2E8FB" FontSize="13" FontAttributes="Bold" />
+                                                            <Label Grid.Column="1" Text="{Binding Star}" TextColor="#7E8AC0" FontSize="10.5" VerticalOptions="Center" IsVisible="{Binding HasStar}" />
+                                                        </Grid>
+                                                        <Label Text="{Binding Method}" TextColor="#9AA6D8" FontSize="11.5" LineHeight="1.2" />
+                                                        <HorizontalStackLayout Spacing="6">
+                                                            <Border IsVisible="{Binding Optional}" StrokeShape="RoundRectangle 4" BackgroundColor="#1E2C46"
+                                                                    Stroke="#5C8AD0" Padding="6,1" HorizontalOptions="Start">
+                                                                <Label Text="OPTIONAL" TextColor="#8FB6E8" FontSize="9" FontAttributes="Bold" />
+                                                            </Border>
+                                                            <Border IsVisible="{Binding Missable}" StrokeShape="RoundRectangle 4" BackgroundColor="#3A2A1A"
+                                                                    Stroke="#C98A3A" Padding="6,1" HorizontalOptions="Start">
+                                                                <Label Text="⚠ may be missable" TextColor="#E0A85A" FontSize="9" FontAttributes="Bold" />
+                                                            </Border>
+                                                        </HorizontalStackLayout>
+                                                    </VerticalStackLayout>
+                                                    <Button Grid.Column="2" Text="➜" IsVisible="{Binding HasLink}" FontSize="15"
+                                                            Command="{Binding Source={x:Reference Page}, Path=BindingContext.OpenRecruitCommand}"
+                                                            CommandParameter="{Binding .}"
+                                                            WidthRequest="38" HeightRequest="38" Padding="0" BackgroundColor="Transparent" TextColor="#ECC56A" VerticalOptions="Start" />
+                                                </Grid>
+                                            </DataTemplate>
+                                        </BindableLayout.ItemTemplate>
+                                    </VerticalStackLayout>
+                                </VerticalStackLayout>
+
+                                </VerticalStackLayout>
+                            </VerticalStackLayout>
+                        </Border>
+                    </DataTemplate>
+                </BindableLayout.ItemTemplate>
+            </VerticalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
