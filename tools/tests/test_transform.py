@@ -45,6 +45,10 @@ class CleanTextTests(unittest.TestCase):
         raw = "Increase PATK by {{SP skill lv|80%|130%}} vs [[Toran Checkpoint|the checkpoint]]<br><strong>now</strong>"
         self.assertEqual(clean_text(raw), "Increase PATK by 80% → 130% vs the checkpoint now")
 
+    def test_nested_templates_are_removed(self):
+        raw = "Strikes {{tooltip|hard|{{Icon|sword}}}} twice"
+        self.assertEqual(clean_text(raw), "Strikes twice")
+
 
 class EffectRowTests(unittest.TestCase):
     def test_power_row_with_chips_and_hits(self):

@@ -23,7 +23,10 @@ def clean_text(value):
     s = _RUBY.sub(lambda m: m.group(1), s)
     s = _COMMENT.sub("", s)
     s = _SKILL_LV.sub(lambda m: " → ".join(p.strip() for p in m.group(1).split("|") if p.strip()), s)
-    s = _TEMPLATE.sub("", s)
+    prev = None
+    while prev != s:
+        prev = s
+        s = _TEMPLATE.sub("", s)
     s = _WIKILINK.sub(lambda m: m.group(1), s)
     s = _EXTLINK.sub(lambda m: m.group(1), s)
     s = _BR.sub(" ", s)
