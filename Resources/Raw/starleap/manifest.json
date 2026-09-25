@@ -1,0 +1,735 @@
+{
+  "schema": 1,
+  "version": 1,
+  "generatedAt": "2026-09-25T22:04:55Z",
+  "source": "https://starleap.gensopedia.org",
+  "license": "CC BY-NC-SA 4.0",
+  "attribution": "Adapted from Gensopedia STAR LEAP",
+  "files": [
+    {
+      "path": "portraits/aegir-night-lightnings-shadow.png",
+      "sha256": "360be9c68dbbff7c354517e9bcb22467527cdbcc6ea6cfbc5b43e6c6b8718ad3",
+      "bytes": 30400
+    },
+    {
+      "path": "portraits/alex-adventurous-family-man.png",
+      "sha256": "48ca334a9f0d9380fddfea7c5de76f9ee77349814099ea96992f0f02a0b210d8",
+      "bytes": 27898
+    },
+    {
+      "path": "portraits/anji-top-dog-of-the-lake.png",
+      "sha256": "edfa741ed45b5e481a90dd1bcf23556906a0f552cf6fff8d8f309652141f8cfa",
+      "bytes": 35916
+    },
+    {
+      "path": "portraits/apple-famous-tacticians-pupil.png",
+      "sha256": "49f27749c80d420e203c3be98be20fdce46a0f7f5227493a1ee4de2647b886a1",
+      "bytes": 24196
+    },
+    {
+      "path": "portraits/avery-beauty-hunter.png",
+      "sha256": "79e4cfe291cc0d6f49b050ddc553eb4cf4c7a74da0d96f82158218d9356b4382",
+      "bytes": 37512
+    },
+    {
+      "path": "portraits/baubau-ex-mercenary-woodcutter.png",
+      "sha256": "d546d1258e1d04f62025dde41accc0bf4846460aeea69d0354ec41975c38c235",
+      "bytes": 33793
+    },
+    {
+      "path": "portraits/belladonna-clear-thinking-architect.png",
+      "sha256": "71738ccdd5d126761cd962a9ceeb2a7e4adec2756a2977ede10eeec690b8dec7",
+      "bytes": 27922
+    },
+    {
+      "path": "portraits/bhuv-mother-master-first.png",
+      "sha256": "821b9dfc0e98925d7e6e0ecd3e11a54ba6026a300e40a8c8a67422a14395c419",
+      "bytes": 24392
+    },
+    {
+      "path": "portraits/chiepoo-highly-enterprising.png",
+      "sha256": "8b812aa2e504dcdeb08553857f26cda3accf1f30ca089920a086d695eec46a66",
+      "bytes": 27906
+    },
+    {
+      "path": "portraits/chloe-item-shop-beauty.png",
+      "sha256": "f282bebd1ff99b8e0439f0f7743b023bd50950a14a8341d70d0d39b6d59b20f3",
+      "bytes": 28688
+    },
+    {
+      "path": "portraits/diana-demon-god-heaven-breaker.png",
+      "sha256": "e9d4bafceb58b47bf7f3764a6921bccf3e97abc535887df6fa2990b0cad729db",
+      "bytes": 28009
+    },
+    {
+      "path": "portraits/diana-power-seeking-demon.png",
+      "sha256": "0086ae841d0996823df0edc5ce56e421b45114c53c82bce361c09a1169cd6e8b",
+      "bytes": 33733
+    },
+    {
+      "path": "portraits/eikei-power-seeking-pugilist.png",
+      "sha256": "bd9adcdadb0a4ff355606b84a9ad3977a34b8168c2b9d226dc610727512408cc",
+      "bytes": 31657
+    },
+    {
+      "path": "portraits/eileen-determined-love.png",
+      "sha256": "d5f7f605bdf852ae11fa5ccae0230b582bc1505e49896e7b941b73b496d83edc",
+      "bytes": 30111
+    },
+    {
+      "path": "portraits/enla-gifted-dwarf-engineer.png",
+      "sha256": "eedf4f7b5eb712157b1a98f570c05e9f18157e8f67bb96f59ee417a1daba89ea",
+      "bytes": 33201
+    },
+    {
+      "path": "portraits/esmeralda-elegant-rose.png",
+      "sha256": "e934be55d545d5208918cf6083ba05727f69846ceb2627071adc56189942f96b",
+      "bytes": 33146
+    },
+    {
+      "path": "portraits/farah-cheerful-merchant.png",
+      "sha256": "1c22319ed452c85a659be2b65949a159dd76dbe1d2b4758bd4ca57d8b2b3125b",
+      "bytes": 32099
+    },
+    {
+      "path": "portraits/farah-whimsical-and-brawny.png",
+      "sha256": "85d50562c89f2f64480198c7fbc2ab09b467a8afc73d3467e3184dd8c447410f",
+      "bytes": 33131
+    },
+    {
+      "path": "portraits/flanagan-steadfast-and-hot-headed.png",
+      "sha256": "744524983be3c52829089bbd8b7e53bbc22a94159f393b60fd5c812ccae0e3a6",
+      "bytes": 35052
+    },
+    {
+      "path": "portraits/flanagan-sturdy-guard.png",
+      "sha256": "3339f10afff71e3c70f3ff55a3be2e3b8c36c5b910f5bfe7fbca5e9e6665f926",
+      "bytes": 33961
+    },
+    {
+      "path": "portraits/flik-blue-flash-strike.png",
+      "sha256": "c664b948656a97e0fa47518a953b7c11b66369752738fdf781eebe9c72d21c94",
+      "bytes": 37491
+    },
+    {
+      "path": "portraits/flik-wandering-swordfighter.png",
+      "sha256": "491068d85d2923696ff98794bfa2e997974e446f5db01abce4cd4b28feef334e",
+      "bytes": 28561
+    },
+    {
+      "path": "portraits/fu-su-lu-tiger-head-iron-arms.png",
+      "sha256": "7722ccd03039622a91eaebe89f5bf699c5c7a91d1247f79b599a9a9dfcbbf5d2",
+      "bytes": 35658
+    },
+    {
+      "path": "portraits/gaspar-daring-gambler.png",
+      "sha256": "eb7820cf02aba740032d6f2cf597eae72531e04ae5e6efe0164af42ec8d46265",
+      "bytes": 24903
+    },
+    {
+      "path": "portraits/gaurus-dynamic-teacher.png",
+      "sha256": "8485f066d88b8362fcb0ca901643f86fca3ac1897a8a958dbe780072df6cf7c1",
+      "bytes": 25152
+    },
+    {
+      "path": "portraits/gen-hot-blooded-shipwright.png",
+      "sha256": "db9ca77376b54bf2f9d7411c49914aab5065144a09f421d94bfe609428ba54bf",
+      "bytes": 32039
+    },
+    {
+      "path": "portraits/georg-calm-swordmaster.png",
+      "sha256": "b2161b29292c342dc0020920b1c1d095668119a4db5e62e80fc2a1c5ffe4be12",
+      "bytes": 35246
+    },
+    {
+      "path": "portraits/georg-wandering-sword-master.png",
+      "sha256": "1c16361a86d913ae85ed3955231b63102714c8a8e408dd0072481a2824901358",
+      "bytes": 29313
+    },
+    {
+      "path": "portraits/gon-my-big-brothers-the-best.png",
+      "sha256": "50eb35040d7c789f83a74685028eba510fafbcbe3a46d0072a02b0acfca3618a",
+      "bytes": 29664
+    },
+    {
+      "path": "portraits/gonoh-centuries-old-maiden.png",
+      "sha256": "7bda7372c30c88794cc14117411da5ab5bcec0e60fd1c3aa7b2e7421b0562791",
+      "bytes": 33255
+    },
+    {
+      "path": "portraits/gonoh-centuries-old-turtle.png",
+      "sha256": "e3c391d0ae9d46a79ea5a9cc127016729bb7125f8ae78cb8389c6fc7dd9cf965",
+      "bytes": 33831
+    },
+    {
+      "path": "portraits/grady-corrupt-military-officer.png",
+      "sha256": "f4dbf2975d7a074d10384396bc77b51590ed3fd126d9119629cfdb240dd3ffd8",
+      "bytes": 26052
+    },
+    {
+      "path": "portraits/gremio-young-masters-caretaker.png",
+      "sha256": "5775ce9c2222b149c60f3b35386afe281f5f24efd012ae3d8b76e49a05c82ab7",
+      "bytes": 28727
+    },
+    {
+      "path": "portraits/haruka-bringer-of-fertility.png",
+      "sha256": "d8b839cc2b1ca7b6d41afa44e8de0bbac02358d9221bf77c46276fa618596ea9",
+      "bytes": 26719
+    },
+    {
+      "path": "portraits/hellion-old-witch-of-the-mirror.png",
+      "sha256": "5203249e55b0fb174d961beb8b4fa1f3e725a434aedaf72a19056fe241085465",
+      "bytes": 37478
+    },
+    {
+      "path": "portraits/hero-academy-hero.png",
+      "sha256": "de495921c53f0a58494d94dcced035c3d41af98716300eab82e5c286a2ddf176",
+      "bytes": 24997
+    },
+    {
+      "path": "portraits/hero-fake-imperial-soldier.png",
+      "sha256": "64957bc221e6055a6d5c823494513f689880c2707fd33c70bade929520da2aed",
+      "bytes": 27867
+    },
+    {
+      "path": "portraits/hero-hero-of-an-enchanted-land.png",
+      "sha256": "a5bf226775a2814cb1db2eb24de472e303e6d003800efd172ba8b68b05deda93",
+      "bytes": 24708
+    },
+    {
+      "path": "portraits/hero-village-chiefs-son.png",
+      "sha256": "7fa7032bdb30a8417d95f19a15b79bd1f177689ea89aa6e771fe05534fde594b",
+      "bytes": 26394
+    },
+    {
+      "path": "portraits/hisui-hidden-power.png",
+      "sha256": "3cd2da13b3c81741945790d59685c71e9e1f7c3f8199c14f196ebe821c1e974e",
+      "bytes": 31317
+    },
+    {
+      "path": "portraits/hisui-manor-servant.png",
+      "sha256": "0e8c22de8a22a9b764319ab3a39b5064702b7ec35acd803db3ba985c236e1b37",
+      "bytes": 26689
+    },
+    {
+      "path": "portraits/hix-gentle-boy-warrior.png",
+      "sha256": "51e4f80fa0ff9b7e986284b9c4cf0c7a12331f9f8fe97d0b80543040696f196f",
+      "bytes": 27782
+    },
+    {
+      "path": "portraits/hou-adventurous-father.png",
+      "sha256": "f7bb3cc485863801924c910c1cc171a5b7a9e2cff280d5edaafc245ecf385231",
+      "bytes": 32777
+    },
+    {
+      "path": "portraits/hou-village-founder.png",
+      "sha256": "06fec6822ea5adc64d4d2cdb0765f6561f7a4979e045e11e72bd755903f93c7a",
+      "bytes": 28545
+    },
+    {
+      "path": "portraits/hou-warrior-wolf.png",
+      "sha256": "e48788bdcd437ec1d2ce51a163e83909aeb88cccc15f7b74f92e20e220d31f7d",
+      "bytes": 33783
+    },
+    {
+      "path": "portraits/humphrey-former-imperial-centurion.png",
+      "sha256": "3f2ecac3975d0ba2f1fc0385ebbf98760dc2c7322afdb7550347d51351aa341c",
+      "bytes": 29839
+    },
+    {
+      "path": "portraits/humphrey-silent-swordsman.png",
+      "sha256": "3c880901323d6320b982d6a47a7fd9521b10a2fb2c811f5260e2ba653ea64b72",
+      "bytes": 30545
+    },
+    {
+      "path": "portraits/jeane-runemistress-of-the-abyss.png",
+      "sha256": "903a95ae2bc224073b7413d53883a4f54c72650c6ee1298eaf1dd2c3a1f146a0",
+      "bytes": 33876
+    },
+    {
+      "path": "portraits/jordi-young-mercenary-duck.png",
+      "sha256": "f13fe5c7a643700ae5b047e865c39510f46e899b9ab96fde8a41db63ef336030",
+      "bytes": 28761
+    },
+    {
+      "path": "portraits/jowy-black-blade-inheritor.png",
+      "sha256": "b14f48efa552c35c769e167ef6f54a6f8c8d9bd58305a7958ddc80bfa022527c",
+      "bytes": 17964
+    },
+    {
+      "path": "portraits/kamandol-lakeside-alchemist.png",
+      "sha256": "28361be6cf70b6c56ebec2a150a96bb5ba720e4660dc9754f54aa02cdec11ecb",
+      "bytes": 25982
+    },
+    {
+      "path": "portraits/kanak-silent-powerhouse.png",
+      "sha256": "3acbcdfb26a945f0cbf8f0b5cd45ec9e618f8c37281e948291e2274998b8caff",
+      "bytes": 30824
+    },
+    {
+      "path": "portraits/kasumi-crimson-ninja-girl.png",
+      "sha256": "35d529bfc371885c88674b46af273e5ab1d782609a1a0f001baddff8f4d88507",
+      "bytes": 25248
+    },
+    {
+      "path": "portraits/kessler-boss-of-mt-tigerwolf.png",
+      "sha256": "fe796e173a0abfb51c3e2eb740d6bb17f098e756d76ea31e5d2a743e642565c6",
+      "bytes": 35818
+    },
+    {
+      "path": "portraits/kika-falcon-pirate-princess.png",
+      "sha256": "1b6e207c099d7bc99a6a6c0a0ec7dc7885f2aef25dd014e9ed88a2941622781b",
+      "bytes": 28557
+    },
+    {
+      "path": "portraits/kimberly-elegant-drunk.png",
+      "sha256": "be8d9b6d542aae6816dd6eca9308739afe4a7e6b0d97f386fac48be28e413aaf",
+      "bytes": 20958
+    },
+    {
+      "path": "portraits/koroku-castle-guard-dog.png",
+      "sha256": "b4550b52bb22f465d52458cc43a6148512cbe49628893dbe48b9cd315ab7a65c",
+      "bytes": 27294
+    },
+    {
+      "path": "portraits/kraze-corrupt-commander.png",
+      "sha256": "100243f2afb9974f13e40aae56e09464c7a75ef349fa93891d37ed77c4282300",
+      "bytes": 30051
+    },
+    {
+      "path": "portraits/kuromimi-hero-of-kobold-village.png",
+      "sha256": "56c76fd450bda0c011e82647f6586810dc91875eb0d78a12f6c5726f00fe4c64",
+      "bytes": 29737
+    },
+    {
+      "path": "portraits/ledon-suspicious-inn-owner.png",
+      "sha256": "79a7210f1f0214b81f9f7a609ff7d02da1ae7684979632dcf9e7f1aab1b31072",
+      "bytes": 35143
+    },
+    {
+      "path": "portraits/lei-knowledge-seeking-noble.png",
+      "sha256": "61b550fdc378cc226b1864b22962972f6631a08eea6edfe20d5f3c4788b7fb9e",
+      "bytes": 31705
+    },
+    {
+      "path": "portraits/leona-crimson-mercenary-leader.png",
+      "sha256": "9bfffda969661e3c35b9124fbec4b85c04a701872c3d9c900a9ce70a41c9d56f",
+      "bytes": 28316
+    },
+    {
+      "path": "portraits/leonardo-horse-slayer-axe.png",
+      "sha256": "f4218dd8abdf282f656e54e64c0940910da56904f4505e5665706ef47118b9c9",
+      "bytes": 33796
+    },
+    {
+      "path": "portraits/lepant-magnate-of-noble-embers.png",
+      "sha256": "f8d5d81d78988b84460b02fb1df15d166c1bbe336e8d34c515c4dad8552b2ecf",
+      "bytes": 31240
+    },
+    {
+      "path": "portraits/lian-fortune-seeking-noble.png",
+      "sha256": "f38f1427bb507787f6d581552d2417c4dc263957764f83268397c90f1026db25",
+      "bytes": 28616
+    },
+    {
+      "path": "portraits/lotte-cat-seeking-sorceress.png",
+      "sha256": "80864240589e66a8521a7ac5e9a85bee9716cf449598b66680b590d4d5204bdf",
+      "bytes": 30554
+    },
+    {
+      "path": "portraits/luc-heaven-sent-rune-child.png",
+      "sha256": "70fe9446aa047fbd709748eb3db1b4743fc79dc53debc6f142bdbe9984c9b45e",
+      "bytes": 28761
+    },
+    {
+      "path": "portraits/luc-leknaats-no-1-pupil.png",
+      "sha256": "faa5f68fe2d1340649343bddb315a3e7ace00bef8ad15244bfdcbc2bfb7ed62a",
+      "bytes": 26342
+    },
+    {
+      "path": "portraits/lun-wave-riding-water-blade.png",
+      "sha256": "07864164b95d920fabbda6d995fd77880d232c012a30783b8d1efdc25f1499f4",
+      "bytes": 30981
+    },
+    {
+      "path": "portraits/luserina-flower-of-the-restoration.png",
+      "sha256": "26d1d224423a3190a9d6fd17ace1ea2dd5105e6a6c41894b632aae365151b8a1",
+      "bytes": 28164
+    },
+    {
+      "path": "portraits/maas-sincere-young-apprentice.png",
+      "sha256": "b5857a675e40bb067bf1bd3e3c32f71d976f5dbec7e5299421f3174ab3ba31c0",
+      "bytes": 31967
+    },
+    {
+      "path": "portraits/mace-master-blacksmith.png",
+      "sha256": "c2242d1a4e3d0f16d02740fb307650b7dae1577bd8c4395757fb4fa7fde9940c",
+      "bytes": 32108
+    },
+    {
+      "path": "portraits/madeleine-elegant-artisan.png",
+      "sha256": "4bfd9b2adec397ba003241d632c1e9ece0993e32ee436958007af255b71b5908",
+      "bytes": 28765
+    },
+    {
+      "path": "portraits/mare-azure-scaled-maiden.png",
+      "sha256": "cdb29a2ecc66e3a93af05d75290467337bfd4050e57d13ec55b09b9b642ce1c9",
+      "bytes": 29182
+    },
+    {
+      "path": "portraits/mare-unmotivated-mermaid.png",
+      "sha256": "942dc1f0aa0b4899eda42d9089771386c37a2848e9a34ee5e4c88f2378549afe",
+      "bytes": 32374
+    },
+    {
+      "path": "portraits/mariye-inns-poster-girl.png",
+      "sha256": "86274cf70f6bc36e3a05ea1bcc08d14093b918c86ba391e43533278c6a41bd97",
+      "bytes": 26321
+    },
+    {
+      "path": "portraits/mariye-pure-pretty-poster-girl.png",
+      "sha256": "bf10260b7ec93b73f68f375926e08301dda98b06aa45add92d66e7d0148c3ab1",
+      "bytes": 30951
+    },
+    {
+      "path": "portraits/mausar-courageous-knight-bunny.png",
+      "sha256": "c6d53137b401b633187cbfda7c7c4d2a6cd5e36dc3ccf4d8ce5483965157bf02",
+      "bytes": 33711
+    },
+    {
+      "path": "portraits/meese-maces-third-pupil.png",
+      "sha256": "0c4c772b26122a835c435c97730d456791674dc91cd1245cd34779ad61bae1e4",
+      "bytes": 26122
+    },
+    {
+      "path": "portraits/meesh-little-master.png",
+      "sha256": "c08cdea07054aa836fbb51b8efb91c466fec44484b52adc7829eda67dc994a4c",
+      "bytes": 33094
+    },
+    {
+      "path": "portraits/melodye-awakened-melodies.png",
+      "sha256": "693a4d22be866d72f76a8a1f3695cd99536e87dd0f53775b4ef339b476ba7699",
+      "bytes": 25157
+    },
+    {
+      "path": "portraits/milich-flower-general.png",
+      "sha256": "53102e34f18c4aca9f4e982ca6fa965cd3ab6d2a681b96b9e66055b384e1540c",
+      "bytes": 34223
+    },
+    {
+      "path": "portraits/mina-freedom-dancer.png",
+      "sha256": "0cdab64620cd1d21a249a9ec5663c15028306303bc39822a8a1de0f564ac9b87",
+      "bytes": 30686
+    },
+    {
+      "path": "portraits/miusar-benevolent-priest-bunny.png",
+      "sha256": "aef3684ace891677b2e0a8649f69153deaed1a2aafa6a57256e168cde3ee38b3",
+      "bytes": 33888
+    },
+    {
+      "path": "portraits/mondo-trusted-ninja.png",
+      "sha256": "84cb20cfb70c328c5b18374407e50e8d9080ce51598b73bdbd4a71ae3ddfbb06",
+      "bytes": 93566
+    },
+    {
+      "path": "portraits/moose-masters-best-pupil.png",
+      "sha256": "49723d55996cbb8a48bea2c1cd3e2f68f6d9e5fb57eb36da2f95d937c7bfbcc5",
+      "bytes": 29561
+    },
+    {
+      "path": "portraits/morgan-minds-eye-fighter.png",
+      "sha256": "848459933a947236ac7e60badf5703a673d07fbd72d8ec0f74dcde16f1967f95",
+      "bytes": 36799
+    },
+    {
+      "path": "portraits/mose-blazing-blacksmith.png",
+      "sha256": "88c5234169c25d99f9c8744d54742dac6a83a1d0df8a5a7e070c2eccae8427f8",
+      "bytes": 31889
+    },
+    {
+      "path": "portraits/mukumuku-five-squirrel-squad-head.png",
+      "sha256": "5dfec577097bd533bd86e6cbf8bc37e4efc91321b6fe3d435eeb2e0dd176af26",
+      "bytes": 30611
+    },
+    {
+      "path": "portraits/muusar-cheerful-dancer-bunny.png",
+      "sha256": "88c7bfa6cd3dd13ae483693cd1f1d29222fa3490fb71cc44cff4ea57e1fa69df",
+      "bytes": 27710
+    },
+    {
+      "path": "portraits/neaje-eminent-runemistress.png",
+      "sha256": "e6cd0916442da812dff6756090e49b07548a2f1a7a5c722a1e890e3b5a687689",
+      "bytes": 33028
+    },
+    {
+      "path": "portraits/nick-surging-lightning-blade.png",
+      "sha256": "27626142e73eaf99a205713bdd30bb40fa2bc295caf084872e71325bc17b993a",
+      "bytes": 30545
+    },
+    {
+      "path": "portraits/nina-maiden-in-love.png",
+      "sha256": "8b96e364f28a13f121e7e9fe079bf5a019988989e60ab18042d547c84df54be2",
+      "bytes": 29758
+    },
+    {
+      "path": "portraits/odessa-daughter-of-nobles.png",
+      "sha256": "32ed0369631e88513491bce6346e09f1afd9a68a87202ca21b2e95f8484ecd84",
+      "bytes": 29049
+    },
+    {
+      "path": "portraits/odessa-virtuous-will.png",
+      "sha256": "92f78ca8926afd9f767c7cb06cbc0b2366804f87b8c985f63e5788ef8aa88f0d",
+      "bytes": 32387
+    },
+    {
+      "path": "portraits/orhan-drunken-tavern-owner.png",
+      "sha256": "a374d38df6e5d07f611d7b2f016e6468f33bb2a498b223f23fed0d22eb1cb4c7",
+      "bytes": 32486
+    },
+    {
+      "path": "portraits/orhan-raging-war-scythe.png",
+      "sha256": "2331285f9a25eb6a1c992733180acb258f016f75a6250b01322b5548d432d369",
+      "bytes": 33529
+    },
+    {
+      "path": "portraits/peter-knowledgeable-ex-tutor.png",
+      "sha256": "b374343c5ba0e5bf5e37524c2cfa4a6a9d02d9603d80f8499e37181cafe46cfd",
+      "bytes": 28948
+    },
+    {
+      "path": "portraits/pros-iron-gadget.png",
+      "sha256": "2e017e2188b2d6dbc2471db87efc81e8b55212298d82e8a31e5ebfceabcdea14",
+      "bytes": 34829
+    },
+    {
+      "path": "portraits/quincy-eagle-eyed-hunter.png",
+      "sha256": "65e9711e8fde0f87b79337c4978cdf05582eec9d3b4e2f6bd9ebbdb8232380df",
+      "bytes": 34823
+    },
+    {
+      "path": "portraits/rachana-kind-mother-master.png",
+      "sha256": "ab1db2b24f67969a2d61541f501c7477cd9f2551579f2594b6f2b9a2d65f4646",
+      "bytes": 20793
+    },
+    {
+      "path": "portraits/rachana-senren-temple-grandmaster.png",
+      "sha256": "637e659aa0f5626e586099725f46f24a887f394978d3bf66e58925cb963ec117",
+      "bytes": 25937
+    },
+    {
+      "path": "portraits/ragnar-night-lightnings-fury.png",
+      "sha256": "f7593e6dad60e2f83933f1a0e9ded87a16b0d8d35493027dc76d1f8be353c7a5",
+      "bytes": 31874
+    },
+    {
+      "path": "portraits/ranran-permissible-insanity.png",
+      "sha256": "c41012e331565e1d346ed5a435c5a0b1d58bc5bbf4ab32bcf14f70013a4e1167",
+      "bytes": 30112
+    },
+    {
+      "path": "portraits/rean-bearer-of-liberation.png",
+      "sha256": "f4de0de883f82cb620dc616fb595772c57d87c1464f860b81d3bd32dfa60272d",
+      "bytes": 30157
+    },
+    {
+      "path": "portraits/retso-phantom-chasing-cook.png",
+      "sha256": "4478787da7217b2391bd2e46f34216aa8569df1314f194aa67dc83ce9ca6f92d",
+      "bytes": 32288
+    },
+    {
+      "path": "portraits/rihyo-academy-troublemaker.png",
+      "sha256": "63300ee201f0ee5b212ce41f6e1e11c80e13f1794fdf617d9da25f5552a5ed84",
+      "bytes": 29887
+    },
+    {
+      "path": "portraits/rihyo-bro.png",
+      "sha256": "62647af668dd38585f53efaee1e30b54ed96e116ae74495b36c074fefaec502d",
+      "bytes": 27857
+    },
+    {
+      "path": "portraits/rinrin-dignified-and-resolute.png",
+      "sha256": "86863e5170278861b1e50ec214b4e338e12f0ad23a91c479cf0aa1125b89f508",
+      "bytes": 23443
+    },
+    {
+      "path": "portraits/romould-heartless-and-selfless.png",
+      "sha256": "1f4c6ecfe1604bd89f8562fa4fb94177343172176bf42cfc137cf3268610e3a6",
+      "bytes": 28906
+    },
+    {
+      "path": "portraits/ronnie-bell-crimson-flame-heroine.png",
+      "sha256": "c9d8efffadb55e4ca25e32ab75d8b83615df08cddbf99e90eb38aafae111a4e9",
+      "bytes": 24278
+    },
+    {
+      "path": "portraits/ruaar-tower-guardian.png",
+      "sha256": "53f3ef02a5d95e145eaefe9edad4267af57eb6f1242ece310e543468f81a77fb",
+      "bytes": 24708
+    },
+    {
+      "path": "portraits/saiga-steady-teacher.png",
+      "sha256": "caa9c6db7f7c1e4bbf2f8ca76145f24f53262115ece267ac160d12567998e7e9",
+      "bytes": 19412
+    },
+    {
+      "path": "portraits/saki-academy-star.png",
+      "sha256": "169b7caab3e63c7eca0426a759e1b83f8a128c4f14b3c2885d8e658dfbb454c3",
+      "bytes": 24636
+    },
+    {
+      "path": "portraits/sanchez-encyclopedic-knowledge.png",
+      "sha256": "56a3b2c6008003cad3c14129eb7e4d26ea6b39206975acb2a96d13a3f9ec33f6",
+      "bytes": 24657
+    },
+    {
+      "path": "portraits/saphia-ever-quiet-huntress.png",
+      "sha256": "b7c8714ed0e614394f03f9f50218c3859d0438193dd84ffea256931344061143",
+      "bytes": 30379
+    },
+    {
+      "path": "portraits/saphia-indebted-hunter.png",
+      "sha256": "70d9dc1ac757b7e8d79916ece23624a970f65175388c1744afbf7bb61c773a27",
+      "bytes": 29295
+    },
+    {
+      "path": "portraits/sasuke-hidden-village-star.png",
+      "sha256": "89b068fd945ab61ecdcfc9d9e6decd6001ff924ddf2255f5bff7a665e9df5f05",
+      "bytes": 28334
+    },
+    {
+      "path": "portraits/shapur-undefeated-azure-dragon.png",
+      "sha256": "d94647f000e93b384b383b7dff5aa0d30a1978937a464597b4ecebeb14227b79",
+      "bytes": 29037
+    },
+    {
+      "path": "portraits/shapur-village-chiefs-aide.png",
+      "sha256": "0512807d1ea607e9af150117c22b916cc5172ffc3e8eee322e5f0662880721bf",
+      "bytes": 27218
+    },
+    {
+      "path": "portraits/shirin-casual-childhood-friend.png",
+      "sha256": "f9f87d7cb7fbed3b33bb7434d6b4625b1a31ecc319137ad8e3e60f68425a47ba",
+      "bytes": 32733
+    },
+    {
+      "path": "portraits/shirin-warrior-childhood-friend.png",
+      "sha256": "3ff526440609b9ef1e32a1bd26dddffc69f68be35d994c5dcfa08d7a0e578a56",
+      "bytes": 27273
+    },
+    {
+      "path": "portraits/sojiro-renowned-helmsman.png",
+      "sha256": "0c29e940d7d302c13423e73d514e413fb12ab2459113413af9e27a544d2ae0e7",
+      "bytes": 27950
+    },
+    {
+      "path": "portraits/stallion-swift-runner.png",
+      "sha256": "ad05b065785e2096b22ca300b9b697a5300462dbf691b873976130e32f4e73f9",
+      "bytes": 36888
+    },
+    {
+      "path": "portraits/stendhal-best-writer-of-our-era.png",
+      "sha256": "3817bd7c0178b805a9c20ffe0ec17085e553ca3bcd1bdd59085b70f29a2c7ec1",
+      "bytes": 29487
+    },
+    {
+      "path": "portraits/sydonia-toate.png",
+      "sha256": "58b2c7de7c500dd740e27c8b77a9c9a283aa5f09620958558404d37ec0147c48",
+      "bytes": 37774
+    },
+    {
+      "path": "portraits/tengaar-pure-maiden.png",
+      "sha256": "acf261a341e3ee454ef18f914408686d495741d5f94dc604275a4ac773c23922",
+      "bytes": 30492
+    },
+    {
+      "path": "portraits/tenten-naive-girl.png",
+      "sha256": "efc69e56518e447649e897f3e079ca2c0c1ccb8a386e97881d589e4b5eaf93a6",
+      "bytes": 29148
+    },
+    {
+      "path": "portraits/tessai-weapon-loving-craftsman.png",
+      "sha256": "66622915a9da79d554db15c66a478fb81405a8698532555f5d7f0259846a0903",
+      "bytes": 35414
+    },
+    {
+      "path": "portraits/tsubaki-overperforming-ninja.png",
+      "sha256": "fcf00b48c2d6c3b3d7bfde204965e25396ba0901cb5e38be1ff92a872b13ee25",
+      "bytes": 24749
+    },
+    {
+      "path": "portraits/tsuranami-forbidden-flower.png",
+      "sha256": "589416f4638a54fd874146efa77437109d51945c89f66263586b4ec10136528e",
+      "bytes": 31289
+    },
+    {
+      "path": "portraits/tuta-top-doc-in-the-making.png",
+      "sha256": "37b45e39dab8f9c01fffbd6b8b103565978cdd86c6d393935c9d2d970b054d71",
+      "bytes": 31321
+    },
+    {
+      "path": "portraits/uku-villages-fisher-boy.png",
+      "sha256": "ab4bbd17a27c50ed0b0bf40aa4d3381b60fea88b996e552887fe537696402e3d",
+      "bytes": 26124
+    },
+    {
+      "path": "portraits/vail-boy-of-the-beast-heart.png",
+      "sha256": "2356dde7ae2dafebb08a27080ab4e911cd29f6aba8ab4e4fb4eef48935c32916",
+      "bytes": 18651
+    },
+    {
+      "path": "portraits/varkas-whirlwind-axe.png",
+      "sha256": "b66ae133e5148e24d341555f4886b72bd97042c841b44ca25a04761df6edaed3",
+      "bytes": 38106
+    },
+    {
+      "path": "portraits/vigdis-seas-mistress.png",
+      "sha256": "4b6fc4439ff29765f6a049dce2300c0ee0549a831e44a1802b4d17392eae3cee",
+      "bytes": 30294
+    },
+    {
+      "path": "portraits/viki-blinking-magic-wielder.png",
+      "sha256": "3cbd7e778446c7d2a7ae61b5d76749b7c188436d74f3f5eed4163bbe1b5031af",
+      "bytes": 27664
+    },
+    {
+      "path": "portraits/viki-time-skipping-girl.png",
+      "sha256": "b29d4395f7c90ad69a7bb288686195cd31b20f0c8f828635b8e84c7aaf4d5ab1",
+      "bytes": 35097
+    },
+    {
+      "path": "portraits/viktor-bear-slayer.png",
+      "sha256": "a7d8f6189cbca35f987df154a601dd5db0b533999a651d92a65342d9f3ee3f20",
+      "bytes": 31001
+    },
+    {
+      "path": "portraits/viktor-virtuoso-swordsman.png",
+      "sha256": "0abada0f9c41d80519bcda46743d32f28111923c958ac084000144a78d32a46b",
+      "bytes": 31609
+    },
+    {
+      "path": "portraits/vincent-kindred-spirit.png",
+      "sha256": "dfe705f219c05f4631a422cf52b7d3d3ec8aaf0773c178e107831931685f3916",
+      "bytes": 30013
+    },
+    {
+      "path": "portraits/yua-passionate-young-cook.png",
+      "sha256": "f149ee84af2cf9fb61182efc3fe326fe9293610f1c1fae3553fad4a3d2c479f1",
+      "bytes": 27863
+    },
+    {
+      "path": "portraits/yume-dream-weaving-child.png",
+      "sha256": "f93ca25b51b1227fc395bddefcab55916fab35c5f6188f151d5f19bbe50c9d74",
+      "bytes": 32905
+    },
+    {
+      "path": "portraits/yuzu-shepherd-girl.png",
+      "sha256": "2482ce5336bc1240c930e5bc140c6cb7b4bd4dbe22685ec20adf4d62ef6aa1ed",
+      "bytes": 28873
+    },
+    {
+      "path": "units.json",
+      "sha256": "1ec66455e3752425afe6a2fe6d478ba96f297923e155a4bfe5be744d1cf8e294",
+      "bytes": 416484
+    }
+  ]
+}

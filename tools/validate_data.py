@@ -13,7 +13,7 @@ Checks:
   * warns about orphan art_*.jpg images not referenced by any entry
 Exits non-zero if any ERROR is found (warnings do not fail the build).
 """
-import json, os, sys, re
+import hashlib, json, os, sys, re
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 RAW = os.path.join(ROOT, "Resources", "Raw")
@@ -74,9 +74,49 @@ if os.path.isdir(IMG):
         if fn.startswith("art_") and fn.endswith(".jpg") and fn not in referenced_images:
             warnings.append(f"orphan image not referenced by any entry: {fn}")
 
+STARLEAP = os.path.join(RAW, "starleap")
+
+
+def check_starleap():
+    manifest_path = os.path.join(STARLEAP, "manifest.json")
+    if not os.path.exists(manifest_path):
+        errors.append("starleap: bundled pack missing (Resources/Raw/starleap/manifest.json)")
+        return 0
+    try:
+        with open(manifest_path, encoding="utf-8") as f:
+            manifest = json.load(f)
+    except Exception as e:
+        errors.append(f"starleap/manifest.json: invalid JSON — {e}")
+        return 0
+    if manifest.get("schema") != 1:
+        errors.append(f"starleap: unsupported schema {manifest.get('schema')!r}")
+    listed = set()
+    for entry in manifest.get("files", []):
+        listed.add(entry.get("path"))
+        path = os.path.join(STARLEAP, entry.get("path", ""))
+        if not os.path.isfile(path):
+            errors.append(f"starleap: {entry.get('path')} is listed but missing")
+            continue
+        with open(path, "rb") as f:
+            if hashlib.sha256(f.read()).hexdigest() != entry.get("sha256"):
+                errors.append(f"starleap: checksum mismatch for {entry.get('path')}")
+    try:
+        with open(os.path.join(STARLEAP, "units.json"), encoding="utf-8") as f:
+            units = json.load(f)
+    except Exception as e:
+        errors.append(f"starleap/units.json: invalid JSON — {e}")
+        return 0
+    for u in units:
+        if u.get("portrait") not in listed:
+            errors.append(f"starleap: {u.get('id')} portrait {u.get('portrait')} is not in the manifest")
+    return len(units)
+
+
+starleap_units = check_starleap()
+
 print(f"[validate_data] entries={len(entries)} "
       f"images_referenced={len(referenced_images)} "
-      f"recruitment_games={len(recruitment)}")
+      f"recruitment_games={len(recruitment)} starleap_units={starleap_units}")
 for w in warnings:
     print(f"  WARN: {w}")
 if errors:

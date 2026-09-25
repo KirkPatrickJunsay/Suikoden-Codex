@@ -23,6 +23,7 @@ public static class MauiProgram
 		builder.Services.AddSingleton<CardData>();
 		builder.Services.AddSingleton<DeckStore>();
 		builder.Services.AddSingleton<WalkthroughData>();
+		builder.Services.AddSingleton<StarLeapData>();
 		builder.Services.AddSingleton<UserState>();
 
 		// ViewModels
