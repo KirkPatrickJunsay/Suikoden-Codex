@@ -38,7 +38,13 @@ public sealed class StarLeapData
         {
             if (Manifest is not null)
                 return;
-            await Task.Run(_updater.RecoverInterruptedSwap);
+            try
+            {
+                await Task.Run(_updater.RecoverInterruptedSwap);
+            }
+            catch (Exception e) when (e is IOException or UnauthorizedAccessException)
+            {
+            }
             var bundledFiles = new BundledPackFiles();
             var bundled = await PackLoader.LoadAsync(bundledFiles);
             var cachedFiles = new DirectoryPackFiles(_updater.CurrentDirectory);
@@ -135,7 +141,10 @@ public sealed class StarLeapData
     {
         Manifest = pack.Manifest;
         Units = pack.Units;
-        _byId = pack.Units.ToDictionary(u => u.Id);
+        var byId = new Dictionary<string, SlUnit>();
+        foreach (var unit in pack.Units)
+            byId.TryAdd(unit.Id, unit);
+        _byId = byId;
         Changed?.Invoke(this, EventArgs.Empty);
     }
 

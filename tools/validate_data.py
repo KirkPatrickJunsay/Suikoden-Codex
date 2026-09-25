@@ -106,7 +106,11 @@ def check_starleap():
     except Exception as e:
         errors.append(f"starleap/units.json: invalid JSON — {e}")
         return 0
+    seen = set()
     for u in units:
+        if u.get("id") in seen:
+            errors.append(f"starleap: duplicate unit id {u.get('id')}")
+        seen.add(u.get("id"))
         if u.get("portrait") not in listed:
             errors.append(f"starleap: {u.get('id')} portrait {u.get('portrait')} is not in the manifest")
     return len(units)
