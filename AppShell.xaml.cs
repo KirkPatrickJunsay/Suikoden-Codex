@@ -21,5 +21,6 @@ public partial class AppShell : Shell
 		Routing.RegisterRoute(nameof(DeckManagerPage), typeof(DeckManagerPage));
 		Routing.RegisterRoute(nameof(DeckBuilderPage), typeof(DeckBuilderPage));
 		Routing.RegisterRoute(nameof(WalkthroughPage), typeof(WalkthroughPage));
+		Routing.RegisterRoute(nameof(StarLeapUnitDetailPage), typeof(StarLeapUnitDetailPage));
 	}
 }
