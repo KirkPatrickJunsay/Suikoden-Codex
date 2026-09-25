@@ -43,3 +43,7 @@ reddit_share/
 # ---- Signing secrets (NEVER commit) ----
 signing.props
 *.keystore.txt
+
+# ---- Star Leap sync ----
+build/
+__pycache__/
