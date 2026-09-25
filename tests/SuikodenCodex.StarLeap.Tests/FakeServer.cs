@@ -29,7 +29,11 @@ public sealed class FakeServer : HttpMessageHandler
         {
             if (DelayMs > 0)
                 await Task.Delay(DelayMs, ct);
-            var path = Uri.UnescapeDataString(request.RequestUri!.AbsolutePath.Replace("/pack/", ""));
+            var absolutePath = request.RequestUri!.AbsolutePath;
+            var path = (absolutePath.StartsWith("/pack/")
+                ? absolutePath["/pack/".Length..]
+                : absolutePath.TrimStart('/'));
+            path = Uri.UnescapeDataString(path);
             lock (Requested)
             {
                 Requested.Add(path);
