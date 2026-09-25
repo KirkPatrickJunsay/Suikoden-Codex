@@ -7,7 +7,7 @@
   "category": "Character",
   "subtype": "Tenko Star — Star of Destiny",
   "game": "Suikoden I & II",
-  "description": "Viktor (ビクトール, Bikutōru) is a major character in Suikoden and Suikoden II who also makes a cameo in Genso Suikogaiden Vol.1.",
+  "description": "Viktor (ビクトール, Bikutōru) is a major character in Suikoden and Suikoden II who also makes a cameo in Genso Suikogaiden Vol.1. Viktor also appears as a story guest in Suikoden STAR LEAP (2026).",
   "quote": "Get going, Flik. If you have to... that's the way it is.",
   "crossRefs": [
    "combo-cross_attack",
@@ -56,6 +56,10 @@
    {
     "label": "Weapon",
     "value": "Two-handed sword (Lv 3)"
+   },
+   {
+    "label": "STAR LEAP",
+    "value": "Story guest (playable) · also a gacha character"
    }
   ],
   "sections": [
@@ -526,7 +530,7 @@
   "category": "Character",
   "subtype": "Tenan Star — Star of Destiny",
   "game": "Suikoden I & II",
-  "description": "Flik (フリック, Furikku) is a character in Suikoden and Suikoden II who also makes a cameo in Genso Suikogaiden Vol.1.",
+  "description": "Flik (フリック, Furikku) is a character in Suikoden and Suikoden II who also makes a cameo in Genso Suikogaiden Vol.1. Flik also appears as a story guest in Suikoden STAR LEAP (2026).",
   "crossRefs": [
    "combo-cross_attack",
    "combo-fancy_lad_attack",
@@ -577,6 +581,10 @@
    {
     "label": "Appears in",
     "value": "Suikoden"
+   },
+   {
+    "label": "STAR LEAP",
+    "value": "Story guest (playable) · also a gacha character"
    }
   ],
   "sections": [
@@ -590,7 +598,7 @@
    },
    {
     "title": "Story",
-    "body": "Rebel Soldier\nthumb|frameless|180px|right|Flik c.453 as depicted in Suikoden STAR LEAP\nFlik is a wandering swordsman. Born and raised in Warriors' Village, Flik left the village on his Manhood Ceremony and eventually became a mercenary. Around SY 453, after a number of years working as a mercenary, Flik saved Odessa Silverberg from some Scarlet Moon Empire soldiers while on the road to Gregminster. Enraptured, he quickly joined her cause and eventually became Vice-Commander of the Toran Liberation Army.\n\nAs a swordsman, he gained the title \"Blue Thunder Flik\" due to his blue clothing and sharp swordsmanship. Over time, he and Odessa would fall in love with one another and become a couple all while Flik continued to serve as a soldier in the fledgling Liberation Army.\n\nWhen the hideout at Lenankamp was attacked, Flik fled to Kunan. Flik tried to round up the scattered former soldiers of the Toran Liberation Army, but when there was a sudden crackdown on rebel factions within the area, many of these former soldiers were captured. After hearing of a revived Toran Liberation Army at Toran Castle, Flik mustered his remaining troops and headed there. \n\nOnce he arrived, Flik heard of Odessa's death and was overcome with grief. Flik was unable to accept McDohl as the leader of the Toran Liberation Army but after calming down and realizing how his reaction would have disappointed Odessa, agreed to join forces to help rescue their comrades who had been captured. Flik's hotheadedness remained an issue as he led the Toran Liberation Army to a dismal defeat at Scarleticia Castle. \n\nHowever, Flik gradually came to mature and accept McDohl as a leader. When McDohl made the unpopular decision to pardon Milich Oppenheimer, Flik supported him and accepted him as the true leader of the Liberation Army. From that moment on, Flik would fight as a productive, invaluable member of the…"
+    "body": "Rebel Soldier\nFlik is a wandering swordsman. Born and raised in Warriors' Village, Flik left the village on his Manhood Ceremony and eventually became a mercenary. Around SY 453, after a number of years working as a mercenary, Flik saved Odessa Silverberg from some Scarlet Moon Empire soldiers while on the road to Gregminster. Enraptured, he quickly joined her cause and eventually became Vice-Commander of the Toran Liberation Army.\n\nAs a swordsman, he gained the title \"Blue Thunder Flik\" due to his blue clothing and sharp swordsmanship. Over time, he and Odessa would fall in love with one another and become a couple all while Flik continued to serve as a soldier in the fledgling Liberation Army.\n\nWhen the hideout at Lenankamp was attacked, Flik fled to Kunan. Flik tried to round up the scattered former soldiers of the Toran Liberation Army, but when there was a sudden crackdown on rebel factions within the area, many of these former soldiers were captured. After hearing of a revived Toran Liberation Army at Toran Castle, Flik mustered his remaining troops and headed there. \n\nOnce he arrived, Flik heard of Odessa's death and was overcome with grief. Flik was unable to accept McDohl as the leader of the Toran Liberation Army but after calming down and realizing how his reaction would have disappointed Odessa, agreed to join forces to help rescue their comrades who had been captured. Flik's hotheadedness remained an issue as he led the Toran Liberation Army to a dismal defeat at Scarleticia Castle. \n\nHowever, Flik gradually came to mature and accept McDohl as a leader. When McDohl made the unpopular decision to pardon Milich Oppenheimer, Flik supported him and accepted him as the true leader of the Liberation Army. From that moment on, Flik would fight as a productive, invaluable member of the…"
    }
   ],
   "recruitment": "Recruited automatically in Kaku after defeating Kwanda Rosman.",
@@ -604,7 +612,7 @@
   "category": "Character",
   "subtype": "Tenei Star — Star of Destiny",
   "game": "Suikoden I",
-  "description": "Gremio (グレミオ, Guremio) is a supporting character in Suikoden who makes a cameo in Suikoden II.",
+  "description": "Gremio (グレミオ, Guremio) is a supporting character in Suikoden who makes a cameo in Suikoden II. Gremio also appears in Suikoden STAR LEAP (2026).",
   "crossRefs": [
    "combo-guardian_attack",
    "soul-eater",
@@ -648,6 +656,10 @@
    {
     "label": "Appears in",
     "value": "Suikoden, Suikoden II, Suikoden STAR LEAP"
+   },
+   {
+    "label": "STAR LEAP",
+    "value": "Appears"
    }
   ],
   "sections": [
@@ -675,7 +687,7 @@
   "category": "Character",
   "subtype": "Star of Destiny",
   "game": "Suikoden I",
-  "description": "Odessa Silverberg (オデッサ・シルバーバーグ, Odessa Shirubābāgu) is a major character in Suikoden. Odessa is the leader of the Toran Liberation Army whose strength and ideals inspired the rebel force throughout the war.",
+  "description": "Odessa Silverberg (オデッサ・シルバーバーグ, Odessa Shirubābāgu) is a major character in Suikoden. Odessa is the leader of the Toran Liberation Army whose strength and ideals inspired the rebel force throughout the war. Odessa Silverberg also plays a major part in the first chapter of Suikoden STAR LEAP (2026).",
   "crossRefs": [
    "mathiu",
    "flik"
@@ -714,6 +726,10 @@
    {
     "label": "Weapon",
     "value": "Bow (Lv 5)"
+   },
+   {
+    "label": "STAR LEAP",
+    "value": "Story character · also a gacha character"
    }
   ],
   "sections": [
@@ -936,7 +952,7 @@
   "category": "Character",
   "subtype": "Star of Destiny",
   "game": "Suikoden II",
-  "description": "Jowy Atreides (ジョウイ ・アトレイド, Joui Atoreido) is a major character in Suikoden II and Genso Suikoden Card Stories who also appears in both Genso Suikogaiden Vol.1 and Genso Suikogaiden Vol.2.",
+  "description": "Jowy Atreides (ジョウイ ・アトレイド, Joui Atoreido) is a major character in Suikoden II and Genso Suikoden Card Stories who also appears in both Genso Suikogaiden Vol.1 and Genso Suikogaiden Vol.2. Jowy Atreides is also playable as a gacha character in Suikoden STAR LEAP (2026).",
   "crossRefs": [
    "riou",
    "black-sword-rune",
@@ -980,6 +996,10 @@
    {
     "label": "Voice actor",
     "value": "Kaji Yūki‏‎"
+   },
+   {
+    "label": "STAR LEAP",
+    "value": "Playable gacha character"
    }
   ],
   "sections": [
@@ -1263,7 +1283,7 @@
   "category": "Region",
   "game": "Suikoden I & II",
   "subtype": "City",
-  "description": "Gregminster (グレッグミンスター, Guregguminsutā) is a city that appears in both Suikoden and Suikoden II as well as the upcoming Suikoden STAR LEAP. It is the capital of the Toran Republic and its predecessor, the Scarlet Moon Empire.",
+  "description": "Gregminster (グレッグミンスター, Guregguminsutā) is a city that appears in both Suikoden and Suikoden II as well as Suikoden STAR LEAP (2026). It is the capital of the Toran Republic and its predecessor, the Scarlet Moon Empire.",
   "facts": [
    {
     "label": "Type",
@@ -1280,6 +1300,10 @@
    {
     "label": "Population",
     "value": "19,000"
+   },
+   {
+    "label": "STAR LEAP",
+    "value": "Visitable location"
    }
   ],
   "imageName": "art_gregminster_region.jpg",
@@ -1419,7 +1443,13 @@
   "description": "Viki is the Chitatsu Star in Suikoden, Suikoden II, Suikoden III, Suikoden IV, and Suikoden V. She also appears in Genso Suikogaiden Vol. 2 and Suikoden STAR LEAP.",
   "crossRefs": [],
   "sourcePage": 202,
-  "imageName": "art_vicky.jpg"
+  "imageName": "art_vicky.jpg",
+  "facts": [
+   {
+    "label": "STAR LEAP",
+    "value": "One of the 108 Stars · also a gacha character"
+   }
+  ]
  },
  {
   "id": "hilda",
@@ -1612,7 +1642,7 @@
   "category": "Character",
   "subtype": "Tensoku Star — Star of Destiny",
   "game": "Suikoden I & II",
-  "description": "Stallion (スタリオン, Sutarion) is a supporting character in Suikoden, Suikoden II, and also makes a cameo in Genso Suikogaiden Vol.1.",
+  "description": "Stallion (スタリオン, Sutarion) is a supporting character in Suikoden, Suikoden II, and also makes a cameo in Genso Suikogaiden Vol.1. Stallion is also playable as a gacha character in Suikoden STAR LEAP (2026).",
   "quote": "My name is Stallion. Fastest in the world. Catch me if you can.",
   "crossRefs": [
    "combo-bow_attack",
@@ -1653,6 +1683,10 @@
    {
     "label": "Weapon",
     "value": "Bow (Lv 6)"
+   },
+   {
+    "label": "STAR LEAP",
+    "value": "Playable gacha character"
    }
   ],
   "sections": [
@@ -2017,7 +2051,7 @@
   "category": "Character",
   "subtype": "Chimou Star — Star of Destiny",
   "game": "Suikoden I",
-  "description": "Alen (アレン, Aren) is a supporting character in Suikoden who makes a cameo in Suikoden II. During the Gate Rune War, Alen is a member of General Teo McDohl's Armored Cavalry, along with his colleague Glenshiel.",
+  "description": "Alen (アレン, Aren) is a supporting character in Suikoden who makes a cameo in Suikoden II. During the Gate Rune War, Alen is a member of General Teo McDohl's Armored Cavalry, along with his colleague Glenshiel. Alen also appears in Suikoden STAR LEAP (2026).",
   "crossRefs": [
    "combo-fancy_lad_attack_2"
   ],
@@ -2056,6 +2090,10 @@
    {
     "label": "Appears in",
     "value": "Suikoden, Suikoden II, Suikoden STAR LEAP"
+   },
+   {
+    "label": "STAR LEAP",
+    "value": "Appears"
    }
   ],
   "sections": [
@@ -2073,7 +2111,7 @@
   "category": "Character",
   "subtype": "Tenken Star — Star of Destiny",
   "game": "Suikoden I",
-  "description": "Anji (アンジー, Anjī) is a supporting character who appears in Suikoden. Anji is the leader of a gang of pirates, a crew which operated on Lake Toran.",
+  "description": "Anji (アンジー, Anjī) is a supporting character who appears in Suikoden. Anji is the leader of a gang of pirates, a crew which operated on Lake Toran. Anji is also playable as a gacha character in Suikoden STAR LEAP (2026).",
   "crossRefs": [
    "combo-pirate_attack"
   ],
@@ -2112,6 +2150,10 @@
    {
     "label": "Appears in",
     "value": "Suikoden"
+   },
+   {
+    "label": "STAR LEAP",
+    "value": "Playable gacha character"
    }
   ],
   "sections": [
@@ -2697,7 +2739,7 @@
   "category": "Character",
   "subtype": "Chiyu Star — Star of Destiny",
   "game": "Suikoden I",
-  "description": "Eikei (エイケイ, Eikei) is a supporting character in Suikoden. Eikei is a powerful martial artist who respects only those he perceives as strong.",
+  "description": "Eikei (エイケイ, Eikei) is a supporting character in Suikoden. Eikei is a powerful martial artist who respects only those he perceives as strong. Eikei is also playable as a gacha character in Suikoden STAR LEAP (2026).",
   "crossRefs": [
    "combo-martial_arts_attack"
   ],
@@ -2736,6 +2778,10 @@
    {
     "label": "Appears in",
     "value": "Suikoden"
+   },
+   {
+    "label": "STAR LEAP",
+    "value": "Playable gacha character"
    }
   ],
   "sections": [
@@ -2753,7 +2799,7 @@
   "category": "Character",
   "subtype": "Tenkou Star — Star of Destiny",
   "game": "Suikoden I",
-  "description": "Eileen (アイリーン, Airīn) is a supporting character in Suikoden who makes a cameo in Suikoden II. A dedicated family woman, Eileen is the wife of Lepant and the mother of Sheena.",
+  "description": "Eileen (アイリーン, Airīn) is a supporting character in Suikoden who makes a cameo in Suikoden II. A dedicated family woman, Eileen is the wife of Lepant and the mother of Sheena. Eileen is also playable as a gacha character in Suikoden STAR LEAP (2026).",
   "crossRefs": [
    "combo-beauty_attack_2",
    "combo-couple_attack",
@@ -2798,6 +2844,10 @@
    {
     "label": "Appears in",
     "value": "Suikoden, Suikoden II"
+   },
+   {
+    "label": "STAR LEAP",
+    "value": "Playable gacha character"
    }
   ],
   "sections": [
@@ -2815,7 +2865,7 @@
   "category": "Character",
   "subtype": "Chikai Star — Star of Destiny",
   "game": "Suikoden I",
-  "description": "Esmeralda (エスメラルダ, Esumeraruda) is a character in Suikoden. She is a naïve and idle woman of aristocratic distinction.",
+  "description": "Esmeralda (エスメラルダ, Esumeraruda) is a character in Suikoden. She is a naïve and idle woman of aristocratic distinction. Esmeralda is also playable as a gacha character in Suikoden STAR LEAP (2026).",
   "crossRefs": [],
   "imageName": "art_s1_esmeralda.jpg",
   "originalName": "エスメラルダ",
@@ -2848,6 +2898,10 @@
    {
     "label": "Artist",
     "value": "Kawano Junko, |caption2=HACCAN"
+   },
+   {
+    "label": "STAR LEAP",
+    "value": "Playable gacha character"
    }
   ],
   "sections": [
@@ -2873,7 +2927,7 @@
   "category": "Character",
   "subtype": "Tensatsu Star |tab1=S1 |tab2=CS-245 — Star of Destiny",
   "game": "Suikoden I",
-  "description": "Fu Su Lu (フー・スー・ルー, Fū Sū Rū) is a character in Suikoden. A powerful man wearing a tiger skin with a voracious appetite, Fu Su Lu is one of the physically strongest characters in the game.",
+  "description": "Fu Su Lu (フー・スー・ルー, Fū Sū Rū) is a character in Suikoden. A powerful man wearing a tiger skin with a voracious appetite, Fu Su Lu is one of the physically strongest characters in the game. Fu Su Lu is also playable as a gacha character in Suikoden STAR LEAP (2026).",
   "crossRefs": [
    "combo-kobolds_pal_attack"
   ],
@@ -2912,6 +2966,10 @@
    {
     "label": "Appears in",
     "value": "Suikoden"
+   },
+   {
+    "label": "STAR LEAP",
+    "value": "Playable gacha character"
    }
   ],
   "sections": [
@@ -3043,7 +3101,7 @@
   "category": "Character",
   "subtype": "Chisyu Star — Star of Destiny",
   "game": "Suikoden I",
-  "description": "Gaspar (ガスパー, Gasupā) is a character in Suikoden and Genso Suikogaiden Vol.1. Gaspar is a gambler who specializes in the game of Chinchirorin.",
+  "description": "Gaspar (ガスパー, Gasupā) is a character in Suikoden and Genso Suikogaiden Vol.1. Gaspar is a gambler who specializes in the game of Chinchirorin. Gaspar is also playable as a gacha character in Suikoden STAR LEAP (2026).",
   "crossRefs": [],
   "imageName": "art_s1_gaspar.jpg",
   "originalName": "ガスパー",
@@ -3072,6 +3130,10 @@
    {
     "label": "Artist",
     "value": "Kawano Junko"
+   },
+   {
+    "label": "STAR LEAP",
+    "value": "Playable gacha character"
    }
   ],
   "sections": [
@@ -3089,7 +3151,7 @@
   "category": "Character",
   "subtype": "Chiman Star — Star of Destiny",
   "game": "Suikoden I",
-  "description": "Gen (ゲン, Gen) is a supporting character in Suikoden. A shipwright by trade, Gen invented a motorboat with the scientist Kamandol.",
+  "description": "Gen (ゲン, Gen) is a supporting character in Suikoden. A shipwright by trade, Gen invented a motorboat with the scientist Kamandol. Gen is also playable as a gacha character in Suikoden STAR LEAP (2026).",
   "crossRefs": [
    "combo-carpenter_attack",
    "combo-stuck_with_you_attack"
@@ -3129,6 +3191,10 @@
    {
     "label": "Appears in",
     "value": "Suikoden"
+   },
+   {
+    "label": "STAR LEAP",
+    "value": "Playable gacha character"
    }
   ],
   "sections": [
@@ -3245,7 +3311,7 @@
   "category": "Character",
   "subtype": "Chikaku Star — Star of Destiny",
   "game": "Suikoden I",
-  "description": "Gon (ゴン, Gon) is a supporting character in Suikoden. Gon is a young kobold who is a close friend of Kuromimi.",
+  "description": "Gon (ゴン, Gon) is a supporting character in Suikoden. Gon is a young kobold who is a close friend of Kuromimi. Gon is also playable as a gacha character in Suikoden STAR LEAP (2026).",
   "crossRefs": [
    "combo-kobold_attack_2",
    "combo-kobolds_pal_attack"
@@ -3285,6 +3351,10 @@
    {
     "label": "Weapon",
     "value": "One-handed sword (Lv 7)"
+   },
+   {
+    "label": "STAR LEAP",
+    "value": "Playable gacha character"
    }
   ],
   "sections": [
@@ -3405,7 +3475,7 @@
   "category": "Character",
   "subtype": "Chisyu Star — Star of Destiny",
   "game": "Suikoden I",
-  "description": "Hellion (ヘリオン, Herion) is a character in Suikoden. Hellion is a magician known for her 'Power of Recall'.",
+  "description": "Hellion (ヘリオン, Herion) is a character in Suikoden. Hellion is a magician known for her 'Power of Recall'. Hellion is also playable as a gacha character in Suikoden STAR LEAP (2026).",
   "crossRefs": [],
   "imageName": "art_s1_hellion.jpg",
   "originalName": "ヘリオン",
@@ -3442,6 +3512,10 @@
    {
     "label": "Appears in",
     "value": "Suikoden"
+   },
+   {
+    "label": "STAR LEAP",
+    "value": "Playable gacha character"
    }
   ],
   "sections": [
@@ -3458,7 +3532,7 @@
   "category": "Character",
   "subtype": "Tenrou Star — Star of Destiny",
   "game": "Suikoden I",
-  "description": "Hix (ヒックス, Hikkusu) is a supporting character in Suikoden and Suikoden II who makes a cameo in Genso Suikogaiden Vol.1. Hix is a young warrior who is undergoing a trial of manhood.",
+  "description": "Hix (ヒックス, Hikkusu) is a supporting character in Suikoden and Suikoden II who makes a cameo in Genso Suikogaiden Vol.1. Hix is a young warrior who is undergoing a trial of manhood. Hix is also playable as a gacha character in Suikoden STAR LEAP (2026).",
   "crossRefs": [
    "combo-warrior_attack",
    "combo-warriors_village_attack"
@@ -3502,6 +3576,10 @@
    {
     "label": "Appears in",
     "value": "S1, S2, G1, SP"
+   },
+   {
+    "label": "STAR LEAP",
+    "value": "Playable gacha character"
    }
   ],
   "sections": [
@@ -3567,7 +3645,7 @@
   "category": "Character",
   "subtype": "Tenyu Star — Star of Destiny",
   "game": "Suikoden I",
-  "description": "Humphrey Mintz (ハンフリー・ミンツ, Hanfurī Mintsu) is a supporting character in Suikoden and Suikoden II who also appears in Genso Suikogaiden Vol.2. Humphrey is a skilled but taciturn swordsman.",
+  "description": "Humphrey Mintz (ハンフリー・ミンツ, Hanfurī Mintsu) is a supporting character in Suikoden and Suikoden II who also appears in Genso Suikogaiden Vol.2. Humphrey is a skilled but taciturn swordsman. Humphrey Mintz also appears as a story guest in Suikoden STAR LEAP (2026).",
   "crossRefs": [],
   "imageName": "art_s1_humphrey_mintz.jpg",
   "originalName": "ハンフリー・ミンツ",
@@ -3612,6 +3690,10 @@
    {
     "label": "Appears in",
     "value": "Suikoden, Suikoden II, Genso Suikogaiden Vol.2, Suikoden STAR LEAP"
+   },
+   {
+    "label": "STAR LEAP",
+    "value": "Story guest (playable) · also a gacha character"
    }
   ],
   "sections": [
@@ -3919,7 +4001,7 @@
   "category": "Character",
   "subtype": "Chiri Star — Star of Destiny",
   "game": "Suikoden I",
-  "description": "Kamandol (カマンドール, Kamandōru) is a supporting character in Suikoden. An alchemist by trade, Kamandol invented an engine that ran on oil.",
+  "description": "Kamandol (カマンドール, Kamandōru) is a supporting character in Suikoden. An alchemist by trade, Kamandol invented an engine that ran on oil. Kamandol is also playable as a gacha character in Suikoden STAR LEAP (2026).",
   "crossRefs": [
    "combo-stuck_with_you_attack"
   ],
@@ -3962,6 +4044,10 @@
    {
     "label": "Appears in",
     "value": "Suikoden"
+   },
+   {
+    "label": "STAR LEAP",
+    "value": "Playable gacha character"
    }
   ],
   "sections": [
@@ -4023,7 +4109,7 @@
   "category": "Character",
   "subtype": "Tenzai Star — Star of Destiny",
   "game": "Suikoden I",
-  "description": "Kanak (カナック, Kanakku) is a supporting character in Suikoden. Kanak is one of Anji's subordinates in their pirate gang.",
+  "description": "Kanak (カナック, Kanakku) is a supporting character in Suikoden. Kanak is one of Anji's subordinates in their pirate gang. Kanak is also playable as a gacha character in Suikoden STAR LEAP (2026).",
   "crossRefs": [
    "combo-pirate_attack"
   ],
@@ -4062,6 +4148,10 @@
    {
     "label": "Appears in",
     "value": "Suikoden"
+   },
+   {
+    "label": "STAR LEAP",
+    "value": "Playable gacha character"
    }
   ],
   "sections": [
@@ -4250,7 +4340,7 @@
   "category": "Character",
   "subtype": "Chisin Star — Star of Destiny",
   "game": "Suikoden I",
-  "description": "Kessler (ケスラー, Kesurā) is a supporting character in Suikoden. Kessler was a bandit who supported the ideals of the Toran Liberation Army.",
+  "description": "Kessler (ケスラー, Kesurā) is a supporting character in Suikoden. Kessler was a bandit who supported the ideals of the Toran Liberation Army. Kessler is also playable as a gacha character in Suikoden STAR LEAP (2026).",
   "crossRefs": [],
   "imageName": "art_s1_kessler.jpg",
   "originalName": "ケスラー",
@@ -4287,6 +4377,10 @@
    {
     "label": "Appears in",
     "value": "Suikoden"
+   },
+   {
+    "label": "STAR LEAP",
+    "value": "Playable gacha character"
    }
   ],
   "sections": [
@@ -4482,7 +4576,7 @@
   "category": "Character",
   "subtype": "Character",
   "game": "Suikoden I",
-  "description": "Kraze Miles (クレイズ・マイルス, Kureizu Mairusu) is a minor antagonist in Suikoden. Cruel and disdainful, Kraze Miles was the Commander of the Imperial Guard during the Gate Rune War.",
+  "description": "Kraze Miles (クレイズ・マイルス, Kureizu Mairusu) is a minor antagonist in Suikoden. Cruel and disdainful, Kraze Miles was the Commander of the Imperial Guard during the Gate Rune War. Kraze Miles is also playable as a gacha character in Suikoden STAR LEAP (2026).",
   "crossRefs": [],
   "imageName": "art_s1_kraze_miles.jpg",
   "originalName": "クレイズ・マイルス",
@@ -4507,6 +4601,10 @@
    {
     "label": "Artist",
     "value": "Kawano Junko"
+   },
+   {
+    "label": "STAR LEAP",
+    "value": "Playable gacha character"
    }
   ],
   "sections": [
@@ -4686,7 +4784,7 @@
   "category": "Character",
   "subtype": "Chitan Star — Star of Destiny",
   "game": "Suikoden I",
-  "description": "Kuromimi (クロミミ, Kuromimi, Black Ears) is a supporting character in Suikoden. Kuromimi is a kobold warrior who set out to rescue Kobold Village's townspeople from the effects of Kwanda Rosman's Conqueror Rune and later arose to the position of Chief of Kobold Village.",
+  "description": "Kuromimi (クロミミ, Kuromimi, Black Ears) is a supporting character in Suikoden. Kuromimi is a kobold warrior who set out to rescue Kobold Village's townspeople from the effects of Kwanda Rosman's Conqueror Rune and later arose to the position of Chief of Kobold Village. Kuromimi is also playable as a gacha character in Suikoden STAR LEAP (2026).",
   "crossRefs": [
    "combo-kobold_attack_2",
    "combo-kobolds_pal_attack"
@@ -4730,6 +4828,10 @@
    {
     "label": "Weapon",
     "value": "One-handed sword (Lv 6)"
+   },
+   {
+    "label": "STAR LEAP",
+    "value": "Playable gacha character"
    }
   ],
   "sections": [
@@ -4805,7 +4907,7 @@
   "category": "Character",
   "subtype": "Chido Star — Star of Destiny",
   "game": "Suikoden I",
-  "description": "Ledon (ルドン, Rudon) is a supporting character in Suikoden. Ledon was a bandit who would rob travellers at his inn on Mt. Tigerwolf.",
+  "description": "Ledon (ルドン, Rudon) is a supporting character in Suikoden. Ledon was a bandit who would rob travellers at his inn on Mt. Tigerwolf. Ledon is also playable as a gacha character in Suikoden STAR LEAP (2026).",
   "crossRefs": [],
   "imageName": "art_s1_ledon.jpg",
   "originalName": "ルドン",
@@ -4838,6 +4940,10 @@
    {
     "label": "Appears in",
     "value": "Suikoden"
+   },
+   {
+    "label": "STAR LEAP",
+    "value": "Playable gacha character"
    }
   ],
   "sections": [
@@ -4855,7 +4961,7 @@
   "category": "Character",
   "subtype": "Character",
   "game": "Suikoden I, III, IV & V",
-  "description": "Leknaat (レックナート, Rekkunāto) is a character in Suikoden, Suikoden II, Suikoden III, Suikoden IV, and Suikoden V. Leknaat is a mysterious, blind seer with an interest in the 108 Stars and holds possession of the back half of the Gate Rune.",
+  "description": "Leknaat (レックナート, Rekkunāto) is a character in Suikoden, Suikoden II, Suikoden III, Suikoden IV, and Suikoden V. Leknaat is a mysterious, blind seer with an interest in the 108 Stars and holds possession of the back half of the Gate Rune. Leknaat also appears in Suikoden STAR LEAP (2026).",
   "crossRefs": [],
   "imageName": "art_s1_leknaat.jpg",
   "originalName": "レックナート",
@@ -4880,6 +4986,10 @@
    {
     "label": "Appears in",
     "value": "Suikoden, Suikoden II, Suikoden III, Suikoden IV, Suikoden V, Suikoden STAR LEAP"
+   },
+   {
+    "label": "STAR LEAP",
+    "value": "Appears"
    }
   ],
   "sections": [
@@ -4957,7 +5067,7 @@
   "category": "Character",
   "subtype": "Tenpai Star — Star of Destiny",
   "game": "Suikoden I",
-  "description": "Leonardo (レオナルド, Reonarudo) is a supporting character in Suikoden. Leonardo is one of Anji's subordinates in his pirate crew.",
+  "description": "Leonardo (レオナルド, Reonarudo) is a supporting character in Suikoden. Leonardo is one of Anji's subordinates in his pirate crew. Leonardo is also playable as a gacha character in Suikoden STAR LEAP (2026).",
   "crossRefs": [
    "combo-pirate_attack"
   ],
@@ -4996,6 +5106,10 @@
    {
     "label": "Appears in",
     "value": "Suikoden"
+   },
+   {
+    "label": "STAR LEAP",
+    "value": "Playable gacha character"
    }
   ],
   "sections": [
@@ -5012,7 +5126,7 @@
   "category": "Character",
   "subtype": "Tengou Star — Star of Destiny",
   "game": "Suikoden I",
-  "description": "Lepant (レパント, Repanto) is a character in Suikoden who makes an appearance in Suikoden II. He is a rich merchant who became the President of the Toran Republic.",
+  "description": "Lepant (レパント, Repanto) is a character in Suikoden who makes an appearance in Suikoden II. He is a rich merchant who became the President of the Toran Republic. Lepant is also playable as a gacha character in Suikoden STAR LEAP (2026).",
   "crossRefs": [
    "combo-couple_attack",
    "combo-lepant_family_attack"
@@ -5056,6 +5170,10 @@
    {
     "label": "Appears in",
     "value": "Suikoden, Suikoden II"
+   },
+   {
+    "label": "STAR LEAP",
+    "value": "Playable gacha character"
    }
   ],
   "sections": [
@@ -5241,7 +5359,7 @@
   "category": "Character",
   "subtype": "Chiku Star — Star of Destiny",
   "game": "Suikoden I",
-  "description": "Lotte (ロッテ, Rotte) is a supporting character in Suikoden. Lotte is a magician who happens to be fond of cats.",
+  "description": "Lotte (ロッテ, Rotte) is a supporting character in Suikoden. Lotte is a magician who happens to be fond of cats. Lotte is also playable as a gacha character in Suikoden STAR LEAP (2026).",
   "crossRefs": [],
   "imageName": "art_s1_lotte.jpg",
   "originalName": "ロッテ",
@@ -5278,6 +5396,10 @@
    {
     "label": "Appears in",
     "value": "Suikoden, Suikoden II"
+   },
+   {
+    "label": "STAR LEAP",
+    "value": "Playable gacha character"
    }
   ],
   "sections": [
@@ -5294,7 +5416,7 @@
   "category": "Character",
   "subtype": "Tenkan Star — Star of Destiny",
   "game": "Suikoden I & III",
-  "description": "Luc (ルック, Rukku) is a character in Suikoden, Suikoden II, and Suikoden III. He is also confirmed to appear in the upcoming Suikoden STAR LEAP.",
+  "description": "Luc (ルック, Rukku) is a character in Suikoden, Suikoden II, and Suikoden III. Luc is also playable as a gacha character in Suikoden STAR LEAP (2026).",
   "crossRefs": [
    "combo-pretty_boy_attack"
   ],
@@ -5345,6 +5467,10 @@
    {
     "label": "Appears in",
     "value": "Suikoden, Suikoden II, Suikoden III, Suikoden STAR LEAP"
+   },
+   {
+    "label": "STAR LEAP",
+    "value": "Playable gacha character"
    }
   ],
   "sections": [
@@ -5370,7 +5496,7 @@
   "category": "Character",
   "subtype": "Chibaku Star — Star of Destiny",
   "game": "Suikoden I",
-  "description": "Maas (マース, Māsu) is a supporting character in Suikoden. Maas is one of several apprentices of the master blacksmith, Mace.",
+  "description": "Maas (マース, Māsu) is a supporting character in Suikoden. Maas is one of several apprentices of the master blacksmith, Mace. Maas is also playable as a gacha character in Suikoden STAR LEAP (2026).",
   "crossRefs": [],
   "imageName": "art_s1_maas.jpg",
   "originalName": "マース",
@@ -5403,6 +5529,10 @@
    {
     "label": "Appears in",
     "value": "Suikoden"
+   },
+   {
+    "label": "STAR LEAP",
+    "value": "Playable gacha character"
    }
   ],
   "sections": [
@@ -5533,7 +5663,7 @@
   "category": "Character",
   "subtype": "Chihi Star — Star of Destiny",
   "game": "Suikoden I",
-  "description": "Meese (ミース, Mīsu) is a supporting character in Suikoden. Meese is one of several apprentices of the master blacksmith, Mace.",
+  "description": "Meese (ミース, Mīsu) is a supporting character in Suikoden. Meese is one of several apprentices of the master blacksmith, Mace. Meese is also playable as a gacha character in Suikoden STAR LEAP (2026).",
   "crossRefs": [
    "combo-blacksmith_attack"
   ],
@@ -5572,6 +5702,10 @@
    {
     "label": "Appears in",
     "value": "Suikoden"
+   },
+   {
+    "label": "STAR LEAP",
+    "value": "Playable gacha character"
    }
   ],
   "sections": [
@@ -5654,7 +5788,7 @@
   "category": "Character",
   "subtype": "Chisa Star — Star of Destiny",
   "game": "Suikoden I",
-  "description": "Melodye (メロディ, Merodi) is a character in Suikoden. She is a young woman looking for a rare rune to unlock her own special ability.",
+  "description": "Melodye (メロディ, Merodi) is a character in Suikoden. She is a young woman looking for a rare rune to unlock her own special ability. Melodye is also playable as a gacha character in Suikoden STAR LEAP (2026).",
   "crossRefs": [],
   "imageName": "art_s1_melodye.jpg",
   "originalName": "メロディ",
@@ -5687,6 +5821,10 @@
    {
     "label": "Appears in",
     "value": "Suikoden"
+   },
+   {
+    "label": "STAR LEAP",
+    "value": "Playable gacha character"
    }
   ],
   "sections": [
@@ -5767,7 +5905,7 @@
   "category": "Character",
   "subtype": "Tenkyu Star — Star of Destiny",
   "game": "Suikoden I",
-  "description": "Milich Oppenheimer (ミルイヒ・オッペンハイマー, Miruihi Oppenhaimā) is a supporting character in Suikoden who makes a cameo appearance in Genso Suikogaiden Vol.2. Milich is one of the Five Great Generals of the Scarlet Moon Empire, who is also known for being the series' original narcissist.",
+  "description": "Milich Oppenheimer (ミルイヒ・オッペンハイマー, Miruihi Oppenhaimā) is a supporting character in Suikoden who makes a cameo appearance in Genso Suikogaiden Vol.2. Milich is one of the Five Great Generals of the Scarlet Moon Empire, who is also known for being the series' original narcissist. Milich Oppenheimer also appears in Suikoden STAR LEAP (2026).",
   "crossRefs": [],
   "imageName": "art_s1_milich_oppenheimer.jpg",
   "originalName": "ミルイヒ・オッペンハイマー",
@@ -5804,6 +5942,10 @@
    {
     "label": "Weapon",
     "value": "One-handed sword (Lv 6)"
+   },
+   {
+    "label": "STAR LEAP",
+    "value": "Appears"
    }
   ],
   "sections": [
@@ -5904,7 +6046,7 @@
   "category": "Character",
   "subtype": "Chikyou Star — Star of Destiny",
   "game": "Suikoden I",
-  "description": "Moose (ムース, Mūsu) is a supporting character in Suikoden. Moose is one of several apprentices of the master blacksmith, Mace.",
+  "description": "Moose (ムース, Mūsu) is a supporting character in Suikoden. Moose is one of several apprentices of the master blacksmith, Mace. Moose is also playable as a gacha character in Suikoden STAR LEAP (2026).",
   "crossRefs": [
    "combo-blacksmith_attack"
   ],
@@ -5943,6 +6085,10 @@
    {
     "label": "Appears in",
     "value": "Suikoden"
+   },
+   {
+    "label": "STAR LEAP",
+    "value": "Playable gacha character"
    }
   ],
   "sections": [
@@ -5959,7 +6105,7 @@
   "category": "Character",
   "subtype": "Chian Star — Star of Destiny",
   "game": "Suikoden I",
-  "description": "Morgan (モーガン, Mōgan) is a supporting character in Suikoden. Morgan is a blind former gladiator who currently studies at Qlon Temple.",
+  "description": "Morgan (モーガン, Mōgan) is a supporting character in Suikoden. Morgan is a blind former gladiator who currently studies at Qlon Temple. Morgan is also playable as a gacha character in Suikoden STAR LEAP (2026).",
   "crossRefs": [
    "combo-martial_arts_attack"
   ],
@@ -6002,6 +6148,10 @@
    {
     "label": "Appears in",
     "value": "Suikoden"
+   },
+   {
+    "label": "STAR LEAP",
+    "value": "Playable gacha character"
    }
   ],
   "sections": [
@@ -6271,7 +6421,7 @@
   "category": "Character",
   "subtype": "Chiyu Star |tab1= S1 |tab2= CS2-331 — Star of Destiny",
   "game": "Suikoden I",
-  "description": "Quincy (クインシー, Kuinshī) is a character in Suikoden. Quincy is a forest-dwelling hunter with a tendency to avoid risking commitment to a cause until he's sure of the results.",
+  "description": "Quincy (クインシー, Kuinshī) is a character in Suikoden. Quincy is a forest-dwelling hunter with a tendency to avoid risking commitment to a cause until he's sure of the results. Quincy is also playable as a gacha character in Suikoden STAR LEAP (2026).",
   "crossRefs": [],
   "imageName": "art_s1_quincy.jpg",
   "originalName": "クインシー",
@@ -6304,6 +6454,10 @@
    {
     "label": "Weapon",
     "value": "Dart (Lv 6)"
+   },
+   {
+    "label": "STAR LEAP",
+    "value": "Playable gacha character"
    }
   ],
   "sections": [
@@ -6430,7 +6584,7 @@
   "category": "Character",
   "subtype": "Character",
   "game": "Suikoden I",
-  "description": "Sanchez (サンチェス, Sanchesu) is a supporting character in Suikoden. A member of the Toran Liberation Army, Sanchez served as the treasurer of the fledgling organization during the Gate Rune War.",
+  "description": "Sanchez (サンチェス, Sanchesu) is a supporting character in Suikoden. A member of the Toran Liberation Army, Sanchez served as the treasurer of the fledgling organization during the Gate Rune War. Sanchez is also playable as a gacha character in Suikoden STAR LEAP (2026).",
   "crossRefs": [],
   "imageName": "art_s1_sanchez.jpg",
   "originalName": "サンチェス",
@@ -6455,6 +6609,10 @@
    {
     "label": "Artist",
     "value": "Kawano Junko"
+   },
+   {
+    "label": "STAR LEAP",
+    "value": "Playable gacha character"
    }
   ],
   "sections": [
@@ -6808,7 +6966,7 @@
   "category": "Character",
   "subtype": "Tenkoku Star — Star of Destiny",
   "game": "Suikoden I",
-  "description": "Sydonia (シドニア, Shidonia) is a supporting character in Suikoden. Sydonia is a bandit of few words with a unique teleportation ability.",
+  "description": "Sydonia (シドニア, Shidonia) is a supporting character in Suikoden. Sydonia is a bandit of few words with a unique teleportation ability. Sydonia is also playable as a gacha character in Suikoden STAR LEAP (2026).",
   "crossRefs": [
    "combo-bandit_attack_2"
   ],
@@ -6843,6 +7001,10 @@
    {
     "label": "Weapon",
     "value": "Dart (Lv 6)"
+   },
+   {
+    "label": "STAR LEAP",
+    "value": "Playable gacha character"
    }
   ],
   "sections": [
@@ -6966,7 +7128,7 @@
   "category": "Character",
   "subtype": "Tenhei Star — Star of Destiny",
   "game": "Suikoden I",
-  "description": "Tai Ho (タイ・ホー, Tai Hō) is a supporting character in Suikoden and Suikoden II. Tai Ho is a fisherman with a penchant for Chinchirorin.",
+  "description": "Tai Ho (タイ・ホー, Tai Hō) is a supporting character in Suikoden and Suikoden II. Tai Ho is a fisherman with a penchant for Chinchirorin. Tai Ho also appears in Suikoden STAR LEAP (2026).",
   "crossRefs": [
    "combo-fisherman_attack"
   ],
@@ -7009,6 +7171,10 @@
    {
     "label": "Weapon",
     "value": "Spear (Lv 3)"
+   },
+   {
+    "label": "STAR LEAP",
+    "value": "Appears"
    }
   ],
   "sections": [
@@ -7146,7 +7312,7 @@
   "category": "Character",
   "subtype": "Tensui Star — Star of Destiny",
   "game": "Suikoden I",
-  "description": "Tengaar (テンガアール, Tengaāru) is a supporting character in Suikoden and Suikoden II. Tengaar is a headstrong woman from Warriors' Village who was nearly forced to marry the vampire Neclord.",
+  "description": "Tengaar (テンガアール, Tengaāru) is a supporting character in Suikoden and Suikoden II. Tengaar is a headstrong woman from Warriors' Village who was nearly forced to marry the vampire Neclord. Tengaar is also playable as a gacha character in Suikoden STAR LEAP (2026).",
   "crossRefs": [
    "combo-pretty_girl_attack",
    "combo-pretty_girl_attack_3",
@@ -7192,6 +7358,10 @@
    {
     "label": "Weapon",
     "value": "Rod (Lv 7)"
+   },
+   {
+    "label": "STAR LEAP",
+    "value": "Playable gacha character"
    }
   ],
   "sections": [
@@ -7379,7 +7549,7 @@
   "category": "Character",
   "subtype": "Tenbou Star — Star of Destiny",
   "game": "Suikoden I",
-  "description": "Varkas (バルカス, Barukasu) is a supporting character in Suikoden who makes a cameo appearance in Suikoden II. Varkas is the leader of the Mt. Seifu bandits and was named the Captain of the Border Guard.",
+  "description": "Varkas (バルカス, Barukasu) is a supporting character in Suikoden who makes a cameo appearance in Suikoden II. Varkas is the leader of the Mt. Seifu bandits and was named the Captain of the Border Guard. Varkas is also playable as a gacha character in Suikoden STAR LEAP (2026).",
   "crossRefs": [
    "combo-bandit_attack_2"
   ],
@@ -7414,6 +7584,10 @@
    {
     "label": "Weapon",
     "value": "Axe (Lv 5)"
+   },
+   {
+    "label": "STAR LEAP",
+    "value": "Playable gacha character"
    }
   ],
   "sections": [
@@ -7494,7 +7668,7 @@
   "category": "Character",
   "subtype": "Chichin Star — Star of Destiny",
   "game": "Suikoden I",
-  "description": "Vincent De Boule (ヴァンサン・ド・ブール, Vansan Do Būru) is a character in Suikoden and Suikoden II who also makes a cameo in Genso Suikogaiden Vol.2. Vincent is an aristocrat prone to fanciful claims although his noble standing is called into question by some.",
+  "description": "Vincent De Boule (ヴァンサン・ド・ブール, Vansan Do Būru) is a character in Suikoden and Suikoden II who also makes a cameo in Genso Suikogaiden Vol.2. Vincent is an aristocrat prone to fanciful claims although his noble standing is called into question by some. Vincent de Boule is also playable as a gacha character in Suikoden STAR LEAP (2026).",
   "crossRefs": [],
   "imageName": "art_s1_vincent_de_boule.jpg",
   "originalName": "ヴァンサン・ド・ブール",
@@ -7531,6 +7705,10 @@
    {
     "label": "Weapon",
     "value": "One-handed sword (Lv 10)"
+   },
+   {
+    "label": "STAR LEAP",
+    "value": "Playable gacha character"
    }
   ],
   "sections": [
@@ -7701,7 +7879,7 @@
   "category": "Character",
   "subtype": "Tenson Star — Star of Destiny",
   "game": "Suikoden I",
-  "description": "Yam Koo (ヤム・クー, Yamu Kū) is a supporting character in Suikoden and Suikoden II.",
+  "description": "Yam Koo (ヤム・クー, Yamu Kū) is a supporting character in Suikoden and Suikoden II. Yam Koo also appears in Suikoden STAR LEAP (2026).",
   "crossRefs": [
    "combo-fisherman_attack"
   ],
@@ -7740,6 +7918,10 @@
    {
     "label": "Weapon",
     "value": "Spear (Lv 3)"
+   },
+   {
+    "label": "STAR LEAP",
+    "value": "Appears"
    }
   ],
   "sections": [
@@ -8098,7 +8280,7 @@
   "category": "Character",
   "subtype": "Chisu Star — Star of Destiny",
   "game": "Suikoden II",
-  "description": "Alex (アレックス, Arekkusu) is a character in Suikoden II. Alex is a treasure hunter who looks to find treasures to provide for his wife, Hilda, and son, Pete.",
+  "description": "Alex (アレックス, Arekkusu) is a character in Suikoden II. Alex is a treasure hunter who looks to find treasures to provide for his wife, Hilda, and son, Pete. Alex is also playable as a gacha character in Suikoden STAR LEAP (2026).",
   "crossRefs": [],
   "imageName": "art_s2_alex.jpg",
   "facts": [
@@ -8133,6 +8315,10 @@
    {
     "label": "Artist",
     "value": "Ishikawa Fumi"
+   },
+   {
+    "label": "STAR LEAP",
+    "value": "Playable gacha character"
    }
   ],
   "originalName": "アレックス",
@@ -9815,7 +10001,7 @@
   "category": "Character",
   "subtype": "Teni Star — Star of Destiny",
   "game": "Suikoden II & V",
-  "description": "Georg Prime (ゲオルグ・プライム, Georugu Puraimu) is a central character of Suikoden V who first appeared in Suikoden II and Genso Suikogaiden Vol.1.",
+  "description": "Georg Prime (ゲオルグ・プライム, Georugu Puraimu) is a central character of Suikoden V who first appeared in Suikoden II and Genso Suikogaiden Vol.1. Georg Prime is also playable as a gacha character in Suikoden STAR LEAP (2026).",
   "crossRefs": [],
   "imageName": "art_s2_georg_prime.jpg",
   "facts": [
@@ -9842,6 +10028,10 @@
    {
     "label": "Voice actor",
     "value": "Koyatsu Hisanori"
+   },
+   {
+    "label": "STAR LEAP",
+    "value": "Playable gacha character"
    }
   ],
   "originalName": "ゲオルグ・プライム",
@@ -11330,7 +11520,7 @@
   "category": "Character",
   "subtype": "Chihi Star — Star of Destiny",
   "game": "Suikoden II",
-  "description": "Leona (レオナ, Reona) is a character in Suikoden II who has a cameo in Genso Suikogaiden Vol.1. She is a bartender for the New Alliance Army.",
+  "description": "Leona (レオナ, Reona) is a character in Suikoden II who has a cameo in Genso Suikogaiden Vol.1. She is a bartender for the New Alliance Army. Leona is also playable as a gacha character in Suikoden STAR LEAP (2026).",
   "crossRefs": [],
   "imageName": "art_s2_leona.jpg",
   "facts": [
@@ -11361,6 +11551,10 @@
    {
     "label": "Artist",
     "value": "Ishikawa Fumi"
+   },
+   {
+    "label": "STAR LEAP",
+    "value": "Playable gacha character"
    }
   ],
   "originalName": "レオナ",
@@ -12218,7 +12412,7 @@
   "category": "Character",
   "subtype": "Chima Star — Star of Destiny",
   "game": "Suikoden II",
-  "description": "Mukumuku (ムクムク, Mukumuku) is a character in Suikoden II. He is a Flying Squirrel who leads a band of his kind called the Flying Squirrel Corps.",
+  "description": "Mukumuku (ムクムク, Mukumuku) is a character in Suikoden II. He is a Flying Squirrel who leads a band of his kind called the Flying Squirrel Corps. Mukumuku is also playable as a gacha character in Suikoden STAR LEAP (2026).",
   "crossRefs": [
    "combo-five_squirrel_attack"
   ],
@@ -12255,6 +12449,10 @@
    {
     "label": "Voice actor",
     "value": "Kaneda Tomoko"
+   },
+   {
+    "label": "STAR LEAP",
+    "value": "Playable gacha character"
    }
   ],
   "originalName": "ムクムク",
@@ -12339,7 +12537,7 @@
   "category": "Character",
   "subtype": "Tenfu Star — Star of Destiny",
   "game": "Suikoden II",
-  "description": "Nina (ニナ, Nina) is a character in Suikoden II who also appears in Genso Suikogaiden Vol.1. Nina is a student at New Leaf Academy who tends to be a hopeless romantic.",
+  "description": "Nina (ニナ, Nina) is a character in Suikoden II who also appears in Genso Suikogaiden Vol.1. Nina is a student at New Leaf Academy who tends to be a hopeless romantic. Nina is also playable as a gacha character in Suikoden STAR LEAP (2026).",
   "crossRefs": [
    "combo-groupie_attack"
   ],
@@ -12372,6 +12570,10 @@
    {
     "label": "Artist",
     "value": "Ishikawa Fumi"
+   },
+   {
+    "label": "STAR LEAP",
+    "value": "Playable gacha character"
    }
   ],
   "originalName": "ニナ",
@@ -12510,7 +12712,7 @@
   "category": "Character",
   "subtype": "Character",
   "game": "Suikoden II",
-  "description": "RanRan (ランラン, Ranran) is an enemy who appears in Suikoden II. She is also a recruitable character in Suikoden STAR LEAP.",
+  "description": "RanRan (ランラン, Ranran) is an enemy who appears in Suikoden II. RanRan is also playable as a gacha character in Suikoden STAR LEAP (2026).",
   "crossRefs": [],
   "imageName": "art_s2_ranran.jpg",
   "facts": [
@@ -12533,6 +12735,10 @@
    {
     "label": "Voice actor",
     "value": "Sasaki Mikoi"
+   },
+   {
+    "label": "STAR LEAP",
+    "value": "Playable gacha character"
    }
   ],
   "originalName": "ランラン",
@@ -12582,7 +12788,7 @@
   "category": "Character",
   "subtype": "Chizou Star — Star of Destiny",
   "game": "Suikoden II & V",
-  "description": "Retso (レツオウ, Retsuou) is a character who appears in Suikoden II and Suikoden V. He is one of the four lords of the Black Dragon Cooking Clan and the father of Shun Min.",
+  "description": "Retso (レツオウ, Retsuou) is a character who appears in Suikoden II and Suikoden V. He is one of the four lords of the Black Dragon Cooking Clan and the father of Shun Min. Retso is also playable as a gacha character in Suikoden STAR LEAP (2026).",
   "crossRefs": [],
   "imageName": "art_s2_retso.jpg",
   "facts": [
@@ -12613,6 +12819,10 @@
    {
     "label": "Artist",
     "value": "Kizaki Sub-Zero"
+   },
+   {
+    "label": "STAR LEAP",
+    "value": "Playable gacha character"
    }
   ],
   "originalName": "レツオウ",
@@ -12880,7 +13090,7 @@
   "category": "Character",
   "subtype": "Character",
   "game": "Suikoden II",
-  "description": "RinRin (リンリン, Rinrin) is an enemy who appears in Suikoden II. She is also a recruitable character in Suikoden STAR LEAP.",
+  "description": "RinRin (リンリン, Rinrin) is an enemy who appears in Suikoden II. RinRin is also playable as a gacha character in Suikoden STAR LEAP (2026).",
   "crossRefs": [],
   "imageName": "art_s2_rinrin.jpg",
   "facts": [
@@ -12903,6 +13113,10 @@
    {
     "label": "Voice actor",
     "value": "Aimi"
+   },
+   {
+    "label": "STAR LEAP",
+    "value": "Playable gacha character"
    }
   ],
   "originalName": "リンリン",
@@ -13922,13 +14136,17 @@
   "category": "Character",
   "subtype": "Character",
   "game": "Suikoden II",
-  "description": "Taro (タロウ, Tarō) is a background character in Suikoden II. Taro is a sheep.",
+  "description": "Taro (タロウ, Tarō) is a background character in Suikoden II. Taro is a sheep. Taro also appears in Suikoden STAR LEAP (2026).",
   "crossRefs": [],
   "imageName": "art_s2_taro.jpg",
   "facts": [
    {
     "label": "Gender",
     "value": "Unknown"
+   },
+   {
+    "label": "STAR LEAP",
+    "value": "Appears"
    }
   ],
   "originalName": "タロウ",
@@ -13996,7 +14214,7 @@
   "category": "Character",
   "subtype": "Character",
   "game": "Suikoden II",
-  "description": "TenTen (テンテン, Tenten) is an enemy who appears in Suikoden II. She is also a recruitable character in Suikoden STAR LEAP.",
+  "description": "TenTen (テンテン, Tenten) is an enemy who appears in Suikoden II. TenTen is also playable as a gacha character in Suikoden STAR LEAP (2026).",
   "crossRefs": [],
   "imageName": "art_s2_tenten.jpg",
   "facts": [
@@ -14019,6 +14237,10 @@
    {
     "label": "Voice actor",
     "value": "Itō Ayasa"
+   },
+   {
+    "label": "STAR LEAP",
+    "value": "Playable gacha character"
    }
   ],
   "originalName": "テンテン",
@@ -14084,7 +14306,7 @@
   "category": "Character",
   "subtype": "Chiko Star — Star of Destiny",
   "game": "Suikoden II",
-  "description": "Tessai (テッサイ, Tessai) is a character in Suikoden II. He is a blacksmith looking for a great sword to reignite his passion for his trade.",
+  "description": "Tessai (テッサイ, Tessai) is a character in Suikoden II. He is a blacksmith looking for a great sword to reignite his passion for his trade. Tessai is also playable as a gacha character in Suikoden STAR LEAP (2026).",
   "crossRefs": [],
   "imageName": "art_s2_tessai.jpg",
   "facts": [
@@ -14115,6 +14337,10 @@
    {
     "label": "Artist",
     "value": "Ishikawa Fumi"
+   },
+   {
+    "label": "STAR LEAP",
+    "value": "Playable gacha character"
    }
   ],
   "originalName": "テッサイ",
@@ -14297,7 +14523,7 @@
   "category": "Character",
   "subtype": "Chijyu Star — Star of Destiny",
   "game": "Suikoden II & III",
-  "description": "Tuta (トウタ, Touta) is a character in Suikoden II and Suikoden III. Tuta is a doctor trained by Doctor Huan.",
+  "description": "Tuta (トウタ, Touta) is a character in Suikoden II and Suikoden III. Tuta is a doctor trained by Doctor Huan. Tuta is also playable as a gacha character in Suikoden STAR LEAP (2026).",
   "crossRefs": [],
   "imageName": "art_s2_tuta.jpg",
   "facts": [
@@ -14332,6 +14558,10 @@
    {
     "label": "Artist",
     "value": "Ishikawa Fumi"
+   },
+   {
+    "label": "STAR LEAP",
+    "value": "Playable gacha character"
    }
   ],
   "originalName": "トウタ",
@@ -14484,7 +14714,7 @@
   "category": "Character",
   "subtype": "Chisyu Star — Star of Destiny",
   "game": "Suikoden II",
-  "description": "Yuzu (ユズ, Yuzu) is a character in Suikoden II who also appears in Genso Suikogaiden Vol.2. Yuzu is a young shepherdess who participated in the Dunan Unification War.",
+  "description": "Yuzu (ユズ, Yuzu) is a character in Suikoden II who also appears in Genso Suikogaiden Vol.2. Yuzu is a young shepherdess who participated in the Dunan Unification War. Yuzu is also playable as a gacha character in Suikoden STAR LEAP (2026).",
   "crossRefs": [],
   "imageName": "art_s2_yuzu.jpg",
   "facts": [
@@ -14519,6 +14749,10 @@
    {
     "label": "Artist",
     "value": "Ishikawa Fumi"
+   },
+   {
+    "label": "STAR LEAP",
+    "value": "Playable gacha character"
    }
   ],
   "originalName": "ユズ",
@@ -17404,7 +17638,7 @@
   "category": "Character",
   "game": "Suikoden III",
   "subtype": "Chima Star — Star of Destiny",
-  "description": "Koroku (コロク, Koroku) is a supporting character who appears in Suikoden III. He has his own, optional, chapter in the game which allows him to explore Budehuc Castle.",
+  "description": "Koroku (コロク, Koroku) is a supporting character who appears in Suikoden III. He has his own, optional, chapter in the game which allows him to explore Budehuc Castle. Koroku is also playable as a gacha character in Suikoden STAR LEAP (2026).",
   "crossRefs": [
    "combo-bow_wow_attack_2"
   ],
@@ -17434,6 +17668,10 @@
    {
     "label": "Artist",
     "value": "Ishikawa Fumi"
+   },
+   {
+    "label": "STAR LEAP",
+    "value": "Playable gacha character"
    }
   ],
   "sections": [
@@ -19331,7 +19569,7 @@
   "category": "Character",
   "game": "Suikoden III",
   "subtype": "Tenko Star — Star of Destiny",
-  "description": "Sgt. Joe (ジョー軍曹, Jō Gunsō), real name Jordi (ジョルディ, Jorudi), is a major character in Suikoden III. Sgt. Joe is a veteran soldier of the Duck Clan who supports and guides Hugo's development as a warrior.",
+  "description": "Sgt. Joe (ジョー軍曹, Jō Gunsō), real name Jordi (ジョルディ, Jorudi), is a major character in Suikoden III. Sgt. Joe is a veteran soldier of the Duck Clan who supports and guides Hugo's development as a warrior. Sgt. Joe is also playable as a gacha character in Suikoden STAR LEAP (2026).",
   "crossRefs": [
    "combo-adonis_attack_inverse",
    "combo-mounted_attack"
@@ -19374,6 +19612,10 @@
    {
     "label": "Artist",
     "value": "Ishikawa Fumi"
+   },
+   {
+    "label": "STAR LEAP",
+    "value": "Playable gacha character"
    }
   ],
   "sections": [
@@ -21037,7 +21279,7 @@
   "category": "Character",
   "game": "Suikoden IV",
   "subtype": "Tenfu Star — Star of Destiny",
-  "description": "Chiepoo (チープー, Chīpū) is a supporting character in Suikoden IV and Suikoden Tactics. Chiepoo is a Nay-Kobold with grand ambitions to become a great merchant.",
+  "description": "Chiepoo (チープー, Chīpū) is a supporting character in Suikoden IV and Suikoden Tactics. Chiepoo is a Nay-Kobold with grand ambitions to become a great merchant. Chiepoo is also playable as a gacha character in Suikoden STAR LEAP (2026).",
   "crossRefs": [],
   "originalName": "チープー",
   "reading": "Chīpū",
@@ -21077,6 +21319,10 @@
    {
     "label": "Voice actor",
     "value": "Itō Miyako"
+   },
+   {
+    "label": "STAR LEAP",
+    "value": "Playable gacha character"
    }
   ],
   "sections": [
@@ -22977,7 +23223,7 @@
   "category": "Character",
   "game": "Suikoden IV",
   "subtype": "Tenko Star — Star of Destiny",
-  "description": "Kika (キカ, Kika) is a major character in Suikoden IV and Suikoden Tactics. Kika is the respected and honorable leader of a pirate band operating in the Island Nations.",
+  "description": "Kika (キカ, Kika) is a major character in Suikoden IV and Suikoden Tactics. Kika is the respected and honorable leader of a pirate band operating in the Island Nations. Kika is also playable as a gacha character in Suikoden STAR LEAP (2026).",
   "crossRefs": [],
   "originalName": "キカ",
   "reading": "Kika",
@@ -23005,6 +23251,10 @@
    {
     "label": "Voice actor",
     "value": "Kiuchi Reiko"
+   },
+   {
+    "label": "STAR LEAP",
+    "value": "Playable gacha character"
    }
   ],
   "sections": [
@@ -28232,7 +28482,7 @@
   "category": "Character",
   "game": "Suikoden V",
   "subtype": "Tenyu Star — Star of Destiny",
-  "description": "Galleon (ガレオン, Gareon) is a supporting character in Suikoden V. Galleon is a veteran member of Falena's Queen's Knights.",
+  "description": "Galleon (ガレオン, Gareon) is a supporting character in Suikoden V. Galleon is a veteran member of Falena's Queen's Knights. Galleon also appears in Suikoden STAR LEAP (2026).",
   "crossRefs": [
    "combo-falena_s_finest",
    "combo-maze_of_steel"
@@ -28275,6 +28525,10 @@
    {
     "label": "Voice actor",
     "value": "Katō Seizō"
+   },
+   {
+    "label": "STAR LEAP",
+    "value": "Appears"
    }
   ],
   "sections": [
@@ -29234,7 +29488,7 @@
   "category": "Character",
   "game": "Suikoden V",
   "subtype": "Tenko Star — Star of Destiny",
-  "description": "Kyle (カイル, Kairu) is a supporting character in Suikoden V. Kyle is the cavalier, care-free member of Falena's Queen's Knights.",
+  "description": "Kyle (カイル, Kairu) is a supporting character in Suikoden V. Kyle is the cavalier, care-free member of Falena's Queen's Knights. Kyle is confirmed to appear in Suikoden STAR LEAP (2026).",
   "crossRefs": [
    "combo-falena_s_finest",
    "combo-flash_of_steel",
@@ -29274,6 +29528,10 @@
    {
     "label": "Voice actor",
     "value": "Kishio Daisuke"
+   },
+   {
+    "label": "STAR LEAP",
+    "value": "Confirmed to appear"
    }
   ],
   "sections": [
@@ -29680,7 +29938,7 @@
   "category": "Character",
   "game": "Suikoden V",
   "subtype": "Chikaku Star — Star of Destiny",
-  "description": "Lun (ラン, Ran) is a supporting character in Suikoden V. Lun is the excitable and dedicated daughter of Kisara and Logg.",
+  "description": "Lun (ラン, Ran) is a supporting character in Suikoden V. Lun is the excitable and dedicated daughter of Kisara and Logg. Lun is confirmed to appear in Suikoden STAR LEAP (2026).",
   "crossRefs": [
    "combo-dad_and_daughter",
    "combo-family",
@@ -29724,6 +29982,10 @@
    {
     "label": "Voice actor",
     "value": "Ōura Fuyuka"
+   },
+   {
+    "label": "STAR LEAP",
+    "value": "Confirmed to appear"
    }
   ],
   "sections": [
@@ -29740,7 +30002,7 @@
   "category": "Character",
   "game": "Suikoden V",
   "subtype": "Chikai Star — Star of Destiny",
-  "description": "Luserina Barows (ルセリナ・バロウズ, Ruserina Barōzu) is a supporting character in Suikoden V. She is the kind-hearted, mature daughter of Salum Barows.",
+  "description": "Luserina Barows (ルセリナ・バロウズ, Ruserina Barōzu) is a supporting character in Suikoden V. She is the kind-hearted, mature daughter of Salum Barows. Luserina Barows is also playable as a gacha character in Suikoden STAR LEAP (2026).",
   "crossRefs": [],
   "originalName": "ルセリナ・バロウズ",
   "reading": "Ruserina Barōzu",
@@ -29780,6 +30042,10 @@
    {
     "label": "Voice actor",
     "value": "Satō Rina"
+   },
+   {
+    "label": "STAR LEAP",
+    "value": "Playable gacha character"
    }
   ],
   "sections": [
@@ -30751,7 +31017,7 @@
   "category": "Character",
   "game": "Suikoden V",
   "subtype": "Tensui Star — Star of Destiny",
-  "description": "Nick (ニック, Nikku) is a supporting character in Suikoden V. Nick is a talented apprentice studying in the Feitas Dragon Cavalry.",
+  "description": "Nick (ニック, Nikku) is a supporting character in Suikoden V. Nick is a talented apprentice studying in the Feitas Dragon Cavalry. Nick is also playable as a gacha character in Suikoden STAR LEAP (2026).",
   "crossRefs": [
    "combo-dragon_cavalry_coop_attack",
    "combo-pretty_boy"
@@ -30790,6 +31056,10 @@
    {
     "label": "Voice actor",
     "value": "Namikawa Daisuke"
+   },
+   {
+    "label": "STAR LEAP",
+    "value": "Playable gacha character"
    }
   ],
   "sections": [
@@ -62240,7 +62510,7 @@
   "category": "Region",
   "game": "Suikoden I",
   "subtype": "Settlement",
-  "description": "Lenankamp (レナンカンプ, Renankanpu) is a town that appears in Suikoden and the upcoming Suikoden STAR LEAP. It is a medium sized town located to the south of the Imperial capital of Gregminster.",
+  "description": "Lenankamp (レナンカンプ, Renankanpu) is a town that appears in Suikoden and Suikoden STAR LEAP (2026). It is a medium sized town located to the south of the Imperial capital of Gregminster.",
   "facts": [
    {
     "label": "Type",
@@ -62257,6 +62527,10 @@
    {
     "label": "Population",
     "value": "7,500"
+   },
+   {
+    "label": "STAR LEAP",
+    "value": "Visitable location"
    }
   ],
   "imageName": "art_lenankamp_region.jpg",
@@ -62352,7 +62626,7 @@
   "category": "Region",
   "game": "Suikoden V",
   "subtype": "City",
-  "description": "Lordlake (ロードレイク, Rōdoreiku) is a location seen in Suikoden V. It is a city in the southern part of the Queendom of Falena.",
+  "description": "Lordlake (ロードレイク, Rōdoreiku) is a location seen in Suikoden V. It is a city in the southern part of the Queendom of Falena. Lordlake can also be visited in Suikoden STAR LEAP (2026).",
   "facts": [
    {
     "label": "Type",
@@ -62361,6 +62635,10 @@
    {
     "label": "Nation",
     "value": "Queendom of Falena"
+   },
+   {
+    "label": "STAR LEAP",
+    "value": "Visitable location"
    }
   ],
   "imageName": "art_lordlake_region.jpg",
@@ -62777,7 +63055,7 @@
   "category": "Region",
   "game": "Suikoden I",
   "subtype": "Mountain",
-  "description": "Mt. Seifu (清風山, Seifūzan) is a mountain that appears in Suikoden. It is the home of the Mt. Seifu bandits and is located to the east of Rockland.",
+  "description": "Mt. Seifu (清風山, Seifūzan) is a mountain that appears in Suikoden. It is the home of the Mt. Seifu bandits and is located to the east of Rockland. Mt. Seifu also appears in Suikoden STAR LEAP (2026).",
   "facts": [
    {
     "label": "Type",
@@ -62786,6 +63064,10 @@
    {
     "label": "Region",
     "value": "Toran"
+   },
+   {
+    "label": "STAR LEAP",
+    "value": "Appears"
    }
   ],
   "imageName": "art_mt_seifu_region.jpg",
@@ -63774,7 +64056,7 @@
   "category": "Region",
   "game": "Suikoden I",
   "subtype": "Village",
-  "description": "Rockland (ロックランド, Rokkurando) is a village that appears in Suikoden and the upcoming Suikoden STAR LEAP. It is a small rural village located to the east of the Imperial capital of Gregminster.",
+  "description": "Rockland (ロックランド, Rokkurando) is a village that appears in Suikoden and Suikoden STAR LEAP (2026). It is a small rural village located to the east of the Imperial capital of Gregminster.",
   "facts": [
    {
     "label": "Type",
@@ -63791,6 +64073,10 @@
    {
     "label": "Population",
     "value": "2,700"
+   },
+   {
+    "label": "STAR LEAP",
+    "value": "Visitable location"
    }
   ],
   "imageName": "art_rockland_region.jpg",
@@ -64066,7 +64352,7 @@
   "category": "Region",
   "game": "Suikoden V",
   "subtype": "City",
-  "description": "Sauronix Castle Town (サウロニクス門前町, Sauronikusu Monzenmachi) is a location seen in Suikoden V. It is a castle town in the southwestern reaches of the Queendom of Falena.",
+  "description": "Sauronix Castle Town (サウロニクス門前町, Sauronikusu Monzenmachi) is a location seen in Suikoden V. It is a castle town in the southwestern reaches of the Queendom of Falena. Sauronix Castle Town can also be visited in Suikoden STAR LEAP (2026).",
   "facts": [
    {
     "label": "Type",
@@ -64075,6 +64361,10 @@
    {
     "label": "Nation",
     "value": "Queendom of Falena"
+   },
+   {
+    "label": "STAR LEAP",
+    "value": "Visitable location"
    }
   ],
   "imageName": "art_sauronix_castle_region.jpg",
@@ -71398,20 +71688,48 @@
  },
  {
   "id": "region-village",
-  "name": "Village",
+  "name": "Taiju Village",
   "category": "Region",
-  "game": "Suikoden I",
+  "game": "Suikoden STAR LEAP",
   "subtype": "Settlement",
-  "description": "The village (里, sato) is a location in the upcoming Suikoden STAR LEAP. It may be named Taiju Village (タイジュの里, Taiju no Sato) according to Viki's teleportation options in the game.",
+  "description": "Taiju Village (タイジュの里, Taiju no Sato, roughly \"Great Tree Village\") is the hero's home in Suikoden STAR LEAP: a lakeside village east of the Scarlet Moon Empire, beyond Mt. Seifu.",
   "facts": [
    {
     "label": "Type",
     "value": "Settlement"
+   },
+   {
+    "label": "Location",
+    "value": "East of the Scarlet Moon Empire"
+   },
+   {
+    "label": "Founder",
+    "value": "Hou"
+   },
+   {
+    "label": "STAR LEAP",
+    "value": "Headquarters"
    }
   ],
   "imageName": "art_village_region.jpg",
-  "originalName": "里",
-  "reading": "Sato"
+  "originalName": "タイジュの里",
+  "reading": "Taiju no Sato",
+  "sections": [
+   {
+    "title": "Information",
+    "body": "Streams and ponds run all through the village, and at its centre stands the Great Tree, its symbol, watching over the people who live there. The village was founded by Hou, who gathered a band of ruffians to build a new home.\n\nEarly in the story the village is razed in a sudden attack, and the hero sets out to gather allies to protect and rebuild it."
+   },
+   {
+    "title": "Headquarters",
+    "body": "The rebuilt village is the game's headquarters. Its restoration grows as companions join, unlocking facilities such as the blacksmith, a rune sage, bounty hunts and treasure hunts."
+   }
+  ],
+  "crossRefs": [
+   "game-suikoden_star_leap",
+   "region-mt_seifu",
+   "faction-scarlet_moon_empire",
+   "region-marindolf"
+  ]
  },
  {
   "id": "region-xasta_grassland",
@@ -73558,6 +73876,193 @@
     "title": "Profile",
     "body": "The Zexen Knights are based out of Brass Castle, near the border with Grasslands. The order was established for Zexen's self-defense alongside the nation's establishment. Although a military order, they are under civilian control as they are subject to the orders of the Zexen Council, with some knights under the direct command of council members.\n\nZexen Knights can fight both on foot and on horseback. They wear heavy, full-body armor and as such, they tend to have very high defensive ability in battle and are difficult to fight head-on. Zexen Knights are also known to be excellent sword wielders.\n\nImmediately prior to the War of the Champions, Galahad, the Captain of the Zexen Knights, and his deputy, Pelize were killed in battle against the Six Clans. Following this, Chris Lightfellow was established as head of the order, following her bravery in battle, leading the Zexen forces to victory.\n"
    }
+  ]
+ },
+ {
+  "id": "game-suikoden_star_leap",
+  "name": "Suikoden STAR LEAP",
+  "originalName": "幻想水滸伝 STAR LEAP",
+  "reading": "Gensōsuikoden Sutārīpu",
+  "category": "Other",
+  "subtype": "Game",
+  "game": "Suikoden STAR LEAP",
+  "description": "Suikoden STAR LEAP is a free-to-play mobile RPG developed by MYTHRIL and published by Konami, and the first original Suikoden RPG set in the main world since Suikoden V. It begins in SY 453, two years before Suikoden, and follows a new generation of 108 Stars of Destiny and the Rune of Change.",
+  "facts": [
+   {
+    "label": "Developer",
+    "value": "MYTHRIL"
+   },
+   {
+    "label": "Publisher",
+    "value": "Konami"
+   },
+   {
+    "label": "Platforms",
+    "value": "iOS, Android (Steam version announced)"
+   },
+   {
+    "label": "Released",
+    "value": "August 7, 2026 (Japan)"
+   },
+   {
+    "label": "Global release",
+    "value": "Not yet scheduled"
+   },
+   {
+    "label": "Setting",
+    "value": "SY 453 onward — east of the Scarlet Moon Empire, later the Queendom of Falena"
+   },
+   {
+    "label": "True Rune",
+    "value": "Rune of Change"
+   },
+   {
+    "label": "Theme song",
+    "value": "\"Campanula\" by Nakamura Kaho"
+   }
+  ],
+  "sections": [
+   {
+    "title": "Story",
+    "body": "The hero, son of the village chief Hou, comes home from his first hunt to a village celebration that is cut short by a sudden raid. A mysterious group hunting a rune burns the village to the ground. The hero sets out with the maid Hisui, his childhood friend Shirin and his teacher Shapur to protect and rebuild it, and soon crosses paths with Odessa as she raises the Toran Liberation Army against the decaying Scarlet Moon Empire. Later chapters carry the story to the Queendom of Falena.\n\nThe story is ongoing: new chapters are added through updates."
+   },
+   {
+    "title": "Gameplay",
+    "body": "Six-character party battles with a timeline-based turn order, large-scale real-time wars, and a headquarters that grows as companions join: rebuilding the hero's village unlocks shops, workshops, a rune sage and other facilities. Pixel-art characters move over 3D backgrounds, a look chosen to recall Suikoden and Suikoden II."
+   },
+   {
+    "title": "Story Stars vs. gacha characters",
+    "body": "The game's own 108 Stars join through the main story and optional recruitment, never through gacha. Separately, a character gacha and events add characters from earlier Suikoden games as a non-canon \"all-star\" layer: they can fight and live at headquarters, but they are not part of the story.\n\nIn this codex, returning characters carry a STAR LEAP detail that says which kind of appearance it is."
+   },
+   {
+    "title": "Returning characters",
+    "body": "Flik, Viktor and Humphrey appear as story guests during the Liberation Army's early days, Odessa plays a major part in the first chapter, and Viki is one of the 108 Stars. Dozens more, from Jowy to Kika, are playable as gacha characters."
+   }
+  ],
+  "crossRefs": [
+   "rune-of-change",
+   "region-village",
+   "region-marindolf",
+   "region-rovere_academy",
+   "odessa",
+   "flik",
+   "viktor",
+   "s1-humphrey-mintz",
+   "vicky",
+   "faction-scarlet_moon_empire",
+   "faction-toran_liberation_army",
+   "faction-queendom_of_falena"
+  ],
+  "year": 453,
+  "yearApprox": false
+ },
+ {
+  "id": "rune-of-change",
+  "name": "Rune of Change",
+  "originalName": "変化の紋章",
+  "reading": "Henka no Monshō",
+  "category": "Rune",
+  "subtype": "True Rune",
+  "game": "Suikoden STAR LEAP",
+  "description": "The Rune of Change (変化の紋章, Henka no Monshō) is one of the 27 True Runes. Long only hinted at through Sindar legend, it sits at the centre of the plot of Suikoden STAR LEAP.",
+  "facts": [
+   {
+    "label": "Type",
+    "value": "True Rune"
+   },
+   {
+    "label": "STAR LEAP",
+    "value": "Central to the story"
+   }
+  ],
+  "sections": [
+   {
+    "title": "Legend",
+    "body": "According to legend, the curse of the Rune of Change kept the Sindar from settling in any one land. Doomed to wander, they built and abandoned the ruins still found across the world, until the legend ends with their arrival at the Eternal City. No one living remembers the full truth of the rune."
+   },
+   {
+    "title": "Suikoden STAR LEAP",
+    "body": "The rune is tied to events east of the Scarlet Moon Empire in SY 453, the period in which Suikoden STAR LEAP begins."
+   }
+  ],
+  "crossRefs": [
+   "game-suikoden_star_leap"
+  ]
+ },
+ {
+  "id": "region-rovere_academy",
+  "name": "Rovere Academy",
+  "originalName": "ロドネイ・ロンド・ロヴェレ学園",
+  "reading": "Rodonei Rondo Rovuere Gakuen",
+  "category": "Region",
+  "subtype": "Institution",
+  "game": "Suikoden STAR LEAP",
+  "description": "Rovere Academy is a school of higher learning in Lordlake, in the Queendom of Falena, and the main setting of Chapter 2 of Suikoden STAR LEAP.",
+  "facts": [
+   {
+    "label": "Type",
+    "value": "Institution"
+   },
+   {
+    "label": "Nation",
+    "value": "Queendom of Falena"
+   },
+   {
+    "label": "Location",
+    "value": "Lordlake"
+   },
+   {
+    "label": "Name",
+    "value": "Fan translation (the game is Japan-only so far)"
+   }
+  ],
+  "sections": [
+   {
+    "title": "Information",
+    "body": "Founded after the Sun Rune War and named after the late Rodney Rondot Rovere, the academy is led by Headmaster Galleon. It is known for punishing standards, and students \"deserting\" is not unheard of.\n\nThe academy is split into two dormitories: Dawn, headed by Professor Peter, and Twilight, headed by Professor Enla. By SY 455 they are assisted by Shapur and Sheridan, and the Heroes Cup is held that year."
+   }
+  ],
+  "crossRefs": [
+   "region-lordlake",
+   "faction-queendom_of_falena",
+   "s5-galleon",
+   "s5-rodney_rondot_rovere",
+   "game-suikoden_star_leap"
+  ]
+ },
+ {
+  "id": "region-marindolf",
+  "name": "Marindolf",
+  "originalName": "マリンドルフ",
+  "reading": "Marindorufu",
+  "category": "Region",
+  "subtype": "Town",
+  "game": "Suikoden STAR LEAP",
+  "description": "Marindolf is an independent port town on the east coast of Toran, south-east of the hero's village in Suikoden STAR LEAP.",
+  "facts": [
+   {
+    "label": "Type",
+    "value": "Town"
+   },
+   {
+    "label": "Region",
+    "value": "Toran"
+   },
+   {
+    "label": "Name",
+    "value": "Fan translation (the game is Japan-only so far)"
+   }
+  ],
+  "sections": [
+   {
+    "title": "Information",
+    "body": "Beyond the reach of the Scarlet Moon Empire, Marindolf runs as an independent port. In SY 455 the hero's party comes here looking for Vigdis, a pirate friend of Hou whose fast ship can carry them to the Queendom of Falena.\n\nThe town keeps a centuries-old lighthouse whose flame still guides ships even though it has no keeper. Pirates lounge on its pier, the fishing is said to be excellent, and the local speciality is a salty anchovy pasta served \"Marindolf style\"."
+   }
+  ],
+  "crossRefs": [
+   "region-village",
+   "faction-scarlet_moon_empire",
+   "game-suikoden_star_leap"
   ]
  }
 ]

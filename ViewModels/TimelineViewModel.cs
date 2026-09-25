@@ -63,10 +63,11 @@ public partial class TimelineViewModel : ObservableObject
     {
         <= 320 => 0,
         <= 439 => 1,
-        <= 456 => 2,
-        <= 459 => 3,
-        <= 474 => 4,
-        _ => 5,
+        <= 450 => 2,
+        <= 456 => 3,
+        <= 459 => 4,
+        <= 474 => 5,
+        _ => 6,
     };
 
     private static string EraTitle(int bucket) => bucket switch
@@ -74,8 +75,9 @@ public partial class TimelineViewModel : ObservableObject
         0 => "Suikoden IV · Island Liberation War (≈SY 307)",
         1 => "Between the wars",
         2 => "Suikoden V · The Sun Rune War (SY 440s)",
-        3 => "Suikoden I · The Gate Rune War (SY 457)",
-        4 => "Suikoden II · The Dunan Unification War (SY 460)",
+        3 => "Suikoden STAR LEAP · Before the Gate Rune War (SY 453)",
+        4 => "Suikoden I · The Gate Rune War (SY 457)",
+        5 => "Suikoden II · The Dunan Unification War (SY 460)",
         _ => "Suikoden III · War of the Champions (SY 475)",
     };
 
