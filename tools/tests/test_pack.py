@@ -24,6 +24,9 @@ class SlugTests(unittest.TestCase):
     def test_slugify(self):
         self.assertEqual(slugify("Aegir: Night Lightning's Shadow"), "aegir-night-lightnings-shadow")
 
+    def test_slugify_curly_apostrophe(self):
+        self.assertEqual(slugify("Gremio’s Return"), "gremios-return")
+
 
 class BuildUnitTests(unittest.TestCase):
     def test_maps_roster_row_and_infobox(self):

@@ -21,7 +21,7 @@ PNG_SIGNATURE = b"\x89PNG\r\n\x1a\n"
 
 
 def slugify(page):
-    s = page.lower().replace("'", "").replace("'", "")
+    s = page.lower().replace("'", "").replace("’", "")
     return re.sub(r"[^a-z0-9]+", "-", s).strip("-")
 
 
