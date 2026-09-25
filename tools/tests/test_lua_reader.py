@@ -58,6 +58,26 @@ text]], d = [==[x]]y]==] }
         with self.assertRaises(LuaReadError):
             read_module("local t = { a = some.call() }")
 
+    def test_skips_if_elseif_else_chains(self):
+        locals_, returned = read_module("""
+            local a = { x = 1 }
+            if PLATFORM == 'ios' then
+                local unused = 1
+            elseif PLATFORM == 'android' then
+                local unused2 = 2
+            else
+                local unused3 = 3
+            end
+            local b = { y = 2 }
+            return { a = a, b = b }
+        """)
+        self.assertEqual(returned, {"a": {"x": 1}, "b": {"y": 2}})
+        self.assertIn("a", locals_)
+        self.assertIn("b", locals_)
+        self.assertNotIn("unused", locals_)
+        self.assertNotIn("unused2", locals_)
+        self.assertNotIn("unused3", locals_)
+
 
 if __name__ == "__main__":
     unittest.main()

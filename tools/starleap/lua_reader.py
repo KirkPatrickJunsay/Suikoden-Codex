@@ -162,19 +162,25 @@ class _Parser:
 
 def _skip_statement(p):
     depth = 0
+    first = True
     while p.peek()[0] != "eof":
         kind, val = p.peek()
-        if kind == "name" and val in ("function", "do", "then", "repeat"):
-            depth += 1
-        elif kind == "name" and val in ("end", "until"):
-            depth -= 1
+        if kind == "name" and val in ("function", "do", "if", "repeat"):
             p.take()
+            depth += 1
+            first = False
+            continue
+        elif kind == "name" and val in ("end", "until"):
+            p.take()
+            depth -= 1
             if depth <= 0:
                 return
+            first = False
             continue
-        elif depth == 0 and kind == "name" and val in ("local", "return"):
+        elif depth == 0 and not first and kind == "name" and val in ("local", "return"):
             return
         p.take()
+        first = False
 
 
 def read_module(src):
@@ -195,6 +201,5 @@ def read_module(src):
             p.take()
             returned = p.table()
             continue
-        p.take()
         _skip_statement(p)
     return p.env, returned
