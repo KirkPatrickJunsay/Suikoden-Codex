@@ -14,6 +14,7 @@ public partial class StarLeapUnitsViewModel : ObservableObject
     private readonly StarLeapData _data;
     private IReadOnlyList<SlUnit>? _rowsSource;
     private Dictionary<string, SlUnitRow> _rowCache = new();
+    private IReadOnlyList<SlUnit>? _appliedUnits;
 
     public StarLeapUnitsViewModel(StarLeapData data) => _data = data;
 
@@ -37,7 +38,8 @@ public partial class StarLeapUnitsViewModel : ObservableObject
         await _data.EnsureLoadedAsync();
         if (Chips.Count == 0)
             BuildChips();
-        Apply();
+        if (!ReferenceEquals(_appliedUnits, _data.Units))
+            Apply();
     }
 
     partial void OnSearchTextChanged(string value) => Apply();
@@ -128,5 +130,6 @@ public partial class StarLeapUnitsViewModel : ObservableObject
         foreach (var unit in result)
             Rows.Add(RowFor(unit));
         ResultSummary = $"{result.Count} of {_data.Units.Count} units";
+        _appliedUnits = _data.Units;
     }
 }

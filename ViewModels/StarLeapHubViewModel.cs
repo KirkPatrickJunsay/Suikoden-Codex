@@ -3,12 +3,14 @@ using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using SuikodenCodex.Pages;
 using SuikodenCodex.Services;
+using SuikodenCodex.StarLeap;
 
 namespace SuikodenCodex.ViewModels;
 
 public partial class StarLeapHubViewModel : ObservableObject
 {
     private readonly StarLeapData _data;
+    private IReadOnlyList<SlUnit>? _newestSource;
 
     public StarLeapHubViewModel(StarLeapData data)
     {
@@ -72,6 +74,9 @@ public partial class StarLeapHubViewModel : ObservableObject
         DataAsOf = _data.Manifest is { } m ? $"Data as of {m.GeneratedAt.ToLocalTime():d MMM yyyy}" : "";
         Status = _data.Status;
         UnitCountText = $"{_data.Units.Count} units";
+        if (ReferenceEquals(_newestSource, _data.Units))
+            return;
+        _newestSource = _data.Units;
         Newest.Clear();
         foreach (var unit in _data.Units
                      .OrderByDescending(u => u.Released ?? "", StringComparer.Ordinal)
