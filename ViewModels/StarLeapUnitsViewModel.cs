@@ -12,6 +12,8 @@ public partial class StarLeapUnitsViewModel : ObservableObject
     private static readonly string[] RarityOrder = { "108 Stars", "Guest", "SSR", "SR", "R" };
     private static readonly string[] ElementOrder = { "Fire", "Water", "Wind", "Earth", "Lightning", "Holy", "Dark" };
     private readonly StarLeapData _data;
+    private IReadOnlyList<SlUnit>? _rowsSource;
+    private Dictionary<string, SlUnitRow> _rowCache = new();
 
     public StarLeapUnitsViewModel(StarLeapData data) => _data = data;
 
@@ -88,6 +90,21 @@ public partial class StarLeapUnitsViewModel : ObservableObject
     private string? Selected(string dimension) =>
         Chips.FirstOrDefault(c => c.Dimension == dimension && c.IsSelected)?.Value;
 
+    private SlUnitRow RowFor(SlUnit unit)
+    {
+        if (!ReferenceEquals(_rowsSource, _data.Units))
+        {
+            _rowsSource = _data.Units;
+            _rowCache = new Dictionary<string, SlUnitRow>();
+        }
+        if (!_rowCache.TryGetValue(unit.Id, out var row))
+        {
+            row = new SlUnitRow(unit, _data.Portrait(unit));
+            _rowCache[unit.Id] = row;
+        }
+        return row;
+    }
+
     private void Apply()
     {
         var origin = Selected("origin") switch
@@ -109,7 +126,7 @@ public partial class StarLeapUnitsViewModel : ObservableObject
         var result = query.Apply(_data.Units);
         Rows.Clear();
         foreach (var unit in result)
-            Rows.Add(new SlUnitRow(unit, _data.Portrait(unit)));
+            Rows.Add(RowFor(unit));
         ResultSummary = $"{result.Count} of {_data.Units.Count} units";
     }
 }
