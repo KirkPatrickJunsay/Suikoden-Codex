@@ -14,7 +14,7 @@ Suikoden Codex is a free, offline fan encyclopedia. It is designed to respect yo
 - collect your name, contacts, location, or device identifiers;
 - include advertising, ad networks, or marketing trackers;
 - include analytics or crash-reporting SDKs;
-- send any of your information to us or to any third party.
+- send any of your information to us or to any third party (the optional Star Leap guide download is described in section 3).
 
 ## 2. Information stored on your device
 
