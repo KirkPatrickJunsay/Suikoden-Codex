@@ -82,7 +82,8 @@ public sealed class StarLeapData
             return new UpdateResult(UpdateOutcome.UpToDate);
 
         SetStatus("Checking for updates…");
-        var result = await Task.Run(() => _updater.CheckAndUpdateAsync(Manifest, _files));
+        using var cts = new CancellationTokenSource(TimeSpan.FromMinutes(3));
+        var result = await Task.Run(() => _updater.CheckAndUpdateAsync(Manifest, _files, cts.Token));
         switch (result.Outcome)
         {
             case UpdateOutcome.Updated:

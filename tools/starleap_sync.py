@@ -44,8 +44,13 @@ def fetch_portraits(client, rows, image_info, cache_dir):
         url, sha1 = info
         cached = os.path.join(cache_dir, f"{sha1}.png")
         if not os.path.exists(cached):
-            with open(cached, "wb") as f:
-                f.write(client.download(url))
+            data = client.download(url)
+            if not data.startswith(b"\x89PNG\r\n\x1a\n"):
+                raise SystemExit(f"error: portrait for {r['page']} is not a PNG ({url})")
+            tmp = cached + ".tmp"
+            with open(tmp, "wb") as f:
+                f.write(data)
+            os.replace(tmp, cached)
             downloaded += 1
             print(f"  downloaded {downloaded}: {r['page']}", flush=True)
         with open(cached, "rb") as f:

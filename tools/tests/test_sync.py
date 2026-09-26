@@ -41,6 +41,12 @@ class FakeClient:
         return PNG
 
 
+class NotPngClient(FakeClient):
+    def download(self, url):
+        self.downloads += 1
+        return b"not a png"
+
+
 class SyncTests(unittest.TestCase):
     NOW = datetime.datetime(2026, 9, 26, tzinfo=datetime.timezone.utc)
 
@@ -70,6 +76,15 @@ class SyncTests(unittest.TestCase):
             client.cargo = lambda table, fields: [dict(FakeClient().cargo(table, fields)[0], role="")]
             self.assertEqual(self.run_sync(tmp, client), 1)
             self.assertFalse(os.path.exists(os.path.join(tmp, "out")))
+
+    def test_non_png_portrait_aborts_and_leaves_no_cache_file(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            client = NotPngClient()
+            with self.assertRaises(SystemExit):
+                self.run_sync(tmp, client)
+            portraits_dir = os.path.join(tmp, "cache", "portraits")
+            leftover = os.listdir(portraits_dir) if os.path.isdir(portraits_dir) else []
+            self.assertEqual([f for f in leftover if f.endswith(".png")], [])
 
 
 if __name__ == "__main__":

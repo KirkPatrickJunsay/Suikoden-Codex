@@ -8,6 +8,11 @@ if [ "$branch" != "main" ]; then
   exit 1
 fi
 
+if ! git diff --cached --quiet; then
+  echo "❌ Unstaged your changes first: git has staged changes that would be published."
+  exit 1
+fi
+
 python3 tools/starleap_sync.py "$@"
 
 version=$(python3 -c "import json; print(json.load(open('build/starleap/manifest.json'))['version'])")
@@ -22,7 +27,7 @@ mkdir -p docs Resources/Raw
 cp -R build/starleap docs/starleap
 cp -R build/starleap Resources/Raw/starleap
 git add docs/starleap Resources/Raw/starleap
-git commit -m "Update Star Leap guide data (v${version})"
+git commit -m "Update Star Leap guide data (v${version})" -- docs/starleap Resources/Raw/starleap
 git push origin main
 
 echo ""
