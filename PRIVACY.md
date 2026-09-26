@@ -1,6 +1,6 @@
 # Privacy Policy — Suikoden Codex
 
-**Effective date:** 25 June 2026
+**Effective date:** 26 September 2026
 
 This Privacy Policy explains how the **Suikoden Codex** mobile application ("the app", "we", "us"), developed by **Kirk (Codes & Chips)**, handles your information. By using the app you agree to this policy.
 
@@ -28,7 +28,7 @@ This data is stored using the device's standard local app-storage. You can remov
 
 ## 3. Permissions
 
-The app may request the standard **Internet / network-state** permission that is included by default with the development framework. The app functions fully offline and does not use the network to collect or transmit your data.
+The app uses the standard **Internet / network-state** permission for one purpose: the optional **Star Leap guide** can download updated guide data (character information and portraits) from the developer's GitHub Pages site (`kirkpatrickjunsay.github.io`). This download sends no personal data and no identifiers; like any web host, GitHub receives your device's IP address when the file is requested, as described in GitHub's own privacy statement. Everything else in the app works fully offline.
 
 ## 4. Sharing and backups
 
@@ -36,7 +36,7 @@ Any "share" or "backup/export" feature is **initiated only by you**. When you ch
 
 ## 5. Third-party content
 
-The app displays Suikoden game information and imagery for reference. *Suikoden* and related content are © Konami Digital Entertainment; encyclopedia text is sourced from the Gensopedia community wiki. These are shown within the app and do not involve sharing your data.
+The app displays Suikoden game information and imagery for reference. *Suikoden* and related content are © Konami Digital Entertainment; encyclopedia text is sourced from the Gensopedia community wiki. These are shown within the app and do not involve sharing your data. Star Leap guide data is adapted from Gensopedia STAR LEAP and shared under CC BY-NC-SA 4.0.
 
 ## 6. Children's privacy
 

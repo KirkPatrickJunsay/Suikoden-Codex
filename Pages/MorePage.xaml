@@ -212,9 +212,15 @@
                     </VerticalStackLayout>
 
                     <VerticalStackLayout Spacing="3">
+                        <Label Text="⭐ Star Leap guide" FontSize="14" FontAttributes="Bold" />
+                        <Label FontSize="12" Opacity="0.75"
+                               Text="Star Leap guide data and portraits are adapted from Gensopedia STAR LEAP (starleap.gensopedia.org) and shared under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 licence." />
+                    </VerticalStackLayout>
+
+                    <VerticalStackLayout Spacing="3">
                         <Label Text="🔒 Your privacy" FontSize="14" FontAttributes="Bold" />
                         <Label FontSize="12" Opacity="0.75"
-                               Text="Suikoden Codex collects no personal data. There is no account, no tracking, and no analytics. Your favorites, recently viewed entries, and recruitment progress are stored only on your device and are never sent anywhere." />
+                               Text="Suikoden Codex collects no personal data. There is no account, no tracking, and no analytics. Your favorites, recently viewed entries, and recruitment progress are stored only on your device and are never sent anywhere. The Star Leap guide can download updated guide data from the developer's GitHub Pages site; nothing about you is sent." />
                     </VerticalStackLayout>
 
                 </VerticalStackLayout>

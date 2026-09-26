@@ -15,7 +15,8 @@ Browse characters, monsters, items, runes, regions and factions across the whole
 - **Interactive World Map** — an original, lore-accurate map of the Suikoden world; tap a nation or region to jump to its entry. Pinch / buttons to zoom.
 - **Series Timeline** — major wars and events across all five games, ordered by Solar Year.
 - **Compare** — view two characters or monsters side by side.
-- **Card Stories gallery** — browse the cards from the *Genso Suikoden Card Stories* TCG.
+- **Star Leap guide** — a tab for players of *Suikoden STAR LEAP*: all playable units with Japanese and English names, level 1 → max stats, full skill kits and portraits. Works offline and can download updated guide data.
+- **Card Stories gallery** (in More) — browse the cards from the *Genso Suikoden Card Stories* TCG.
 - **Quality-of-life** — favorites, recently viewed, random "discover", spoiler-safe mode, dark theme, and local backup / restore of your progress.
 
 ## 📱 Screenshots
@@ -45,9 +46,11 @@ dotnet build -f net10.0-android -t:Run -c Debug -p:AdbTarget="-s <device-serial>
 
 Entry text and card data are sourced primarily from **[Gensopedia](https://gensopedia.org)**, the community Suikoden encyclopedia, with thanks. The app credits Gensopedia and Konami in-app on entry pages.
 
+Star Leap guide data comes from **[Gensopedia STAR LEAP](https://starleap.gensopedia.org)** (CC BY-NC-SA 4.0). The adapted data in `docs/starleap/` and `Resources/Raw/starleap/` is shared under the same licence. To refresh it, run `./publish_starleap.sh` on `main`.
+
 ## 🔒 Privacy
 
-Suikoden Codex collects **no personal data** and works entirely offline. Everything you do (progress, favorites, custom data) is stored only on your device. Full policy: **[PRIVACY.md](PRIVACY.md)**.
+Suikoden Codex collects **no personal data** and works offline; the optional Star Leap guide can download public guide data from GitHub Pages (nothing about you is sent). Everything you do (progress, favorites, custom data) is stored only on your device. Full policy: **[PRIVACY.md](PRIVACY.md)**.
 
 ## ⚖️ Attribution & license
 
