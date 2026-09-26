@@ -68,6 +68,20 @@
                 </Grid>
             </Border>
 
+            <Border StrokeShape="RoundRectangle 10" Stroke="#30808080" Padding="16">
+                <Grid ColumnDefinitions="Auto,*,Auto" ColumnSpacing="14">
+                    <Label Text="🃏" FontSize="24" VerticalOptions="Center" />
+                    <VerticalStackLayout Grid.Column="1" VerticalOptions="Center">
+                        <Label Text="Card Stories gallery" FontSize="16" FontAttributes="Bold" />
+                        <Label Text="Cards from the Genso Suikoden Card Stories TCG" FontSize="12" Opacity="0.6" />
+                    </VerticalStackLayout>
+                    <Label Grid.Column="2" Text="›" FontSize="22" Opacity="0.4" VerticalOptions="Center" />
+                    <Grid.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding OpenCardsCommand}" />
+                    </Grid.GestureRecognizers>
+                </Grid>
+            </Border>
+
             <Label Text="Library" FontSize="13" FontAttributes="Bold" Opacity="0.6" Margin="0,12,0,0" />
 
             <Border StrokeShape="RoundRectangle 10" Stroke="#30808080" Padding="16">

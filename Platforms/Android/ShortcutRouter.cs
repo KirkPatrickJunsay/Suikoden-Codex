@@ -23,7 +23,7 @@ public static class ShortcutRouter
                     await shell.GoToAsync("//browse");
                     break;
                 case "cards":
-                    await shell.GoToAsync("//cards");
+                    await shell.GoToAsync("CardsPage");
                     break;
                 case "random":
                     var data = IPlatformApplication.Current?.Services.GetService<CodexData>();

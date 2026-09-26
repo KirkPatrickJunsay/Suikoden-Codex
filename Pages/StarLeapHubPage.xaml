@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="SuikodenCodex.Pages.StarLeapHubPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:vm="clr-namespace:SuikodenCodex.ViewModels"
+    x:Name="Page"
+    x:DataType="vm:StarLeapHubViewModel"
+    Title="Star Leap">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="16" Spacing="14">
+
+            <Border StrokeShape="RoundRectangle 12" Stroke="#44D9A636" BackgroundColor="#1AD9A636" Padding="16,14">
+                <VerticalStackLayout Spacing="6">
+                    <Label Text="Suikoden STAR LEAP guide" FontSize="18" FontAttributes="Bold" />
+                    <Label Text="{Binding DataAsOf}" FontSize="13" Opacity="0.8" />
+                    <Label Text="{Binding Credit}" FontSize="11" Opacity="0.6" />
+                    <Grid ColumnDefinitions="Auto,*" ColumnSpacing="12" Margin="0,6,0,0">
+                        <Button Text="Check for updates" Command="{Binding CheckForUpdatesCommand}"
+                                IsEnabled="{Binding IsChecking, Converter={StaticResource InvertedBool}}"
+                                FontSize="12" HeightRequest="36" Padding="14,0"
+                                BackgroundColor="#20264A" TextColor="#ECC56A" BorderColor="#55D9A636" BorderWidth="1" />
+                        <HorizontalStackLayout Grid.Column="1" Spacing="8" VerticalOptions="Center">
+                            <ActivityIndicator IsRunning="{Binding IsChecking}" IsVisible="{Binding IsChecking}"
+                                               HeightRequest="18" WidthRequest="18" Color="{StaticResource Primary}" />
+                            <Label Text="{Binding Status}" FontSize="12" Opacity="0.7" VerticalOptions="Center" />
+                        </HorizontalStackLayout>
+                    </Grid>
+                </VerticalStackLayout>
+            </Border>
+
+            <Border StrokeShape="RoundRectangle 10" Stroke="#30808080" Padding="16">
+                <Grid ColumnDefinitions="Auto,*,Auto" ColumnSpacing="14">
+                    <Label Text="🧑" FontSize="26" VerticalOptions="Center" />
+                    <VerticalStackLayout Grid.Column="1" VerticalOptions="Center">
+                        <Label Text="Characters" FontSize="16" FontAttributes="Bold" />
+                        <Label Text="{Binding UnitCountText}" FontSize="12" Opacity="0.6" />
+                    </VerticalStackLayout>
+                    <Label Grid.Column="2" Text="›" FontSize="22" Opacity="0.4" VerticalOptions="Center" />
+                    <Grid.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding OpenCharactersCommand}" />
+                    </Grid.GestureRecognizers>
+                </Grid>
+            </Border>
+
+            <Label Text="Newest units" FontSize="13" FontAttributes="Bold" Opacity="0.6" Margin="0,6,0,0" />
+            <CollectionView ItemsSource="{Binding Newest}" HeightRequest="118" SelectionMode="None">
+                <CollectionView.ItemsLayout>
+                    <LinearItemsLayout Orientation="Horizontal" ItemSpacing="10" />
+                </CollectionView.ItemsLayout>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="vm:SlUnitRow">
+                        <VerticalStackLayout WidthRequest="80" Spacing="4">
+                            <Border WidthRequest="72" HeightRequest="72" StrokeShape="RoundRectangle 10"
+                                    Stroke="#33808080" BackgroundColor="#20264A" Padding="0" HorizontalOptions="Center">
+                                <Image Source="{Binding Portrait}" Aspect="AspectFill" />
+                            </Border>
+                            <Label Text="{Binding Name}" FontSize="11" HorizontalTextAlignment="Center"
+                                   MaxLines="2" LineBreakMode="TailTruncation" />
+                            <VerticalStackLayout.GestureRecognizers>
+                                <TapGestureRecognizer
+                                    Command="{Binding Source={x:Reference Page}, Path=BindingContext.OpenUnitCommand}"
+                                    CommandParameter="{Binding .}" />
+                            </VerticalStackLayout.GestureRecognizers>
+                        </VerticalStackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+            <Border StrokeShape="RoundRectangle 10" Stroke="#30808080" Padding="16">
+                <Grid ColumnDefinitions="Auto,*,Auto" ColumnSpacing="14">
+                    <Label Text="📖" FontSize="24" VerticalOptions="Center" />
+                    <VerticalStackLayout Grid.Column="1" VerticalOptions="Center">
+                        <Label Text="About Star Leap" FontSize="16" FontAttributes="Bold" />
+                        <Label Text="Story, setting and how Stars differ from gacha characters" FontSize="12" Opacity="0.6" />
+                    </VerticalStackLayout>
+                    <Label Grid.Column="2" Text="›" FontSize="22" Opacity="0.4" VerticalOptions="Center" />
+                    <Grid.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding OpenAboutCommand}" />
+                    </Grid.GestureRecognizers>
+                </Grid>
+            </Border>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

@@ -27,10 +27,10 @@
             Route="recruitment" />
 
         <ShellContent
-            Title="Cards"
-            Icon="tab_cards.png"
-            ContentTemplate="{DataTemplate pages:CardsPage}"
-            Route="cards" />
+            Title="Star Leap"
+            Icon="tab_starleap.png"
+            ContentTemplate="{DataTemplate pages:StarLeapHubPage}"
+            Route="starleap" />
 
         <ShellContent
             Title="More"

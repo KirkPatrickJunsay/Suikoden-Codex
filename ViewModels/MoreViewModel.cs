@@ -95,6 +95,10 @@ public partial class MoreViewModel : ObservableObject
         await Shell.Current.GoToAsync(nameof(WalkthroughPage));
 
     [RelayCommand]
+    private async Task OpenCards() =>
+        await Shell.Current.GoToAsync(nameof(CardsPage));
+
+    [RelayCommand]
     private async Task Backup()
     {
         try

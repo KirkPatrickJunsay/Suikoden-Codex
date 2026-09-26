@@ -44,6 +44,7 @@ public static class MauiProgram
 		builder.Services.AddTransient<WalkthroughViewModel>();
 		builder.Services.AddTransient<StarLeapUnitDetailViewModel>();
 		builder.Services.AddTransient<StarLeapUnitsViewModel>();
+		builder.Services.AddSingleton<StarLeapHubViewModel>();
 
 		// Pages
 		builder.Services.AddSingleton<HomePage>();
@@ -54,7 +55,7 @@ public static class MauiProgram
 		builder.Services.AddTransient<PageImagePage>();
 		builder.Services.AddTransient<EntryListPage>();
 		builder.Services.AddTransient<TimelinePage>();
-		builder.Services.AddSingleton<CardsPage>();
+		builder.Services.AddTransient<CardsPage>();
 		builder.Services.AddTransient<CardDetailPage>();
 		builder.Services.AddTransient<ComparePage>();
 		builder.Services.AddTransient<WorldMapPage>();
@@ -64,6 +65,7 @@ public static class MauiProgram
 		builder.Services.AddTransient<WalkthroughPage>();
 		builder.Services.AddTransient<StarLeapUnitDetailPage>();
 		builder.Services.AddTransient<StarLeapUnitsPage>();
+		builder.Services.AddSingleton<StarLeapHubPage>();
 		builder.Services.AddTransient<ImageViewerPage>();
 
 #if DEBUG
