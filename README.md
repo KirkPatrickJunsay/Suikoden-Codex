@@ -1,6 +1,6 @@
 # Suikoden Codex
 
-A free, offline fan encyclopedia and companion app for Konami's **Suikoden I–V**, built with .NET MAUI for Android.
+A free fan encyclopedia that works offline and companion app for Konami's **Suikoden I–V**, built with .NET MAUI for Android.
 
 Browse characters, monsters, items, runes, regions and factions across the whole series, track your **108 Stars of Destiny** recruitment in every game, explore an interactive world map, and follow the saga's timeline — all on-device, with no account and no ads.
 
@@ -28,7 +28,7 @@ Browse characters, monsters, items, runes, regions and factions across the whole
 
 - **.NET MAUI** (.NET 10) — single-project Android app (`net10.0-android`)
 - **MVVM** via the CommunityToolkit.Mvvm
-- Bundled JSON datasets + images (fully offline)
+- Bundled JSON datasets + images (works offline; Star Leap guide data can update from GitHub Pages)
 
 ## 🚀 Getting started
 
@@ -46,11 +46,11 @@ dotnet build -f net10.0-android -t:Run -c Debug -p:AdbTarget="-s <device-serial>
 
 Entry text and card data are sourced primarily from **[Gensopedia](https://gensopedia.org)**, the community Suikoden encyclopedia, with thanks. The app credits Gensopedia and Konami in-app on entry pages.
 
-Star Leap guide data comes from **[Gensopedia STAR LEAP](https://starleap.gensopedia.org)** (CC BY-NC-SA 4.0). The adapted data in `docs/starleap/` and `Resources/Raw/starleap/` is shared under the same licence. To refresh it, run `./publish_starleap.sh` on `main`.
+Star Leap guide data comes from **[Gensopedia STAR LEAP](https://starleap.gensopedia.org)** (CC BY-NC-SA 4.0). The adapted data in `docs/starleap/` and `Resources/Raw/starleap/` is shared under the same licence. Unit portraits are © Konami, via Gensopedia STAR LEAP, and are not covered by that licence. To refresh it, run `./publish_starleap.sh` on `main`.
 
 ## 🔒 Privacy
 
-Suikoden Codex collects **no personal data** and works offline; the optional Star Leap guide can download public guide data from GitHub Pages (nothing about you is sent). Everything you do (progress, favorites, custom data) is stored only on your device. Full policy: **[PRIVACY.md](PRIVACY.md)**.
+Suikoden Codex collects **no personal data** and works offline; the optional Star Leap guide can download public guide data from GitHub Pages (no personal data or identifiers are sent). Everything you do (progress, favorites, custom data) is stored only on your device. Full policy: **[PRIVACY.md](PRIVACY.md)**.
 
 ## ⚖️ Attribution & license
 

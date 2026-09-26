@@ -11,7 +11,7 @@ Look up every playable Suikoden STAR LEAP unit: Japanese and English names, leve
 Everything works without a connection; the Star Leap guide can optionally download updated guide data. Suikoden Codex collects no personal data: no account, no tracking, no analytics, no ads.
 
 ## Credits line (append to the fan-project disclaimer)
-Star Leap guide data is adapted from Gensopedia STAR LEAP under CC BY-NC-SA 4.0.
+Star Leap guide data is adapted from Gensopedia STAR LEAP under CC BY-NC-SA 4.0; unit portraits © Konami.
 
 ## Release notes (≤ 500)
 New: Star Leap guide! A new tab with every playable Suikoden STAR LEAP unit — Japanese and English names, stats, full skill kits and portraits. It works offline and can download updated data as the game grows.

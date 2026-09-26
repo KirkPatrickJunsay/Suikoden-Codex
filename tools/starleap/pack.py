@@ -10,7 +10,7 @@ from .transform import clean_text
 SCHEMA = 1
 SOURCE = "https://starleap.gensopedia.org"
 LICENSE = "CC BY-NC-SA 4.0"
-ATTRIBUTION = "Adapted from Gensopedia STAR LEAP"
+ATTRIBUTION = "Adapted from Gensopedia STAR LEAP; unit portraits © Konami"
 RARITIES = {"108 Stars", "Guest", "SSR", "SR", "R"}
 ELEMENTS = {"Fire", "Water", "Wind", "Earth", "Lightning", "Holy", "Dark"}
 ROLES = {"Attack", "Defense", "Support", "Recover"}

@@ -254,8 +254,9 @@ becomes a pushed route opened from a new **Card Stories gallery** row in More â†
   **Other versions** (same `basedOn`); **Classic codex entry** link; credit footer
   with **View on Gensopedia** link. Sections with no data are hidden.
 
-**Credits (More page)**: add "Star Leap guide data and portraits adapted from
-Gensopedia STAR LEAP (starleap.gensopedia.org), shared under CC BY-NC-SA 4.0."
+**Credits (More page)**: add "Star Leap guide data is adapted from Gensopedia
+STAR LEAP (starleap.gensopedia.org) and shared under CC BY-NC-SA 4.0. Unit
+portraits Â© Konami, via Gensopedia STAR LEAP."
 
 ## Error handling
 
