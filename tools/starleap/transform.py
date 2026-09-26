@@ -200,7 +200,9 @@ def build_stats(page, stat_locals, stat_module):
     stats = {
         "hp": pair("HP"), "patk": pair("PATK"), "matk": pair("MATK"),
         "pdef": pair("PDEF"), "mdef": pair("MDEF"),
-        "agi": unit.get("AGI"), "hit": unit.get("HIT"), "dodge": unit.get("DODGE"),
+        "agi": int(unit["AGI"]) if unit.get("AGI") is not None else None,
+        "hit": int(unit["HIT"]) if unit.get("HIT") is not None else None,
+        "dodge": int(unit["DODGE"]) if unit.get("DODGE") is not None else None,
         "training": training,
     }
     weapon = None

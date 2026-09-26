@@ -46,18 +46,22 @@ public sealed class StarLeapData
             {
             }
             var bundledFiles = new BundledPackFiles();
-            var bundled = await PackLoader.LoadAsync(bundledFiles);
+            var bundled = await TryLoadAsync(bundledFiles);
             var cachedFiles = new DirectoryPackFiles(_updater.CurrentDirectory);
             var cached = await TryLoadAsync(cachedFiles);
-            if (cached is not null && cached.Manifest.Version > bundled.Manifest.Version)
+            if (cached is not null && (bundled is null || cached.Manifest.Version > bundled.Manifest.Version))
             {
                 _files = cachedFiles;
                 Apply(cached);
             }
-            else
+            else if (bundled is not null)
             {
                 _files = bundledFiles;
                 Apply(bundled);
+            }
+            else
+            {
+                SetStatus("Star Leap data is unavailable");
             }
         }
         finally

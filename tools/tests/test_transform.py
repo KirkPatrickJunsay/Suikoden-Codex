@@ -121,6 +121,16 @@ class BuildStatsTests(unittest.TestCase):
     def test_unknown_unit(self):
         self.assertEqual(build_stats("Nobody", self.STAT_LOCALS, self.STAT_MODULE), (None, None))
 
+    def test_single_stats_are_ints(self):
+        stat_module = {"units": {1: {"name": "Mixed", "AGI": 72.0, "HIT": "78", "DODGE": 72}}}
+        stats, _ = build_stats("Mixed", {}, stat_module)
+        self.assertIs(type(stats["agi"]), int)
+        self.assertIs(type(stats["hit"]), int)
+        self.assertIs(type(stats["dodge"]), int)
+        self.assertEqual(stats["agi"], 72)
+        self.assertEqual(stats["hit"], 78)
+        self.assertEqual(stats["dodge"], 72)
+
 
 class InfoboxTests(unittest.TestCase):
     def test_parses_params_on_one_line_and_nested_links(self):
