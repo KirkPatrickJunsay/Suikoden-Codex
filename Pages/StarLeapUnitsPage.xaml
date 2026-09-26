@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="SuikodenCodex.Pages.StarLeapUnitsPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:vm="clr-namespace:SuikodenCodex.ViewModels"
+    x:DataType="vm:StarLeapUnitsViewModel"
+    Title="Star Leap characters">
+
+    <Grid RowDefinitions="Auto,Auto,Auto,*">
+
+        <SearchBar Grid.Row="0" Placeholder="Search English or Japanese names…"
+                   Text="{Binding SearchText, Mode=TwoWay}" />
+
+        <CollectionView Grid.Row="1" ItemsSource="{Binding Chips}" ItemsLayout="HorizontalList"
+                        HeightRequest="48" Margin="8,0" SelectionMode="None">
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="vm:FilterChip">
+                    <Border StrokeShape="RoundRectangle 18" Margin="4,6" Padding="12,6"
+                            Stroke="{Binding IsSelected, Converter={StaticResource BoolToColor}, ConverterParameter=#D9A636|#55808080}"
+                            BackgroundColor="{Binding IsSelected, Converter={StaticResource BoolToColor}, ConverterParameter=#D9A636|#00000000}">
+                        <Label Text="{Binding Label}" FontSize="13" VerticalOptions="Center"
+                               TextColor="{Binding IsSelected, Converter={StaticResource BoolToColor}, ConverterParameter=#1C2348|#9AA0B5}" />
+                        <Border.GestureRecognizers>
+                            <TapGestureRecognizer
+                                Command="{Binding Source={RelativeSource AncestorType={x:Type vm:StarLeapUnitsViewModel}}, Path=ToggleChipCommand}"
+                                CommandParameter="{Binding .}" />
+                        </Border.GestureRecognizers>
+                    </Border>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+        <Grid Grid.Row="2" ColumnDefinitions="*,Auto" Padding="16,2,12,4">
+            <Label Text="{Binding ResultSummary}" FontSize="12" Opacity="0.6" VerticalOptions="Center" />
+            <Button Grid.Column="1" Text="{Binding SortLabel}" Command="{Binding ToggleSortCommand}"
+                    FontSize="12" HeightRequest="32" Padding="12,0"
+                    BackgroundColor="Transparent" TextColor="{StaticResource Primary}" />
+        </Grid>
+
+        <CollectionView Grid.Row="3" ItemsSource="{Binding Rows}" SelectionMode="None">
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="vm:SlUnitRow">
+                    <Grid Padding="16,10" ColumnDefinitions="Auto,*" ColumnSpacing="14">
+                        <Border WidthRequest="50" HeightRequest="50" Padding="0" VerticalOptions="Center"
+                                StrokeShape="RoundRectangle 10" Stroke="#22808080" BackgroundColor="#20264A">
+                            <Image Source="{Binding Portrait}" Aspect="AspectFill" />
+                        </Border>
+                        <VerticalStackLayout Grid.Column="1" Spacing="1" VerticalOptions="Center">
+                            <Label Text="{Binding DisplayName}" FontSize="16" FontAttributes="Bold"
+                                   MaxLines="1" LineBreakMode="TailTruncation" />
+                            <Label Text="{Binding Subtitle}" FontSize="12" Opacity="0.6"
+                                   MaxLines="1" LineBreakMode="TailTruncation" />
+                        </VerticalStackLayout>
+                        <Grid.GestureRecognizers>
+                            <TapGestureRecognizer
+                                Command="{Binding Source={RelativeSource AncestorType={x:Type vm:StarLeapUnitsViewModel}}, Path=OpenUnitCommand}"
+                                CommandParameter="{Binding .}" />
+                        </Grid.GestureRecognizers>
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+            <CollectionView.EmptyView>
+                <Label Text="No units match your search." HorizontalOptions="Center" Margin="0,40" Opacity="0.6" />
+            </CollectionView.EmptyView>
+        </CollectionView>
+    </Grid>
+</ContentPage>

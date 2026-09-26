@@ -43,6 +43,7 @@ public static class MauiProgram
 		builder.Services.AddTransient<DeckManagerViewModel>();
 		builder.Services.AddTransient<WalkthroughViewModel>();
 		builder.Services.AddTransient<StarLeapUnitDetailViewModel>();
+		builder.Services.AddTransient<StarLeapUnitsViewModel>();
 
 		// Pages
 		builder.Services.AddSingleton<HomePage>();
@@ -62,6 +63,7 @@ public static class MauiProgram
 		builder.Services.AddTransient<DeckManagerPage>();
 		builder.Services.AddTransient<WalkthroughPage>();
 		builder.Services.AddTransient<StarLeapUnitDetailPage>();
+		builder.Services.AddTransient<StarLeapUnitsPage>();
 		builder.Services.AddTransient<ImageViewerPage>();
 
 #if DEBUG
